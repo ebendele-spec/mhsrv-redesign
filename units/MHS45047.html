@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 Holiday Rambler Admiral 32N · MHS45047 | MHSRV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--hwy-green:#17376A;--hwy-green-dark:#0E2347;--sign-yellow:#FFC91F;--asphalt:#1C1F23;--line:#E4E7E4;--paper:#F7F8F6;--ink:#22262A;--muted:#66706B;--radius:14px}
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{scroll-behavior:smooth}
+  body{font-family:'Barlow',system-ui,sans-serif;background:var(--paper);color:var(--ink);padding-bottom:78px}
+  button{font-family:inherit;cursor:pointer;border:none;background:none}
+  .wrap{max-width:520px;margin:0 auto;padding:0 16px}
+  @media(min-width:760px){.wrap{max-width:860px}}
+  .cond{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.02em;text-transform:uppercase}
+
+  header{position:sticky;top:0;z-index:50;background:var(--hwy-green);color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+  .hdr{display:flex;align-items:center;justify-content:space-between;padding:11px 16px;max-width:860px;margin:0 auto}
+  .back{display:flex;align-items:center;gap:8px;color:#fff;text-decoration:none;font-weight:600;font-size:14px}
+  .shield{width:28px;height:32px;background:var(--sign-yellow);clip-path:polygon(50% 0,100% 12%,100% 62%,50% 100%,0 62%,0 12%);display:grid;place-items:center;color:var(--hwy-green-dark);font-family:'Barlow Condensed';font-weight:700;font-size:12px}
+  .call-btn{background:var(--sign-yellow);color:var(--hwy-green-dark);font-weight:700;font-size:13.5px;padding:8px 13px;border-radius:99px;text-decoration:none}
+
+  /* gallery */
+  .gallery{position:relative;background:#101314}
+  .strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .strip::-webkit-scrollbar{display:none}
+  .strip img{flex:none;width:100%;max-width:860px;height:280px;object-fit:cover;scroll-snap-align:center;background:#1A2020}
+  @media(min-width:760px){.strip img{height:430px}}
+  .g-count{position:absolute;bottom:12px;right:14px;background:rgba(0,0,0,.6);color:#fff;font-size:12px;font-weight:600;padding:5px 10px;border-radius:8px;backdrop-filter:blur(3px)}
+  .g-save{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:99px;background:rgba(255,255,255,.92);display:grid;place-items:center;font-size:18px}
+  .g-badge{position:absolute;top:12px;left:12px;display:flex;gap:6px}
+  .g-badge span{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:5px 9px;border-radius:6px}
+  .b-new{background:var(--sign-yellow);color:var(--hwy-green-dark)}
+  .b-arrival{background:linear-gradient(135deg,#E8873F,#C24E31);color:#fff}
+  .thumbs{display:flex;gap:6px;overflow-x:auto;padding:8px 12px;background:#101314;scrollbar-width:none}
+  .thumbs::-webkit-scrollbar{display:none}
+  .thumbs img{flex:none;width:64px;height:42px;object-fit:cover;border-radius:6px;opacity:.55;cursor:pointer;border:2px solid transparent}
+  .thumbs img.on{opacity:1;border-color:var(--sign-yellow)}
+
+  /* title */
+  .titleblock{padding:16px 0 4px}
+  .stock{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+  h1{font-family:'Barlow Condensed';font-size:26px;font-weight:700;line-height:1.08;text-transform:uppercase;letter-spacing:.01em;margin-top:4px}
+  h1 small{display:block;font-size:15px;color:var(--hwy-green);letter-spacing:.02em;margin-top:2px}
+  .chipsrow{display:flex;gap:8px;overflow-x:auto;margin-top:12px;scrollbar-width:none;padding-bottom:2px}
+  .chipsrow::-webkit-scrollbar{display:none}
+  .spec-chip{flex:none;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:12.5px;font-weight:600;color:var(--ink);box-shadow:inset 0 -3px 0 var(--sign-yellow)}
+  .spec-chip b{display:block;font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+
+  section{padding:20px 0 4px}
+  h2{font-family:'Barlow Condensed';font-size:21px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin-bottom:12px;position:relative;padding-left:14px}
+  h2::before{content:'';position:absolute;left:0;top:3px;bottom:3px;width:5px;background:var(--sign-yellow);border-radius:3px}
+
+  /* price card */
+  .pricecard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:16px}
+  .pc-top{padding:16px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px;background:linear-gradient(140deg,#1D4079 0%,#17376A 45%,#0E2347 100%)}
+  .msrp{font-size:13px;color:#AFC0DB}
+  .msrp s{font-weight:600}
+  .special{font-family:'Barlow Condensed';font-size:40px;font-weight:700;color:var(--sign-yellow);line-height:1;text-shadow:0 2px 10px rgba(0,0,0,.3)}
+  .special small{display:inline-block;font-size:11.5px;font-family:'Barlow';font-weight:700;color:var(--hwy-green-dark);background:var(--sign-yellow);padding:3px 9px;border-radius:5px;transform:skew(-6deg);text-transform:uppercase;letter-spacing:.05em;margin-left:6px;vertical-align:6px;text-shadow:none}
+  .save-pill{background:linear-gradient(135deg,#E8873F,#C24E31);color:#fff;font-weight:700;font-size:13px;padding:9px 13px;border-radius:10px;text-align:center;line-height:1.25;box-shadow:0 3px 10px rgba(194,78,49,.4)}
+  .save-pill b{display:block;font-family:'Barlow Condensed';font-size:20px}
+  .pc-mo{padding:10px 16px 14px;font-size:13.5px;color:#C3CFE4;background:#0E2347;margin-top:0}
+  .pc-mo b{color:#fff}
+  .fee-toggle{width:100%;text-align:left;padding:13px 16px;border-top:1px solid var(--line);font-size:14px;font-weight:600;color:var(--hwy-green);display:flex;justify-content:space-between;align-items:center}
+  .fees{display:none;padding:4px 16px 14px;border-top:1px dashed var(--line)}
+  .fees.open{display:block}
+  .fee{display:flex;justify-content:space-between;padding:7px 0;font-size:14px;border-bottom:1px solid #F0F2F0}
+  .fee:last-child{border:none}
+  .fee span:last-child{font-weight:700}
+  .fee .zero{color:var(--hwy-green)}
+  .fee small{display:block;font-size:11.5px;color:var(--muted);font-weight:400}
+  .unlock{display:block;margin:12px 16px 16px;background:var(--sign-yellow);color:var(--hwy-green-dark);text-align:center;font-weight:700;font-size:15.5px;padding:14px;border-radius:11px;width:calc(100% - 32px);box-shadow:0 4px 16px rgba(255,201,31,.4)}
+
+  /* payment calculator */
+  .calc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+  .calc-row{display:flex;justify-content:space-between;font-size:13.5px;font-weight:600;margin:12px 0 6px}
+  .calc-row output{color:var(--hwy-green);font-weight:700}
+  input[type=range]{width:100%;accent-color:var(--hwy-green)}
+  .calc-result{margin-top:14px;background:#FFF4D6;border:1px solid #F2DFA0;border-radius:10px;padding:12px 14px;display:flex;justify-content:space-between;align-items:baseline}
+  .calc-result b{font-family:'Barlow Condensed';font-size:26px;color:var(--hwy-green)}
+  .fine{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.45}
+
+  /* highlights */
+  .hl{display:flex;flex-wrap:wrap;gap:8px}
+  .hl span{background:#fff;border:1px solid var(--line);border-radius:99px;font-size:13px;font-weight:600;padding:8px 13px}
+  .hl span::before{content:'✓ ';color:#C2571B;font-weight:800}
+
+  /* floorplan */
+  .floorplan{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:12px}
+  .floorplan img{width:100%;border-radius:8px}
+  .floorplan p{font-size:11.5px;color:var(--muted);margin-top:8px}
+
+  /* accordions */
+  details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:8px;overflow:hidden}
+  summary{list-style:none;padding:14px 16px;font-weight:700;font-size:14.5px;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+  summary::after{content:'+';font-size:20px;color:var(--hwy-green);font-weight:600}
+  details[open] summary::after{content:'–'}
+  .d-body{padding:0 16px 14px;font-size:14px;line-height:1.6;color:#3A4440}
+  .d-body ul{list-style:none;display:grid;gap:6px;grid-template-columns:1fr 1fr}
+  .d-body li{font-size:13px;padding-left:16px;position:relative}
+  .d-body li::before{content:'·';position:absolute;left:4px;color:var(--hwy-green);font-weight:800}
+
+  /* docs */
+  .docs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .doc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:var(--ink);font-weight:600;font-size:13.5px;display:flex;align-items:center;gap:10px}
+  .doc .ic{width:34px;height:34px;border-radius:9px;background:#FFF1CC;color:#B4530A;display:grid;place-items:center;font-size:16px;flex:none}
+
+  /* perks */
+  .perks{background:linear-gradient(155deg,#17376A 0%,#241B3E 62%,#38284F 100%);border-radius:var(--radius);color:#fff;padding:18px;position:relative;overflow:hidden}
+  .perks::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle 1.6px at 12% 18%,#fff 99%,transparent),radial-gradient(circle 1.1px at 32% 8%,rgba(255,255,255,.85) 99%,transparent),radial-gradient(circle 1.4px at 56% 14%,#fff 99%,transparent),radial-gradient(circle 1px at 74% 24%,rgba(255,255,255,.8) 99%,transparent),radial-gradient(circle 1.5px at 88% 10%,#fff 99%,transparent),radial-gradient(circle 1px at 94% 42%,rgba(255,255,255,.7) 99%,transparent)}
+  .perks h3,.perks ul{position:relative}
+  .perks h3{font-family:'Barlow Condensed';font-size:20px;text-transform:uppercase;letter-spacing:.02em}
+  .perks ul{list-style:none;margin-top:10px;display:grid;gap:8px;font-size:13.5px;font-weight:600}
+  .perks li{display:flex;gap:8px;align-items:flex-start}
+  .perks li::before{content:'✓';flex:none;width:18px;height:18px;border-radius:99px;background:var(--sign-yellow);color:var(--hwy-green-dark);display:grid;place-items:center;font-size:11px;font-weight:800;margin-top:1px}
+
+  /* similar */
+  .sim-rail{display:flex;gap:12px;overflow-x:auto;scrollbar-width:none;padding:2px 16px 8px;margin:0 -16px}
+  .sim-rail::-webkit-scrollbar{display:none}
+  .sim{flex:none;width:230px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--ink)}
+  .sim img{width:100%;height:120px;object-fit:cover;background:#E8ECE9}
+  .sim .s-body{padding:10px 12px 12px}
+  .sim b{font-size:13.5px;line-height:1.25;display:block}
+  .sim .s-price{font-family:'Barlow Condensed';font-size:19px;font-weight:700;color:var(--hwy-green);margin-top:4px}
+  .sim small{color:var(--muted);font-size:11.5px}
+
+  /* review */
+  .review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px;position:relative}
+  .review::after{content:'\201D';position:absolute;top:-8px;right:14px;font-family:'Barlow Condensed';font-size:76px;line-height:1;color:var(--sign-yellow);opacity:.9}
+  .stars{color:var(--sign-yellow);font-size:14px;letter-spacing:2px}
+  .review p{font-size:14px;line-height:1.55;margin-top:8px}
+  .review footer{margin-top:8px;font-size:12.5px;color:var(--muted);font-weight:600}
+
+  /* dock */
+  .dock{position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.08)}
+  .dock-inner{max-width:860px;margin:0 auto;display:flex;gap:8px;padding:10px 14px calc(10px + env(safe-area-inset-bottom))}
+  .dock a,.dock button{flex:1;text-align:center;font-size:14px;font-weight:700;padding:12px 0;border-radius:11px;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:6px}
+  .dock .call{background:var(--hwy-green);color:#fff}
+  .dock .text{border:1.5px solid var(--hwy-green);color:var(--hwy-green)}
+  .dock .fin{background:var(--sign-yellow);color:var(--hwy-green-dark)}
+
+  /* modal */
+  .modal{position:fixed;inset:0;z-index:80;background:rgba(12,18,15,.55);display:none;align-items:flex-end;justify-content:center}
+  .modal.open{display:flex}
+  .sheet{background:#fff;width:100%;max-width:520px;border-radius:18px 18px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom));max-height:86vh;overflow-y:auto}
+  .sheet h3{font-family:'Barlow Condensed';font-size:22px;text-transform:uppercase}
+  .sheet p{font-size:13.5px;color:var(--muted);margin-top:4px}
+  .sheet input{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:13px 14px;font-size:16px;font-family:inherit;margin-top:10px}
+  .sheet input:focus{outline:none;border-color:var(--hwy-green)}
+  .sheet .go{width:100%;background:var(--hwy-green);color:#fff;font-weight:700;font-size:15.5px;padding:14px;border-radius:11px;margin-top:14px}
+  .sheet .x{position:sticky;float:right;font-size:22px;color:var(--muted);line-height:1}
+  .success{display:none;text-align:center;padding:26px 6px 10px}
+  .success .big{font-size:42px}
+  .success h4{font-family:'Barlow Condensed';font-size:22px;text-transform:uppercase;margin-top:8px}
+  .success p{font-size:14px;color:var(--muted);margin-top:6px}
+  :focus-visible{outline:3px solid var(--sign-yellow);outline-offset:2px}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  /* ---------- menu drawer ---------- */
+  .burger{width:40px;height:40px;display:grid;place-items:center;border-radius:10px;color:#fff}
+  .burger svg{display:block}
+  .drawer-veil{position:fixed;inset:0;z-index:90;background:rgba(10,16,12,.5);opacity:0;pointer-events:none;transition:opacity .2s}
+  .drawer-veil.open{opacity:1;pointer-events:auto}
+  .drawer{position:fixed;top:0;right:0;bottom:0;z-index:95;width:min(330px,88vw);background:#fff;transform:translateX(105%);transition:transform .25s ease;display:flex;flex-direction:column;box-shadow:-4px 0 24px rgba(0,0,0,.2)}
+  .drawer.open{transform:translateX(0)}
+  .dr-head{background:var(--hwy-green);color:#fff;padding:14px 16px;display:flex;align-items:center;justify-content:space-between}
+  .dr-head .logo2{display:flex;align-items:center;gap:9px;font-family:'Barlow Condensed';font-size:20px;font-weight:700;letter-spacing:.03em}
+  .dr-x{color:#fff;font-size:20px;width:36px;height:36px;border-radius:9px;display:grid;place-items:center}
+  .dr-body{flex:1;overflow-y:auto;padding:6px 0 14px}
+  .dr-item{display:flex;align-items:center;justify-content:space-between;width:100%;text-align:left;padding:17px 18px;font-size:17.5px;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1px solid #F0F2F0}
+  .dr-item .em{width:26px;flex:none}
+  .dr-item span:first-of-type{flex:1;display:flex;align-items:center;gap:10px}
+  .dr-item .chev{color:var(--muted);font-size:17px;transition:transform .2s}
+  .dr-item.expanded .chev{transform:rotate(90deg)}
+  .dr-sub{display:none;background:#F6F8F6;border-bottom:1px solid #F0F2F0}
+  .dr-sub.open{display:block}
+  .dr-sub a{display:block;padding:15px 18px 15px 56px;font-size:16.5px;font-weight:500;color:#3A4440;text-decoration:none;border-bottom:1px solid #ECEFEC}
+  .dr-sub a:last-child{border-bottom:none}
+  .dr-contact{margin:14px 16px 0;background:#ECF1FA;border-radius:12px;padding:14px}
+  .dr-contact b{font-family:'Barlow Condensed';font-size:16px;text-transform:uppercase;letter-spacing:.04em;color:var(--hwy-green)}
+  .dr-contact a{display:flex;justify-content:space-between;padding:11px 0;color:var(--ink);font-weight:600;font-size:16px;text-decoration:none;border-bottom:1px solid #D8E2F0}
+  .dr-contact a:last-child{border-bottom:none}
+  .dr-contact a span:last-child{color:var(--hwy-green);font-weight:700}
+
+  .dr-signin{margin:12px 16px 4px;background:var(--hwy-green);border-radius:12px;padding:14px;display:flex;align-items:center;gap:12px;text-decoration:none}
+  .dr-signin .avatar{flex:none;width:38px;height:38px;border-radius:99px;background:var(--sign-yellow);display:grid;place-items:center;font-size:18px}
+  .dr-signin b{color:#fff;font-size:16.5px;font-weight:700;display:block}
+  .dr-signin small{color:rgba(255,255,255,.8);font-size:12.5px;display:block;margin-top:1px}
+  .dr-signin .chev2{margin-left:auto;color:var(--sign-yellow);font-size:20px;font-weight:700}
+  .brandwrap{position:relative;display:inline-grid;place-items:center;flex:none}
+  .brandmark{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 1px 3px rgba(0,0,0,.25))}
+  .hdr{gap:8px}
+  .hdr .logo{min-width:0;flex:1}
+  .logo small{white-space:normal;line-height:1.25}
+  .call-btn{white-space:nowrap;flex:none}
+  @media(max-width:370px){.call-btn{font-size:12px;padding:8px 9px}}
+
+.hero-photo{position:relative;background:#101314}
+.hero-photo img{display:block;width:100%;max-width:860px;margin:0 auto;height:300px;object-fit:cover}
+@media(min-width:760px){.hero-photo img{height:430px}}
+.morephotos{display:block;text-align:center;background:#0E2347;color:#fff;font-weight:600;font-size:13.5px;padding:11px;text-decoration:none}
+.morephotos b{color:var(--sign-yellow)}
+</style></head><body>
+
+<style>
+.dr-sub-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;text-align:left;padding:15px 18px 15px 56px;font-size:16.5px;font-weight:500;color:#3A4440;background:none;border:none;border-bottom:1px solid #ECEFEC;cursor:pointer;font-family:inherit}
+.dr-sub-toggle .chev{color:var(--muted);font-size:16px;transition:transform .2s}
+.dr-sub-toggle.expanded .chev{transform:rotate(90deg)}
+.dr-types{display:none;grid-template-columns:1fr 1fr;gap:8px;padding:12px 16px;background:#EFF3F0;border-bottom:1px solid #ECEFEC}
+.dr-types.open{display:grid}
+.dr-type-tile{background:#fff;border:1px solid #E0E5E1;border-radius:10px;padding:6px 8px 9px;text-decoration:none;color:var(--ink);text-align:center}
+.dr-type-tile .ic{height:44px;color:#5F6771;display:flex;align-items:center;justify-content:center}
+.dr-type-tile .ic svg{width:78px;height:44px;flex:none}
+.dr-type-tile b{display:block;font-size:12px;font-weight:600;line-height:1.2;margin-top:3px}
+.dr-brands{display:none;background:#EFF3F0;border-bottom:1px solid #ECEFEC}
+.dr-brands.open{display:block}
+.dr-brands a{display:block;padding:12px 18px 12px 66px;text-decoration:none;border-bottom:1px solid #E4E9E5}
+.dr-brands a:last-child{border-bottom:none}
+.dr-brands a b{display:block;font-size:15px;font-weight:600;color:var(--ink);line-height:1.2}
+.dr-brands a small{display:block;font-size:12px;color:var(--muted);margin-top:2px;line-height:1.3}
+</style>
+<div class="drawer-veil" onclick="closeDrawer()"></div>
+<nav class="drawer" aria-label="Main menu">
+  <div class="dr-head">
+    <div class="logo2"><span class="brandwrap" style="width:40px;height:40px"><img class="brandmark" src="https://mhsrv.s3.amazonaws.com/images/homeimage/logo--mhs-bc.png" alt="Motor Home Specialist" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="shield" style="display:none">MHS</span></span> MHSRV</div>
+    <button class="dr-x" aria-label="Close menu" onclick="closeDrawer()">✕</button>
+  </div>
+  <div class="dr-body">
+    <a class="dr-signin" href="../saved.html"><span class="avatar">👤</span><span><b>Sign in</b><small>Save RVs, track price drops &amp; pick up where you left off</small></span><span class="chev2">›</span></a>
+    <button class="dr-item" onclick="this.classList.toggle('expanded');document.getElementById('subShop').classList.toggle('open')"><span><span class="em">🚌</span>Shop RVs</span><span class="chev">›</span></button>
+    <div class="dr-sub" id="subShop">
+      <a href="../index.html#inventory">All inventory</a>
+      <a href="../index.html?cond=new#inventory">New RVs</a>
+      <a href="../index.html?cond=used#inventory">Used RVs</a>
+      <a href="../index.html?cond=deal#inventory">🔥 Deals of the Week</a>
+      <button class="dr-sub-toggle" onclick="this.classList.toggle('expanded');document.getElementById('subTypes').classList.toggle('open')">Shop by type <span class="chev">›</span></button>
+      <div class="dr-types" id="subTypes">
+        <a class="dr-type-tile" href="../index.html?type=classa#inventory"><div class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 120 68"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 47 V24 q0 -4 4 -4 h14 v-3 h12 v3 h10 v-3 h12 v3 h28 l10 14 V51 L97 51 a9 9 0 0 1 -18 0 L51 51 a9 9 0 0 1 -18 0 L16 51 q-4 0 -4 -4z  M93 23 l7 10 v3 h-7 z M25 26 h12 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-12 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M47 26 h12 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-12 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M70.5 26 h5 a2.5 2.5 0 0 1 2.5 2.5 v13 a2.5 2.5 0 0 1 -2.5 2.5 h-5 a2.5 2.5 0 0 1 -2.5 -2.5 v-13 a2.5 2.5 0 0 1 2.5 -2.5 z M21.5 42 h9 a1.5 1.5 0 0 1 1.5 1.5 v0 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v0 a1.5 1.5 0 0 1 1.5 -1.5 z "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M35.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M38.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="42" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M81.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M84.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="88" cy="53" r="1.7" fill="currentColor"/></svg></div><b>Class A Gas</b></a><a class="dr-type-tile" href="../index.html?type=classc#inventory"><div class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 120 68"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M14 47 V20 q0 -4 4 -4 h20 v-3 h12 v3 h20 q10 0 12 8 l4 6 l6 11 l8 2 V51 L97 51 a9 9 0 0 1 -18 0 L45 51 a9 9 0 0 1 -18 0 L18 51 q-4 0 -4 -4z  M86.5 31 l5.5 9.5 h-7.5 v-9.5 z M72.5 30 h6 a1.5 1.5 0 0 1 1.5 1.5 v5 a1.5 1.5 0 0 1 -1.5 1.5 h-6 a1.5 1.5 0 0 1 -1.5 -1.5 v-5 a1.5 1.5 0 0 1 1.5 -1.5 z M24 22 h12 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-12 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M50.5 26 h5 a2.5 2.5 0 0 1 2.5 2.5 v13 a2.5 2.5 0 0 1 -2.5 2.5 h-5 a2.5 2.5 0 0 1 -2.5 -2.5 v-13 a2.5 2.5 0 0 1 2.5 -2.5 z M70 26 h11 a1 1 0 0 1 1 1 v0 a1 1 0 0 1 -1 1 h-11 a1 1 0 0 1 -1 -1 v0 a1 1 0 0 1 1 -1 z "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M29.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M32.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="36" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M81.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M84.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="88" cy="53" r="1.7" fill="currentColor"/></svg></div><b>Class C & B+</b></a><a class="dr-type-tile" href="../index.html?type=classb#inventory"><div class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 120 68"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M26 47 V24 q0 -4 4 -4 h12 v-2.5 h10 v2.5 h20 q8 0 11 5 l7 12 q2 3 2 6 V51 L91 51 a9 9 0 0 1 -18 0 L47 51 a9 9 0 0 1 -18 0 L30 51 q-4 0 -4 -4z  M77 22 q4 1 6 5 l5 9 h-11 z M38 25 h9 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-9 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M55 25 h9 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-9 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M53.2 23 h0 a1 1 0 0 1 1 1 v21 a1 1 0 0 1 -1 1 h0 a1 1 0 0 1 -1 -1 v-21 a1 1 0 0 1 1 -1 z "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M31.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M34.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="38" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M75.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M78.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="82" cy="53" r="1.7" fill="currentColor"/></svg></div><b>Class B / Van</b></a><a class="dr-type-tile" href="../index.html?type=diesel#inventory"><div class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 120 68"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M8 47 V20 q0 -4 4 -4 h16 v-3 h12 v3 h10 v-3 h12 v3 h34 l10 13 V51 L99 51 a9 9 0 0 1 -18 0 L53 51 a9 9 0 0 1 -18 0 L35 51 a9 9 0 0 1 -18 0 L12 51 q-4 0 -4 -4z  M92 18.5 l9 10.5 v4 h-9 z M20 22 h13 a2 2 0 0 1 2 2 v6 a2 2 0 0 1 -2 2 h-13 a2 2 0 0 1 -2 -2 v-6 a2 2 0 0 1 2 -2 z M43 22 h13 a2 2 0 0 1 2 2 v6 a2 2 0 0 1 -2 2 h-13 a2 2 0 0 1 -2 -2 v-6 a2 2 0 0 1 2 -2 z M72.5 22 h5 a2.5 2.5 0 0 1 2.5 2.5 v15 a2.5 2.5 0 0 1 -2.5 2.5 h-5 a2.5 2.5 0 0 1 -2.5 -2.5 v-15 a2.5 2.5 0 0 1 2.5 -2.5 z M15.5 42 h7 a1.5 1.5 0 0 1 1.5 1.5 v0 a1.5 1.5 0 0 1 -1.5 1.5 h-7 a1.5 1.5 0 0 1 -1.5 -1.5 v0 a1.5 1.5 0 0 1 1.5 -1.5 z M29.5 42 h7 a1.5 1.5 0 0 1 1.5 1.5 v0 a1.5 1.5 0 0 1 -1.5 1.5 h-7 a1.5 1.5 0 0 1 -1.5 -1.5 v0 a1.5 1.5 0 0 1 1.5 -1.5 z "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M19.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M22.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="26" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M37.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M40.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="44" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M83.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M86.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="90" cy="53" r="1.7" fill="currentColor"/></svg></div><b>Diesel Pusher</b></a><a class="dr-type-tile" href="../index.html?type=superc#inventory"><div class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 120 68"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M8 47 V18 q0 -4 4 -4 h16 v-3 h12 v3 h28 q8 0 12 5 l6 7 h8 l7 11 l9 3 V51 L105 51 a9 9 0 0 1 -18 0 L53 51 a9 9 0 0 1 -18 0 L35 51 a9 9 0 0 1 -18 0 L12 51 q-4 0 -4 -4z  M92.5 28 l6 9 h-8.5 v-9 z M18 20 h13 a2 2 0 0 1 2 2 v6 a2 2 0 0 1 -2 2 h-13 a2 2 0 0 1 -2 -2 v-6 a2 2 0 0 1 2 -2 z M41 20 h13 a2 2 0 0 1 2 2 v6 a2 2 0 0 1 -2 2 h-13 a2 2 0 0 1 -2 -2 v-6 a2 2 0 0 1 2 -2 z M66.5 20 h5 a2.5 2.5 0 0 1 2.5 2.5 v15 a2.5 2.5 0 0 1 -2.5 2.5 h-5 a2.5 2.5 0 0 1 -2.5 -2.5 v-15 a2.5 2.5 0 0 1 2.5 -2.5 z M86 27 h0 a1 1 0 0 1 1 1 v6 a1 1 0 0 1 -1 1 h0 a1 1 0 0 1 -1 -1 v-6 a1 1 0 0 1 1 -1 z "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M19.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M22.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="26" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M37.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M40.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="44" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M89.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M92.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="96" cy="53" r="1.7" fill="currentColor"/></svg></div><b>Super C</b></a><a class="dr-type-tile" href="../index.html?type=fifth#inventory"><div class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 120 68"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M16 47 V30 q0 -4 4 -4 h44 V18 q0 -4 4 -4 h8 v-3 h10 v3 h10 q8 0 8 10 v16 h-16 v11 L85 51 a9 9 0 0 1 -18 0 L67 51 a9 9 0 0 1 -18 0 L20 51 q-4 0 -4 -4z  M74 18 h9 a2 2 0 0 1 2 2 v4 a2 2 0 0 1 -2 2 h-9 a2 2 0 0 1 -2 -2 v-4 a2 2 0 0 1 2 -2 z M26 30 h11 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-11 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M48.5 30 h5 a2.5 2.5 0 0 1 2.5 2.5 v12 a2.5 2.5 0 0 1 -2.5 2.5 h-5 a2.5 2.5 0 0 1 -2.5 -2.5 v-12 a2.5 2.5 0 0 1 2.5 -2.5 z "/><path fill="currentColor" stroke="none" d="M95 40 h4 v6 q0 1.5 -2 1.5 q-2 0 -2 -1.5 z"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M51.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M54.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="58" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M69.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M72.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="76" cy="53" r="1.7" fill="currentColor"/></svg></div><b>5th Wheel</b></a><a class="dr-type-tile" href="../index.html?type=toy#inventory"><div class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 120 68"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M24 47 V18 q0 -4 4 -4 h14 v-3 h12 v3 h20 q8 0 12 5 l6 7 h6 l7 11 l8 3 V51 L109 51 a9 9 0 0 1 -18 0 L65 51 a9 9 0 0 1 -18 0 L47 51 a9 9 0 0 1 -18 0 L28 51 q-4 0 -4 -4z  M96 28 l6 9 h-8.5 v-9 z M34 20 h11 a2 2 0 0 1 2 2 v6 a2 2 0 0 1 -2 2 h-11 a2 2 0 0 1 -2 -2 v-6 a2 2 0 0 1 2 -2 z M54 20 h6 a2 2 0 0 1 2 2 v6 a2 2 0 0 1 -2 2 h-6 a2 2 0 0 1 -2 -2 v-6 a2 2 0 0 1 2 -2 z "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M23 19 L27.2 20.6 L11.2 60 L7 58.4 z M20.2 29.5 a1.3 1.3 0 1 0 2.6 0 a1.3 1.3 0 1 0 -2.6 0 M16 39.5 a1.3 1.3 0 1 0 2.6 0 a1.3 1.3 0 1 0 -2.6 0 M11.799999999999999 49.5 a1.3 1.3 0 1 0 2.6 0 a1.3 1.3 0 1 0 -2.6 0 "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M31.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M34.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="38" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M49.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M52.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="56" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M93.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M96.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="100" cy="53" r="1.7" fill="currentColor"/></svg></div><b>Toy Hauler</b></a><a class="dr-type-tile" href="../index.html?type=tt#inventory"><div class="ic"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 120 68"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M14 47 V24 q0 -4 4 -4 h20 v-3 h12 v3 h32 q9 0 10 8 V51 L79 51 a9 9 0 0 1 -18 0 L61 51 a9 9 0 0 1 -18 0 L18 51 q-4 0 -4 -4z  M24 26 h11 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-11 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M68 26 h9 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-9 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M46.5 26 h5 a2.5 2.5 0 0 1 2.5 2.5 v12 a2.5 2.5 0 0 1 -2.5 2.5 h-5 a2.5 2.5 0 0 1 -2.5 -2.5 v-12 a2.5 2.5 0 0 1 2.5 -2.5 z "/><path fill="currentColor" stroke="none" d="M92 42.6 L108.5 45.8 l-0.7 3 L91.6 45.6 z M103 47 h3 v8 h-3 z M99.5 54.5 h10 q1 0 1 1.2 q0 1.3 -1 1.3 h-10 q-1 0 -1 -1.3 q0 -1.2 1 -1.2 z"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M92.9 39.4 a3.1 3.1 0 1 0 6.2 0 a3.1 3.1 0 1 0 -6.2 0 M98.9 40.6 a3.1 3.1 0 1 0 6.2 0 a3.1 3.1 0 1 0 -6.2 0 M94.9 39.4 a1.1 1.1 0 1 0 2.2 0 a1.1 1.1 0 1 0 -2.2 0 M100.9 40.6 a1.1 1.1 0 1 0 2.2 0 a1.1 1.1 0 1 0 -2.2 0 "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M45.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M48.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="52" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M63.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M66.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="70" cy="53" r="1.7" fill="currentColor"/></svg></div><b>Travel Trailer</b></a>
+      </div>
+      <button class="dr-sub-toggle" onclick="this.classList.toggle('expanded');document.getElementById('subBrands').classList.toggle('open')">Shop by brand <span class="chev">›</span></button>
+      <div class="dr-brands" id="subBrands">
+        <a href="../index.html?brand=Entegra%20Coach#inventory"><b>Entegra Coach</b><small>Luxury Diesel, Class A, B, B+, C, Super C</small></a><a href="../index.html?brand=Thor%20Motor%20Coach#inventory"><b>Thor Motor Coach</b><small>Diesel, Class A, B, B+, C, Super C, Toy Haulers</small></a><a href="../index.html?brand=Dynamax#inventory"><b>Dynamax</b><small>Super C & B+ RVs</small></a><a href="../index.html?brand=Newmar#inventory"><b>Newmar</b><small>Luxury Diesel Pushers, Class A, C, & Super C</small></a><a href="../index.html?brand=Tiffin#inventory"><b>Tiffin</b><small>Luxury Class A, B, & C RVs</small></a><a href="../index.html?brand=Foretravel#inventory"><b>Foretravel</b><small>The Foremost in Luxury Motor Coaches</small></a><a href="../index.html?brand=Forest%20River#inventory"><b>Forest River</b><small>Diesel Pushers, Class A, B+, C, Travel Trailers</small></a><a href="../index.html?brand=Fleetwood%20RV#inventory"><b>Fleetwood RV</b><small>Diesel Pusher & Class A RVs</small></a><a href="../index.html?brand=American%20Coach#inventory"><b>American Coach</b><small>Luxury Diesel Pushers & Class B RVs</small></a><a href="../index.html?brand=Holiday%20Rambler#inventory"><b>Holiday Rambler</b><small>Diesel Pushers & Class A RVs</small></a><a href="../index.html?brand=East%20to%20West#inventory"><b>East to West</b><small>Luxury Class C RVs</small></a><a href="../index.html?brand=Grand%20Design#inventory"><b>Grand Design</b><small>Luxury Class C RV & Class B Vans</small></a><a href="../index.html?brand=Leisure%20Travel#inventory"><b>Leisure Travel</b><small>Luxury Class B Vans</small></a><a href="../index.html?brand=Brinkley%20RV#inventory"><b>Brinkley RV</b><small>Luxury Travel Trailers & Fifth Wheels</small></a><a href="../index.html?brand=Midwest%20Automotive%20Designs#inventory"><b>Midwest Automotive Designs</b><small>Luxury Custom Sprinter Vans</small></a><a href="../index.html?brand=OGV%20Luxury%20Coach#inventory"><b>OGV Luxury Coach</b><small>Luxury Class B Vans</small></a><a href="../index.html?brand=Gulf%20Stream#inventory"><b>Gulf Stream</b><small>Class B+ RVs</small></a><a href="../index.html?brand=Nexus%20RV#inventory"><b>Nexus RV</b><small>Super C, Class C, B+</small></a><a href="../index.html?brand=Axiom%20RV#inventory"><b>Axiom RV</b><small>Luxury Fifth Wheel RVs</small></a><a href="../index.html?brand=DRV#inventory"><b>DRV</b><small>The Pinnacle in Luxury Fifth Wheels</small></a>
+      </div>
+    </div>
+    <a class="dr-item" href="../sell-your-rv.html"><span><span class="em">💰</span>Sell or trade my RV</span><span class="chev">›</span></a>
+    <a class="dr-item" href="../get-prequalified.html"><span><span class="em">🏦</span>Get pre-qualified</span><span class="chev">›</span></a>
+    <a class="dr-item" href="https://www.bluecompassrv.com/rv-service" target="_blank" rel="noopener"><span><span class="em">🔧</span>Service &amp; parts ↗</span><span class="chev">›</span></a>
+    <button class="dr-item" onclick="this.classList.toggle('expanded');document.getElementById('subLoc').classList.toggle('open')"><span><span class="em">📍</span>Locations</span><span class="chev">›</span></button>
+    <div class="dr-sub" id="subLoc">
+      <a href="tel:8003356054">Texas — Alvarado · 800-335-6054</a>
+      <a href="tel:3342880331">Alabama — Montgomery · 334-288-0331</a>
+      <a href="tel:8006103934">California — Palm Desert (soon)</a>
+    </div>
+    <a class="dr-item" href="../reviews.html"><span><span class="em">⭐</span>4,500+ five-star reviews</span><span class="chev">›</span></a>
+    <a class="dr-item" href="../saved.html"><span><span class="em">❤️</span>Saved RVs</span><span class="chev">›</span></a>
+    <a class="dr-item" href="../about.html"><span><span class="em">🤠</span>About MHSRV</span><span class="chev">›</span></a>
+    <div class="dr-contact"><b>Talk to a specialist</b>
+      <a href="tel:8003356054"><span>📞 Sales</span><span>800-335-6054</span></a>
+      <a href="sms:8177907771"><span>💬 Text us</span><span>817-790-7771</span></a>
+    </div>
+  </div>
+</nav>
+<script>function closeDrawer(){document.querySelector('.drawer').classList.remove('open');document.querySelector('.drawer-veil').classList.remove('open');document.body.style.overflow=''}
+function openDrawer(){document.querySelector('.drawer').classList.add('open');document.querySelector('.drawer-veil').classList.add('open');document.body.style.overflow='hidden'}
+function toggleSave(stk,btn){let s=[];try{s=JSON.parse(localStorage.getItem('mhsrv-saved')||'[]')}catch(e){}
+const i=s.indexOf(stk);if(i>-1){s.splice(i,1);btn.textContent='♡'}else{s.push(stk);btn.textContent='❤️'}
+try{localStorage.setItem('mhsrv-saved',JSON.stringify(s))}catch(e){}}
+function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')||'[]').includes(stk)}catch(e){return false}}</script>
+<header><div class="hdr">
+  <a class="back" href="../index.html#inventory"><span class="brandwrap" style="width:34px;height:34px"><img class="brandmark" src="https://mhsrv.s3.amazonaws.com/images/homeimage/logo--mhs-bc.png" alt="MHS" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="shield" style="display:none">MHS</span></span> Back to results</a>
+  <div style="display:flex;align-items:center;gap:6px">
+    <a class="call-btn" href="tel:8003356054"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg> Call</a>
+    <button class="burger" aria-label="Menu" style="width:34px;height:38px" onclick="openDrawer()"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 6.5h14M5 12h14M5 17.5h14"/></svg></button>
+  </div>
+</div></header>
+<div class="hero-photo">
+  <div style="height:300px;max-width:860px;margin:0 auto;background:linear-gradient(150deg,#1D4079,#0E2347);display:flex;align-items:center;justify-content:center;color:#8FA6C9"><span style="width:260px"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 120 68"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 47 V24 q0 -4 4 -4 h14 v-3 h12 v3 h10 v-3 h12 v3 h28 l10 14 V51 L97 51 a9 9 0 0 1 -18 0 L51 51 a9 9 0 0 1 -18 0 L16 51 q-4 0 -4 -4z  M93 23 l7 10 v3 h-7 z M25 26 h12 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-12 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M47 26 h12 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-12 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M70.5 26 h5 a2.5 2.5 0 0 1 2.5 2.5 v13 a2.5 2.5 0 0 1 -2.5 2.5 h-5 a2.5 2.5 0 0 1 -2.5 -2.5 v-13 a2.5 2.5 0 0 1 2.5 -2.5 z M21.5 42 h9 a1.5 1.5 0 0 1 1.5 1.5 v0 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v0 a1.5 1.5 0 0 1 1.5 -1.5 z "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M35.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M38.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="42" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M81.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M84.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="88" cy="53" r="1.7" fill="currentColor"/></svg></span></div>
+  <div class="g-badge"><span class="badge new" style="position:static">New</span></div>
+  <button class="g-save" aria-label="Save" onclick="toggleSave('MHS45047',this)">♡</button>
+</div>
+<div class="morephotos">📷 <b>59 photos</b> &amp; floorplan available — call or text for the full gallery</div>
+<main class="wrap">
+  <div class="titleblock">
+    <div class="stock">Stock #MHS45047 · MHS Texas — Alvarado</div>
+    <h1>2026 Holiday Rambler Admiral 32N</h1>
+    <div class="chipsrow">
+      <div class="spec-chip"><b>Length</b>33ft</div>
+      <div class="spec-chip"><b>Type</b>Class A Gas</div>
+      
+      
+      <div class="spec-chip"><b>Condition</b>New</div>
+    </div>
+  </div>
+  <div class="pricecard">
+    <div class="pc-top">
+      <div><div class="msrp">M.S.R.P. <s>$200,500</s></div>
+      <div class="special">$120,199 <small>PrecisionPrice</small></div></div>
+      <div class="save-pill">You save<b>$80,301</b>40% off</div></div>
+    <div class="pc-mo">Est. <b>$927/mo</b> w.a.c.* · 9.99% APR, 20% down</div>
+    <button class="fee-toggle" onclick="document.getElementById('fees').classList.toggle('open');this.querySelector('span').textContent=this.querySelector('span').textContent==='+'?'–':'+'">What's in this price? No games, no gimmicks. <span>+</span></button>
+    <div class="fees" id="fees">
+      <div class="fee"><span>Freight<small>We've never charged freight. Never will.</small></span><span class="zero">$0</span></div>
+      <div class="fee"><span>Vehicle prep<small>We've never charged prep. Never will.</small></span><span class="zero">$0</span></div>
+      <div class="fee"><span>Documentation fee</span><span>$225</span></div>
+      <div class="fee"><span>Hidden fees<small>We said no hidden fees.</small></span><span class="zero">$0</span></div>
+    </div>
+    <button class="unlock" onclick="openModal()">🔓 Unlock Your Price</button>
+  </div>
+  <section><h2>Highlights</h2><div class="hl"><span>One-piece windshield</span><span>Power awning w/ LED</span><span>Auto leveling jacks</span><span>Onan generator</span><span>Back-up monitor</span><span>Basement storage</span><span>Ducted A/C</span><span>King or queen bed</span></div></section>
+  <section><h2>Payment estimator</h2><div class="calc">
+    <div class="calc-row"><span>Down payment</span><output id="downOut"></output></div>
+    <input type="range" id="down" min="10" max="50" step="5" value="20" aria-label="Down payment percent">
+    <div class="calc-row"><span>Term</span><output id="termOut"></output></div>
+    <input type="range" id="term" min="5" max="20" step="5" value="20" aria-label="Loan term in years">
+    <div class="calc-result"><span>Estimated payment</span><b id="pay"></b></div>
+    <p class="fine">*Estimate only, with approved credit, 9.99% APR. Maximum term depends on amount financed. Excludes TT&amp;L. Call MHSRV finance for exact terms.</p>
+  </div></section>
+  <section><div class="perks"><h3>Every MHSRV purchase includes</h3><ul>
+    <li>200-point inspection, detail &amp; rain-booth leak test</li>
+    <li>VIP orientation with an MHSRV technician</li>
+    <li>Free night stay in our delivery park</li>
+    <li>No prep fees. No freight fees. Ever.</li>
+  </ul></div></section>
+  <section><h2>Owner reviews</h2>
+    <a class="review" style="display:block;text-decoration:none;color:inherit" href="../reviews.html?brand=Holiday%20Rambler">
+      <div class="stars">★★★★★</div>
+      <p><b>4,571 five-star reviews</b> from real MHSRV buyers — including Holiday Rambler owners. Every coach we deliver gets its own review, with photos.</p>
+      <footer style="color:var(--hwy-green);font-weight:700">Read Holiday Rambler owner reviews →</footer>
+    </a>
+  </section>
+  <section><h2>Similar on the lot</h2><div class="sim-rail">
+    <a class="sim" href="./MHS43233.html"><img loading="lazy" src="https://assets-cdn.interactcp.com/bluecompassrv/unit_photo/imgh_400x300-m0325202602454800/unit_photo_202603250245480032254782.jpg" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2026 Thor Motor Coach Vegas 24.1</b><small>#MHS43233 · 26ft</small><div class="s-price">$104,989</div></div></a><a class="sim" href="./MHS43214.html"><img loading="lazy" src="https://assets-cdn.interactcp.com/bluecompassrv/unit_photo/imgh_400x300-m1008202500255925/unit_photo_202510081225592550177302.jpg" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2026 Thor Motor Coach A.C.E. 29D</b><small>#MHS43214 · 30ft 9in</small><div class="s-price">$110,214</div></div></a><a class="sim" href="./MHS43736.html"><img loading="lazy" src="https://assets-cdn.interactcp.com/bluecompassrv/unit_photo/imgh_400x300-m1004202500594217/unit_photo_202510041259421769187431.jpg" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2026 Thor Motor Coach Axis 24.1</b><small>#MHS43736 · 25ft</small><div class="s-price">$109,989</div></div></a><a class="sim" href="./MHS43218.html"><img loading="lazy" src="https://assets-cdn.interactcp.com/bluecompassrv/unit_photo/imgh_400x300-m1018202500230440/unit_photo_202510181223044078859295.jpg" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2026 Thor Motor Coach Resonate 29D</b><small>#MHS43218 · 30ft</small><div class="s-price">$109,989</div></div></a>
+  </div></section>
+</main>
+<nav class="dock" aria-label="Actions"><div class="dock-inner">
+  <a class="call" href="tel:8003356054"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg> Call</a>
+  <a class="text" href="sms:8177907771">💬 Text</a>
+  <button class="fin" onclick="openModal()">Confirm availability</button>
+</div></nav>
+<div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="sheet">
+  <button class="x" onclick="closeModal()" aria-label="Close">✕</button>
+  <div id="formview"><h3>Unlock your price</h3>
+    <p>2026 Holiday Rambler Admiral 32N · #MHS45047 — or call <a href="tel:8003356054" style="color:var(--hwy-green);font-weight:700">800-335-6054</a></p>
+    <form id="leadform" onsubmit="return false">
+      <input placeholder="First name" name="first_name" required><input placeholder="Last name" name="last_name">
+      <input placeholder="Phone" type="tel" name="phone" required><input placeholder="Email" type="email" name="email" required>
+      <button class="go" id="gobtn" onclick="sendLead(document.getElementById('leadform'),'MHSRV Lead — 2026 Holiday Rambler Admiral 32N #MHS45047',this).then(ok=>{if(ok)submitLead()})">Submit</button>
+    </form>
+    <p style="font-size:11px;margin-top:10px">Msg &amp; data rates may apply. Easily unsubscribe at any time.</p>
+  </div>
+  <div class="success" id="successview"><div class="big">🤠</div><h4>You're on the board!</h4>
+    <p>A specialist will reach out shortly. Skip the line: call 800-335-6054 and mention stock #MHS45047.</p></div>
+</div></div>
+<script>
+
+async function sendLead(form,subject,btn){
+  const data={};new FormData(form).forEach((v,k)=>data[k]=v);
+  data._subject=subject;data._template='table';
+  btn.disabled=true;btn.textContent='Sending…';
+  try{
+    const r=await fetch('https://formsubmit.co/ajax/ebendele@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)});
+    if(!r.ok)throw 0;
+    return true;
+  }catch(e){
+    window.location.href='mailto:ebendele@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(JSON.stringify(data,null,1));
+    return true;
+  }finally{btn.disabled=false;btn.textContent='Submit';}
+}
+function openModal(){document.getElementById('formview').style.display='block';document.getElementById('successview').style.display='none';document.getElementById('modal').classList.add('open')}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+function submitLead(){document.getElementById('formview').style.display='none';document.getElementById('successview').style.display='block'}
+document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.g-save');if(b&&isSaved('MHS45047'))b.textContent='❤️';});
+const PRICE=120199;
+function calc(){
+  const dp=+document.getElementById('down').value,L=PRICE*(1-dp/100);
+  const maxY=L>50000?20:(L>20000?15:10);
+  const t=document.getElementById('term');t.max=maxY;if(+t.value>maxY)t.value=maxY;
+  const yrs=+t.value,n=yrs*12,m=Math.round(L*(.0999/12)/(1-Math.pow(1+.0999/12,-n)));
+  document.getElementById('downOut').textContent=dp+'% · $'+Math.round(PRICE*dp/100).toLocaleString();
+  document.getElementById('termOut').textContent=yrs+' years'+(maxY<20?' (max '+maxY+' at this amount)':'');
+  document.getElementById('pay').textContent='$'+m.toLocaleString()+'/mo';}
+document.getElementById('down').addEventListener('input',calc);
+document.getElementById('term').addEventListener('input',calc);calc();
+</script></body></html>
