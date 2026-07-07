@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2026 Thor A.C.E. 29D · MHS43214 | MHSRV</title>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 Thor Motor Coach A.C.E. 29D · MHS43214 | MHSRV</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -197,9 +194,25 @@
   .logo small{white-space:normal;line-height:1.25}
   .call-btn{white-space:nowrap;flex:none}
   @media(max-width:370px){.call-btn{font-size:12px;padding:8px 9px}}
-</style>
-</head>
-<body>
+
+.hero-photo{position:relative;background:#101314}
+.hero-photo img{display:block;width:100%;max-width:860px;margin:0 auto;height:300px;object-fit:cover}
+@media(min-width:760px){.hero-photo img{height:430px}}
+.vstrip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;max-width:860px;margin:0 auto}
+.vstrip::-webkit-scrollbar{display:none}
+.vstrip img{flex:none;scroll-snap-align:center;cursor:zoom-in}
+.morephotos{display:block;width:100%;text-align:center;background:#0E2347;color:#fff;font-weight:600;font-size:13.5px;padding:11px;text-decoration:none;border:none;cursor:pointer;font-family:inherit}
+.morephotos b{color:var(--sign-yellow)}
+.lb{position:fixed;inset:0;z-index:200;background:#0A0D11;display:none;flex-direction:column}
+.lb.open{display:flex}
+.lb-x{position:absolute;top:calc(10px + env(safe-area-inset-top));right:12px;z-index:2;width:42px;height:42px;border-radius:99px;background:rgba(255,255,255,.14);color:#fff;font-size:18px;cursor:pointer}
+.lb-strip{flex:1;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;align-items:center}
+.lb-strip::-webkit-scrollbar{display:none}
+.lb-strip img{flex:none;width:100vw;max-height:100%;object-fit:contain;scroll-snap-align:center}
+.lb-foot{padding:12px 16px calc(14px + env(safe-area-inset-bottom));display:flex;justify-content:space-between;align-items:center;color:#fff}
+.lb-foot #lbc{font-weight:700;font-size:14px}
+.lb-note{font-size:11px;opacity:.6;text-align:right}
+</style></head><body>
 
 <style>
 .dr-sub-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;text-align:left;padding:15px 18px 15px 56px;font-size:16.5px;font-weight:500;color:#3A4440;background:none;border:none;border-bottom:1px solid #ECEFEC;cursor:pointer;font-family:inherit}
@@ -265,224 +278,101 @@ function toggleSave(stk,btn){let s=[];try{s=JSON.parse(localStorage.getItem('mhs
 const i=s.indexOf(stk);if(i>-1){s.splice(i,1);btn.textContent='♡'}else{s.push(stk);btn.textContent='❤️'}
 try{localStorage.setItem('mhsrv-saved',JSON.stringify(s))}catch(e){}}
 function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')||'[]').includes(stk)}catch(e){return false}}</script>
-
-
-<header>
-  <div class="hdr">
-    <a class="back" href="../index.html#inventory"><span class="brandwrap" style="width:42px;height:42px"><img class="brandmark" src="https://mhsrv.s3.amazonaws.com/images/homeimage/logo--mhs-bc.png" alt="Motor Home Specialist" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="shield" style="display:none">MHS</span></span> Back to results</a>
-    <div style="display:flex;align-items:center;gap:6px"><a class="call-btn" href="tel:8003356054"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg> Call</a><button class="burger" aria-label="Menu" style="width:34px;height:38px" onclick="document.querySelector('.drawer').classList.add('open');document.querySelector('.drawer-veil').classList.add('open');document.body.style.overflow='hidden'">
-      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 6.5h14M5 12h14M5 17.5h14"/></svg>
-    </button></div>
+<header><div class="hdr">
+  <a class="back" href="../index.html#inventory"><span class="brandwrap" style="width:34px;height:34px"><img class="brandmark" src="https://mhsrv.s3.amazonaws.com/images/homeimage/logo--mhs-bc.png" alt="MHS" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="shield" style="display:none">MHS</span></span> Back to results</a>
+  <div style="display:flex;align-items:center;gap:6px">
+    <a class="call-btn" href="tel:8003356054"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg> Call</a>
+    <button class="burger" aria-label="Menu" style="width:34px;height:38px" onclick="openDrawer()"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 6.5h14M5 12h14M5 17.5h14"/></svg></button>
   </div>
-</header>
-
-<!-- GALLERY: lazy-loaded, swipe with snap -->
-<div class="gallery">
-  <div class="strip" id="strip"></div>
-  <div class="g-badge"><span class="b-new">New</span><span class="b-arrival">New Arrival</span></div>
-  <button class="g-save" aria-label="Save this RV" onclick="toggleSave('MHS43214',this)">♡</button>
-  <div class="g-count" id="gcount">1 / 58</div>
+</div></header>
+<div class="hero-photo">
+  <div class="vstrip" id="vstrip"><img src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064439.jpg;width=860;quality=60" alt="2026 Thor Motor Coach A.C.E. 29D photo 1" onclick="openLB(0)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064440.jpg;width=860;quality=60" alt="2026 Thor Motor Coach A.C.E. 29D photo 2" onclick="openLB(1)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064441.jpg;width=860;quality=60" alt="2026 Thor Motor Coach A.C.E. 29D photo 3" onclick="openLB(2)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_281946911.jpg;width=860;quality=60" alt="2026 Thor Motor Coach A.C.E. 29D photo 4" onclick="openLB(3)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064442.jpg;width=860;quality=60" alt="2026 Thor Motor Coach A.C.E. 29D photo 5" onclick="openLB(4)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064443.jpg;width=860;quality=60" alt="2026 Thor Motor Coach A.C.E. 29D photo 6" onclick="openLB(5)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064444.jpg;width=860;quality=60" alt="2026 Thor Motor Coach A.C.E. 29D photo 7" onclick="openLB(6)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064445.jpg;width=860;quality=60" alt="2026 Thor Motor Coach A.C.E. 29D photo 8" onclick="openLB(7)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064446.jpg;width=860;quality=60" alt="2026 Thor Motor Coach A.C.E. 29D photo 9" onclick="openLB(8)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064447.jpg;width=860;quality=60" alt="2026 Thor Motor Coach A.C.E. 29D photo 10" onclick="openLB(9)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064448.jpg;width=860;quality=60" alt="2026 Thor Motor Coach A.C.E. 29D photo 11" onclick="openLB(10)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064449.jpg;width=860;quality=60" alt="2026 Thor Motor Coach A.C.E. 29D photo 12" onclick="openLB(11)" onerror="this.remove()"></div><div class="g-count" id="gc">1 / 12</div>
+  <div class="g-badge"><span class="badge new" style="position:static">New</span></div>
+  <button class="g-save" aria-label="Save" onclick="toggleSave('MHS43214',this)">♡</button>
 </div>
-<div class="thumbs" id="thumbs"></div>
-
+<button class="morephotos" onclick="openLB(0)">📷 See all <b>59 photos</b></button>
+<div class="lb" id="lb">
+  <button class="lb-x" onclick="closeLB()" aria-label="Close">✕</button>
+  <div class="lb-strip" id="lbs"><img src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064439.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 1"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064440.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 2"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064441.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 3"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_281946911.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 4"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064442.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 5"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064443.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 6"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064444.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 7"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064445.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 8"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064446.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 9"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064447.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 10"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064448.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 11"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064449.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 12"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064450.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 13"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064451.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 14"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064452.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 15"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064453.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 16"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064454.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 17"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064455.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 18"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064456.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 19"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064457.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 20"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064458.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 21"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064459.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 22"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064460.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 23"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064461.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 24"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064462.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 25"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064463.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 26"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064464.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 27"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064465.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 28"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064466.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 29"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064467.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 30"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064468.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 31"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064469.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 32"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064470.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 33"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064471.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 34"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064472.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 35"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064473.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 36"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064474.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 37"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_281946889.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 38"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064475.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 39"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064476.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 40"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064477.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 41"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064478.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 42"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064479.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 43"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064480.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 44"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064481.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 45"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064482.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 46"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064483.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 47"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064484.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 48"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064485.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 49"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064486.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 50"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064487.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 51"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064488.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 52"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064489.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 53"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064490.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 54"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064491.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 55"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064492.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 56"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064493.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 57"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064494.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 58"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_300064495.jpg;width=1200;quality=70" alt="2026 Thor Motor Coach A.C.E. 29D photo 59"></div>
+  <div class="lb-foot"><span id="lbc">1 / 59</span><span class="lb-note">59 photos · full resolution</span></div>
+</div>
 <main class="wrap">
-
   <div class="titleblock">
     <div class="stock">Stock #MHS43214 · MHS Texas — Alvarado</div>
-    <h1>2026 Thor Motor Coach A.C.E. 29D
-      <small>Solar · King Bed · Winegard · Dual A/C</small>
-    </h1>
+    <h1>2026 Thor Motor Coach A.C.E. 29D</h1>
     <div class="chipsrow">
-      <div class="spec-chip"><b>Length</b>30′ 9″</div>
+      <div class="spec-chip"><b>Length</b>30ft</div>
       <div class="spec-chip"><b>Type</b>Class A Gas</div>
+      
       <div class="spec-chip"><b>Slides</b>1</div>
-      <div class="spec-chip"><b>Engine</b>7.3L V-8 Ford</div>
-      <div class="spec-chip"><b>Sleeps</b>Up to 8</div>
-      <div class="spec-chip"><b>Decor</b>Grand Haven &amp; Retreat</div>
+      <div class="spec-chip"><b>Condition</b>New</div>
+      <div class="spec-chip"><b>Fuel</b>Gas</div>
     </div>
   </div>
-
-  <!-- PRICE -->
   <div class="pricecard">
     <div class="pc-top">
-      <div>
-        <div class="msrp">M.S.R.P. <s>$195,006</s> · Sale <s>$132,995</s></div>
-        <div class="special">$110,214 <small>PrecisionPrice</small></div>
-      </div>
-      <div class="save-pill">You save<b>$85,017</b>44% off</div>
-    </div>
-    <div class="pc-mo">Est. <b id="heromo">$832/mo</b> w.a.c.* · 7.99% APR, 10% down, 20 yr</div>
-    <button class="fee-toggle" onclick="document.getElementById('fees').classList.toggle('open');this.querySelector('span').textContent=this.querySelector('span').textContent==='+'?'–':'+'">
-      What's in this price? No games, no gimmicks. <span>+</span>
-    </button>
+      <div><div class="msrp">M.S.R.P. <s>$195,006</s> · Sale <s>$132,995</s></div>
+      <div class="special">$109,989 <small>PrecisionPrice</small></div></div>
+      <div class="save-pill">You save<b>$85,017</b>44% off</div></div>
+    <div class="pc-mo">Est. <b>$849/mo</b> w.a.c.* · 9.99% APR, 20% down</div>
+    <button class="fee-toggle" onclick="document.getElementById('fees').classList.toggle('open');this.querySelector('span').textContent=this.querySelector('span').textContent==='+'?'–':'+'">What's in this price? No games, no gimmicks. <span>+</span></button>
     <div class="fees" id="fees">
       <div class="fee"><span>Freight<small>We've never charged freight. Never will.</small></span><span class="zero">$0</span></div>
       <div class="fee"><span>Vehicle prep<small>We've never charged prep. Never will.</small></span><span class="zero">$0</span></div>
-      <div class="fee"><span>Documentation fee<small>We don't charge prep or freight — let us have this one.</small></span><span>$225</span></div>
-      <div class="fee"><span>1 year RV Complete VIP<small>Over $5,000 in services, complimentary.</small></span><span class="zero">$0</span></div>
-      <div class="fee"><span>Airport pickup on delivery day<small>Flying in? We'll come get you.</small></span><span class="zero">$0</span></div>
-      <div class="fee"><span>Hidden fees<small>Why are you even looking? We said no hidden fees.</small></span><span class="zero">$0</span></div>
+      <div class="fee"><span>Documentation fee</span><span>$225</span></div>
+      <div class="fee"><span>Hidden fees<small>We said no hidden fees.</small></span><span class="zero">$0</span></div>
     </div>
-    <button class="unlock" onclick="openModal('unlock')">🔓 Unlock Your Price</button>
+    <button class="unlock" onclick="openModal()">🔓 Unlock Your Price</button>
   </div>
-
-  <!-- HIGHLIGHTS -->
-  <section>
-    <h2>Highlights</h2>
-    <div class="hl">
-      <span>100W Solar</span><span>King bed</span><span>Dual A/C</span><span>Winegard WiFi + 4G</span>
-      <span>Drop-down loft</span><span>Exterior 32" TV</span><span>Onan 4000 generator</span>
-      <span>LED awning</span><span>Side-view cameras</span><span>Back-up monitor</span>
-      <span>Apple CarPlay</span><span>Roof ladder</span><span>8,000-lb hitch</span><span>Mudroom</span>
-    </div>
-  </section>
-
-  <!-- FLOORPLAN -->
-  <section>
-    <h2>Floorplan</h2>
-    <div class="floorplan">
-      <img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_281946889.jpg;maxwidth=760;quality=60" alt="A.C.E. 29D floorplan">
-      <p>Manufacturer changes and/or options may alter the floorplan of the unit for sale.</p>
-    </div>
-  </section>
-
-  <!-- PAYMENT CALCULATOR -->
-  <section>
-    <h2>Payment estimator</h2>
-    <div class="calc">
-      <div class="calc-row"><span>Down payment</span><output id="downOut">10% · $11,021</output></div>
-      <input type="range" id="down" min="10" max="50" step="5" value="10" aria-label="Down payment percent">
-      <div class="calc-row"><span>Term</span><output id="termOut">20 years</output></div>
-      <input type="range" id="term" min="10" max="20" step="5" value="20" aria-label="Loan term in years">
-      <div class="calc-result"><span>Estimated payment</span><b id="pay">$832/mo</b></div>
-      <p class="fine">*Estimate only, with approved credit (w.a.c.), 7.99% APR. Excludes TT&amp;L and other fees. Units under $50k subject to shorter terms and different down payments. Call MHSRV finance for exact terms.</p>
-    </div>
-  </section>
-
-  <!-- DOCS -->
-  <section>
-    <h2>Documents</h2>
-    <div class="docs">
-      <a class="doc" href="https://doc.dlrwebservice.com/2321/2321_53434.pdf" target="_blank" rel="noopener"><span class="ic">📄</span>Window sticker</a>
-      <a class="doc" href="https://library.rvusa.com/brochure/2026-Thor-Motor-Coach-A-C-E-.pdf" target="_blank" rel="noopener"><span class="ic">📘</span>2026 A.C.E. brochure</a>
-    </div>
-  </section>
-
-  <!-- DETAILS ACCORDIONS -->
-  <section>
-    <h2>Details</h2>
-    <details open>
-      <summary>About this coach</summary>
-      <div class="d-body">Rides on Ford's new F-53 chassis with a 7.3L PFI V-8, 6-speed TorqShift automatic, updated instrument cluster, automatic headlights and tilt/telescoping wheel. This 29D adds the optional 100-watt solar charging system, dual roof A/Cs with 50-amp service, king bed with Serta mattress, and Winegard ConnecT WiFi extender + 4G. The one-piece windshield with "20/20 vision" front cap keeps heat and glare out of the driver's eyes, and the below-floor furnace and water heater keep noise down and exhaust away from kids and pets.</div>
-    </details>
-    <details>
-      <summary>Construction &amp; exterior</summary>
-      <div class="d-body"><ul>
-        <li>Welded tubular aluminum cage</li><li>Vacu-Bond laminated walls</li>
-        <li>One-piece fiberglass front cap</li><li>One-piece roof</li>
-        <li>Power awning w/ LED</li><li>Slide topper awnings</li>
-        <li>Auto leveling jacks</li><li>Basement pass-through</li>
-        <li>Frameless windows</li><li>Electric entry step</li>
-        <li>Roof ladder</li><li>Pet-Link tie-down</li>
-      </ul></div>
-    </details>
-    <details>
-      <summary>Cockpit &amp; automotive</summary>
-      <div class="d-body"><ul>
-        <li>10" touchscreen w/ CarPlay</li><li>Heated mirrors + cameras</li>
-        <li>Back-up monitor</li><li>Cruise control</li>
-        <li>Dash workstation 110V/12V</li><li>Bird's Eye window</li>
-        <li>Swivel captain's chairs</li><li>Emergency start switch</li>
-      </ul></div>
-    </details>
-    <details>
-      <summary>Kitchen, bed &amp; bath</summary>
-      <div class="d-body"><ul>
-        <li>King bed + CPAP outlet</li><li>Double-door fridge</li>
-        <li>3-burner cooktop/oven</li><li>Microwave</li>
-        <li>Glass tile backsplash</li><li>Skylight shower</li>
-        <li>Foot-flush porcelain toilet</li><li>Kibble Station pet bowls</li>
-      </ul></div>
-    </details>
-    <details>
-      <summary>Power &amp; plumbing</summary>
-      <div class="d-body"><ul>
-        <li>Onan QG 4000 generator</li><li>Auto generator start</li>
-        <li>Dual A/C + 50-amp cord</li><li>100W solar w/ controller</li>
-        <li>2nd auxiliary battery</li><li>Gas/electric water heater</li>
-        <li>Black tank flush</li><li>Outside shower</li>
-      </ul></div>
-    </details>
-  </section>
-
-  <!-- MHSRV PERKS -->
-  <section>
-    <div class="perks">
-      <h3>Every MHSRV purchase includes</h3>
-      <ul>
-        <li>200-point inspection, detail service &amp; high-pressure rain-booth leak test</li>
-        <li>VIP orientation with an MHSRV technician</li>
-        <li>Free night stay in our delivery park — full hook-ups, covered pads</li>
-        <li>RV Complete VIP membership free for 1 year (over $5,000 value)</li>
-        <li>14 nights free camping + fuel discounts</li>
-        <li>No prep fees. No freight fees. Ever.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- SIMILAR -->
-  <section>
-    <h2>Similar coaches on the lot</h2>
-    <div class="sim-rail">
-      <a class="sim" href="./MHS43218.html"><img loading="lazy" src="https://assets-cdn.interactcp.com/bluecompassrv/unit_photo/imgh_400x300-m1018202500230440/unit_photo_202510181223044078859295.jpg" alt=""><div class="s-body"><b>2026 Thor Resonate 29D</b><small>#MHS43218 · 30ft</small><div class="s-price">$109,989</div></div></a>
-      <a class="sim" href="./MHS43233.html"><img loading="lazy" src="https://assets-cdn.interactcp.com/bluecompassrv/unit_photo/imgh_400x300-m0325202602454800/unit_photo_202603250245480032254782.jpg" alt=""><div class="s-body"><b>2026 Thor Vegas 24.1</b><small>#MHS43233 · 26ft</small><div class="s-price">$104,989</div></div></a>
-      <a class="sim" href="./MHS43543.html"><img loading="lazy" src="https://assets-cdn.interactcp.com/bluecompassrv/unit_photo/imgh_400x300-m0627202502220620/unit_photo_202506270222062078115654.jpg" alt=""><div class="s-body"><b>2026 Holiday Rambler Admiral 29M</b><small>#MHS43543 · 31ft</small><div class="s-price">$118,989</div></div></a>
-      <a class="sim" href="./MHS43974.html"><img loading="lazy" src="https://assets-cdn.interactcp.com/bluecompassrv/unit_photo/imgh_400x300-m0208202604223455/unit_photo_202602080422345550401827.jpg" alt=""><div class="s-body"><b>2026 Thor Vegas 28.1</b><small>#MHS43974 · 30ft</small><div class="s-price">$116,989</div></div></a>
-    </div>
-  </section>
-
-  <section>
-    <h2>From MHS-RVers</h2>
-    <div class="review">
+  <section><h2>Highlights</h2><div class="hl"><span>One-piece windshield</span><span>Power awning w/ LED</span><span>Auto leveling jacks</span><span>Onan generator</span><span>Back-up monitor</span><span>Basement storage</span><span>Ducted A/C</span><span>King or queen bed</span></div></section>
+  <section><h2>About this coach</h2>
+  <details open><summary>Full description</summary><div class="d-body" style="white-space:pre-line">MSRP $195,006. New 2026 Thor Motor Coach A.C.E. Model 29D is approximately 30 feet 9 inches in length and rides on Fords new chassis featuring a 7.3L PFI V-8, a 6-speed TorqShift® automatic transmission, an updated instrument cluster, automatic headlights and a tilt/telescoping steering wheel. A few additional features include 2 new partial paint exterior options, general décor updates throughout, upgraded radio with Apple CarPlay &amp; Android Auto, Serta mattress, LED rear taillights and much more. The A.C.E. also features a drop down overhead loft, multiple USB charging ports throughout, Winegard ConnecT Wifi extender + 4G, bedroom TV, exterior entertainment center, attic fans, black tank flush, second auxiliary battery, power side mirrors with integrated side view cameras, a mud-room, roof ladder, generator, electric patio awning with integrated LED lights, stainless steel wheel liners, hitch, valve stem extenders, refrigerator, microwave, water heater, one-piece windshield with '20/20 vision' front cap that helps eliminate heat and sunlight from getting into the drivers vision, cockpit mirrors, slide-out workstation in the dash, floor level cockpit window for better visibility while turning and a 'below floor' furnace and water heater helping keep the noise to an absolute minimum and the exhaust away from the kids and pets. Shop hundreds of class A motorhomes all at 1 location! Choose from Thor A.C.E. – Resonate – Hurricane – Windsport – Luminate – Indigo – Vegas – Axis – Challenger – Miramar Fleetwood Flair – Fortis – Flex – Bounder - Forest River Georgetown - FR3 – Entegra Coach Vision – Vision XL – Emblem – Holiday Rambler Admiral – Eclipse – Invicta – Vacationer - and much more. We also sell quality pre-owned models such as Jayco Alante SE – Alante – Precept – Precept Prestige – Tiffin Allegro Open Road – Newmar Canyon Star – Bay Star – Winnebago Vista – Sunstar – Adventurer – Coachmen Mirada – Pursuit - Encore and much more. Visit MHSRV.com for our complete line-up and the sale prices that have made us the #1 volume selling motor home dealership in the world 12 years in a row! For additional details on this unit and our entire inventory including brochures, window sticker, videos, photos, reviews &amp; testimonials as well as additional information about Motor Home Specialist and our manufacturers please visit us at MHSRV.com or call 800-335-6054. At Motor Home Specialist, we DO NOT charge any prep or orientation fees like you will find at other dealerships. All sale prices include a 200-point inspection, interior &amp; exterior wash, detail service and a fully automated high-pressure rain booth test and coach wash that is a standout service unlike that of any other in the industry. You will also receive a thorough coach orientation with an MHSRV technician, a night stay in our delivery park featuring landscaped and covered pads with full hook-ups and much more! Read Thousands upon Thousands of 5-Star Reviews at MHSRV.com and See What They Had to Say About Their Experience at Motor Home Specialist. WHY PAY MORE? WHY SETTLE FOR LESS?</div></details></section>
+  <section><h2>Specifications</h2>
+  <details><summary>Chassis, power &amp; capacities</summary><div class="d-body"><ul style="grid-template-columns:1fr"><li><b>Chassis:</b> Ford</li><li><b>Engine:</b> 7.3L V-8</li><li><b>Fuel:</b> Gas</li><li><b>Interior:</b> Grand Haven & Retreat</li><li><b>Exterior:</b> A.C.E.</li><li><b>A/C units:</b> 1</li></ul></div></details></section>
+  <section><h2>Payment estimator</h2><div class="calc">
+    <div class="calc-row"><span>Down payment</span><output id="downOut"></output></div>
+    <input type="range" id="down" min="10" max="50" step="5" value="20" aria-label="Down payment percent">
+    <div class="calc-row"><span>Term</span><output id="termOut"></output></div>
+    <input type="range" id="term" min="5" max="20" step="5" value="20" aria-label="Loan term in years">
+    <div class="calc-result"><span>Estimated payment</span><b id="pay"></b></div>
+    <p class="fine">*Estimate only, with approved credit, 9.99% APR. Maximum term depends on amount financed. Excludes TT&amp;L. Call MHSRV finance for exact terms.</p>
+  </div></section>
+  <section><div class="perks"><h3>Every MHSRV purchase includes</h3><ul>
+    <li>200-point inspection, detail &amp; rain-booth leak test</li>
+    <li>VIP orientation with an MHSRV technician</li>
+    <li>Free night stay in our delivery park</li>
+    <li>No prep fees. No freight fees. Ever.</li>
+  </ul></div></section>
+  <section><h2>Owner reviews</h2>
+    <a class="review" style="display:block;text-decoration:none;color:inherit" href="../reviews.html?brand=Thor%20Motor%20Coach">
       <div class="stars">★★★★★</div>
-      <p>"We saw nothing from any dealer that could match the coach or the price from MHS. After choosing the Thor A.C.E., they worked with us on trade-in, a smooth walk-through, and encouraged us to stay the night on their lot to make sure everything worked to our satisfaction."</p>
-      <footer>Gunnery Sergeant Michael D. Moser, USMC Ret. — A.C.E. owner</footer><a class="review-link" href="../reviews.html?brand=Thor%20Motor%20Coach" style="display:inline-block;margin-top:10px;color:var(--hwy-green);font-weight:700;text-decoration:none">Read 4,571 more owner reviews →</a>
-    </div>
+      <p><b>4,571 five-star reviews</b> from real MHSRV buyers — including Thor Motor Coach owners. Every coach we deliver gets its own review, with photos.</p>
+      <footer style="color:var(--hwy-green);font-weight:700">Read Thor Motor Coach owner reviews →</footer>
+    </a>
   </section>
-
+  <section><h2>Similar on the lot</h2><div class="sim-rail">
+    <a class="sim" href="./MHS44195.html"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4992767/o/1_2321_4992767_308454534.jpg;width=480;quality=55" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2026 Forest River FR3 30DS</b><small>#MHS44195 · 31ft</small><div class="s-price">$132,899</div></div></a><a class="sim" href="./MHS43725.html"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4699038/o/1_2321_4699038_300876388.jpg;width=480;quality=55" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2026 Thor Motor Coach Outlaw Wild West Edition 38M</b><small>#MHS43725 · 39ft</small><div class="s-price">$191,989</div></div></a><a class="sim" href="./MHS44733.html"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5176003/o/1_2321_5176003_315592489.jpg;width=480;quality=55" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2027 Forest River Georgetown 5 Series GT5 34H5</b><small>#MHS44733 · 37ft</small><div class="s-price">$168,799</div></div></a><a class="sim" href="./MHS44812.html"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5194069/o/1_2321_5194069_317742403.jpg;width=480;quality=55" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2027 Entegra Coach Vision XL 36C</b><small>#MHS44812 · 38ft</small><div class="s-price">$177,989</div></div></a>
+  </div></section>
 </main>
-
-<nav class="dock" aria-label="Actions">
-  <div class="dock-inner">
-    <a class="call" href="tel:8003356054"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg> Call</a>
-    <a class="text" href="sms:8177907771"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l2-5.7a8.4 8.4 0 0 1-.9-3.8A8.5 8.5 0 0 1 12.6 3a8.4 8.4 0 0 1 8.4 8.5z"/></svg> Text</a>
-    <button class="fin" onclick="openModal('avail')">Confirm availability</button>
+<nav class="dock" aria-label="Actions"><div class="dock-inner">
+  <a class="call" href="tel:8003356054"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg> Call</a>
+  <a class="text" href="sms:8177907771">💬 Text</a>
+  <button class="fin" onclick="openModal()">Confirm availability</button>
+</div></nav>
+<div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="sheet">
+  <button class="x" onclick="closeModal()" aria-label="Close">✕</button>
+  <div id="formview"><h3>Unlock your price</h3>
+    <p>2026 Thor Motor Coach A.C.E. 29D · #MHS43214 — or call <a href="tel:8003356054" style="color:var(--hwy-green);font-weight:700">800-335-6054</a></p>
+    <form id="leadform" onsubmit="return false">
+      <input placeholder="First name" name="first_name" required><input placeholder="Last name" name="last_name">
+      <input placeholder="Phone" type="tel" name="phone" required><input placeholder="Email" type="email" name="email" required>
+      <button class="go" id="gobtn" onclick="sendLead(document.getElementById('leadform'),'MHSRV Lead — 2026 Thor Motor Coach A.C.E. 29D #MHS43214',this).then(ok=>{if(ok)submitLead()})">Submit</button>
+    </form>
+    <p style="font-size:11px;margin-top:10px">Msg &amp; data rates may apply. Easily unsubscribe at any time.</p>
   </div>
-</nav>
-
-<!-- MODAL -->
-<div class="modal" id="modal" onclick="if(event.target===this)closeModal()">
-  <div class="sheet">
-    <button class="x" onclick="closeModal()" aria-label="Close">✕</button>
-    <div id="formview">
-      <h3 id="mtitle">Unlock your price</h3>
-      <p id="msub">2026 Thor A.C.E. 29D · #MHS43214 — or just call <a href="tel:8003356054" style="color:var(--hwy-green);font-weight:700">800-335-6054</a></p>
-      <form id="leadform" onsubmit="return false">
-      <input placeholder="First name" name="first_name" required>
-      <input placeholder="Last name" name="last_name">
-      <input placeholder="Phone" type="tel" name="phone" required>
-      <input placeholder="Email" type="email" name="email" required>
-      <button class="go" onclick="sendLead(document.getElementById('leadform'),document.getElementById('mtitle').textContent+' — 2026 Thor A.C.E. 29D #MHS43214',this).then(ok=>{if(ok)submitLead()})">Submit</button></form>
-      <p style="font-size:11px;margin-top:10px">Msg &amp; data rates may apply. Reply STOP to cancel. Easily unsubscribe at any time.</p>
-    </div>
-    <div class="success" id="successview">
-      <div class="big">🤠</div>
-      <h4>You're on the board!</h4>
-      <p id="successmsg">A specialist will reach out shortly. Want to skip the line? Call 800-335-6054 and mention stock #MHS43214.</p>
-    </div>
-  </div>
-</div>
-
+  <div class="success" id="successview"><div class="big">🤠</div><h4>You're on the board!</h4>
+    <p>A specialist will reach out shortly. Skip the line: call 800-335-6054 and mention stock #MHS43214.</p></div>
+</div></div>
 <script>
 
 async function sendLead(form,subject,btn){
@@ -498,48 +388,25 @@ async function sendLead(form,subject,btn){
     return true;
   }finally{btn.disabled=false;btn.textContent='Submit';}
 }
-/* ---- gallery: 58 real photos, only ~14 loaded here, all lazy ---- */
-const IMG='https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/4542125/o/1_2321_4542125_';
-const HERO=';width=860;height=430;quality=60', TH=';width=140;height=90;mode=crop;quality=40';
-const IDS=['300064439','300064440','300064441','281946911','300064442','300064443','300064444','300064445','300064446','300064450','300064455','300064460','300064465','300064470'];
-const strip=document.getElementById('strip'),thumbs=document.getElementById('thumbs');
-strip.innerHTML=IDS.map((id,i)=>`<img ${i?'loading="lazy"':''} src="${IMG+id+'.jpg'+HERO}" alt="2026 Thor A.C.E. 29D photo ${i+1}">`).join('');
-thumbs.innerHTML=IDS.map((id,i)=>`<img loading="lazy" class="${i?'':'on'}" src="${IMG+id+'.jpg'+TH}" data-i="${i}" alt="">`).join('');
-const slides=[...strip.children], tEls=[...thumbs.children];
-tEls.forEach(t=>t.onclick=()=>slides[+t.dataset.i].scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'}));
-strip.addEventListener('scroll',()=>{
-  const i=Math.round(strip.scrollLeft/strip.clientWidth);
-  document.getElementById('gcount').textContent=(i+1)+' / 58';
-  tEls.forEach((t,j)=>t.classList.toggle('on',j===i));
-},{passive:true});
-
-/* ---- payment calc (MHSRV's real disclosed terms: 7.99% w.a.c.) ---- */
-const PRICE=110214;
-function calc(){
-  const dp=+document.getElementById('down').value, yrs=+document.getElementById('term').value;
-  const L=PRICE*(1-dp/100), r=.0799/12, n=yrs*12;
-  const m=Math.round(L*r/(1-Math.pow(1+r,-n)));
-  document.getElementById('downOut').textContent=dp+'% · $'+Math.round(PRICE*dp/100).toLocaleString();
-  document.getElementById('termOut').textContent=yrs+' years';
-  document.getElementById('pay').textContent='$'+m.toLocaleString()+'/mo';
-  return m;
-}
-document.getElementById('down').addEventListener('input',calc);
-document.getElementById('term').addEventListener('input',calc);
-document.getElementById('heromo').textContent='$'+calc().toLocaleString()+'/mo';
-
-/* ---- modal ---- */
-function openModal(kind){
-  document.getElementById('mtitle').textContent=kind==='unlock'?'Unlock your price':'Confirm availability';
-  document.getElementById('formview').style.display='block';
-  document.getElementById('successview').style.display='none';
-  document.getElementById('modal').classList.add('open');
-}
+function openLB(i){const lb=document.getElementById('lb');lb.classList.add('open');document.body.style.overflow='hidden';
+const s=document.getElementById('lbs');requestAnimationFrame(()=>s.scrollLeft=i*s.clientWidth);}
+function closeLB(){document.getElementById('lb').classList.remove('open');document.body.style.overflow='';}
+document.getElementById('lbs').addEventListener('scroll',function(){const i=Math.round(this.scrollLeft/this.clientWidth)+1;document.getElementById('lbc').textContent=i+' / 59';},{passive:true});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB()});
+document.getElementById('vstrip').addEventListener('scroll',function(){const i=Math.round(this.scrollLeft/this.clientWidth)+1;document.getElementById('gc').textContent=i+' / 12';},{passive:true});
+function openModal(){document.getElementById('formview').style.display='block';document.getElementById('successview').style.display='none';document.getElementById('modal').classList.add('open')}
 function closeModal(){document.getElementById('modal').classList.remove('open')}
-function submitLead(){
-  document.getElementById('formview').style.display='none';
-  document.getElementById('successview').style.display='block';
-}
-</script>
-</body>
-</html>
+function submitLead(){document.getElementById('formview').style.display='none';document.getElementById('successview').style.display='block'}
+document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.g-save');if(b&&isSaved('MHS43214'))b.textContent='❤️';});
+const PRICE=109989;
+function calc(){
+  const dp=+document.getElementById('down').value,L=PRICE*(1-dp/100);
+  const maxY=L>50000?20:(L>20000?15:10);
+  const t=document.getElementById('term');t.max=maxY;if(+t.value>maxY)t.value=maxY;
+  const yrs=+t.value,n=yrs*12,m=Math.round(L*(.0999/12)/(1-Math.pow(1+.0999/12,-n)));
+  document.getElementById('downOut').textContent=dp+'% · $'+Math.round(PRICE*dp/100).toLocaleString();
+  document.getElementById('termOut').textContent=yrs+' years'+(maxY<20?' (max '+maxY+' at this amount)':'');
+  document.getElementById('pay').textContent='$'+m.toLocaleString()+'/mo';}
+document.getElementById('down').addEventListener('input',calc);
+document.getElementById('term').addEventListener('input',calc);calc();
+</script></body></html>

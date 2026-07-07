@@ -232,6 +232,12 @@
   @media(max-width:370px){.call-btn{font-size:12px;padding:8px 9px}}
   #budget,#inventory,#typeRail,#reviews{scroll-margin-top:78px}
   .loadmore{grid-column:1/-1;background:#fff;border:1.5px solid var(--hwy-green);color:var(--hwy-green);font-weight:700;font-size:14.5px;padding:14px;border-radius:11px;cursor:pointer;font-family:inherit}
+  .cstrip{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .cstrip::-webkit-scrollbar{display:none}
+  .cstrip img{flex:none;width:100%;height:100%;object-fit:cover;scroll-snap-align:center}
+  .cdots{position:absolute;bottom:8px;left:0;right:0;display:flex;gap:5px;justify-content:center;z-index:2;pointer-events:none}
+  .cdots i{width:6px;height:6px;border-radius:99px;background:rgba(255,255,255,.55);transition:background .15s}
+  .cdots i.on{background:#fff}
 </style>
 <script src="data.js"></script>
 <script type="application/ld+json">
@@ -812,11 +818,13 @@ function renderGrid(more){if(!more)state.page=1;
   $('grid').innerHTML=list.slice(0,state.page*24).map(r=>{
     const save=r.msrp?r.msrp-r.price:0;
     const pct=r.msrp?Math.round(save/r.msrp*100):0;
-    const photo=r.img?`<img src="${r.img}" alt="${r.y} ${r.brand} ${r.model}" loading="lazy" onerror="this.remove()">`:'';
+    const gal=(r.imgs&&r.imgs.length>1)?r.imgs.slice(0,6):null;
+    const photo=gal?`<div class="cstrip">${gal.map((u,i)=>`<img ${i?'loading="lazy" ':''}src="${u}" alt="${r.y} ${r.brand} ${r.model} photo ${i+1}" onerror="this.remove()">`).join('')}</div><div class="cdots">${gal.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div>`
+    :(r.img?`<img src="${r.img}" alt="${r.y} ${r.brand} ${r.model}" loading="lazy" onerror="this.remove()">`:'');
     return `<article class="rv">
       <div class="rv-img">
         ${unitArt(r.scene,r.type)}${photo}
-        <span class="badge ${r.cond}">${r.cond==='new'?'New':'Pre-owned'}</span>
+        <span class="badge ${r.cond}">${r.cond==='new'?'New':'Pre-owned'}</span>${r.pend?`<span class="badge" style="top:40px;background:#B4530A;color:#fff">Sale pending</span>`:''}
         <button class="save" aria-label="Save this RV" onclick="toggleSave('${r.stk}',this)">${typeof isSaved==='function'&&isSaved(r.stk)?'❤️':'♡'}</button>
         <span class="photos">📷 ${r.photos} photos</span>
       </div>
@@ -836,6 +844,10 @@ function renderGrid(more){if(!more)state.page=1;
       </div>
     </article>`;
   }).join('')+(list.length>state.page*24?`<button class="loadmore" onclick="state.page++;renderGrid(true)">Load 24 more · ${(list.length-state.page*24).toLocaleString()} remaining</button>`:'');
+  document.querySelectorAll('.cstrip').forEach(s=>s.addEventListener('scroll',()=>{
+    const i=Math.round(s.scrollLeft/s.clientWidth);
+    s.parentElement.querySelectorAll('.cdots i').forEach((d,j)=>d.classList.toggle('on',j===i));
+  },{passive:true}));
 }
 const qp=new URLSearchParams(location.search);
 if(qp.get('cond')){state.cond=qp.get('cond');document.querySelectorAll('#condChips .chip').forEach(c=>c.classList.toggle('on',c.dataset.cond===state.cond));}

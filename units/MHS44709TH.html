@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2027 Thor Motor Coach Outlaw 29T Toy Hauler · MHS44709TH | MHSRV</title>
+<title>2027 Thor Motor Coach Outlaw 29T · MHS44709TH | MHSRV</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -198,8 +198,20 @@
 .hero-photo{position:relative;background:#101314}
 .hero-photo img{display:block;width:100%;max-width:860px;margin:0 auto;height:300px;object-fit:cover}
 @media(min-width:760px){.hero-photo img{height:430px}}
-.morephotos{display:block;text-align:center;background:#0E2347;color:#fff;font-weight:600;font-size:13.5px;padding:11px;text-decoration:none}
+.vstrip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;max-width:860px;margin:0 auto}
+.vstrip::-webkit-scrollbar{display:none}
+.vstrip img{flex:none;scroll-snap-align:center;cursor:zoom-in}
+.morephotos{display:block;width:100%;text-align:center;background:#0E2347;color:#fff;font-weight:600;font-size:13.5px;padding:11px;text-decoration:none;border:none;cursor:pointer;font-family:inherit}
 .morephotos b{color:var(--sign-yellow)}
+.lb{position:fixed;inset:0;z-index:200;background:#0A0D11;display:none;flex-direction:column}
+.lb.open{display:flex}
+.lb-x{position:absolute;top:calc(10px + env(safe-area-inset-top));right:12px;z-index:2;width:42px;height:42px;border-radius:99px;background:rgba(255,255,255,.14);color:#fff;font-size:18px;cursor:pointer}
+.lb-strip{flex:1;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;align-items:center}
+.lb-strip::-webkit-scrollbar{display:none}
+.lb-strip img{flex:none;width:100vw;max-height:100%;object-fit:contain;scroll-snap-align:center}
+.lb-foot{padding:12px 16px calc(14px + env(safe-area-inset-bottom));display:flex;justify-content:space-between;align-items:center;color:#fff}
+.lb-foot #lbc{font-weight:700;font-size:14px}
+.lb-note{font-size:11px;opacity:.6;text-align:right}
 </style></head><body>
 
 <style>
@@ -274,29 +286,35 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
   </div>
 </div></header>
 <div class="hero-photo">
-  <img src="https://assets-cdn.interactcp.com/bluecompassrv/unit_photo/imgh_400x300-m0410202604093882/unit_photo_202604100409388227105239.jpg" alt="2027 Thor Motor Coach Outlaw 29T Toy Hauler" onerror="this.style.opacity=.2">
-  <div class="g-badge"><span class="badge new" style="position:static">New</span><span class="badge" style="position:static;background:linear-gradient(135deg,#E8873F,#C24E31);color:#fff">In transit</span></div>
+  <div class="vstrip" id="vstrip"><img src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664219.jpg;width=860;quality=60" alt="2027 Thor Motor Coach Outlaw 29T photo 1" onclick="openLB(0)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664220.jpg;width=860;quality=60" alt="2027 Thor Motor Coach Outlaw 29T photo 2" onclick="openLB(1)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664221.jpg;width=860;quality=60" alt="2027 Thor Motor Coach Outlaw 29T photo 3" onclick="openLB(2)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664222.jpg;width=860;quality=60" alt="2027 Thor Motor Coach Outlaw 29T photo 4" onclick="openLB(3)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664223.jpg;width=860;quality=60" alt="2027 Thor Motor Coach Outlaw 29T photo 5" onclick="openLB(4)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664224.jpg;width=860;quality=60" alt="2027 Thor Motor Coach Outlaw 29T photo 6" onclick="openLB(5)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664225.jpg;width=860;quality=60" alt="2027 Thor Motor Coach Outlaw 29T photo 7" onclick="openLB(6)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664226.jpg;width=860;quality=60" alt="2027 Thor Motor Coach Outlaw 29T photo 8" onclick="openLB(7)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664227.jpg;width=860;quality=60" alt="2027 Thor Motor Coach Outlaw 29T photo 9" onclick="openLB(8)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664228.jpg;width=860;quality=60" alt="2027 Thor Motor Coach Outlaw 29T photo 10" onclick="openLB(9)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664229.jpg;width=860;quality=60" alt="2027 Thor Motor Coach Outlaw 29T photo 11" onclick="openLB(10)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664230.jpg;width=860;quality=60" alt="2027 Thor Motor Coach Outlaw 29T photo 12" onclick="openLB(11)" onerror="this.remove()"></div><div class="g-count" id="gc">1 / 12</div>
+  <div class="g-badge"><span class="badge new" style="position:static">New</span><span class="badge" style="position:static;background:linear-gradient(135deg,#E8873F,#C24E31);color:#fff">On order</span></div>
   <button class="g-save" aria-label="Save" onclick="toggleSave('MHS44709TH',this)">♡</button>
 </div>
-<a class="morephotos" href="https://www.bluecompassrv.com/product/new-2027-thor-motor-coach-outlaw-29t-3577166-26" target="_blank" rel="noopener">📷 See all <b>28+ photos</b>, floorplan &amp; full specs ↗</a>
+<button class="morephotos" onclick="openLB(0)">📷 See all <b>27 photos</b></button>
+<div class="lb" id="lb">
+  <button class="lb-x" onclick="closeLB()" aria-label="Close">✕</button>
+  <div class="lb-strip" id="lbs"><img src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664219.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 1"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664220.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 2"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664221.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 3"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664222.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 4"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664223.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 5"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664224.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 6"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664225.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 7"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664226.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 8"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664227.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 9"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664228.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 10"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664229.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 11"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664230.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 12"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664231.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 13"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664232.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 14"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664233.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 15"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664234.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 16"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664235.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 17"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664236.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 18"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664237.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 19"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664238.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 20"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664239.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 21"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664240.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 22"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664241.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 23"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664242.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 24"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664243.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 25"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664244.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 26"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5146358/o/1_2321_5146358_312664245.jpg;width=1200;quality=70" alt="2027 Thor Motor Coach Outlaw 29T photo 27"></div>
+  <div class="lb-foot"><span id="lbc">1 / 27</span><span class="lb-note">27 photos · full resolution</span></div>
+</div>
 <main class="wrap">
   <div class="titleblock">
     <div class="stock">Stock #MHS44709TH · MHS Texas — Alvarado</div>
-    <h1>2027 Thor Motor Coach Outlaw 29T Toy Hauler</h1>
+    <h1>2027 Thor Motor Coach Outlaw 29T</h1>
     <div class="chipsrow">
       <div class="spec-chip"><b>Length</b>31ft</div>
       <div class="spec-chip"><b>Type</b>Toy Hauler</div>
       
-      
+      <div class="spec-chip"><b>Slides</b>1</div>
       <div class="spec-chip"><b>Condition</b>New</div>
+      <div class="spec-chip"><b>Fuel</b>Gas</div>
     </div>
   </div>
   <div class="pricecard">
     <div class="pc-top">
-      <div><div class="msrp">M.S.R.P. <s>$180,901</s></div>
-      <div class="special" style="font-size:26px">In transit — arriving soon</div></div>
-      <div class="save-pill">Unlock<b>intro price</b>before arrival</div></div>
-    <div class="pc-mo">Call <b>800-335-6054</b> to reserve this unit before it hits the lot</div>
+      <div><div class="msrp">M.S.R.P. <s>$180,901</s> · Sale <s>$119,995</s></div>
+      <div class="special">$116,989 <small>PrecisionPrice</small></div></div>
+      <div class="save-pill">You save<b>$63,912</b>35% off</div></div>
+    <div class="pc-mo">Est. <b>$903/mo</b> w.a.c.* · 9.99% APR, 20% down</div>
     <button class="fee-toggle" onclick="document.getElementById('fees').classList.toggle('open');this.querySelector('span').textContent=this.querySelector('span').textContent==='+'?'–':'+'">What's in this price? No games, no gimmicks. <span>+</span></button>
     <div class="fees" id="fees">
       <div class="fee"><span>Freight<small>We've never charged freight. Never will.</small></span><span class="zero">$0</span></div>
@@ -307,7 +325,18 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
     <button class="unlock" onclick="openModal()">🔓 Unlock Your Price</button>
   </div>
   <section><h2>Highlights</h2><div class="hl"><span>Rear ramp door garage</span><span>Fuel station</span><span>Loft sleeping</span><span>Party deck ready</span><span>Heavy-duty tie-downs</span><span>Generator</span><span>Outdoor entertainment</span><span>Sleeps the whole crew</span></div></section>
-  
+  <section><h2>About this coach</h2>
+  <details open><summary>Full description</summary><div class="d-body" style="white-space:pre-line">MSRP $180,901. New 2027 Thor Motor Coach Outlaw Toy Hauler model 29T      Optional Features      Cabover Child Safety Net           Shop hundreds of class C gas RVs at MHSRV! Choose from Fleetwood Altitude - Gulf Stream BT Cruiser - Thor Chateau - Four Winds - Geneva and Quantum - Entegra Coach Odyssey Odyssey SE and Esteem - East to West Entrada - Forest River Forester - Forester LE - Nexus Phantom - Viper and much more. We also sell quality pre-owned models such as Jayco Greyhawk – Redhawk - Redhawk SE - Thor Magnitude - Winnebago Spirit - and Minnie Winnie - Coachmen Freelander and Leprechaun - Forest River Sunseeker Classic - Sunseeker LE – Solera - Holiday Rambler Incline and much more. Visit MHSRV.com for our complete line-up and the sale prices that have made us the #1 volume selling motor home dealership in the world 13 years in a row!         About This RV       This RV approximately measures 31 feet 2 inch in length with the new Ford chassis with a 7.3L V8 engine, slide-out, SmoothTECH Suspension, ramp door, swivel driver &amp; passenger chairs, cab over loft with swivel TV.          About Us       For more details on this unit, our full inventory, brochures, window stickers, videos, photos, and customer reviews, visit MHSRV.com or call 800-335-6054.  At Motor Home Specialist, we never charge prep or orientation fees. Every new RV sale includes a multi-point inspection, full interior and exterior detail, and a high-pressure rain booth test—an exclusive service in the industry. You'll also receive a comprehensive coach orientation with an MHSRV technician and a complimentary night in our delivery park with full hook-ups.  --Why Pay More? Why Settle for Less?—</div></details></section>
+  <section><h2>Specifications</h2>
+  <details><summary>Chassis, power &amp; capacities</summary><div class="d-body"><ul style="grid-template-columns:1fr"><li><b>Chassis:</b> Ford E-450</li><li><b>Engine:</b> 7.3L V8 engine</li><li><b>Fuel:</b> Gas</li><li><b>Interior:</b> Carbon Steel & Hampton</li><li><b>Exterior:</b> Outlaw</li><li><b>A/C units:</b> 2</li></ul></div></details></section>
+  <section><h2>Payment estimator</h2><div class="calc">
+    <div class="calc-row"><span>Down payment</span><output id="downOut"></output></div>
+    <input type="range" id="down" min="10" max="50" step="5" value="20" aria-label="Down payment percent">
+    <div class="calc-row"><span>Term</span><output id="termOut"></output></div>
+    <input type="range" id="term" min="5" max="20" step="5" value="20" aria-label="Loan term in years">
+    <div class="calc-result"><span>Estimated payment</span><b id="pay"></b></div>
+    <p class="fine">*Estimate only, with approved credit, 9.99% APR. Maximum term depends on amount financed. Excludes TT&amp;L. Call MHSRV finance for exact terms.</p>
+  </div></section>
   <section><div class="perks"><h3>Every MHSRV purchase includes</h3><ul>
     <li>200-point inspection, detail &amp; rain-booth leak test</li>
     <li>VIP orientation with an MHSRV technician</li>
@@ -322,7 +351,7 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
     </a>
   </section>
   <section><h2>Similar on the lot</h2><div class="sim-rail">
-    <a class="sim" href="./MHS44710TH.html"><img loading="lazy" src="https://assets-cdn.interactcp.com/bluecompassrv/unit_photo/imgh_400x300-m0410202604100160/unit_photo_202604100410016071505892.jpg" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2027 Thor Motor Coach Outlaw Wild West 38K</b><small>#MHS44710TH · 39ft</small><div class="s-price">Arriving soon</div></div></a><a class="sim" href="./MHS44128ATH.html"><img loading="lazy" src="https://assets-cdn.interactcp.com/bluecompassrv/unit_photo/imgh_400x300-m0516202604090557/unit_photo_202605160409055771592952.jpg" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2026 Keystone RV Raptor 441 Toy Hauler</b><small>#MHS44128ATH · 44ft</small><div class="s-price">$104,997</div></div></a><a class="sim" href="./MHS45336.html"><div style="height:120px;background:#EAEFF6;display:flex;align-items:center;justify-content:center;color:#8A97AB"><span style="width:130px"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 120 68"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M24 47 V18 q0 -4 4 -4 h14 v-3 h12 v3 h20 q8 0 12 5 l6 7 h6 l7 11 l8 3 V51 L109 51 a9 9 0 0 1 -18 0 L65 51 a9 9 0 0 1 -18 0 L47 51 a9 9 0 0 1 -18 0 L28 51 q-4 0 -4 -4z  M96 28 l6 9 h-8.5 v-9 z M34 20 h11 a2 2 0 0 1 2 2 v6 a2 2 0 0 1 -2 2 h-11 a2 2 0 0 1 -2 -2 v-6 a2 2 0 0 1 2 -2 z M54 20 h6 a2 2 0 0 1 2 2 v6 a2 2 0 0 1 -2 2 h-6 a2 2 0 0 1 -2 -2 v-6 a2 2 0 0 1 2 -2 z "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M23 19 L27.2 20.6 L11.2 60 L7 58.4 z M20.2 29.5 a1.3 1.3 0 1 0 2.6 0 a1.3 1.3 0 1 0 -2.6 0 M16 39.5 a1.3 1.3 0 1 0 2.6 0 a1.3 1.3 0 1 0 -2.6 0 M11.799999999999999 49.5 a1.3 1.3 0 1 0 2.6 0 a1.3 1.3 0 1 0 -2.6 0 "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M31.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M34.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="38" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M49.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M52.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="56" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M93.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M96.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="100" cy="53" r="1.7" fill="currentColor"/></svg></span></div><div class="s-body"><b>2026 Brinkley RV Model G 3500</b><small>#MHS45336 · 39ft</small><div class="s-price">$72,399</div></div></a><a class="sim" href="./MHS45337.html"><div style="height:120px;background:#EAEFF6;display:flex;align-items:center;justify-content:center;color:#8A97AB"><span style="width:130px"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 120 68"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M24 47 V18 q0 -4 4 -4 h14 v-3 h12 v3 h20 q8 0 12 5 l6 7 h6 l7 11 l8 3 V51 L109 51 a9 9 0 0 1 -18 0 L65 51 a9 9 0 0 1 -18 0 L47 51 a9 9 0 0 1 -18 0 L28 51 q-4 0 -4 -4z  M96 28 l6 9 h-8.5 v-9 z M34 20 h11 a2 2 0 0 1 2 2 v6 a2 2 0 0 1 -2 2 h-11 a2 2 0 0 1 -2 -2 v-6 a2 2 0 0 1 2 -2 z M54 20 h6 a2 2 0 0 1 2 2 v6 a2 2 0 0 1 -2 2 h-6 a2 2 0 0 1 -2 -2 v-6 a2 2 0 0 1 2 -2 z "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M23 19 L27.2 20.6 L11.2 60 L7 58.4 z M20.2 29.5 a1.3 1.3 0 1 0 2.6 0 a1.3 1.3 0 1 0 -2.6 0 M16 39.5 a1.3 1.3 0 1 0 2.6 0 a1.3 1.3 0 1 0 -2.6 0 M11.799999999999999 49.5 a1.3 1.3 0 1 0 2.6 0 a1.3 1.3 0 1 0 -2.6 0 "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M31.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M34.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="38" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M49.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M52.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="56" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M93.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M96.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="100" cy="53" r="1.7" fill="currentColor"/></svg></span></div><div class="s-body"><b>2026 Brinkley RV Model G 3500</b><small>#MHS45337 · 39ft</small><div class="s-price">$74,899</div></div></a>
+    <a class="sim" href="./MHS44743TH.html"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5191431/o/1_2321_5191431_317376192.jpg;width=480;quality=55" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2027 Thor Motor Coach Outlaw 29J</b><small>#MHS44743TH · 31ft</small><div class="s-price">$116,989</div></div></a><a class="sim" href="./MHS44399TH.html"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5057409/o/1_2321_5057409_311321310.jpg;width=480;quality=55" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2027 Thor Motor Coach Outlaw Wild West Edition 38M</b><small>#MHS44399TH · 39ft</small><div class="s-price">$199,499</div></div></a><a class="sim" href="./MHS44397TH.html"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5120442/o/1_2321_5120442_318068971.jpg;width=480;quality=55" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2027 Thor Motor Coach Outlaw Wild West Edition 38K</b><small>#MHS44397TH · 39ft</small><div class="s-price">$194,989</div></div></a><a class="sim" href="./MHS43604ATH.html"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215972/o/1_2321_5215972_320030287.jpg;width=480;quality=55" alt="" onerror="this.style.opacity=.2"><div class="s-body"><b>2023 Grand Design Momentum M-Class 395MS</b><small>#MHS43604ATH · 44ft</small><div class="s-price">$79,997</div></div></a>
   </div></section>
 </main>
 <nav class="dock" aria-label="Actions"><div class="dock-inner">
@@ -333,11 +362,11 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
 <div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="sheet">
   <button class="x" onclick="closeModal()" aria-label="Close">✕</button>
   <div id="formview"><h3>Unlock your price</h3>
-    <p>2027 Thor Motor Coach Outlaw 29T Toy Hauler · #MHS44709TH — or call <a href="tel:8003356054" style="color:var(--hwy-green);font-weight:700">800-335-6054</a></p>
+    <p>2027 Thor Motor Coach Outlaw 29T · #MHS44709TH — or call <a href="tel:8003356054" style="color:var(--hwy-green);font-weight:700">800-335-6054</a></p>
     <form id="leadform" onsubmit="return false">
       <input placeholder="First name" name="first_name" required><input placeholder="Last name" name="last_name">
       <input placeholder="Phone" type="tel" name="phone" required><input placeholder="Email" type="email" name="email" required>
-      <button class="go" id="gobtn" onclick="sendLead(document.getElementById('leadform'),'MHSRV Lead — 2027 Thor Motor Coach Outlaw 29T Toy Hauler #MHS44709TH',this).then(ok=>{if(ok)submitLead()})">Submit</button>
+      <button class="go" id="gobtn" onclick="sendLead(document.getElementById('leadform'),'MHSRV Lead — 2027 Thor Motor Coach Outlaw 29T #MHS44709TH',this).then(ok=>{if(ok)submitLead()})">Submit</button>
     </form>
     <p style="font-size:11px;margin-top:10px">Msg &amp; data rates may apply. Easily unsubscribe at any time.</p>
   </div>
@@ -359,9 +388,25 @@ async function sendLead(form,subject,btn){
     return true;
   }finally{btn.disabled=false;btn.textContent='Submit';}
 }
+function openLB(i){const lb=document.getElementById('lb');lb.classList.add('open');document.body.style.overflow='hidden';
+const s=document.getElementById('lbs');requestAnimationFrame(()=>s.scrollLeft=i*s.clientWidth);}
+function closeLB(){document.getElementById('lb').classList.remove('open');document.body.style.overflow='';}
+document.getElementById('lbs').addEventListener('scroll',function(){const i=Math.round(this.scrollLeft/this.clientWidth)+1;document.getElementById('lbc').textContent=i+' / 27';},{passive:true});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB()});
+document.getElementById('vstrip').addEventListener('scroll',function(){const i=Math.round(this.scrollLeft/this.clientWidth)+1;document.getElementById('gc').textContent=i+' / 12';},{passive:true});
 function openModal(){document.getElementById('formview').style.display='block';document.getElementById('successview').style.display='none';document.getElementById('modal').classList.add('open')}
 function closeModal(){document.getElementById('modal').classList.remove('open')}
 function submitLead(){document.getElementById('formview').style.display='none';document.getElementById('successview').style.display='block'}
 document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.g-save');if(b&&isSaved('MHS44709TH'))b.textContent='❤️';});
-
+const PRICE=116989;
+function calc(){
+  const dp=+document.getElementById('down').value,L=PRICE*(1-dp/100);
+  const maxY=L>50000?20:(L>20000?15:10);
+  const t=document.getElementById('term');t.max=maxY;if(+t.value>maxY)t.value=maxY;
+  const yrs=+t.value,n=yrs*12,m=Math.round(L*(.0999/12)/(1-Math.pow(1+.0999/12,-n)));
+  document.getElementById('downOut').textContent=dp+'% · $'+Math.round(PRICE*dp/100).toLocaleString();
+  document.getElementById('termOut').textContent=yrs+' years'+(maxY<20?' (max '+maxY+' at this amount)':'');
+  document.getElementById('pay').textContent='$'+m.toLocaleString()+'/mo';}
+document.getElementById('down').addEventListener('input',calc);
+document.getElementById('term').addEventListener('input',calc);calc();
 </script></body></html>
