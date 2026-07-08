@@ -1,7 +1,7 @@
 {
  "updated": "2026-07-08T15:31:56.215734Z",
  "note": "SEED data captured from Google Maps by hand — replaced automatically by tools/fetch-google-reviews.js once API credentials are set. See tools/README-google-reviews.md.",
- "placeUrl": "https://www.google.com/maps/place/Motor+Home+Specialist/@32.4236503,-97.2295969,17z/data=!4m6!3m5!1s0x864e5c83af8ee9cb:0x53b8d40c646c9de4",
+ "placeUrl": "https://maps.google.com/?cid=6032804850552315364",
  "reviews": [
   {
    "author": "Shelly R.",
@@ -21,5 +21,7 @@
    "date": "Nov 2025",
    "text": "Christine was so amazing to work with, her patience and kindness made our experience there feel welcoming. They take their time and answer any questions you have. Overall we had a great experience here, lots of inventory to look through to make the best decision for your needs."
   }
- ]
+ ],
+ "rating": 4.6,
+ "count": 3666
 }

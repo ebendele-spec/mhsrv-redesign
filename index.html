@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MHSRV — Find Your RV | Motor Home Specialist</title>
+<link rel="icon" type="image/png" href="https://mhsrv.s3.amazonaws.com/images/homeimage/logo--mhs-bc.png">
+<link rel="apple-touch-icon" href="https://mhsrv.s3.amazonaws.com/images/homeimage/logo--mhs-bc.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -42,7 +44,7 @@
   .scene2 svg{display:block;width:100%;height:216px}
   @media(min-width:760px){.scene2 svg{height:288px}}
   .hero-top{padding-top:22px;padding-bottom:2px}
-  .hero-bottom{position:relative;z-index:2;padding-bottom:22px}
+  .hero-bottom{position:relative;z-index:2;padding-bottom:8px}
   .hero h1{font-family:'Barlow Condensed';font-size:clamp(32px,8vw,46px);font-weight:700;line-height:1.0;text-transform:uppercase;letter-spacing:.015em;text-shadow:0 2px 12px rgba(0,0,0,.45)}
   .hero h1 span{color:var(--sign-yellow)}
   .hero .sub{margin-top:8px;font-size:14.5px;font-weight:500;text-shadow:0 1px 8px rgba(0,0,0,.5)}
@@ -96,13 +98,13 @@
   .sec-sub{font-size:13.5px;color:var(--muted);margin-bottom:14px}
 
   /* lifestyle rail */
-  .life-rail{display:flex;gap:12px;overflow-x:auto;scrollbar-width:none;padding:2px 16px 8px;margin:0 -16px}
-  .life-rail::-webkit-scrollbar{display:none}
-  .life-card{flex:none;width:230px;height:150px;border-radius:var(--radius);overflow:hidden;position:relative;text-align:left;color:#fff;box-shadow:0 3px 10px rgba(0,0,0,.12)}
+  .life-rail{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  @media(min-width:760px){.life-rail{grid-template-columns:repeat(4,1fr)}}
+  .life-card{width:auto;height:86px;border-radius:11px;overflow:hidden;position:relative;text-align:left;color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.12)}
   .life-card svg{position:absolute;inset:0;width:100%;height:100%}
-  .life-card .lc-txt{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.65))}
-  .life-card b{font-family:'Barlow Condensed';font-size:19px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;display:block;line-height:1.05}
-  .life-card span{font-size:12px;opacity:.9}
+  .life-card .lc-txt{position:absolute;left:0;right:0;bottom:0;padding:18px 9px 7px;background:linear-gradient(transparent,rgba(0,0,0,.7))}
+  .life-card b{font-family:'Barlow Condensed';font-size:13.5px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;display:block;line-height:1.05}
+  .life-card span{font-size:9.5px;opacity:.9;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .life-card.on{outline:3px solid var(--sign-yellow);outline-offset:-3px}
 
   /* promo rail — real MHSRV assets */
@@ -309,17 +311,17 @@
   .cnav.pv{left:8px}.cnav.nx{right:8px}
   @media(hover:hover){.rv-img:hover .cnav{display:flex}}
   /* featured rail */
-  .feat-rail{display:flex;gap:12px;overflow-x:auto;scrollbar-width:none;padding:2px 16px 8px;margin:10px -16px 0;scroll-snap-type:x proximity}
+  .feat-rail{display:flex;gap:9px;overflow-x:auto;scrollbar-width:none;padding:2px 16px 8px;margin:10px -16px 0;scroll-snap-type:x proximity}
   .feat-rail::-webkit-scrollbar{display:none}
-  .feat{flex:none;width:240px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--ink);scroll-snap-align:start;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+  .feat{flex:none;width:132px;background:#fff;border-radius:10px;overflow:hidden;text-decoration:none;color:var(--ink);scroll-snap-align:start;box-shadow:0 2px 10px rgba(0,0,0,.1)}
   .feat .f-img{position:relative;aspect-ratio:3/2;background:#E8ECE9}
   .feat .f-img img{width:100%;height:100%;object-fit:cover;display:block}
-  .feat .f-tag{position:absolute;bottom:8px;left:8px;font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:4px 8px;border-radius:6px;color:#fff}
-  .feat .f-body{padding:10px 12px 12px}
-  .feat b{font-size:13.5px;line-height:1.25;display:block}
-  .feat small{color:var(--muted);font-size:11.5px}
-  .feat .f-price{font-family:'Barlow Condensed';font-size:19px;font-weight:700;color:var(--hwy-green);margin-top:4px}
-  .feat .f-off{font-size:11px;font-weight:700;color:#B4530A;background:#FDEBD7;padding:2px 6px;border-radius:5px;margin-left:6px;vertical-align:2px}
+  .feat .f-tag{position:absolute;bottom:0;left:0;right:0;font-size:8px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 6px;color:#fff;text-align:center}
+  .feat .f-body{padding:7px 8px 9px}
+  .feat b{font-size:10.5px;line-height:1.25;display:block;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:26px}
+  .feat small{display:none}
+  .feat .f-price{font-family:'Barlow Condensed';font-size:16px;font-weight:700;color:var(--hwy-green);margin-top:3px}
+  .feat .f-off{font-size:9px;font-weight:700;color:#B4530A;background:#FDEBD7;padding:1.5px 4px;border-radius:4px;margin-left:4px;vertical-align:2px}
 </style>
 <script src="data.js"></script>
 <script src="specs.js"></script>
@@ -400,7 +402,7 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
     
     <a class="logo" href="#">
       <span class="brandwrap" style="width:42px;height:42px"><img class="brandmark" src="https://mhsrv.s3.amazonaws.com/images/homeimage/logo--mhs-bc.png" alt="Motor Home Specialist" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="shield" style="display:none">MHS</span></span>
-      <div><b>MHSRV</b><small>#1 in the world · 13 yrs</small></div>
+      <div><b>MHSRV</b><small>#1 in the world · 13 years running</small></div>
     </a>
     <div style="display:flex;align-items:center;gap:6px"><a class="call-btn" href="tel:8003356054">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
@@ -520,13 +522,6 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
 
 <main class="wrap">
 
-  <!-- LIFESTYLE: how do you camp? -->
-  <section>
-    <div class="sec-head"><h2>What's your kind of trip?</h2><button onclick="clearLife()">Clear</button></div>
-    <p class="sec-sub">Tap a lifestyle and we'll match the rigs built for it.</p>
-    <div class="life-rail" id="lifeRail"></div>
-  </section>
-
   <!-- REAL MHSRV promos -->
   <section>
     <div class="sec-head"><h2>Happening at MHSRV</h2></div>
@@ -548,6 +543,13 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
         <div class="p-body"><b>Entrada 210NS</b><span>Big value in a small footprint</span></div>
       </a>
     </div>
+  </section>
+
+  <!-- LIFESTYLE: how do you camp? -->
+  <section>
+    <div class="sec-head"><h2>What's your kind of trip?</h2><button onclick="clearTool()">Clear</button></div>
+    <p class="sec-sub">Tap a lifestyle and we'll match the rigs built for it.</p>
+    <div class="life-rail" id="lifeRail"></div>
   </section>
 
   <section>
@@ -913,6 +915,7 @@ function renderPrices(){
 function clearType(){state.type=null;renderTypes();renderGrid();}
 function clearPrice(){state.price=null;renderPrices();renderGrid();}
 function clearLife(){state.life=null;renderLife();renderGrid();}
+function clearTool(){state.life=null;state.type=null;state.price=null;renderLife();renderTypes();renderPrices();renderGrid();}
 
 document.querySelectorAll('#condChips .chip').forEach(c=>c.onclick=()=>{
   document.querySelectorAll('#condChips .chip').forEach(x=>x.classList.remove('on'));
@@ -1067,8 +1070,12 @@ function renderFeatured(){
   if(!pool.length){el.parentElement.style.display='none';return}
   const latest=Math.max(...pool.filter(r=>r.cond==='new').map(r=>r.y));
   const pctOf=r=>r.msrp?1-r.price/r.msrp:0;
+  /* 'Just arrived' = arrival flag AND listed in the newest ~week of feed ids
+     (listing ids are sequential; swap for the feed's stock-in date in production) */
+  const ids=pool.map(r=>+r.it).sort((a,b)=>a-b);
+  const newestCut=ids[Math.floor(ids.length*0.88)]||0;
   const buckets=[
-    {tag:'Just arrived',bg:'#2F7D4C',list:pool.filter(r=>r.arrv).sort((a,b)=>(b.fs||0)-(a.fs||0))},
+    {tag:'Just arrived',bg:'#2F7D4C',list:pool.filter(r=>r.arrv&&+r.it>=newestCut).sort((a,b)=>+b.it-+a.it)},
     {tag:'New '+latest,bg:'var(--hwy-green)',list:pool.filter(r=>r.cond==='new'&&r.y>=latest).sort((a,b)=>(b.fs||0)-(a.fs||0))},
     {tag:'Top savings',bg:'#B4530A',list:pool.filter(r=>r.msrp&&pctOf(r)>=.2).sort((a,b)=>pctOf(b)-pctOf(a))},
     {tag:'hot',bg:'linear-gradient(135deg,#D64533,#B02A1F)',list:pool.slice().sort((a,b)=>b.vw-a.vw)}
@@ -1088,7 +1095,7 @@ function renderFeatured(){
     const label=tag==='hot'?`🔥 ${r.vw} views/24h`:tag;
     return `<a class="feat" href="units/${r.stk}.html">
       <div class="f-img"><img loading="lazy" src="${r.img}" alt="${r.y} ${r.brand} ${r.model}" onerror="this.style.opacity=.15"><span class="f-tag" style="background:${bg}">${label}</span></div>
-      <div class="f-body"><b>${r.y} ${r.brand} ${r.model}</b><small>#${r.stk} · ${r.len}</small>
+      <div class="f-body"><b>${r.y} ${r.model}</b>
       <div class="f-price">${fmt(r.price)}${pct>=10?`<span class="f-off">${pct}% off</span>`:''}</div></div></a>`;
   }).join('');
 }
