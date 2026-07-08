@@ -124,6 +124,18 @@
   .fpdocs .docs{grid-template-columns:1fr}
   button.doc{width:100%;text-align:left;font-family:inherit;font-size:13.5px;cursor:pointer}
   .doc .sub{display:block;font-size:11.5px;color:var(--muted);font-weight:500;margin-top:1px}
+  .docsheet{border-top:10px solid var(--sign-yellow)}
+  .ds-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.22em;color:#8A6A00;background:#FFF4D6;border:1px solid #F2DFA0;padding:3px 8px;border-radius:4px;margin-bottom:8px}
+  .ds-strip{height:24px;background:repeating-linear-gradient(90deg,#22262A 0 2px,transparent 2px 5px,#22262A 5px 6px,transparent 6px 11px,#22262A 11px 14px,transparent 14px 18px);border-radius:3px;margin:14px 0 4px;opacity:.8}
+  .vdoc{position:relative;padding:0;min-height:88px;display:block;border:none;overflow:hidden}
+  .vd-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .vd-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,14,20,.88) 20%,rgba(10,14,20,.25))}
+  .vd-play{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:46px;height:33px;background:#F00;color:#fff;border-radius:9px;display:grid;place-items:center;font-size:14px;box-shadow:0 2px 10px rgba(0,0,0,.45)}
+  .vdoc:hover .vd-play{background:#D90000}
+  .vd-txt{position:absolute;left:74px;right:12px;top:50%;transform:translateY(-50%);color:#fff;font-weight:700;font-size:13.5px;text-align:left}
+  .vd-txt .sub{color:#DCE4EF}
+  .vplayer{margin-top:10px;border-radius:12px;overflow:hidden;background:#000;aspect-ratio:16/9}
+  .vplayer iframe{width:100%;height:100%;border:0;display:block}
 
   /* perks */
   .perks{background:linear-gradient(155deg,#17376A 0%,#241B3E 62%,#38284F 100%);border-radius:var(--radius);color:#fff;padding:18px;position:relative;overflow:hidden}
@@ -371,7 +383,7 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
       </div>
     </div>
     <div class="docs">
-      <button class="doc" onclick="openModal()"><div class="ic">📄</div><span>Window sticker &amp; M.S.R.P.<span class="sub">We&#39;ll send it to you in minutes — no charge</span></span></button>
+      <button class="doc" onclick="openDocReq('sticker')"><div class="ic">📄</div><span>Window sticker &amp; M.S.R.P.<span class="sub">We&#39;ll send it to you in minutes — full transparency</span></span></button>
       <a class="doc" href="https://library.rvusa.com/brochure/2026-Dynamax-Corp-Europa-S.pdf" target="_blank" rel="noopener"><div class="ic">📘</div><span>2026 Europa S factory brochure<span class="sub">Full specs &amp; floorplans (PDF)</span></span></a>
       <a class="doc" href="https://www.youtube.com/@motorhomespecialist/search?query=2026%20Dynamax%20Corp%20Europa%20S%2037CA" target="_blank" rel="noopener"><div class="ic">🎬</div><span>Video tour<span class="sub">Watch on MHSRV&#39;s YouTube channel</span></span></a>
     </div>
@@ -410,6 +422,22 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
   <a class="text" href="sms:8177907771">💬 Text</a>
   <button class="fin" onclick="openModal()">Confirm availability</button>
 </div></nav>
+<div class="modal" id="docmodal" onclick="if(event.target===this)closeDocReq()"><div class="sheet docsheet">
+  <button class="x" onclick="closeDocReq()" aria-label="Close">✕</button>
+  <div id="docformview"><span class="ds-tag">FACTORY DOCUMENT</span>
+    <h3 id="dochead">Window sticker &amp; M.S.R.P.</h3>
+    <p id="docsub"></p>
+    <div class="ds-strip" aria-hidden="true"></div>
+    <form id="docform" onsubmit="return false">
+      <input placeholder="First name" name="first_name" required><input placeholder="Last name" name="last_name">
+      <input placeholder="Phone" type="tel" name="phone" required><input placeholder="Email" type="email" name="email">
+      <button class="go" id="docbtn" onclick="sendLead(document.getElementById('docform'),(docKind==='brochure'?'Brochure':'Window Sticker')+' Request — 2026 Dynamax Corp Europa S 37CA #MHS44358',this).then(ok=>{if(ok){document.getElementById('docformview').style.display='none';document.getElementById('docsuccess').style.display='block';}})">📄 Text me the document</button>
+    </form>
+    <p style="font-size:11px;margin-top:10px;color:var(--muted)">Msg &amp; data rates may apply. Easily unsubscribe at any time.</p>
+  </div>
+  <div class="success" id="docsuccess"><div class="big">📄</div><h4>It&#39;s on the way!</h4>
+    <p>A specialist is pulling the document for stock #MHS44358 right now — expect a text shortly.</p></div>
+</div></div>
 <div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="sheet">
   <button class="x" onclick="closeModal()" aria-label="Close">✕</button>
   <div id="formview"><h3>Unlock your price</h3>
