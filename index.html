@@ -141,34 +141,40 @@
   .view-hint{font-size:12px;color:var(--muted);margin:-4px 0 10px}
   /* ---------- data view ---------- */
   .grid.dataview{grid-template-columns:1fr !important;gap:10px}
-  .rvd{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:132px 1fr;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-  @media(min-width:760px){.rvd{grid-template-columns:200px 1fr 230px}}
-  .rvd-img{position:relative;display:block;background:#E8ECE9}
-  @media(max-width:759px){.rvd-img{align-self:start}.rvd-img .badge{bottom:auto;top:6px}}
+  .rvd{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:136px 1fr;grid-template-areas:"img main" "price main";box-shadow:0 2px 8px rgba(0,0,0,.05)}
+  @media(min-width:760px){.rvd{grid-template-columns:168px 1fr 205px;grid-template-areas:"img main price"}}
+  .rvd-img{grid-area:img;position:relative;display:block;background:#E8ECE9}
   .rvd-img img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:3/2}
-  @media(min-width:760px){.rvd-img img{aspect-ratio:auto;min-height:100%}}
-  .rvd-img .badge{position:absolute;bottom:6px;left:6px;font-size:9.5px;padding:3px 7px}
-  .rvd-main{padding:10px 12px 12px;min-width:0}
-  .rvd-main .meta{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
-  .rvd-main h3{font-size:15px;font-weight:700;line-height:1.25;margin:2px 0 6px}
+  @media(min-width:760px){.rvd-img img{aspect-ratio:auto;min-height:100%;position:absolute;inset:0}}
+  .rvd-img .badge{top:auto;bottom:6px;left:6px;font-size:9px;padding:3px 6px}
+  .rvd-main{grid-area:main;padding:8px 12px 10px;min-width:0}
+  .rvd-main .meta{font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+  .rvd-main h3{font-size:14.5px;font-weight:700;line-height:1.2;margin:1px 0 5px}
   .rvd-main h3 a{color:inherit;text-decoration:none}
   .rvd-main h3 a:hover{color:var(--hwy-green);text-decoration:underline}
-  .rvd-specs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:2px 14px;font-size:12px;margin:0}
-  .rvd-specs div{display:flex;gap:5px;min-width:0;border-bottom:1px dashed #EEF1EE;padding:2.5px 0}
+  .rvd-specs{display:grid;grid-template-columns:repeat(auto-fill,minmax(138px,1fr));gap:1px 12px;font-size:11.5px;margin:0}
+  .rvd-specs div{display:flex;gap:4px;min-width:0;border-bottom:1px dashed #EEF1EE;padding:2px 0}
   .rvd-specs dt{color:var(--muted);font-weight:600;flex:none}
   .rvd-specs dd{margin:0;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .rvd-price{padding:10px 12px 12px;border-top:1px dashed var(--line);display:flex;flex-direction:column;gap:2px;grid-column:1/-1}
-  @media(min-width:760px){.rvd-price{grid-column:auto;border-top:none;border-left:1px dashed var(--line)}}
-  .rvd-price .msrpline{font-size:11.5px;color:var(--muted)}
+  .rvd-price{grid-area:price;padding:8px 10px 10px;border-top:1px dashed var(--line);display:flex;flex-direction:column;gap:1px;background:#FBFCFB}
+  @media(min-width:760px){.rvd-price{border-top:none;border-left:1px dashed var(--line)}}
+  .rvd-price .msrpline{font-size:10.5px;color:var(--muted)}
   .rvd-price .msrpline s{font-weight:600}
-  .rvd-price .now{font-family:'Barlow Condensed';font-size:24px;font-weight:700;color:var(--hwy-green);line-height:1.05}
-  .rvd-price .saveline{font-size:11.5px;font-weight:700;color:#B4530A}
-  .rvd-price .mo2{font-size:11.5px;color:var(--muted)}
-  .rvd-price .hot2{font-size:11.5px;font-weight:700;color:#B02A1F}
-  .rvd-cta{display:flex;gap:6px;margin-top:auto;padding-top:8px}
-  .rvd-cta a{flex:1;text-align:center;font-size:12px;font-weight:700;padding:8px 0;border-radius:8px;text-decoration:none}
+  .rvd-price .now{font-family:'Barlow Condensed';font-size:22px;font-weight:700;color:var(--hwy-green);line-height:1.05}
+  .rvd-price .saveline{font-size:10.5px;font-weight:700;color:#B4530A}
+  .rvd-price .mo2{font-size:10.5px;color:var(--muted)}
+  .rvd-price .hot2{font-size:10.5px;font-weight:700;color:#B02A1F}
+  .rvd-cta{display:flex;gap:5px;margin-top:auto;padding-top:6px}
+  .rvd-cta a{flex:1;text-align:center;font-size:11.5px;font-weight:700;padding:7px 0;border-radius:8px;text-decoration:none;white-space:nowrap}
   .rvd-cta .primary{background:var(--hwy-green);color:#fff}
   .rvd-cta .ghost{border:1.5px solid var(--line);color:var(--ink)}
+  @media(max-width:759px){
+    .rvd-img img{aspect-ratio:auto;height:92px}
+    .rvd-main{padding:8px 10px 8px 0}
+    .rvd-main{padding-left:10px}
+    .rvd-price{padding:6px 8px 8px}
+    .rvd-cta{flex-direction:column;gap:4px}
+  }
   .grid{display:grid;gap:16px}
   @media(min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}}
   .rv{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 8px rgba(0,0,0,.05)}
@@ -994,11 +1000,10 @@ function renderDataRows(list){
     const pct=r.msrp?Math.round(save/r.msrp*100):0;
     const sp=(typeof SPECS!=='undefined'&&SPECS[r.stk])||{};
     const tname=TYPES.find(t=>t.id===r.type).name;
-    const rows=[['Stock','#'+r.stk],['Condition',r.cond==='new'?'New':'Pre-owned'],['Type',tname],['Floorplan',r.model],['Length',r.len]];
+    const rows=[['Stock','#'+r.stk],['Floorplan',r.model],['Length',r.len]];
     if(r.sleeps)rows.push(['Sleeps',r.sleeps]);
     if(r.slides)rows.push(['Slides',r.slides]);
     ['Fuel','Engine','Chassis','Exterior','Interior','Mileage','GVWR'].forEach(k=>{if(sp[k])rows.push([k,sp[k]])});
-    rows.push(['Photos',r.photos]);
     const badge=r.pend?['#B4530A','Sale pending']:r.onord?['linear-gradient(135deg,#E8873F,#C24E31)','On order']:r.coming?['linear-gradient(135deg,#E8873F,#C24E31)','Coming soon']:r.arrv?['#2F7D4C','Just arrived']:r.cond==='used'?['#fff','Pre-owned']:null;
     return `<article class="rvd">
       <a class="rvd-img" href="units/${r.stk}.html">${r.img?`<img loading="lazy" src="${r.img}" alt="${r.y} ${r.brand} ${r.model}" onerror="this.style.opacity=.15">`:''}${badge?`<span class="badge" style="background:${badge[0]};color:${badge[0]==='#fff'?'var(--asphalt)':'#fff'}">${badge[1]}</span>`:''}</a>

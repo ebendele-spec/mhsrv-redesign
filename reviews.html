@@ -206,6 +206,18 @@
 .filters .wrap{display:flex;gap:8px;flex-wrap:wrap}
 .filters input,.filters select{font-family:inherit;font-size:14px;border:1.5px solid var(--line);border-radius:99px;padding:9px 14px;background:#fff;color:var(--ink)}
 .filters input{flex:1;min-width:150px}
+.loadmore{display:block;width:100%;background:#fff;border:1.5px solid var(--hwy-green);color:var(--hwy-green);font-weight:700;font-size:14px;padding:13px;border-radius:11px;cursor:pointer;font-family:inherit;margin-top:14px}
+.gr-h{font-family:'Barlow Condensed';font-size:22px;text-transform:uppercase;margin-top:30px}
+.gr-sub{font-size:13px;color:var(--muted);margin:4px 0 12px}
+.ggrid{display:grid;gap:12px}
+@media(min-width:760px){.ggrid{grid-template-columns:1fr 1fr 1fr}}
+.gcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
+.gcard .g-head{display:flex;align-items:center;gap:8px;font-weight:700;font-size:13.5px}
+.gcard .g-av{width:30px;height:30px;border-radius:99px;background:var(--hwy-green);color:#fff;display:grid;place-items:center;font-size:13px;flex:none}
+.gcard .g-stars{color:#FBBC05;font-size:13px;letter-spacing:2px;margin:5px 0 4px}
+.gcard p{font-size:13px;line-height:1.5;color:#3A4440}
+.gcard .g-date{font-size:11px;color:var(--muted);margin-top:6px}
+.gr-link{display:inline-block;margin-top:12px;font-size:13.5px;font-weight:700;color:var(--hwy-green);text-decoration:none}
 .rgrid{display:grid;gap:14px;margin-top:18px}
 @media(min-width:760px){.rgrid{grid-template-columns:repeat(2,1fr)}}
 .rcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;text-decoration:none;color:var(--ink);display:block}
@@ -298,8 +310,14 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
 </div></div>
 <main class="wrap">
   <div class="rgrid" id="rgrid"></div>
+  <button class="loadmore" id="rmore" hidden>Load 36 more</button>
   <p class="count-note" id="rcount"></p>
-  <div class="corpus">📚 This prototype shows a sample of the corpus. In production, all 4,571 reviews import from the existing WordPress site via its REST API, each old URL 301-redirects here to keep every ounce of SEO equity, and this hub replaces the separate domain.</div>
+  <section id="gsection" hidden>
+    <h2 class="gr-h">⭐ Fresh from Google</h2>
+    <p class="gr-sub">Live 5-star reviews from our Google Business Profile.</p>
+    <div class="ggrid" id="ggrid"></div>
+    <a class="gr-link" id="glink" href="#" target="_blank" rel="noopener">Read all reviews on Google →</a>
+  </section>
 </main>
 <nav class="dock"><div class="dock-inner">
 <a class="call" href="tel:8003356054">📞 Call</a><a class="text" href="sms:8177907771">💬 Text</a><a class="fin" href="./index.html#inventory">Shop RVs</a>
@@ -313,19 +331,40 @@ const brands=[...new Set(REVIEWS.map(r=>r.brand))].sort();
 const types=[...new Set(REVIEWS.map(r=>r.type))].sort();
 document.getElementById('fbrand').innerHTML+=brands.map(b=>'<option'+(b===st.brand?' selected':'')+'>'+b+'</option>').join('');
 document.getElementById('ftype').innerHTML+=types.map(t=>'<option>'+t+'</option>').join('');
-function render(){
+st.page=1;const PAGE=36;
+function card(r){
+  const bits=[r.type,r.buyer&&r.loc?('Sold to '+r.buyer+' of '+r.loc):'',r.date].filter(Boolean).join(' · ');
+  return `<a class="rcard" href="reviews/${r.slug}.html">
+    <div class="stars">★★★★★</div>
+    <h3>${[r.y,r.brand,r.model].filter(Boolean).join(' ')} Review</h3>
+    <p>${r.txt}</p>
+    <footer>${bits}</footer></a>`;
+}
+function render(more){
+  if(!more)st.page=1;
   const list=REVIEWS.filter(r=>{
     if(st.brand&&r.brand!==st.brand)return false;
     if(st.type&&r.type!==st.type)return false;
-    if(st.q){const h=(r.brand+' '+r.model+' '+r.loc+' '+r.y+' '+r.type).toLowerCase();if(!h.includes(st.q))return false;}
+    if(st.q){const h=((r.brand||'')+' '+(r.model||'')+' '+(r.loc||'')+' '+(r.y||'')+' '+(r.type||'')+' '+(r.stk||'')).toLowerCase();if(!h.includes(st.q))return false;}
     return true;});
-  document.getElementById('rgrid').innerHTML=list.map(r=>`<a class="rcard" href="reviews/${r.slug}.html">
-    <div class="stars">★★★★★</div>
-    <h3>${r.y} ${r.brand} ${r.model} Review</h3>
-    <p>${r.txt}</p>
-    <footer>${r.type} · Sold to ${r.buyer} of ${r.loc} · ${r.date}</footer></a>`).join('')||'<p style="padding:24px 0;color:var(--muted)">No reviews match — clear a filter.</p>';
-  document.getElementById('rcount').textContent='Showing '+list.length+' of 4,571 reviews'+(st.brand?' · '+st.brand:'');
+  document.getElementById('rgrid').innerHTML=list.slice(0,st.page*PAGE).map(card).join('')||'<p style="padding:24px 0;color:var(--muted)">No reviews match — clear a filter.</p>';
+  const mb=document.getElementById('rmore');
+  mb.hidden=list.length<=st.page*PAGE;
+  mb.textContent='Load 36 more · '+(list.length-Math.min(list.length,st.page*PAGE)).toLocaleString()+' remaining';
+  document.getElementById('rcount').textContent='Showing '+Math.min(list.length,st.page*PAGE).toLocaleString()+' of '+list.length.toLocaleString()+' matching reviews · full corpus: '+REVIEWS.length.toLocaleString();
 }
+document.getElementById('rmore').addEventListener('click',()=>{st.page++;render(true)});
+/* Google Reviews — rendered from google-reviews.json, refreshed by tools/fetch-google-reviews.js */
+fetch('google-reviews.json').then(r=>r.ok?r.json():null).then(g=>{
+  if(!g||!g.reviews||!g.reviews.length)return;
+  document.getElementById('gsection').hidden=false;
+  if(g.placeUrl)document.getElementById('glink').href=g.placeUrl;
+  document.getElementById('ggrid').innerHTML=g.reviews.filter(r=>r.rating===5).slice(0,9).map(r=>`
+    <div class="gcard"><div class="g-head"><span class="g-av">${(r.author||'?')[0].toUpperCase()}</span>${r.author||'Google user'}</div>
+    <div class="g-stars">★★★★★ <span style="font-size:10px;color:var(--muted);letter-spacing:0">on Google</span></div>
+    <p>${(r.text||'').slice(0,220)}${(r.text||'').length>220?'…':''}</p>
+    <div class="g-date">${r.date||''}</div></div>`).join('');
+}).catch(()=>{});
 document.getElementById('q').addEventListener('input',e=>{st.q=e.target.value.toLowerCase();render()});
 document.getElementById('fbrand').addEventListener('change',e=>{st.brand=e.target.value;render()});
 document.getElementById('ftype').addEventListener('change',e=>{st.type=e.target.value;render()});
