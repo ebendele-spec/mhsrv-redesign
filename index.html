@@ -392,6 +392,7 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
         <radialGradient id="moong" cx=".5" cy=".5" r=".5">
           <stop offset="0" stop-color="#EDF2F7" stop-opacity=".22"/><stop offset="1" stop-color="#EDF2F7" stop-opacity="0"/>
         </radialGradient>
+        <filter id="beamblur" x="-25%" y="-25%" width="150%" height="150%"><feGaussianBlur stdDeviation="5"/></filter>
         <linearGradient id="groundfade" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stop-color="#1D1420" stop-opacity="0"/><stop offset="1" stop-color="#1D1420" stop-opacity="1"/>
         </linearGradient>
@@ -417,28 +418,38 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
       <path d="M848 150 C 880 176, 1060 198, 980 240" stroke="#3A414B" stroke-width="3" fill="none"/>
       <path class="lane" d="M834 152 C 770 180, 852 204, 800 240" stroke="#F4C84A" stroke-width="4" fill="none" opacity=".85" stroke-linecap="round"/>
       <clipPath id="roadclip"><path d="M820 150 C 700 176, 820 200, 620 240 L 980 240 C 1060 198, 880 176, 848 150 Z"/></clipPath>
-      <g clip-path="url(#roadclip)">
-        <path class="beam" d="M700 202 L945 202 L862 150 L810 150 Z" fill="url(#poolg)"/>
-        <path class="beam" d="M745 200 L888 200 L849 152 L821 152 Z" fill="url(#poolg)" opacity=".8"/>
+      <g clip-path="url(#roadclip)" filter="url(#beamblur)">
+        <path class="beam" d="M778 204 L944 204 L858 150 L826 150 Z" fill="url(#poolg)"/>
+        <path class="beam" d="M806 202 L918 202 L852 152 L831 152 Z" fill="url(#poolg)" opacity=".8"/>
       </g>
-      <ellipse cx="806" cy="188" rx="40" ry="4.5" fill="#E23A2A" opacity=".16"/>
-      <g transform="translate(806,110) scale(.62)"><g class="rvbob">
-        <ellipse cx="0" cy="121" rx="55" ry="6" fill="#0E0A14" opacity=".55"/>
-        <rect x="-42" y="112" width="20" height="9" rx="2" fill="#14181D"/>
-        <rect x="22" y="112" width="20" height="9" rx="2" fill="#14181D"/>
-        <rect x="-48" y="0" width="96" height="114" rx="10" fill="#F2EFE8"/>
-        <rect x="-32" y="9" width="64" height="26" rx="5" fill="#1E2732"/>
-        <circle cx="-12" cy="4.5" r="2" fill="#D64533"/><circle cx="0" cy="4.5" r="2" fill="#D64533"/><circle cx="12" cy="4.5" r="2" fill="#D64533"/>
-        <path d="M36 8 v100 M43 8 v100" stroke="#C9C4B4" stroke-width="2.4"/>
-        <path d="M36 18 h7 M36 30 h7 M36 42 h7 M36 54 h7 M36 66 h7 M36 78 h7 M36 90 h7 M36 100 h7" stroke="#C9C4B4" stroke-width="2"/>
-        <path d="M-48 60 h96 v11 q-48 8 -96 0 z" fill="#C24E31"/>
-        <path d="M-48 71 q48 8 96 0 v7 q-48 7 -96 0 z" fill="#8A3A26"/>
-        <rect x="-8" y="90" width="16" height="11" rx="1.5" fill="#D8D4C8"/>
-        <rect x="-48" y="104" width="96" height="10" rx="2.5" fill="#2E3540"/>
-        <circle class="tail" cx="-40" cy="95" r="10" fill="#FF5A47" opacity=".4"/>
-        <circle class="tail" cx="40" cy="95" r="10" fill="#FF5A47" opacity=".4"/>
-        <rect x="-45" y="87" width="10" height="16" rx="2.5" fill="#E23A2A"/>
-        <rect x="35" y="87" width="10" height="16" rx="2.5" fill="#E23A2A"/>
+      <ellipse cx="858" cy="188" rx="40" ry="4.5" fill="#E23A2A" opacity=".16"/>
+      <g transform="translate(858,108) scale(.62)"><g class="rvbob">
+        <ellipse cx="0" cy="124" rx="56" ry="6" fill="#0E0A14" opacity=".55"/>
+        <rect x="-42" y="114" width="20" height="10" rx="2" fill="#14181D"/>
+        <rect x="22" y="114" width="20" height="10" rx="2" fill="#14181D"/>
+        <rect x="-40" y="120" width="16" height="6" rx="1" fill="#0E1116"/>
+        <rect x="24" y="120" width="16" height="6" rx="1" fill="#0E1116"/>
+        <rect x="-30" y="-4" width="14" height="7" rx="2" fill="#D8D4C8"/>
+        <rect x="6" y="-4" width="14" height="7" rx="2" fill="#D8D4C8"/>
+        <path d="M32 -1 a6 3.5 0 0 1 12 0 z" fill="#EDF2F7"/><rect x="37" y="-1" width="2" height="4" fill="#B9B4A6"/>
+        <rect x="-48" y="0" width="96" height="116" rx="10" fill="#F2EFE8"/>
+        <circle cx="-13" cy="5.5" r="2" fill="#D64533"/><circle cx="0" cy="5.5" r="2" fill="#D64533"/><circle cx="13" cy="5.5" r="2" fill="#D64533"/>
+        <rect x="-35" y="10" width="70" height="19" rx="4.5" fill="#1E2732"/>
+        <path d="M-48 40 C -18 33, 16 54, 48 38 L48 60 C 18 74, -16 52, -48 64 Z" fill="#4A5560" opacity=".92"/>
+        <path d="M-48 50 C -12 42, 18 64, 48 46 L48 53 C 18 70, -12 48, -48 57 Z" fill="#C24E31"/>
+        <path d="M-48 62 C -14 53, 20 76, 48 58 L48 80 C 16 92, -18 70, -48 84 Z" fill="#8A3A26"/>
+        <path d="M36 6 v100 M43 6 v100" stroke="#C9C4B4" stroke-width="2.4"/>
+        <path d="M36 16 h7 M36 28 h7 M36 40 h7 M36 52 h7 M36 64 h7 M36 76 h7 M36 88 h7 M36 98 h7" stroke="#C9C4B4" stroke-width="2"/>
+        <rect x="-11" y="90" width="22" height="12" rx="1.5" fill="#D8D4C8"/>
+        <text x="0" y="99.5" text-anchor="middle" font-family="Barlow, sans-serif" font-size="8" font-weight="700" fill="#4A5560">MHS</text>
+        <path d="M-26 106 h52 M-26 110 h52" stroke="#B9B4A6" stroke-width="1.6"/>
+        <rect x="-48" y="104" width="96" height="12" rx="2.5" fill="#2E3540"/>
+        <circle class="tail" cx="-41" cy="94" r="11" fill="#FF5A47" opacity=".4"/>
+        <circle class="tail" cx="41" cy="94" r="11" fill="#FF5A47" opacity=".4"/>
+        <rect x="-46" y="84" width="9" height="20" rx="2.5" fill="#E23A2A"/>
+        <rect x="37" y="84" width="9" height="20" rx="2.5" fill="#E23A2A"/>
+        <rect x="-46" y="86" width="9" height="4" rx="1.5" fill="#FFB13D"/>
+        <rect x="37" y="86" width="9" height="4" rx="1.5" fill="#FFB13D"/>
       </g></g>
       <rect y="186" width="1600" height="54" fill="url(#groundfade)"/>
     </svg></div>
