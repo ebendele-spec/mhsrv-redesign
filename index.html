@@ -135,6 +135,40 @@
   .results-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
   .results-bar b{font-size:14px}
   .results-bar select{font-family:inherit;font-size:13.5px;font-weight:600;border:1.5px solid var(--line);border-radius:99px;padding:7px 12px;background:#fff;color:var(--ink)}
+  .viewtoggle{display:flex;background:#fff;border:1.5px solid var(--line);border-radius:99px;padding:2px}
+  .vt{font-family:inherit;font-size:12.5px;font-weight:700;padding:6px 11px;border-radius:99px;color:var(--muted);white-space:nowrap}
+  .vt.on{background:var(--hwy-green);color:#fff}
+  .view-hint{font-size:12px;color:var(--muted);margin:-4px 0 10px}
+  /* ---------- data view ---------- */
+  .grid.dataview{grid-template-columns:1fr !important;gap:10px}
+  .rvd{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:132px 1fr;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+  @media(min-width:760px){.rvd{grid-template-columns:200px 1fr 230px}}
+  .rvd-img{position:relative;display:block;background:#E8ECE9}
+  @media(max-width:759px){.rvd-img{align-self:start}.rvd-img .badge{bottom:auto;top:6px}}
+  .rvd-img img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:3/2}
+  @media(min-width:760px){.rvd-img img{aspect-ratio:auto;min-height:100%}}
+  .rvd-img .badge{position:absolute;bottom:6px;left:6px;font-size:9.5px;padding:3px 7px}
+  .rvd-main{padding:10px 12px 12px;min-width:0}
+  .rvd-main .meta{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+  .rvd-main h3{font-size:15px;font-weight:700;line-height:1.25;margin:2px 0 6px}
+  .rvd-main h3 a{color:inherit;text-decoration:none}
+  .rvd-main h3 a:hover{color:var(--hwy-green);text-decoration:underline}
+  .rvd-specs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:2px 14px;font-size:12px;margin:0}
+  .rvd-specs div{display:flex;gap:5px;min-width:0;border-bottom:1px dashed #EEF1EE;padding:2.5px 0}
+  .rvd-specs dt{color:var(--muted);font-weight:600;flex:none}
+  .rvd-specs dd{margin:0;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rvd-price{padding:10px 12px 12px;border-top:1px dashed var(--line);display:flex;flex-direction:column;gap:2px;grid-column:1/-1}
+  @media(min-width:760px){.rvd-price{grid-column:auto;border-top:none;border-left:1px dashed var(--line)}}
+  .rvd-price .msrpline{font-size:11.5px;color:var(--muted)}
+  .rvd-price .msrpline s{font-weight:600}
+  .rvd-price .now{font-family:'Barlow Condensed';font-size:24px;font-weight:700;color:var(--hwy-green);line-height:1.05}
+  .rvd-price .saveline{font-size:11.5px;font-weight:700;color:#B4530A}
+  .rvd-price .mo2{font-size:11.5px;color:var(--muted)}
+  .rvd-price .hot2{font-size:11.5px;font-weight:700;color:#B02A1F}
+  .rvd-cta{display:flex;gap:6px;margin-top:auto;padding-top:8px}
+  .rvd-cta a{flex:1;text-align:center;font-size:12px;font-weight:700;padding:8px 0;border-radius:8px;text-decoration:none}
+  .rvd-cta .primary{background:var(--hwy-green);color:#fff}
+  .rvd-cta .ghost{border:1.5px solid var(--line);color:var(--ink)}
   .grid{display:grid;gap:16px}
   @media(min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}}
   .rv{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 8px rgba(0,0,0,.05)}
@@ -282,6 +316,7 @@
   .feat .f-off{font-size:11px;font-weight:700;color:#B4530A;background:#FDEBD7;padding:2px 6px;border-radius:5px;margin-left:6px;vertical-align:2px}
 </style>
 <script src="data.js"></script>
+<script src="specs.js"></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"AutoDealer","name":"Motor Home Specialist (MHSRV)","url":"https://mhsrv.com","telephone":"+1-800-335-6054","address":{"@type":"PostalAddress","streetAddress":"5411 South I-35W","addressLocality":"Alvarado","addressRegion":"TX","postalCode":"76009","addressCountry":"US"},"sameAs":["https://www.motorhomespecialistreviews.com/","https://www.youtube.com/user/mhsrv1"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"4571"}}
 </script>
@@ -529,13 +564,20 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
     <p class="sec-sub">Real units, real stock numbers, real prices — synced from MHSRV's feed.</p>
     <div class="results-bar" style="margin-top:10px">
       <b id="count"></b>
-      <select id="sort" aria-label="Sort results">
-        <option value="featured">Featured</option>
-        <option value="low">Price: low → high</option>
-        <option value="high">Price: high → low</option>
-        <option value="savings">Biggest savings</option>
-      </select>
+      <div style="display:flex;gap:8px;align-items:center">
+        <div class="viewtoggle" role="group" aria-label="Result layout">
+          <button id="vwVisual" class="vt on" aria-pressed="true" onclick="setView('visual')">🖼 Visual</button>
+          <button id="vwData" class="vt" aria-pressed="false" onclick="setView('data')">📊 Data</button>
+        </div>
+        <select id="sort" aria-label="Sort results">
+          <option value="featured">Featured</option>
+          <option value="low">Price: low → high</option>
+          <option value="high">Price: high → low</option>
+          <option value="savings">Biggest savings</option>
+        </select>
+      </div>
     </div>
+    <p class="view-hint" id="viewHint" hidden>📊 Data view — smaller photos, full specs &amp; pricing at a glance. Tap 🖼 Visual to switch back.</p>
     <div class="grid" id="grid"></div>
   </section>
 
@@ -834,7 +876,7 @@ const typeIcon=t=>ICONS[t.id];
 const lifeArt=s=>`<svg viewBox="0 0 400 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${LIFESCENES[s]}</svg>`;
 
 /* ============ STATE + RENDER ============ */
-const state={q:'',type:null,price:null,cond:'all',life:null,sort:'featured',page:1};
+const state={q:'',type:null,price:null,cond:'all',life:null,sort:'featured',page:1,view:'visual'};
 const $=id=>document.getElementById(id);
 const fmt=n=>'$'+n.toLocaleString();
 const monthly=p=>{const r=.0999/12,n=p>50000?240:180,L=p*.8;return Math.round(L*r/(1-Math.pow(1+r,-n)))};
@@ -891,6 +933,8 @@ function renderGrid(more){if(!more)state.page=1;
   if(state.sort==='savings')list.sort((a,b)=>(b.msrp-b.price)-(a.msrp-a.price));
   $('count').textContent=list.length+(list.length===1?' RV':' RVs');
   if(!list.length){$('grid').innerHTML=`<div class="empty"><b>No live units in this slice yet</b>Try widening your budget or clearing a filter — or call us, new arrivals land daily. </div>`;return;}
+  if(state.view==='data'){renderDataRows(list);return;}
+  $('grid').classList.remove('dataview');
   $('grid').innerHTML=list.slice(0,state.page*24).map(r=>{
     const save=r.msrp?r.msrp-r.price:0;
     const pct=r.msrp?Math.round(save/r.msrp*100):0;
@@ -933,6 +977,46 @@ function renderGrid(more){if(!more)state.page=1;
   document.querySelectorAll('.rv-img[data-u]').forEach(el=>{
     el.addEventListener('click',e=>{if(e.target.closest('.save,.cdots,.cnav'))return;location.href=el.dataset.u});
   });
+}
+/* ---- Data view: compact photo, expanded specs for spec-first shoppers ---- */
+function setView(v){
+  state.view=v;try{localStorage.setItem('mhsrv-view',v)}catch(e){}
+  const bv=document.getElementById('vwVisual'),bd=document.getElementById('vwData'),h=document.getElementById('viewHint');
+  if(bv){bv.classList.toggle('on',v==='visual');bv.setAttribute('aria-pressed',v==='visual')}
+  if(bd){bd.classList.toggle('on',v==='data');bd.setAttribute('aria-pressed',v==='data')}
+  if(h)h.hidden=v!=='data';
+  renderGrid();
+}
+function renderDataRows(list){
+  const g=$('grid');g.classList.add('dataview');
+  g.innerHTML=list.slice(0,state.page*24).map(r=>{
+    const save=r.msrp?r.msrp-r.price:0;
+    const pct=r.msrp?Math.round(save/r.msrp*100):0;
+    const sp=(typeof SPECS!=='undefined'&&SPECS[r.stk])||{};
+    const tname=TYPES.find(t=>t.id===r.type).name;
+    const rows=[['Stock','#'+r.stk],['Condition',r.cond==='new'?'New':'Pre-owned'],['Type',tname],['Floorplan',r.model],['Length',r.len]];
+    if(r.sleeps)rows.push(['Sleeps',r.sleeps]);
+    if(r.slides)rows.push(['Slides',r.slides]);
+    ['Fuel','Engine','Chassis','Exterior','Interior','Mileage','GVWR'].forEach(k=>{if(sp[k])rows.push([k,sp[k]])});
+    rows.push(['Photos',r.photos]);
+    const badge=r.pend?['#B4530A','Sale pending']:r.onord?['linear-gradient(135deg,#E8873F,#C24E31)','On order']:r.coming?['linear-gradient(135deg,#E8873F,#C24E31)','Coming soon']:r.arrv?['#2F7D4C','Just arrived']:r.cond==='used'?['#fff','Pre-owned']:null;
+    return `<article class="rvd">
+      <a class="rvd-img" href="units/${r.stk}.html">${r.img?`<img loading="lazy" src="${r.img}" alt="${r.y} ${r.brand} ${r.model}" onerror="this.style.opacity=.15">`:''}${badge?`<span class="badge" style="background:${badge[0]};color:${badge[0]==='#fff'?'var(--asphalt)':'#fff'}">${badge[1]}</span>`:''}</a>
+      <div class="rvd-main">
+        <div class="meta">${r.y} ${r.cond==='new'?'New':'Pre-owned'} · ${tname}</div>
+        <h3><a href="units/${r.stk}.html">${r.brand} ${r.model}</a></h3>
+        <dl class="rvd-specs">${rows.map(([k,v])=>`<div><dt>${k}:</dt><dd title="${String(v).replace(/"/g,'&quot;')}">${v}</dd></div>`).join('')}</dl>
+      </div>
+      <div class="rvd-price">
+        ${r.msrp?`<span class="msrpline">M.S.R.P. <s>$${r.msrp.toLocaleString()}</s></span>`:`<span class="msrpline">Pre-owned · priced to move</span>`}
+        <span class="now">${r.price?fmt(r.price):'Arriving soon'}</span>
+        ${save>0?`<span class="saveline">Save ${fmt(save)} · ${pct}% off</span>`:''}
+        ${r.price?`<span class="mo2">Est. ${fmt(monthly(r.price))}/mo w.a.c.*</span>`:''}
+        ${r.vw>=70?`<span class="hot2">🔥 ${r.vw} viewed today</span>`:''}
+        <div class="rvd-cta"><a class="primary" href="units/${r.stk}.html">View details</a><a class="ghost" href="tel:8003356054">Call</a></div>
+      </div>
+    </article>`;
+  }).join('')+(list.length>state.page*24?`<button class="loadmore" onclick="state.page++;renderGrid(true)">Load 24 more · ${(list.length-state.page*24).toLocaleString()} remaining</button>`:'');
 }
 /* ---- desktop gallery interactions: one-photo wheel steps + mouse drag ---- */
 function stripStep(s,d){const i=Math.round(s.scrollLeft/s.clientWidth);const n=Math.max(0,Math.min(s.children.length-1,i+d));s.scrollTo({left:n*s.clientWidth,behavior:'smooth'})}
@@ -1007,6 +1091,11 @@ const qp=new URLSearchParams(location.search);
 if(qp.get('cond')){state.cond=qp.get('cond');document.querySelectorAll('#condChips .chip').forEach(c=>c.classList.toggle('on',c.dataset.cond===state.cond));}
 if(qp.get('type'))state.type=qp.get('type');
 if(qp.get('brand')){state.q=qp.get('brand').toLowerCase();const qi=document.getElementById('q');if(qi)qi.value=qp.get('brand');}
+try{const sv=qp.get('view')||localStorage.getItem('mhsrv-view');if(sv==='data')state.view='data';}catch(e){}
+if(state.view==='data'){const bv=document.getElementById('vwVisual'),bd=document.getElementById('vwData'),h=document.getElementById('viewHint');
+  if(bv){bv.classList.remove('on');bv.setAttribute('aria-pressed','false')}
+  if(bd){bd.classList.add('on');bd.setAttribute('aria-pressed','true')}
+  if(h)h.hidden=false;}
 renderLife();renderTypes();renderPrices();renderFeatured();renderGrid();
 </script>
 </body>
