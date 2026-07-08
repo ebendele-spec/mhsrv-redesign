@@ -46,6 +46,7 @@
   .hero h1{font-family:'Barlow Condensed';font-size:clamp(32px,8vw,46px);font-weight:700;line-height:1.0;text-transform:uppercase;letter-spacing:.015em;text-shadow:0 2px 12px rgba(0,0,0,.45)}
   .hero h1 span{color:var(--sign-yellow)}
   .hero .sub{margin-top:8px;font-size:14.5px;font-weight:500;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+  .hero .tagline{margin-top:7px;font-family:'Barlow Condensed';font-size:clamp(17px,4.6vw,23px);font-weight:700;line-height:1.15;color:var(--sign-yellow);text-transform:uppercase;letter-spacing:.035em;text-shadow:0 1px 10px rgba(0,0,0,.5)}
   .searchbox{margin-top:-30px;position:relative;background:#fff;border-radius:var(--radius);display:flex;align-items:center;padding:4px 4px 4px 14px;box-shadow:0 8px 28px rgba(0,0,0,.4)}
   @media(min-width:760px){.searchbox{max-width:560px}}
   .searchbox svg{flex:none;color:var(--muted)}
@@ -60,7 +61,18 @@
   @keyframes twink{0%,100%{opacity:.9}50%{opacity:.25}}
   .star{animation:twink 3.2s infinite}
   .star:nth-child(2n){animation-delay:1.1s}.star:nth-child(3n){animation-delay:2s}
-  @media(prefers-reduced-motion:reduce){.fire,.star{animation:none}}
+  @keyframes lane{to{stroke-dashoffset:-96}}
+  .lane{stroke-dasharray:26 22;animation:lane 1.5s linear infinite}
+  @keyframes drift{to{transform:translateX(-110px)}}
+  .cloud{animation:drift 38s linear infinite alternate}
+  .cloud2{animation:drift 52s linear infinite alternate-reverse}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(1.7px)}}
+  .rvbob{animation:bob 1.15s ease-in-out infinite}
+  @keyframes beamp{0%,100%{opacity:.55}50%{opacity:.75}}
+  .beam{animation:beamp 3.4s ease-in-out infinite}
+  @keyframes tailp{0%,100%{opacity:.4}50%{opacity:.7}}
+  .tail{animation:tailp 2.6s ease-in-out infinite}
+  @media(prefers-reduced-motion:reduce){.fire,.star,.lane,.cloud,.cloud2,.rvbob,.beam,.tail{animation:none}}
 
   /* ---------- trust strip ---------- */
   .trust{background:var(--asphalt);color:#fff}
@@ -355,57 +367,60 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
 <!-- HERO: illustrated Texas dusk campsite -->
 <div class="hero">
   <div class="wrap hero-top">
-    <h1>Your next<br>campfire <span>starts here.</span></h1>
-    <p class="sub">1,000+ new &amp; used RVs · Alvarado, TX — 20 min south of Fort Worth</p>
+    <h1>Your next<br>adventure <span>starts here.</span></h1>
+    <p class="sub">1,200+ new &amp; used RVs in stock</p>
+    <p class="tagline">The World's Lowest Prices From The Industry's Most Reputable Dealer!</p>
   </div>
   <div class="scene2" aria-hidden="true"><svg viewBox="0 0 1600 240" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#1B1533"/><stop offset=".22" stop-color="#1B1533"/>
-          <stop offset=".55" stop-color="#4A2A55"/><stop offset=".82" stop-color="#B5533C"/><stop offset="1" stop-color="#E8873F"/>
+          <stop offset="0" stop-color="#1B1533"/><stop offset=".38" stop-color="#3A2452"/>
+          <stop offset=".72" stop-color="#B5533C"/><stop offset="1" stop-color="#E8873F"/>
         </linearGradient>
         <radialGradient id="sun" cx=".5" cy=".5" r=".5">
           <stop offset="0" stop-color="#FFD9A0"/><stop offset="1" stop-color="#FFD9A0" stop-opacity="0"/>
         </radialGradient>
-        <radialGradient id="fireGlow" cx=".5" cy=".5" r=".5">
-          <stop offset="0" stop-color="#FFB13D" stop-opacity=".8"/><stop offset="1" stop-color="#FFB13D" stop-opacity="0"/>
-        </radialGradient>
+        <linearGradient id="poolg" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="#FFE9A8" stop-opacity=".55"/><stop offset="1" stop-color="#FFE9A8" stop-opacity="0"/>
+        </linearGradient>
       </defs>
       <rect width="1600" height="240" fill="url(#sky)"/>
-      <circle class="star" cx="70" cy="62" r="1.4" fill="#fff"/><circle class="star" cx="150" cy="84" r="1" fill="#fff"/><circle class="star" cx="240" cy="56" r="1" fill="#fff"/><circle class="star" cx="330" cy="78" r="1.4" fill="#fff"/><circle class="star" cx="430" cy="62" r="1" fill="#fff"/><circle class="star" cx="520" cy="88" r="1" fill="#fff"/><circle class="star" cx="640" cy="58" r="1.4" fill="#fff"/><circle class="star" cx="700" cy="80" r="1" fill="#fff"/><circle class="star" cx="780" cy="64" r="1" fill="#fff"/><circle class="star" cx="905" cy="55" r="1.4" fill="#fff"/><circle class="star" cx="1040" cy="72" r="1" fill="#fff"/><circle class="star" cx="1130" cy="58" r="1" fill="#fff"/><circle class="star" cx="1240" cy="82" r="1.4" fill="#fff"/><circle class="star" cx="1330" cy="60" r="1" fill="#fff"/><circle class="star" cx="1440" cy="78" r="1" fill="#fff"/><circle class="star" cx="1540" cy="64" r="1.4" fill="#fff"/>
-      <circle cx="948" cy="112" r="56" fill="url(#sun)"/>
-      <circle cx="948" cy="112" r="16" fill="#FFE0AE"/>
-      <path d="M0 152 L88 152 102 128 166 128 180 152 552 152 566 132 632 132 646 152 1176 152 1192 126 1262 126 1276 152 1600 152 V240 H0 Z" fill="#3A2334" opacity=".85"/>
-      <path d="M0 172 L398 172 416 148 484 148 500 172 1064 172 1080 150 1150 150 1164 172 1600 172 V240 H0 Z" fill="#2A1A2C"/>
-      <rect y="186" width="1600" height="54" fill="#1D1420"/>
-      <path d="M204 186 v-16 M204 176 q-7 0 -7 -7 M204 179 q8 0 8 -8" stroke="#241730" stroke-width="4" stroke-linecap="round" fill="none"/>
-      <path d="M1338 186 l16 -24 16 24z" fill="#241730"/><path d="M1346 186 l8 -12 8 12z" fill="#181022"/>
-      <g transform="translate(582,1) scale(0.78)">
-        <rect x="36" y="196" width="176" height="58" rx="9" fill="#2E3540"/>
-        <path d="M212 204 h20 q10 0 13 10 l5 22 v18 h-38z" fill="#2E3540"/>
-        <rect x="36" y="222" width="212" height="8" fill="#C24E31"/>
-        <path d="M36 230 q90 12 212 0 v6 q-110 10 -212 0z" fill="#8A3A26"/>
-        <rect x="48" y="204" width="26" height="14" rx="2" fill="#FFC96B"/>
-        <rect x="82" y="204" width="26" height="14" rx="2" fill="#FFC96B"/>
-        <rect x="116" y="204" width="26" height="14" rx="2" fill="#FFC96B"/>
-        <rect x="152" y="204" width="20" height="30" rx="2" fill="#FFB84D"/>
-        <rect x="216" y="208" width="24" height="16" rx="2" fill="#95B4C4" opacity=".9"/>
-        <circle cx="84" cy="256" r="12" fill="#11141A"/><circle cx="84" cy="256" r="5" fill="#5A6470"/>
-        <circle cx="196" cy="256" r="12" fill="#11141A"/><circle cx="196" cy="256" r="5" fill="#5A6470"/>
-        <!-- awning + string lights -->
-        <path d="M36 196 L-6 214" stroke="#C24E31" stroke-width="3"/>
-        <path d="M60 196 Q120 210 180 196" stroke="#FFD98C" stroke-width="1" fill="none"/>
-        <circle cx="80" cy="201" r="1.8" fill="#FFE3A0"/><circle cx="104" cy="204" r="1.8" fill="#FFE3A0"/>
-        <circle cx="128" cy="204" r="1.8" fill="#FFE3A0"/><circle cx="152" cy="201" r="1.8" fill="#FFE3A0"/>
-      </g>
-      <g transform="translate(642,0) scale(0.78)"><!-- campfire -->
-      <circle class="fire" cx="292" cy="262" r="30" fill="url(#fireGlow)"/>
-      <path class="fire" d="M292 268 q-7-8 -2-16 q2 5 5 6 q-2-8 4-13 q1 7 5 10 q4 4 1 10 q-4 7 -13 3z" fill="#FFA53B"/>
-      <path d="M282 272 l20 0" stroke="#3A2A20" stroke-width="4" stroke-linecap="round"/>
-      <!-- camp chairs -->
-      <path d="M320 254 l4 14 M332 254 l-4 14 M319 258 h14" stroke="#C24E31" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M258 256 l4 12 M268 256 l-4 12 M257 260 h12" stroke="#4E7A66" stroke-width="2.5" stroke-linecap="round"/>
-    </g>
+      <circle class="star" cx="120" cy="46" r="1.3" fill="#fff"/><circle class="star" cx="300" cy="70" r="1" fill="#fff"/><circle class="star" cx="470" cy="38" r="1.2" fill="#fff"/><circle class="star" cx="640" cy="58" r="1" fill="#fff"/><circle class="star" cx="775" cy="34" r="1.3" fill="#fff"/><circle class="star" cx="905" cy="52" r="1" fill="#fff"/><circle class="star" cx="1060" cy="40" r="1.2" fill="#fff"/><circle class="star" cx="1240" cy="64" r="1" fill="#fff"/><circle class="star" cx="1420" cy="44" r="1.3" fill="#fff"/><circle class="star" cx="1545" cy="72" r="1" fill="#fff"/>
+      <circle cx="940" cy="108" r="52" fill="url(#sun)"/>
+      <circle cx="940" cy="108" r="15" fill="#FFE0AE"/>
+      <g><g class="cloud" opacity=".16" fill="#fff"><ellipse cx="700" cy="52" rx="58" ry="10"/><ellipse cx="742" cy="46" rx="34" ry="8"/></g></g>
+      <g><g class="cloud2" opacity=".12" fill="#fff"><ellipse cx="1080" cy="70" rx="70" ry="11"/><ellipse cx="1130" cy="63" rx="38" ry="8"/></g></g>
+      <path d="M0 152 L130 94 L250 152 L345 114 L475 152 L600 84 L755 152 L878 102 L1005 152 L1145 88 L1295 152 L1408 118 L1600 152 V240 H0 Z" fill="#33204A" opacity=".92"/>
+      <path d="M600 96 L620 118 L600 112 L585 120 Z M1145 100 L1163 120 L1146 114 L1131 122 Z" fill="#E8B98F" opacity=".35"/>
+      <path d="M0 174 L190 130 L405 174 L565 142 L830 174 L1048 138 L1268 174 L1452 150 L1600 174 V240 H0 Z" fill="#241732"/>
+      <rect y="196" width="1600" height="44" fill="#1D1420"/>
+      <path d="M40 240 l17 -27 17 27z M74 240 l13 -20 13 20z M1490 240 l16 -25 16 25z M1524 240 l12 -18 12 18z" fill="#161022"/>
+      <path d="M820 150 C 700 176, 820 200, 620 240 L 980 240 C 1060 198, 880 176, 848 150 Z" fill="#262B33"/>
+      <path d="M820 150 C 700 176, 820 200, 620 240" stroke="#3A414B" stroke-width="3" fill="none"/>
+      <path d="M848 150 C 880 176, 1060 198, 980 240" stroke="#3A414B" stroke-width="3" fill="none"/>
+      <path class="lane" d="M834 152 C 770 180, 852 204, 800 240" stroke="#F4C84A" stroke-width="4" fill="none" opacity=".85" stroke-linecap="round"/>
+      <path class="beam" d="M779 178 L738 156 L802 151 L790 170 Z" fill="url(#poolg)"/>
+      <path class="beam" d="M833 178 L892 158 L858 151 L824 170 Z" fill="url(#poolg)"/>
+      <path class="beam" d="M783 172 L806 151 L829 172 Z" fill="url(#poolg)" opacity=".7"/>
+      <ellipse cx="806" cy="188" rx="40" ry="4.5" fill="#E23A2A" opacity=".16"/>
+      <g transform="translate(806,110) scale(.62)"><g class="rvbob">
+        <ellipse cx="0" cy="121" rx="55" ry="6" fill="#0E0A14" opacity=".55"/>
+        <rect x="-42" y="112" width="20" height="9" rx="2" fill="#14181D"/>
+        <rect x="22" y="112" width="20" height="9" rx="2" fill="#14181D"/>
+        <rect x="-48" y="0" width="96" height="114" rx="10" fill="#F2EFE8"/>
+        <rect x="-32" y="9" width="64" height="26" rx="5" fill="#1E2732"/>
+        <circle cx="-12" cy="4.5" r="2" fill="#D64533"/><circle cx="0" cy="4.5" r="2" fill="#D64533"/><circle cx="12" cy="4.5" r="2" fill="#D64533"/>
+        <path d="M36 8 v100 M43 8 v100" stroke="#C9C4B4" stroke-width="2.4"/>
+        <path d="M36 18 h7 M36 30 h7 M36 42 h7 M36 54 h7 M36 66 h7 M36 78 h7 M36 90 h7 M36 100 h7" stroke="#C9C4B4" stroke-width="2"/>
+        <path d="M-48 60 h96 v11 q-48 8 -96 0 z" fill="#C24E31"/>
+        <path d="M-48 71 q48 8 96 0 v7 q-48 7 -96 0 z" fill="#8A3A26"/>
+        <rect x="-8" y="90" width="16" height="11" rx="1.5" fill="#D8D4C8"/>
+        <rect x="-48" y="104" width="96" height="10" rx="2.5" fill="#2E3540"/>
+        <circle class="tail" cx="-40" cy="95" r="10" fill="#FF5A47" opacity=".4"/>
+        <circle class="tail" cx="40" cy="95" r="10" fill="#FF5A47" opacity=".4"/>
+        <rect x="-45" y="87" width="10" height="16" rx="2.5" fill="#E23A2A"/>
+        <rect x="35" y="87" width="10" height="16" rx="2.5" fill="#E23A2A"/>
+      </g></g>
     </svg></div>
   <div class="hero-bottom-band"><div class="wrap hero-bottom">
     <div class="searchbox">
