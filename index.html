@@ -58,6 +58,21 @@
   .searchbox svg{flex:none;color:var(--muted)}
   .searchbox input{flex:1;border:none;outline:none;font-size:16px;padding:12px 10px;font-family:inherit;color:var(--ink);background:transparent;min-width:0}
   .searchbox button{background:var(--asphalt);color:#fff;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px}
+  .sugg{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;border-radius:12px;box-shadow:0 12px 34px rgba(0,0,0,.35);overflow:hidden;z-index:40;max-height:min(420px,60vh);overflow-y:auto}
+  .sg{display:flex;align-items:center;gap:10px;width:100%;padding:10px 13px;font-size:14px;text-align:left;color:var(--ink);border-bottom:1px solid #F2F4F2;cursor:pointer;background:#fff;font-family:inherit;text-decoration:none}
+  .sg:last-child{border-bottom:none}
+  .sg:hover,.sg.sel{background:#EFF4FB}
+  .sg .si{flex:none;width:20px;text-align:center;color:var(--muted)}
+  .sg img{flex:none;width:52px;height:35px;object-fit:cover;border-radius:6px;background:#E8ECE9}
+  .sg .st{min-width:0;flex:1}
+  .sg .st b{display:block;font-size:13.5px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sg .st small{color:var(--muted);font-size:11.5px}
+  .sg .sp{flex:none;font-family:'Barlow Condensed';font-weight:700;color:var(--hwy-green);font-size:15px}
+  .sg mark{background:none;color:var(--hwy-green);font-weight:700}
+  .smartbar{display:flex;flex-wrap:wrap;gap:7px;align-items:center;background:#ECF1FA;border:1px solid #D8E2F0;border-radius:11px;padding:9px 11px;margin-bottom:12px;font-size:12.5px}
+  .smartbar .sb-i{font-weight:700;color:var(--hwy-green)}
+  .smartbar .chip2{background:#fff;border:1px solid #C9D6EA;border-radius:99px;padding:3px 10px;font-weight:600}
+  .smartbar .sb-x{margin-left:auto;background:none;border:none;color:var(--hwy-green);font-weight:700;font-size:12.5px;cursor:pointer;font-family:inherit}
   .chips{display:flex;gap:8px;margin-top:12px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
   .chips::-webkit-scrollbar{display:none}
   .chip{flex:none;border:1.5px solid rgba(255,255,255,.5);background:rgba(0,0,0,.25);color:#fff;font-size:13.5px;font-weight:600;padding:7px 14px;border-radius:99px;backdrop-filter:blur(4px);transition:.15s}
@@ -325,6 +340,7 @@
 </style>
 <script src="data.js"></script>
 <script src="specs.js"></script>
+<script src="search-index.js"></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"AutoDealer","name":"Motor Home Specialist (MHSRV)","url":"https://mhsrv.com","telephone":"+1-800-335-6054","address":{"@type":"PostalAddress","streetAddress":"5411 South I-35W","addressLocality":"Alvarado","addressRegion":"TX","postalCode":"76009","addressCountry":"US"},"sameAs":["https://www.motorhomespecialistreviews.com/","https://www.youtube.com/user/mhsrv1"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"4571"}}
 </script>
@@ -497,10 +513,11 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
       <rect y="186" width="1600" height="54" fill="url(#groundfade)"/>
     </svg></div>
   <div class="hero-bottom-band"><div class="wrap hero-bottom">
-    <div class="searchbox">
+    <div class="searchbox" id="searchbox">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-      <input id="q" type="search" placeholder="Search brand, model, or type…" aria-label="Search inventory">
-      <button onclick="document.getElementById('inventory').scrollIntoView()">Search</button>
+      <input id="q" type="search" placeholder="Try “new diesel pusher under 300k” or a stock #…" aria-label="Search inventory" autocomplete="off">
+      <button id="qgo">Search</button>
+      <div class="sugg" id="sugg" hidden></div>
     </div>
     <div class="chips" id="condChips">
       <button class="chip on" data-cond="all">All</button>
@@ -586,6 +603,7 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
       </div>
     </div>
     <p class="view-hint" id="viewHint" hidden>📊 Data view — smaller photos, full specs &amp; pricing at a glance. Tap 🖼 Visual to switch back.</p>
+    <div class="smartbar" id="smartbar" hidden></div>
     <div class="grid" id="grid"></div>
   </section>
 
@@ -922,7 +940,119 @@ document.querySelectorAll('#condChips .chip').forEach(c=>c.onclick=()=>{
   c.classList.add('on');state.cond=c.dataset.cond;renderGrid();
   $('inventory').scrollIntoView({behavior:'smooth'});
 });
-$('q').addEventListener('input',e=>{state.q=e.target.value.toLowerCase();renderGrid();});
+/* ================= SMART SEARCH ================= */
+function lev(a,b){if(Math.abs(a.length-b.length)>2)return 9;const m=[];for(let i=0;i<=b.length;i++)m[i]=[i];for(let j=0;j<=a.length;j++)m[0][j]=j;
+for(let i=1;i<=b.length;i++)for(let j=1;j<=a.length;j++)m[i][j]=b[i-1]===a[j-1]?m[i-1][j-1]:Math.min(m[i-1][j-1],m[i][j-1],m[i-1][j])+1;
+return m[b.length][a.length];}
+const VWORDS=(()=>{const w=new Set();(typeof SIDX!=='undefined'?SIDX.VOCAB:[]).forEach(v=>v.toLowerCase().split(/\s+/).forEach(t=>{if(t.length>2)w.add(t)}));
+['diesel','pusher','class','super','fifth','wheel','toy','hauler','travel','trailer','sprinter','bunk','bunkhouse','gas','used','new','under','sleeps','people','month','down','popular','selling','motorhome','motorhomes'].forEach(t=>w.add(t));return[...w];})();
+function fixTok(t){if(t.length<4||/^\d/.test(t))return t;if(VWORDS.includes(t))return t;
+let best=t,bd=t.length>5?3:2;for(const w of VWORDS){if(w[0]!==t[0])continue;const d=lev(t,w);if(d<bd){bd=d;best=w}}return best;}
+const TYPESYN=[[/diesel pushers?|pushers?/,'diesel'],[/class a gas|gas class a/,'classa'],[/class a\b/,'classa'],[/class b\+|b plus/,'classc'],[/class cs?\b|class c's/,'classc'],[/class b\b|\bvans?\b|sprinters?/,'classb'],[/super c/,'superc'],[/(fifth|5th) wheels?/,'fifth'],[/toy haulers?/,'toy'],[/travel trailers?/,'tt']];
+function num(x){x=String(x).replace(/[$,]/g,'');let v=parseFloat(x);if(/k$/i.test(x))v*=1000;if(/m$/i.test(x))v*=1e6;return v;}
+function smartParse(raw){
+  let q=' '+raw.toLowerCase().replace(/[’']/g,'').replace(/\s+/g,' ').trim()+' ';
+  q=q.split(' ').map(fixTok).join(' ');
+  const t={chips:[]};
+  let m;
+  if(m=q.match(/\$?([\d,.]+k?)\s*(?:\/|per |a |each )?\s*mo(?:nth)?/)){
+    const mo=num(m[1]);let down=0;
+    const dm=q.match(/(?:with |w\/ ?)?\$?([\d,.]+k?)\s*(?:down|dp)/);if(dm)down=num(dm[1]);
+    const r=.0999/12,n=240,L=mo/(r/(1-Math.pow(1+r,-n)));
+    t.maxPrice=Math.round(L+down);
+    t.chips.push('≤ $'+mo.toLocaleString()+'/mo'+(down?' with $'+down.toLocaleString()+' down':'')+' ≈ ≤$'+t.maxPrice.toLocaleString());
+    q=q.replace(m[0],' ');if(dm)q=q.replace(dm[0],' ');
+  }
+  if(m=q.match(/(?:under|below|less than|max|up to) \$?([\d,.]+k?m?)/)){t.maxPrice=Math.min(t.maxPrice||9e9,num(m[1]));t.chips.push('under $'+num(m[1]).toLocaleString());q=q.replace(m[0],' ');}
+  if(m=q.match(/(?:over|above|from|at least) \$?([\d,.]+k?m?)(?! ?hp)/)){const v=num(m[1]);if(v>5000){t.minPrice=v;t.chips.push('over $'+v.toLocaleString());q=q.replace(m[0],' ');}}
+  if(m=q.match(/(\d{3,4}) ?hp( or (up|more|higher)| ?\+| plus| and up)?/)){t.minHp=+m[1];t.chips.push(m[1]+'hp+');q=q.replace(m[0],' ');}
+  if(m=q.match(/sleeps? (\d+)|(\d+) (?:people|persons)/)){t.sleeps=+(m[1]||m[2]);t.chips.push('sleeps '+t.sleeps+'+');q=q.replace(m[0],' ');}
+  if(/\b(used|pre ?owned)\b/.test(q)){t.cond='used';t.chips.push('Pre-owned');q=q.replace(/\b(used|pre ?owned)\b/,' ');}
+  else if(/\bnew\b/.test(q)&&!/whats new|new arrivals/.test(q)){t.cond='new';t.chips.push('New');q=q.replace(/\bnew\b/,' ');}
+  for(const[rx,id]of TYPESYN){if(rx.test(q)){t.type=id;t.chips.push(TYPES.find(x=>x.id===id).name);q=q.replace(rx,' ');break;}}
+  if(/\b(popular|trending|hot|hottest|best sell\w*|top sell\w*|most viewed)\b/.test(q)){t.sortPop=true;t.chips.push('🔥 most popular right now');q=q.replace(/\b(what (are|is)|the|right now|most|best|top|popular|trending|hottest?|sell\w*|viewed|at mhs\w*|rvs?|motorhomes?)\b/g,' ');}
+  t.cols=SIDX.COLORS.filter(c=>new RegExp('\\b'+c+'\\b').test(q));
+  if(t.cols.length){t.chips.push(t.cols.join('/')+' exterior');t.cols.forEach(c=>q=q.replace(new RegExp('\\b'+c+'\\b'),' '));q=q.replace(/\b(paint( jobs?)?|exterior|color)\b/g,' ');}
+  t.feats=[];SIDX.FEATS.forEach((f,i)=>{const base=f.split(' ')[0];const rx=new RegExp('\\b'+base+(base==='bunk'?'(house|s| beds?| models?)?':'')+'\\b');
+    if(rx.test(q)&&(f.includes(' ')?q.includes(f)||base==='bunk':true)){t.feats.push(i);t.chips.push(f);q=q.replace(rx,' ');}});
+  q=q.replace(/\b(im|i|am|looking|for|show|me|find|a|an|the|with|that|can|under|over|rv|rvs|motorhome|motorhomes|unit|units|please|what|whats|any|people|persons|person|family|guests|sleep|sleeps|beds?|paint|jobs?|exterior|color|gas|diesel|or|up|and|in|of|to|on|at)\b/g,' ').replace(/[^a-z0-9. ]/g,' ').replace(/\s+/g,' ').trim();
+  t.text=q;if(q)t.chips.push('“'+q+'”');
+  return t;
+}
+function smartSearch(raw){
+  if(!raw.trim())return;
+  const t=smartParse(raw);
+  state.cond=t.cond||'all';
+  document.querySelectorAll('#condChips .chip').forEach(c=>c.classList.toggle('on',c.dataset.cond===(t.cond||'all')));
+  state.type=t.type||null;state.life=null;state.price=null;
+  state.q=t.text||'';
+  state.smart=t;
+  renderTypes();renderLife();renderPrices();renderGrid();
+  /* graceful degradation: relax the softest constraints until something matches */
+  const relaxed=[];
+  const order=[['text',()=>{state.q='';t.text=''}],['sleeps',()=>delete t.sleeps],['cols',()=>t.cols=[]],['feats',()=>t.feats=[]],['minHp',()=>delete t.minHp]];
+  for(const[key,drop]of order){
+    if(parseInt($('count').textContent)>0)break;
+    if((key==='text'&&t.text)||(key==='sleeps'&&t.sleeps)||(key==='cols'&&t.cols.length)||(key==='feats'&&t.feats.length)||(key==='minHp'&&t.minHp)){
+      drop();relaxed.push(key==='text'?'keyword':key==='minHp'?'horsepower':key==='cols'?'color':key);renderGrid();
+    }
+  }
+  if(relaxed.length)t.chips.push('⚠ limited data — relaxed: '+relaxed.join(', '));
+  const bar=document.getElementById('smartbar');
+  bar.hidden=false;
+  bar.innerHTML='<span class="sb-i">🔎 I looked for:</span> '+t.chips.map(c=>'<span class="chip2">'+c+'</span>').join('')+'<button class="sb-x" onclick="clearSmart()">✕ Clear search</button>';
+  document.getElementById('inventory').scrollIntoView({behavior:'smooth'});
+  hideSugg();
+}
+function clearSmart(){state.smart=null;state.q='';$('q').value='';state.type=null;state.cond='all';
+  document.querySelectorAll('#condChips .chip').forEach(c=>c.classList.toggle('on',c.dataset.cond==='all'));
+  document.getElementById('smartbar').hidden=true;renderTypes();renderGrid();}
+/* ---------- autocomplete ---------- */
+const sugg=document.getElementById('sugg');let selIdx=-1;
+function hideSugg(){sugg.hidden=true;sugg.innerHTML='';selIdx=-1;}
+function unitRow(r){return `<a class="sg" href="units/${r.stk}.html">${r.img?`<img loading="lazy" src="${r.img}" alt="">`:'<span class="si">🚌</span>'}<span class="st"><b>${r.y} ${r.brand} ${r.model}</b><small>Stock #${r.stk} · ${r.len}</small></span><span class="sp">${r.price?fmt(r.price):''}</span></a>`;}
+function termRow(term,fill){return `<button class="sg" data-fill="${fill||term}"><span class="si">🔍</span><span class="st"><b>${term}</b></span></button>`;}
+function buildSugg(v){
+  v=v.trim();if(v.length<2){hideSugg();return;}
+  const lv=v.toLowerCase();let html='';
+  const stockish=/^(mhs|m|t|cm)?[\s#-]*\d{2,}[a-z0-9]*$/i.test(lv);
+  if(stockish){
+    const digits=lv.replace(/[^a-z0-9]/g,'');
+    const hits=RVS.filter(r=>r.stk.toLowerCase().includes(digits)).slice(0,7);
+    html=hits.map(unitRow).join('');
+  }else{
+    const toks=lv.split(/\s+/).map(fixTok);const fixed=toks.join(' ');
+    const units=RVS.filter(r=>{const h=(r.y+' '+r.brand+' '+r.model).toLowerCase();return toks.every(t=>h.includes(t));}).slice(0,4);
+    const terms=SIDX.VOCAB.filter(x=>{const xl=x.toLowerCase();return xl.startsWith(lv)||xl.startsWith(fixed)||xl.split(' ').some(w=>w.startsWith(toks[toks.length-1]))&&xl.includes(toks[0])}).slice(0,4);
+    const smartHints=[];
+    if(/diesel|pusher/.test(fixed))smartHints.push('new diesel pusher under $300k');
+    if(/class c/.test(fixed))smartHints.push('class c with bunk beds');
+    if(/popular|best|hot/.test(fixed))smartHints.push('most popular motorhomes right now');
+    html=terms.map(x=>termRow(x)).join('')+smartHints.map(x=>termRow('✨ '+x,x)).join('')+units.map(unitRow).join('');
+    if(fixed!==lv&&html)html=termRow('Did you mean “'+fixed+'”?',fixed)+html;
+  }
+  if(!html){hideSugg();return;}
+  sugg.innerHTML=html;sugg.hidden=false;selIdx=-1;
+  sugg.querySelectorAll('button.sg').forEach(b=>b.addEventListener('click',()=>{$('q').value=b.dataset.fill;smartSearch(b.dataset.fill);}));
+}
+let deb;
+$('q').addEventListener('input',e=>{
+  const v=e.target.value;
+  state.q=v.toLowerCase();if(!state.smart)renderGrid();
+  clearTimeout(deb);deb=setTimeout(()=>buildSugg(v),120);
+});
+$('q').addEventListener('keydown',e=>{
+  const items=[...sugg.querySelectorAll('.sg')];
+  if(e.key==='ArrowDown'&&items.length){e.preventDefault();selIdx=(selIdx+1)%items.length;items.forEach((x,i)=>x.classList.toggle('sel',i===selIdx));}
+  else if(e.key==='ArrowUp'&&items.length){e.preventDefault();selIdx=(selIdx-1+items.length)%items.length;items.forEach((x,i)=>x.classList.toggle('sel',i===selIdx));}
+  else if(e.key==='Enter'){e.preventDefault();
+    if(selIdx>=0&&items[selIdx]){items[selIdx].click?.();if(items[selIdx].href)location.href=items[selIdx].href;}
+    else smartSearch(e.target.value);}
+  else if(e.key==='Escape')hideSugg();
+});
+document.getElementById('qgo').addEventListener('click',()=>smartSearch($('q').value));
+document.addEventListener('click',e=>{if(!e.target.closest('#searchbox'))hideSugg();});
+
 $('sort').addEventListener('change',e=>{state.sort=e.target.value;renderGrid();});
 
 function renderGrid(more){if(!more)state.page=1;
@@ -933,9 +1063,18 @@ function renderGrid(more){if(!more)state.page=1;
     if(state.cond==='new'&&r.cond!=='new')return false;
     if(state.cond==='used'&&r.cond!=='used')return false;
     if(state.cond==='deal'&&!r.deal)return false;
-    if(state.q){const hay=(r.brand+' '+r.model+' '+r.y+' '+r.type).toLowerCase();if(!hay.includes(state.q))return false;}
+    if(state.q){const hay=(r.brand+' '+r.model+' '+r.y+' '+r.type+' '+r.stk).toLowerCase();if(!hay.includes(state.q))return false;}
+    if(state.smart){const t=state.smart,x=(typeof SIDX!=='undefined'&&SIDX.IDX[r.stk])||{};
+      if(t.maxPrice&&(!r.price||r.price>t.maxPrice))return false;
+      if(t.minPrice&&(!r.price||r.price<t.minPrice))return false;
+      if(t.minHp&&!(x.hp>=t.minHp))return false;
+      if(t.sleeps&&!(r.sleeps>=t.sleeps||(t.sleeps>=6&&x.f&&x.f.includes(0))))return false;
+      if(t.cols&&t.cols.length&&!(x.col&&t.cols.some(c=>x.col.includes(c))))return false;
+      if(t.feats&&t.feats.length&&!(x.f&&t.feats.every(fi=>x.f.includes(fi))))return false;
+    }
     return true;
   });
+  if(state.smart&&state.smart.sortPop)list.sort((a,b)=>b.vw-a.vw);
   if(state.sort==='featured')list.sort((a,b)=>(b.fs||0)-(a.fs||0));
   if(state.sort==='low')list.sort((a,b)=>a.price-b.price);
   if(state.sort==='high')list.sort((a,b)=>b.price-a.price);
