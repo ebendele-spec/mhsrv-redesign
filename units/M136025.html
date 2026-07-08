@@ -107,6 +107,23 @@
   .docs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
   .doc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:var(--ink);font-weight:600;font-size:13.5px;display:flex;align-items:center;gap:10px}
   .doc .ic{width:34px;height:34px;border-radius:9px;background:#FFF1CC;color:#B4530A;display:grid;place-items:center;font-size:16px;flex:none}
+  .fpdocs{display:grid;gap:10px}
+  @media(min-width:760px){.fpdocs{grid-template-columns:3fr 2fr;align-items:start}}
+  .fpcard{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .fp-toggle{width:100%;display:flex;align-items:center;gap:12px;padding:12px 14px;text-align:left;cursor:pointer;font-family:inherit}
+  .fp-art{flex:none;width:92px;color:#7A828C}
+  .fp-art svg{display:block;width:100%;height:auto}
+  .fp-toggle .fpt b{font-size:14.5px;display:block}
+  .fp-toggle .fpt .sub{font-size:12px;color:var(--muted);display:block;margin-top:2px}
+  .fp-chev{margin-left:auto;font-size:17px;color:var(--hwy-green);transition:transform .2s;flex:none}
+  .fpcard.open .fp-chev{transform:rotate(180deg)}
+  .fp-body{display:none;padding:0 14px 14px;font-size:13.5px;line-height:1.55;color:#3A4440}
+  .fpcard.open .fp-body{display:block}
+  .fp-body .fine{font-size:11px;color:var(--muted);margin-top:8px}
+  .fp-cta{display:inline-block;margin-top:10px;background:var(--hwy-green);color:#fff;font-weight:700;font-size:13px;padding:9px 14px;border-radius:9px;text-decoration:none}
+  .fpdocs .docs{grid-template-columns:1fr}
+  button.doc{width:100%;text-align:left;font-family:inherit;font-size:13.5px;cursor:pointer}
+  .doc .sub{display:block;font-size:11.5px;color:var(--muted);font-weight:500;margin-top:1px}
 
   /* perks */
   .perks{background:linear-gradient(155deg,#17376A 0%,#241B3E 62%,#38284F 100%);border-radius:var(--radius);color:#fff;padding:18px;position:relative;overflow:hidden}
@@ -332,6 +349,27 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
     <button class="unlock" onclick="openModal()">🔓 Unlock Your Price</button>
   </div>
   <section><h2>Highlights</h2><div class="hl"><span>One-piece windshield</span><span>Power awning w/ LED</span><span>Auto leveling jacks</span><span>Onan generator</span><span>Back-up monitor</span><span>Basement storage</span><span>Ducted A/C</span><span>King or queen bed</span></div></section>
+  <section><h2>Floorplan &amp; documents</h2>
+  <div class="fpdocs">
+    <div class="fpcard">
+      <button class="fp-toggle" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+        <span class="fp-art"><svg viewBox="0 0 120 60" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="6" width="112" height="48" rx="8"/><path d="M40 6 v20 h-14 M40 26 h-36 M78 54 v-22 h20 M78 32 h38 M56 6 v14 M56 54 v-16"/><rect x="88" y="12" width="20" height="12" rx="2"/><rect x="12" y="38" width="22" height="10" rx="2"/></svg></span>
+        <span class="fpt"><b>Geneva 24VS floorplan</b><span class="sub">25ft · 1 slide · sleeps 4 — tap for layout details</span></span>
+        <span class="fp-chev">⌄</span>
+      </button>
+      <div class="fp-body">
+        <p>The official 2026 Geneva floorplan drawing with full dimensions is in the factory brochure. Want the exact layout of this coach with options? Text us the stock number <b>#M136025</b> and we&#39;ll send it right over.</p>
+        <a class="fp-cta" href="https://library.rvusa.com/brochure/2026-Thor-Motor-Coach-Geneva.pdf" target="_blank" rel="noopener">📐 Open factory brochure</a>
+        <a class="fp-cta" style="background:#fff;color:var(--hwy-green);border:1.5px solid var(--hwy-green);margin-left:8px" href="sms:8177907771">💬 Text us</a>
+        <p class="fine">Manufacturer changes and/or options may alter the floorplan of the unit for sale.</p>
+      </div>
+    </div>
+    <div class="docs">
+      <button class="doc" onclick="openModal()"><div class="ic">📄</div><span>Window sticker &amp; M.S.R.P.<span class="sub">We&#39;ll send it to you in minutes — no charge</span></span></button>
+      <a class="doc" href="https://library.rvusa.com/brochure/2026-Thor-Motor-Coach-Geneva.pdf" target="_blank" rel="noopener"><div class="ic">📘</div><span>2026 Geneva factory brochure<span class="sub">Full specs &amp; floorplans (PDF)</span></span></a>
+      <a class="doc" href="https://www.youtube.com/@motorhomespecialist/search?query=2026%20Thor%20Motor%20Coach%20Geneva%2024VS" target="_blank" rel="noopener"><div class="ic">🎬</div><span>Video tour<span class="sub">Watch on MHSRV&#39;s YouTube channel</span></span></a>
+    </div>
+  </div></section>
   <section><h2>About this coach</h2>
   <details open><summary>Full description</summary><div class="d-body"><p>MSRP $171,486. The 2026 Thor Motor Coach Geneva 24VS for sale at Motor Home Specialist; the #1 Volume Selling Motor Home Dealership in the World.</p><p class="d-h">Features</p><ul><li>Holding Tanks W/ Heat Pads</li><li>Frameless Windows</li><li>Automatic Generator Start</li><li>Tankless Water Hearter</li><li>Second Auxiliary Battery</li></ul><p>More About This RVSince this coach features twin beds with a king bed conversion, you can travel with your friend or honey! Along with the versatile sleeping arrangements, you'll also enjoy the bedroom 32' LED Smart TV, and if you have any guests, they can sleep on the 66' sofa bed in the main living room. If you're needing additional sleeping space, just choose the optional power drop-down overhead bunk! A full kitchen includes a two burner gas cooktop and convection microwave with an air fryer, along with a 12V DC double door refrigerator for food storage. The full bath with a 27' x 27' radius shower will let you freshen up each day, and the closet right across the hall will be perfect for clean clothes!</p><p>The Geneva Class A gas motorhome by Thor Motor Coach is easy to maneuver and even easier to love! There is a durable Ford E-Series chassis with a 7.3L V8 engine to power your trips both near and far. The durable construction includes a welded tubular steel floor, a one-piece fiberglass front cap, plus welded tubular aluminum roof and sidewall cage construction. And the driver is sure to appreciate the 14' touchscreen dash radio, back-up monitor, and reclining/swivel leatherette captain's chairs! Inside, you'll be met with residential vinyl flooring, a designer headboard and pillow shams, a shower skylight, and many more at-home comforts!</p><p>About Us Shop hundreds of class A motorhomes all at MHSRV! Choose from Thor A.C.E. &amp;ndash; Resonate &amp;ndash; Hurricane &amp;ndash; Windsport &amp;ndash; Luminate &amp;ndash; Indigo &amp;ndash; Vegas &amp;ndash; Axis &amp;ndash; Challenger &amp;ndash; Miramar Fleetwood Flair &amp;ndash; Fortis &amp;ndash; Flex &amp;ndash; Bounder - Forest River Georgetown - FR3 &amp;ndash; Entegra Coach Vision &amp;ndash; Vision XL &amp;ndash; Emblem &amp;ndash; Holiday Rambler Admiral &amp;ndash; Eclipse &amp;ndash; Invicta &amp;ndash; Vacationer - and much more. We also sell quality pre-owned models such as Jayco Alante SE &amp;ndash; Alante &amp;ndash; Precept &amp;ndash; Precept Prestige &amp;ndash; Tiffin Allegro Open Road &amp;ndash; Newmar Canyon Star &amp;ndash; Bay Star &amp;ndash; Winnebago Vista &amp;ndash; Sunstar &amp;ndash; Adventurer &amp;ndash; Coachmen Mirada &amp;ndash; Pursuit - Encore and much more. Visit MHSRV.com for our complete line-up and the sale prices that have made us the #1 volume selling motor home dealership in the world 13 years in a row! For more details on this unit, our full inventory, brochures, window stickers, videos, photos, and customer reviews, visit MHSRV.com or call 800-335-6054 for the Texas location, 334-288-0331 for our Alabama location or 800-610-3934 for our California Location.</p><p>'Why Pay More? Why Settle for Less?'</p></div></details></section>
   <section><h2>Specifications</h2>

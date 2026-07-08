@@ -107,6 +107,23 @@
   .docs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
   .doc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:var(--ink);font-weight:600;font-size:13.5px;display:flex;align-items:center;gap:10px}
   .doc .ic{width:34px;height:34px;border-radius:9px;background:#FFF1CC;color:#B4530A;display:grid;place-items:center;font-size:16px;flex:none}
+  .fpdocs{display:grid;gap:10px}
+  @media(min-width:760px){.fpdocs{grid-template-columns:3fr 2fr;align-items:start}}
+  .fpcard{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .fp-toggle{width:100%;display:flex;align-items:center;gap:12px;padding:12px 14px;text-align:left;cursor:pointer;font-family:inherit}
+  .fp-art{flex:none;width:92px;color:#7A828C}
+  .fp-art svg{display:block;width:100%;height:auto}
+  .fp-toggle .fpt b{font-size:14.5px;display:block}
+  .fp-toggle .fpt .sub{font-size:12px;color:var(--muted);display:block;margin-top:2px}
+  .fp-chev{margin-left:auto;font-size:17px;color:var(--hwy-green);transition:transform .2s;flex:none}
+  .fpcard.open .fp-chev{transform:rotate(180deg)}
+  .fp-body{display:none;padding:0 14px 14px;font-size:13.5px;line-height:1.55;color:#3A4440}
+  .fpcard.open .fp-body{display:block}
+  .fp-body .fine{font-size:11px;color:var(--muted);margin-top:8px}
+  .fp-cta{display:inline-block;margin-top:10px;background:var(--hwy-green);color:#fff;font-weight:700;font-size:13px;padding:9px 14px;border-radius:9px;text-decoration:none}
+  .fpdocs .docs{grid-template-columns:1fr}
+  button.doc{width:100%;text-align:left;font-family:inherit;font-size:13.5px;cursor:pointer}
+  .doc .sub{display:block;font-size:11.5px;color:var(--muted);font-weight:500;margin-top:1px}
 
   /* perks */
   .perks{background:linear-gradient(155deg,#17376A 0%,#241B3E 62%,#38284F 100%);border-radius:var(--radius);color:#fff;padding:18px;position:relative;overflow:hidden}
@@ -338,6 +355,27 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
     <button class="unlock" onclick="openModal()">🔓 Unlock Your Price</button>
   </div>
   <section><h2>Highlights</h2><div class="hl"><span>Cab-over bunk</span><span>Power awning</span><span>Back-up camera</span><span>Generator ready</span><span>Sleeps the family</span><span>Easy to drive</span><span>Ducted A/C</span><span>Apple CarPlay</span></div></section>
+  <section><h2>Floorplan &amp; documents</h2>
+  <div class="fpdocs">
+    <div class="fpcard">
+      <button class="fp-toggle" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
+        <span class="fp-art"><svg viewBox="0 0 120 60" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="6" width="112" height="48" rx="8"/><path d="M40 6 v20 h-14 M40 26 h-36 M78 54 v-22 h20 M78 32 h38 M56 6 v14 M56 54 v-16"/><rect x="88" y="12" width="20" height="12" rx="2"/><rect x="12" y="38" width="22" height="10" rx="2"/></svg></span>
+        <span class="fpt"><b>Isata 5 Series 30FWEX floorplan</b><span class="sub">32ft · 2 slides — tap for layout details</span></span>
+        <span class="fp-chev">⌄</span>
+      </button>
+      <div class="fp-body">
+        <p>The official 2027 Isata 5 Series floorplan drawing with full dimensions is in the factory brochure. Want the exact layout of this coach with options? Text us the stock number <b>#MHS44740</b> and we&#39;ll send it right over.</p>
+        <a class="fp-cta" href="https://library.rvusa.com/brochure/2027-Dynamax-Corp-Isata-5-Series.pdf" target="_blank" rel="noopener">📐 Open factory brochure</a>
+        <a class="fp-cta" style="background:#fff;color:var(--hwy-green);border:1.5px solid var(--hwy-green);margin-left:8px" href="sms:8177907771">💬 Text us</a>
+        <p class="fine">Manufacturer changes and/or options may alter the floorplan of the unit for sale.</p>
+      </div>
+    </div>
+    <div class="docs">
+      <button class="doc" onclick="openModal()"><div class="ic">📄</div><span>Window sticker &amp; M.S.R.P.<span class="sub">We&#39;ll send it to you in minutes — no charge</span></span></button>
+      <a class="doc" href="https://library.rvusa.com/brochure/2027-Dynamax-Corp-Isata-5-Series.pdf" target="_blank" rel="noopener"><div class="ic">📘</div><span>2027 Isata 5 Series factory brochure<span class="sub">Full specs &amp; floorplans (PDF)</span></span></a>
+      <a class="doc" href="https://www.youtube.com/@motorhomespecialist/search?query=2027%20Dynamax%20Corp%20Isata%205%20Series%2030FWEX" target="_blank" rel="noopener"><div class="ic">🎬</div><span>Video tour<span class="sub">Watch on MHSRV&#39;s YouTube channel</span></span></a>
+    </div>
+  </div></section>
   <section><h2>About this coach</h2>
   <details open><summary>Full description</summary><div class="d-body"><p>MSRP $392,218. The 2027 Dynamax Isata 5 Series model 30FW Super C</p><p class="d-h">Optional Features</p><p>Xplorer Package Dual Pane Dark-Tinted Frameless Windows Insulated Cab Curtain Four Lithium House Batteries 800W Solar Package Insulated Utility Bay with Secondary Tank Heater and Temperature Sensor Extreme Edition</p><p>Four-Point LiquidSpring® Smart Suspension (with Adjustable Ride Height and maximum height of 13'1') &amp; Earth Leveling Lifted Chassis Custom Wheel Flares Upgraded Off-Road Style Front Bumper With LED Lights Aggressive 41” Tires with Blackout Wheels Blackout Front Grille Super-Single Rear Wheels Theater Seats</p><p>Shop hundreds of motorhomes including Super C RVs at MHSRV! Choose from Entegra Accolade – Accolade XL – Accolade XT – Esteem XL – Dynamax DX3 – Dynaquest XL – Europa – isata 5 - Thor Magnitude – Magnitude Grand – Omni – Omni Trail – Pasadena – Inception - East to West Bravado – Nexus Ghost – Wraith – Rebel – Verrado and much more. We also sell quality pre-owned models such as Jayco Seneca XT – Seneca – Seneca Prestige - Greyhawk XL – Tiffin Allegro Bay – Newmar Super Star – Supreme Aire – Renegade Veracruz – Valencia – Verona – Verona LE – Explorer – Coachmen Entourage and much more. Visit MHSRV.com for our complete line-up and the sale prices that have made us the #1 volume selling motor home dealership in the world 13 years in a row!</p><p class="d-h">About This RV</p><p>This RV is approximately 32 feet 1 inches in length. This RV features Ram 5500 SLT chassis, Cummins 6.7L turbo diesel engine, aluminum running boards, LED ceiling lighting, soft-touch padded vinyl ceiling, premium vinyl flooring throughout, hardwood craftsmen-style cabinetry, full extension, soft-closing drawer guides (where applicable) and much more.</p><p class="d-h">About Us</p><p>For more details on this unit, our full inventory, brochures, window stickers, videos, photos, and customer reviews, visit MHSRV.com or call 800-335-6054 for the Texas location or 334-288-0331 for our Alabama location. At Motor Home Specialist, we never charge prep or orientation fees. Every new RV sale includes a multi-point inspection, full interior and exterior detail. At our Texas location we also offer a high-pressure rain booth test—an exclusive service in the industry. You'll also receive a comprehensive coach orientation with an MHSRV technician and a complimentary night in our delivery park with full hook-ups at our Texas Location. --Why Pay More? Why Settle for Less?—</p></div></details></section>
   <section><h2>Specifications</h2>
