@@ -379,7 +379,7 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
         <p>The official 2026 Palisade floorplan drawing with full dimensions is in the factory brochure. Want the exact layout of this coach with options? Text us the stock number <b>#MHS44464</b> and we&#39;ll send it right over.</p>
         <a class="fp-cta" href="https://www.bluecompassrv.com/product/rv-3456624-5#section-detail-floorplan-anchor" target="_blank" rel="noopener">📐 View floorplan drawing</a>
         <a class="fp-cta" href="https://library.rvusa.com/brochure/2026-Fleetwood-Palisade.pdf" target="_blank" rel="noopener">📘 Open factory brochure</a>
-        <a class="fp-cta" style="background:#fff;color:var(--hwy-green);border:1.5px solid var(--hwy-green);margin-left:8px" href="sms:8177907771">💬 Text us</a>
+        <a class="fp-cta" style="background:#fff;color:var(--hwy-green);border:1.5px solid var(--hwy-green);margin-left:8px" href="sms:8177907771?&body=Hi%21%20I%27m%20interested%20in%20the%202026%20Fleetwood%20Palisade%2045FS%20%28stock%20%23MHS44464%29.%20Can%20you%20send%20me%20the%20floorplan%20image%20with%20dimensions%20and%20options%3F%20Thanks%21">💬 Text us</a>
         <p class="fine">Manufacturer changes and/or options may alter the floorplan of the unit for sale.</p>
       </div>
     </div>
@@ -488,6 +488,18 @@ const vw=Math.min(128,15+Math.abs(h)%96+26);
 if(vw>=35){document.getElementById('vwn').textContent=vw;document.getElementById('vwbar').hidden=false;}})();
 function openModal(){document.getElementById('formview').style.display='block';document.getElementById('successview').style.display='none';document.getElementById('modal').classList.add('open')}
 function closeModal(){document.getElementById('modal').classList.remove('open')}
+let docKind='sticker';
+function openDocReq(kind){docKind=kind;
+  const h=document.getElementById('dochead'),s=document.getElementById('docsub');
+  if(kind==='brochure'){h.textContent='Factory brochure';s.textContent="We keep a library of factory brochures and hunt down the rare ones. Tell us where to send it and we'll track down the brochure for this coach.";}
+  else{h.textContent='Window sticker & M.S.R.P.';s.textContent='See exactly how this coach was built — every factory option and package, plus the full M.S.R.P. breakdown. Full transparency, straight from the build sheet.';}
+  document.getElementById('docformview').style.display='block';document.getElementById('docsuccess').style.display='none';
+  document.getElementById('docmodal').classList.add('open');}
+function closeDocReq(){document.getElementById('docmodal').classList.remove('open')}
+function playTour(btn){const id=btn.dataset.yt;if(!id)return;let p=document.getElementById('vplayer');
+  if(!p){p=document.createElement('div');p.className='vplayer';p.id='vplayer';btn.closest('.fpdocs').after(p);}
+  p.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Video tour"></iframe>';
+  p.scrollIntoView({behavior:'smooth',block:'center'});}
 function submitLead(){document.getElementById('formview').style.display='none';document.getElementById('successview').style.display='block'}
 document.addEventListener('DOMContentLoaded',()=>{const b=document.querySelector('.g-save');if(b&&isSaved('MHS44464'))b.textContent='❤️';});
 const PRICE=469989;
