@@ -27,7 +27,7 @@
   @media(min-width:760px){.strip img{height:430px}}
   .g-count{position:absolute;bottom:12px;right:14px;background:rgba(0,0,0,.6);color:#fff;font-size:12px;font-weight:600;padding:5px 10px;border-radius:8px;backdrop-filter:blur(3px)}
   .g-save{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:99px;background:rgba(255,255,255,.92);display:grid;place-items:center;font-size:18px}
-  .g-badge{position:absolute;top:12px;left:12px;display:flex;gap:6px}
+  .g-badge{position:absolute;bottom:12px;left:12px;display:flex;gap:6px}
   .g-badge span{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:5px 9px;border-radius:6px}
   .b-new{background:var(--sign-yellow);color:var(--hwy-green-dark)}
   .b-arrival{background:linear-gradient(135deg,#E8873F,#C24E31);color:#fff}
@@ -196,7 +196,7 @@
   @media(max-width:370px){.call-btn{font-size:12px;padding:8px 9px}}
 
 .hero-photo{position:relative;background:#101314}
-.hero-photo img{display:block;width:100%;max-width:860px;margin:0 auto;aspect-ratio:4/3;height:auto;max-height:74vh;object-fit:contain;background:#101314}
+.hero-photo img{display:block;width:100%;max-width:860px;margin:0 auto;aspect-ratio:3/2;height:auto;max-height:74vh;object-fit:contain;background:#101314}
 .vstrip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;max-width:860px;margin:0 auto}
 .vstrip::-webkit-scrollbar{display:none}
 .vstrip{cursor:grab}
@@ -293,7 +293,7 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
 </div></header>
 <div class="hero-photo">
   <div style="height:300px;max-width:860px;margin:0 auto;background:linear-gradient(150deg,#1D4079,#0E2347);display:flex;align-items:center;justify-content:center;color:#8FA6C9"><span style="width:260px"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-hidden="true" viewBox="0 0 120 68"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M14 47 V24 q0 -4 4 -4 h20 v-3 h12 v3 h32 q9 0 10 8 V51 L79 51 a9 9 0 0 1 -18 0 L61 51 a9 9 0 0 1 -18 0 L18 51 q-4 0 -4 -4z  M24 26 h11 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-11 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M68 26 h9 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-9 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M46.5 26 h5 a2.5 2.5 0 0 1 2.5 2.5 v12 a2.5 2.5 0 0 1 -2.5 2.5 h-5 a2.5 2.5 0 0 1 -2.5 -2.5 v-12 a2.5 2.5 0 0 1 2.5 -2.5 z "/><path fill="currentColor" stroke="none" d="M92 42.6 L108.5 45.8 l-0.7 3 L91.6 45.6 z M103 47 h3 v8 h-3 z M99.5 54.5 h10 q1 0 1 1.2 q0 1.3 -1 1.3 h-10 q-1 0 -1 -1.3 q0 -1.2 1 -1.2 z"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M92.9 39.4 a3.1 3.1 0 1 0 6.2 0 a3.1 3.1 0 1 0 -6.2 0 M98.9 40.6 a3.1 3.1 0 1 0 6.2 0 a3.1 3.1 0 1 0 -6.2 0 M94.9 39.4 a1.1 1.1 0 1 0 2.2 0 a1.1 1.1 0 1 0 -2.2 0 M100.9 40.6 a1.1 1.1 0 1 0 2.2 0 a1.1 1.1 0 1 0 -2.2 0 "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M45.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M48.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="52" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M63.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M66.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="70" cy="53" r="1.7" fill="currentColor"/></svg></span></div>
-  <div class="g-badge" style="flex-direction:column;align-items:flex-start"><span class="badge" style="position:static;background:#B4530A;color:#fff">Sale pending</span><span class="badge used" style="position:static">Pre-owned</span></div>
+  <div class="g-badge" style="flex-direction:column;align-items:flex-start"><span class="badge" style="position:static;background:#B4530A;color:#fff">Sale pending</span></div>
   
   <button class="g-save" aria-label="Save" onclick="toggleSave('UT2100250',this)">♡</button>
 </div>

@@ -27,7 +27,7 @@
   @media(min-width:760px){.strip img{height:430px}}
   .g-count{position:absolute;bottom:12px;right:14px;background:rgba(0,0,0,.6);color:#fff;font-size:12px;font-weight:600;padding:5px 10px;border-radius:8px;backdrop-filter:blur(3px)}
   .g-save{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:99px;background:rgba(255,255,255,.92);display:grid;place-items:center;font-size:18px}
-  .g-badge{position:absolute;top:12px;left:12px;display:flex;gap:6px}
+  .g-badge{position:absolute;bottom:12px;left:12px;display:flex;gap:6px}
   .g-badge span{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:5px 9px;border-radius:6px}
   .b-new{background:var(--sign-yellow);color:var(--hwy-green-dark)}
   .b-arrival{background:linear-gradient(135deg,#E8873F,#C24E31);color:#fff}
@@ -196,7 +196,7 @@
   @media(max-width:370px){.call-btn{font-size:12px;padding:8px 9px}}
 
 .hero-photo{position:relative;background:#101314}
-.hero-photo img{display:block;width:100%;max-width:860px;margin:0 auto;aspect-ratio:4/3;height:auto;max-height:74vh;object-fit:contain;background:#101314}
+.hero-photo img{display:block;width:100%;max-width:860px;margin:0 auto;aspect-ratio:3/2;height:auto;max-height:74vh;object-fit:contain;background:#101314}
 .vstrip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;max-width:860px;margin:0 auto}
 .vstrip::-webkit-scrollbar{display:none}
 .vstrip{cursor:grab}
@@ -293,7 +293,7 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
 </div></header>
 <div class="hero-photo">
   <div class="vstrip" id="vstrip"><img src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215245/o/1_2321_5215245_319819143.jpg;width=860;quality=60" alt="2025 Forest River Georgetown 5 Series GT5 34M5 photo 1" onclick="openLB(0)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215245/o/1_2321_5215245_319819144.jpg;width=860;quality=60" alt="2025 Forest River Georgetown 5 Series GT5 34M5 photo 2" onclick="openLB(1)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215245/o/1_2321_5215245_319819145.jpg;width=860;quality=60" alt="2025 Forest River Georgetown 5 Series GT5 34M5 photo 3" onclick="openLB(2)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215245/o/1_2321_5215245_319819179.jpg;width=860;quality=60" alt="2025 Forest River Georgetown 5 Series GT5 34M5 photo 4" onclick="openLB(3)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215245/o/1_2321_5215245_319819146.jpg;width=860;quality=60" alt="2025 Forest River Georgetown 5 Series GT5 34M5 photo 5" onclick="openLB(4)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215245/o/1_2321_5215245_319819147.jpg;width=860;quality=60" alt="2025 Forest River Georgetown 5 Series GT5 34M5 photo 6" onclick="openLB(5)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215245/o/1_2321_5215245_319819148.jpg;width=860;quality=60" alt="2025 Forest River Georgetown 5 Series GT5 34M5 photo 7" onclick="openLB(6)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215245/o/1_2321_5215245_319819149.jpg;width=860;quality=60" alt="2025 Forest River Georgetown 5 Series GT5 34M5 photo 8" onclick="openLB(7)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215245/o/1_2321_5215245_319819150.jpg;width=860;quality=60" alt="2025 Forest River Georgetown 5 Series GT5 34M5 photo 9" onclick="openLB(8)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215245/o/1_2321_5215245_319819151.jpg;width=860;quality=60" alt="2025 Forest River Georgetown 5 Series GT5 34M5 photo 10" onclick="openLB(9)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215245/o/1_2321_5215245_319819152.jpg;width=860;quality=60" alt="2025 Forest River Georgetown 5 Series GT5 34M5 photo 11" onclick="openLB(10)" onerror="this.remove()"><img loading="lazy" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5215245/o/1_2321_5215245_319819153.jpg;width=860;quality=60" alt="2025 Forest River Georgetown 5 Series GT5 34M5 photo 12" onclick="openLB(11)" onerror="this.remove()"></div><div class="g-count" id="gc">1 / 12</div>
-  <div class="g-badge" style="flex-direction:column;align-items:flex-start"><span class="badge used" style="position:static">Pre-owned</span></div>
+  <div class="g-badge" style="flex-direction:column;align-items:flex-start"></div>
   <button class="vnav pv" onclick="stepV(-1)" aria-label="Previous photo">‹</button><button class="vnav nx" onclick="stepV(1)" aria-label="Next photo">›</button>
   <button class="g-save" aria-label="Save" onclick="toggleSave('MHS44042A',this)">♡</button>
 </div>

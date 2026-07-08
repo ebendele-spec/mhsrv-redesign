@@ -120,7 +120,7 @@
   .grid{display:grid;gap:16px}
   @media(min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}}
   .rv{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-  .rv-img{aspect-ratio:4/3;position:relative;overflow:hidden}
+  .rv-img{aspect-ratio:3/2;position:relative;overflow:hidden;cursor:pointer}
   .rv-img svg{position:absolute;inset:0;width:100%;height:100%}
   .rv-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .badge{position:absolute;top:10px;left:10px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:4px 9px;border-radius:6px;z-index:2}
@@ -131,6 +131,8 @@
   .rv-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
   .rv-body .meta{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
   .rv-body h3{font-size:15.5px;font-weight:700;line-height:1.25}
+  .rv-body h3 a{color:inherit;text-decoration:none}
+  .rv-body h3 a:hover{color:var(--hwy-green);text-decoration:underline}
   .specs{display:flex;gap:10px;font-size:12px;color:var(--muted);margin-top:2px}
   .specs span{display:flex;align-items:center;gap:4px}
   .price-row{display:flex;align-items:baseline;gap:8px;margin-top:5px;flex-wrap:wrap}
@@ -242,7 +244,7 @@
   .cdots{pointer-events:auto}
   .cdots i{width:8px;height:8px;cursor:pointer}
   .cstrip img{scroll-snap-stop:always}
-  .bstack{position:absolute;top:10px;left:10px;display:flex;flex-direction:column;align-items:flex-start;gap:6px;z-index:2}
+  .bstack{position:absolute;bottom:32px;left:10px;display:flex;flex-direction:column;align-items:flex-start;gap:6px;z-index:2}
   .bstack .badge{position:static}
   .cnav{position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:99px;background:rgba(255,255,255,.92);color:#22262A;font-size:20px;font-weight:700;z-index:3;display:none;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25)}
   .cnav.pv{left:8px}.cnav.nx{right:8px}
@@ -251,9 +253,9 @@
   .feat-rail{display:flex;gap:12px;overflow-x:auto;scrollbar-width:none;padding:2px 16px 8px;margin:10px -16px 0;scroll-snap-type:x proximity}
   .feat-rail::-webkit-scrollbar{display:none}
   .feat{flex:none;width:240px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--ink);scroll-snap-align:start;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-  .feat .f-img{position:relative;aspect-ratio:4/3;background:#E8ECE9}
+  .feat .f-img{position:relative;aspect-ratio:3/2;background:#E8ECE9}
   .feat .f-img img{width:100%;height:100%;object-fit:cover;display:block}
-  .feat .f-tag{position:absolute;top:8px;left:8px;font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:4px 8px;border-radius:6px;color:#fff}
+  .feat .f-tag{position:absolute;bottom:8px;left:8px;font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:4px 8px;border-radius:6px;color:#fff}
   .feat .f-body{padding:10px 12px 12px}
   .feat b{font-size:13.5px;line-height:1.25;display:block}
   .feat small{color:var(--muted);font-size:11.5px}
@@ -849,7 +851,7 @@ function renderGrid(more){if(!more)state.page=1;
     const photo=gal?`<div class="cstrip">${gal.map((u,i)=>`<img ${i?'loading="lazy" ':''}src="${u}" alt="${r.y} ${r.brand} ${r.model} photo ${i+1}" onerror="this.remove()">`).join('')}</div><div class="cdots">${gal.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div><button class="cnav pv" aria-label="Previous photo">‹</button><button class="cnav nx" aria-label="Next photo">›</button>`
     :(r.img?`<img src="${r.img}" alt="${r.y} ${r.brand} ${r.model}" loading="lazy" onerror="this.remove()">`:'');
     return `<article class="rv">
-      <div class="rv-img">
+      <div class="rv-img" data-u="units/${r.stk}.html">
         ${unitArt(r.scene,r.type)}${photo}
         <div class="bstack">${r.pend?`<span class="badge" style="background:#B4530A;color:#fff">Sale pending</span>`:r.onord?`<span class="badge" style="background:linear-gradient(135deg,#E8873F,#C24E31);color:#fff">On order</span>`:r.coming?`<span class="badge" style="background:linear-gradient(135deg,#E8873F,#C24E31);color:#fff">Coming soon</span>`:r.arrv?`<span class="badge" style="background:#2F7D4C;color:#fff">Just arrived</span>`:''}${r.cond==='used'?`<span class="badge used">Pre-owned</span>`:''}${r.vw>=70?`<span class="badge" style="background:linear-gradient(135deg,#D64533,#B02A1F);color:#fff">🔥 ${r.vw} viewed today</span>`:''}</div>
         <button class="save" aria-label="Save this RV" onclick="toggleSave('${r.stk}',this)">${typeof isSaved==='function'&&isSaved(r.stk)?'❤️':'♡'}</button>
@@ -857,8 +859,8 @@ function renderGrid(more){if(!more)state.page=1;
       </div>
       <div class="rv-body">
         <div class="meta">${r.y} ${r.cond==='new'?'New':'Pre-owned'} · ${TYPES.find(t=>t.id===r.type).name} · Stock #${r.stk}</div>
-        <h3>${r.brand} ${r.model}</h3>
-        <div class="specs"><span>📏 ${r.len}</span>${r.sleeps?`<span>🛏 Sleeps ${r.sleeps}</span>`:''}<span>💰 Save ${fmt(save)}</span></div>
+        <h3><a href="units/${r.stk}.html">${r.brand} ${r.model}</a></h3>
+        <div class="specs"><span>📏 ${r.len}</span>${r.sleeps?`<span>🛏 Sleeps ${r.sleeps}</span>`:''}${save>0?`<span>💰 Save ${fmt(save)}</span>`:''}</div>
         <div class="price-row">
           <span class="now">${r.price?fmt(r.price):'Arriving soon'}</span>
           ${r.msrp?`<span class="was">${fmt(r.msrp)}</span><span class="off">${pct}% off</span>`:''}
@@ -880,6 +882,9 @@ function renderGrid(more){if(!more)state.page=1;
     s.parentElement.querySelectorAll('.cdots i').forEach((d,j)=>d.onclick=e=>{e.preventDefault();e.stopPropagation();s.scrollTo({left:j*s.clientWidth,behavior:'smooth'})});
     s.parentElement.querySelectorAll('.cnav').forEach(btn=>btn.onclick=e=>{e.preventDefault();e.stopPropagation();stripStep(s,btn.classList.contains('nx')?1:-1)});
     hookStrip(s);
+  });
+  document.querySelectorAll('.rv-img[data-u]').forEach(el=>{
+    el.addEventListener('click',e=>{if(e.target.closest('.save,.cdots,.cnav'))return;location.href=el.dataset.u});
   });
 }
 /* ---- desktop gallery interactions: one-photo wheel steps + mouse drag ---- */
