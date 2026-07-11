@@ -1230,4 +1230,5 @@
 <url><loc>https://www.mhsrv.com/units/CM920456.html</loc><priority>0.9</priority></url>
 <url><loc>https://www.mhsrv.com/units/UT520687.html</loc><priority>0.9</priority></url>
 <url><loc>https://www.mhsrv.com/units/T136562.html</loc><priority>0.9</priority></url>
+<url><loc>https://www.mhsrv.com/trade-in.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>

@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/png" href="https://mhsrv.s3.amazonaws.com/images/homeimage/logo--mhs-bc.png">
-<title>Sell or Trade Your RV | MHSRV</title>
-<meta name="description" content="Sell or consign your RV with Motor Home Specialist. Competitive offers, fast payment, and the industry&#x27;s most trusted name.">
+<title>Sell or Consign Your RV — No Seller's Fee | MHSRV</title>
+<meta name="description" content="Hassle-free RV consignment with no seller's fee at Motor Home Specialist. Schedule an appraisal, drop off your RV, and get top dollar — we do all the work, you get paid.">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{--hwy-green:#17376A;--hwy-green-dark:#0E2347;--sign-yellow:#FFC91F;--asphalt:#1C1F23;--line:#E4E7E4;--paper:#F7F8F6;--ink:#22262A;--muted:#66706B;--radius:14px}
@@ -201,6 +201,22 @@
 .formcard input,.formcard select,.formcard textarea{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:13px 14px;font-size:16px;font-family:inherit;margin-top:10px}
 .formcard textarea{min-height:90px;resize:vertical}
 .formcard .go{width:100%;background:var(--hwy-green);color:#fff;font-weight:700;font-size:15.5px;padding:14px;border-radius:11px;margin-top:14px;border:none;cursor:pointer}
+
+.steps{display:grid;grid-template-columns:1fr;gap:10px;margin-top:20px}
+@media(min-width:760px){.steps{grid-template-columns:1fr 1fr 1fr}}
+.step{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;gap:12px;align-items:flex-start}
+.step .num{flex:none;width:34px;height:34px;border-radius:99px;background:var(--sign-yellow);color:var(--hwy-green-dark);display:grid;place-items:center;font-family:'Barlow Condensed';font-weight:700;font-size:18px}
+.step b{display:block;font-family:'Barlow Condensed';font-size:17px;text-transform:uppercase;letter-spacing:.02em}
+.step span{display:block;font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.4}
+.formhead{margin-top:22px}
+.formhead h2{font-family:'Barlow Condensed';font-size:22px;text-transform:uppercase;letter-spacing:.02em}
+.formhead p{font-size:13.5px;color:var(--muted);margin-top:4px}
+.bens{display:grid;grid-template-columns:1fr;gap:10px;margin-top:16px}
+@media(min-width:760px){.bens{grid-template-columns:1fr 1fr}}
+.ben{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px}
+.ben b{display:block;font-family:'Barlow Condensed';font-size:16.5px;text-transform:uppercase;letter-spacing:.02em;color:var(--hwy-green)}
+.ben p{font-size:13px;color:#3A4440;line-height:1.5;margin-top:5px}
+.vipnote{background:linear-gradient(135deg,#B27A0D,#8A5E06);border-radius:12px;color:#fff;padding:15px 16px;margin-top:12px;font-size:13.5px;font-weight:600;line-height:1.5}
 </style></head><body>
 
 <style>
@@ -272,8 +288,14 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
   <div style="display:flex;align-items:center;gap:6px"><a class="call-btn" href="tel:8003356054">📞 800-335-6054</a>
   <button class="burger" aria-label="Menu" style="width:34px;height:38px" onclick="openDrawer()"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 6.5h14M5 12h14M5 17.5h14"/></svg></button></div>
 </div></header>
-<div class="pgtitle"><div class="wrap"><h1>Sell or Trade Your RV</h1><p>60-second form. Real offer. We buy, trade & consign.</p></div></div>
+<div class="pgtitle"><div class="wrap"><h1>Hassle-Free Consignment &amp; No Seller's Fee</h1><p>Sell your RV for cash or consign it with the #1 motorhome dealer in the world — it's as easy as 1-2-3.</p></div></div>
 <main class="wrap">
+<div class="steps">
+<div class="step"><div class="num">1</div><div><b>Schedule Appraisal</b><span>Quickly find out how much your RV is worth</span></div></div>
+<div class="step"><div class="num">2</div><div><b>Drop Off</b><span>Scheduled for your convenience with a VIP experience</span></div></div>
+<div class="step"><div class="num">3</div><div><b>Get Top Dollar</b><span>We do all the work — you get paid without the fees</span></div></div>
+</div>
+<div class="formhead"><h2>What's My RV Worth?</h2><p>Please complete the form below. Once we receive your info, your dedicated procurement specialist will reach out and provide next steps.</p></div>
 <div class="formcard"><form id="sellform" onsubmit="return false">
   <input name="first_name" placeholder="First name" required><input name="last_name" placeholder="Last name">
   <input name="phone" type="tel" placeholder="Phone" required><input name="email" type="email" placeholder="Email" required>
@@ -283,10 +305,22 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
   <textarea name="notes" placeholder="Anything else we should know?"></textarea>
   <button class="go" onclick="sendLead(document.getElementById('sellform'),'MHSRV Sell/Trade Request',this).then(()=>{this.textContent='✓ Sent — we\'ll be in touch!';this.disabled=true})">Submit</button>
 </form></div>
+<section>
+<div class="formhead"><h2>We do all the work</h2><p>You just sit back, relax and get paid for your RV.</p></div>
+<div class="bens">
+<div class="ben"><b>We'll get your RV ready to sell</b><p>First, we'll thoroughly inspect your RV, then we'll clean it, sanitize it, photograph it and make note of everything that makes your RV a great value.</p></div>
+<div class="ben"><b>#1 motorhome dealer in the world since 2013</b><p>National exposure across our website, email marketing, social media and more. Centrally located near Dallas &amp; Fort Worth with over 150 acres, a highly trained motor home sales &amp; service staff, 24/7 police-patrolled security, and an on-site campground.</p></div>
+<div class="ben"><b>We offer financing for your buyer</b><p>We partner with all major RV lenders to offer competitive interest rates and flexible payment options. Same-day financing is even available.</p></div>
+<div class="ben"><b>We allow trade-ins for your buyer</b><p>To make things even easier to find a buyer for your RV, we take trades on consignment sales.</p></div>
+<div class="ben"><b>We'll handle all the paperwork</b><p>Including all the documents for paying off your RV, title transfers, bill of sale — everything! And the best part? You get paid!</p></div>
+<div class="ben"><b>Trading instead?</b><p>Get a real trade-in value in minutes with our <a href="trade-in.html">RV &amp; Auto trade-in forms</a> — the value goes straight toward your next coach.</p></div>
+</div>
+<div class="vipnote">PLUS, we back the sale of your RV with a 1-Year VIP Membership to RV Complete — a $5,000 value at no additional cost for the new owner.</div>
+</section>
 <section><div class="perks"><h3>Why sell to MHSRV</h3><ul>
 <li>Real offers — we buy and consign RVs every single day</li>
 <li>We advertise your consignment to millions of shoppers</li>
-<li>Trade-in value applied straight to your next coach</li></ul></div></section></main>
+<li>No seller's fee — you get top dollar without the hassle</li></ul></div></section></main>
 <nav class="dock"><div class="dock-inner">
 <a class="call" href="tel:8003356054">📞 Call</a><a class="text" href="sms:8177907771">💬 Text</a><a class="fin" href="./index.html#inventory">Shop RVs</a>
 </div></nav>
