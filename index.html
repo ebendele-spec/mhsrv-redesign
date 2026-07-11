@@ -146,11 +146,10 @@
   .tc-txt span{display:block;font-size:10.5px;color:var(--muted);margin-top:1px}
   @media(min-width:760px){
     #typeRail{grid-template-columns:repeat(4,1fr);gap:10px}
-    .type-card{display:block;text-align:center;padding:0 0 12px}
-    .tc-img{width:auto;height:76px;background:#fff}
-    .tc-img img{inset:10px 12px 2px;width:calc(100% - 24px);height:calc(100% - 12px);filter:drop-shadow(0 3px 4px rgba(20,30,45,.18))}
-    .tc-txt b{margin-top:8px;font-size:12.5px;line-height:1.2;padding:0 6px;white-space:normal;overflow:visible}
-    .tc-txt span{font-size:11px;margin-top:2px}
+    .type-card{gap:11px;padding:9px 10px 9px 12px}
+    .tc-img{width:92px;height:40px}
+    .tc-txt b{font-size:13px}
+    .tc-txt span{font-size:11px}
   }
 
   /* price pills */
@@ -572,6 +571,11 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
     </div>
   </section>
 
+  <section id="featured">
+    <div class="sec-head"><h2>Featured this week</h2><button onclick="document.getElementById('inventory').scrollIntoView({behavior:'smooth'})">See all</button></div>
+    <div class="feat-rail" id="featRail"></div>
+  </section>
+
   <!-- LIFESTYLE: how do you camp? -->
   <section>
     <div class="sec-head"><h2>What's your kind of trip?</h2><button onclick="clearTool()">Clear</button></div>
@@ -589,10 +593,6 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
     <div class="pills" id="pricePills" style="margin-top:10px"></div>
   </section>
 
-  <section id="featured">
-    <div class="sec-head"><h2>Featured this week</h2><button onclick="document.getElementById('inventory').scrollIntoView({behavior:'smooth'})">See all</button></div>
-    <div class="feat-rail" id="featRail"></div>
-  </section>
 
   <section id="inventory">
     <div class="sec-head"><h2>Live from the lot</h2><a href="https://www.bluecompassrv.com/locations/texas/alvarado" target="_blank" rel="noopener">Full inventory</a></div>
@@ -1010,13 +1010,15 @@ function smartSearch(raw){
   if(relaxed.length)t.chips.push('⚠ limited data — relaxed: '+relaxed.join(', '));
   const bar=document.getElementById('smartbar');
   bar.hidden=false;
-  bar.innerHTML='<span class="sb-i">🔎 I looked for:</span> '+t.chips.map(c=>'<span class="chip2">'+c+'</span>').join('')+'<button class="sb-x" onclick="clearSmart()">✕ Clear search</button>';
+  bar.innerHTML='<span class="sb-i">🔎 I looked for:</span> '+t.chips.map(c=>'<span class="chip2">'+c+'</span>').join('')+'<button type="button" class="sb-x">✕ Clear search</button>';
+  bar.querySelector('.sb-x').onclick=clearSmart;
   document.getElementById('inventory').scrollIntoView({behavior:'smooth'});
   hideSugg();
 }
-function clearSmart(){state.smart=null;state.q='';$('q').value='';state.type=null;state.cond='all';
+function clearSmart(){state.smart=null;state.q='';$('q').value='';state.type=null;state.cond='all';state.price=null;state.life=null;
   document.querySelectorAll('#condChips .chip').forEach(c=>c.classList.toggle('on',c.dataset.cond==='all'));
-  document.getElementById('smartbar').hidden=true;renderTypes();renderGrid();}
+  document.getElementById('smartbar').hidden=true;renderTypes();renderLife();renderPrices();renderGrid();}
+window.clearSmart=clearSmart;
 /* ---------- autocomplete ---------- */
 const sugg=document.getElementById('sugg');let selIdx=-1;
 function hideSugg(){sugg.hidden=true;sugg.innerHTML='';selIdx=-1;}
