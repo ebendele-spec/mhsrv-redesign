@@ -135,18 +135,23 @@
   /* type rail */
   .rail{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding:2px 16px 8px;margin:0 -16px}
   .rail::-webkit-scrollbar{display:none}
-  #typeRail{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;overflow:visible;padding:2px 0 4px;margin:0}
-  @media(min-width:760px){#typeRail{grid-template-columns:repeat(4,1fr)}}
-  .type-card{width:auto;background:#fff;border:1px solid var(--line);border-radius:11px;overflow:hidden;text-align:center;transition:.15s;padding:0 0 12px;box-shadow:0 2px 8px rgba(0,0,0,.06);cursor:pointer}
+  #typeRail{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;overflow:visible;padding:2px 0 4px;margin:0}
+  .type-card{width:auto;display:flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);border-radius:11px;overflow:hidden;text-align:left;transition:.15s;padding:8px 8px 8px 10px;box-shadow:0 2px 8px rgba(0,0,0,.06);cursor:pointer}
   .type-card.on{border-color:var(--hwy-green);background:#ECF1FA;box-shadow:inset 0 0 0 2px var(--hwy-green)}
-  .tc-img{position:relative;height:66px;background:#fff;color:#7A828C;transition:color .15s}
-  @media(min-width:760px){.tc-img{height:76px}}
-  .type-card.on .tc-img{color:var(--hwy-green)}
-  .type-card.on .tc-img img{filter:drop-shadow(0 3px 5px rgba(31,92,55,.35))}
-  .tc-img svg{position:absolute;inset:0;width:100%;height:100%}
-  .tc-img img{position:absolute;inset:10px 12px 2px;width:calc(100% - 24px);height:calc(100% - 12px);object-fit:contain;filter:drop-shadow(0 3px 4px rgba(20,30,45,.18))}
-  .type-card b{display:block;margin-top:8px;font-size:12.5px;font-weight:600;line-height:1.2;padding:0 6px}
-  .type-card span{display:block;font-size:11px;color:var(--muted);margin-top:2px}
+  .tc-img{position:relative;flex:none;width:72px;height:32px;color:#7A828C}
+  .tc-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 2px 3px rgba(20,30,45,.18))}
+  .type-card.on .tc-img img{filter:drop-shadow(0 2px 4px rgba(31,92,55,.35))}
+  .tc-txt{min-width:0}
+  .tc-txt b{display:block;font-size:12px;font-weight:600;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .tc-txt span{display:block;font-size:10.5px;color:var(--muted);margin-top:1px}
+  @media(min-width:760px){
+    #typeRail{grid-template-columns:repeat(4,1fr);gap:10px}
+    .type-card{display:block;text-align:center;padding:0 0 12px}
+    .tc-img{width:auto;height:76px;background:#fff}
+    .tc-img img{inset:10px 12px 2px;width:calc(100% - 24px);height:calc(100% - 12px);filter:drop-shadow(0 3px 4px rgba(20,30,45,.18))}
+    .tc-txt b{margin-top:8px;font-size:12.5px;line-height:1.2;padding:0 6px;white-space:normal;overflow:visible}
+    .tc-txt span{font-size:11px;margin-top:2px}
+  }
 
   /* price pills */
   .pills{display:flex;flex-wrap:wrap;gap:8px}
@@ -927,8 +932,8 @@ function renderLife(){
 }
 function renderTypes(){
   $('typeRail').innerHTML=TYPES.map(t=>t.ext?
-`<a class="type-card" href="${t.ext}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:block"><div class="tc-img">${typeIcon(t)}</div><b>${t.name}</b><span>${t.n}</span></a>`:
-`<button class="type-card ${state.type===t.id?'on':''}" data-t="${t.id}"><div class="tc-img">${typeIcon(t)}</div><b>${t.name}</b><span>${t.n}</span></button>`).join('');
+`<a class="type-card" href="${t.ext}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><div class="tc-img">${typeIcon(t)}</div><div class="tc-txt"><b>${t.name}</b><span>${t.n}</span></div></a>`:
+`<button class="type-card ${state.type===t.id?'on':''}" data-t="${t.id}"><div class="tc-img">${typeIcon(t)}</div><div class="tc-txt"><b>${t.name}</b><span>${t.n}</span></div></button>`).join('');
   document.querySelectorAll('.type-card').forEach(b=>b.onclick=()=>{state.type=state.type===b.dataset.t?null:b.dataset.t;state.life=null;renderLife();renderTypes();renderGrid();if(state.type){const bud=document.getElementById('budget');if(bud)bud.scrollIntoView({behavior:'smooth'});}});
 }
 function renderPrices(){
