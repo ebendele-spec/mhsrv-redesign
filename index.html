@@ -38,6 +38,25 @@
   .logo small{display:block;font-size:10.5px;font-weight:500;opacity:.85;letter-spacing:.06em;text-transform:uppercase}
   .call-btn{background:var(--sign-yellow);color:var(--hwy-green-dark);font-weight:700;font-size:14px;padding:9px 14px;border-radius:99px;display:flex;align-items:center;gap:6px;text-decoration:none}
 
+
+  /* ---------- hero slider ---------- */
+  .heroslides{position:relative;overflow:hidden}
+  .hslide{transition:opacity .65s ease,transform .65s ease}
+  .hslide.off{opacity:0;transform:translateY(16px);pointer-events:none}
+  .hslide.abs{position:absolute;inset:0}
+  .hpromo{display:flex;align-items:center;background:#141022}
+  .hpromo .pimg{position:absolute;inset:0;background-size:cover;background-position:center right;opacity:.68}
+  .hpromo::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#171126 8%,rgba(23,17,38,.72) 46%,rgba(23,17,38,.15) 78%,rgba(23,17,38,0));pointer-events:none}
+  .hpromo .pcontent{position:relative;z-index:2;padding-top:20px;padding-bottom:34px}
+  .hpromo .kick{font-family:'Barlow Condensed';font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--sign-yellow)}
+  .hpromo h2{font-family:'Barlow Condensed';font-size:clamp(26px,6.4vw,40px);font-weight:700;line-height:1.04;text-transform:uppercase;letter-spacing:.015em;margin-top:6px;text-shadow:0 2px 12px rgba(0,0,0,.5);max-width:16ch;padding-left:0}
+  .hpromo h2::before{display:none}
+  .hpromo p{margin-top:7px;font-size:14px;font-weight:500;opacity:.92;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+  .hpromo .pcta{display:inline-block;margin-top:13px;background:var(--sign-yellow);color:var(--hwy-green-dark);font-weight:700;font-size:13.5px;padding:10px 18px;border-radius:99px;text-decoration:none;border:none;cursor:pointer;font-family:inherit}
+  .hdots{position:absolute;right:14px;bottom:10px;z-index:5;display:flex;gap:6px}
+  .hdots button{width:8px;height:8px;border-radius:99px;background:rgba(255,255,255,.38);border:none;cursor:pointer;padding:0;transition:.2s}
+  .hdots button.on{background:var(--sign-yellow);width:20px}
+  @media(prefers-reduced-motion:reduce){.hslide{transition:none}}
   /* ---------- hero: dusk campsite scene ---------- */
   .hero{color:#fff;background:#1B1533;border-bottom:5px solid var(--sign-yellow)}
   .scene2{line-height:0;background:#1B1533}
@@ -70,6 +89,7 @@
   .sg .st small{color:var(--muted);font-size:11.5px}
   .sg .sp{flex:none;font-family:'Barlow Condensed';font-weight:700;color:var(--hwy-green);font-size:15px}
   .sg mark{background:none;color:var(--hwy-green);font-weight:700}
+  .smartbar[hidden]{display:none}
   .smartbar{display:flex;flex-wrap:wrap;gap:7px;align-items:center;background:#ECF1FA;border:1px solid #D8E2F0;border-radius:11px;padding:9px 11px;margin-bottom:12px;font-size:12.5px}
   .smartbar .sb-i{font-weight:700;color:var(--hwy-green)}
   .smartbar .chip2{background:#fff;border:1px solid #C9D6EA;border-radius:99px;padding:3px 10px;font-weight:600}
@@ -440,6 +460,8 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
 
 <!-- HERO: illustrated Texas dusk campsite -->
 <div class="hero">
+ <div class="heroslides" id="heroSlides">
+ <div class="hslide" id="hs0">
   <div class="wrap hero-top">
     <h1>Your next<br>adventure <span>starts here.</span></h1>
     <p class="sub">1,200+ new &amp; used RVs in stock</p>
@@ -521,6 +543,17 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
       </g></g>
       <rect y="186" width="1600" height="54" fill="url(#groundfade)"/>
     </svg></div>
+</div><!-- /hs0 -->
+<div class="hslide abs off hpromo" data-hs="1"><div class="pimg" style="background-image:url('https://mhsrv.s3.us-east-1.amazonaws.com/images/landing-pages/lp-2026-06-17-overstocked-luxury-diesel-pusher-sale/hdr-overstocked-luxury-diesel-pusher-sale-mobile.jpg')"></div>
+  <div class="wrap pcontent"><div class="kick">Happening at MHSRV</div><h2>Overstocked Diesel Pusher Sale</h2><p>Luxury coaches, priced to move</p><button class="pcta" onclick="promoGo('diesel')">Shop the sale →</button></div></div>
+<div class="hslide abs off hpromo" data-hs="2"><div class="pimg" style="background-image:url('https://mhsrv.s3.us-east-1.amazonaws.com/images/landing-pages/lp-2026-05-25-qwest-se-exclusive-floorplan/hdr-qwest-se-freedom-sale-mobile.gif')"></div>
+  <div class="wrap pcontent"><div class="kick">Happening at MHSRV</div><h2>Qwest SE Freedom Sale</h2><p>MHSRV-exclusive floorplan</p><button class="pcta" onclick="promoSearch('qwest se')">See the Qwest SE →</button></div></div>
+<div class="hslide abs off hpromo" data-hs="3"><div class="pimg" style="background-image:url('https://mhsrv.s3.us-east-1.amazonaws.com/images/landing-pages/lp-2026-07-01-california-location/hdr-california-location-mobile.jpg')"></div>
+  <div class="wrap pcontent"><div class="kick">Happening at MHSRV</div><h2>Coming Soon: California</h2><p>Palm Desert location opening</p><a class="pcta" href="about.html">Learn more →</a></div></div>
+<div class="hslide abs off hpromo" data-hs="4"><div class="pimg" style="background-image:url('https://mhsrv.s3.us-east-1.amazonaws.com/images/landing-pages/lp-2025-08-19-entrada-210ns/hdr-entrada-210ns-mobile-3-left.jpg')"></div>
+  <div class="wrap pcontent"><div class="kick">Happening at MHSRV</div><h2>East to West Entrada 210NS</h2><p>Big value in a small footprint</p><button class="pcta" onclick="promoSearch('entrada 210ns')">Check it out →</button></div></div>
+<div class="hdots" id="hdots" aria-label="Hero slides"></div>
+ </div><!-- /heroslides -->
   <div class="hero-bottom-band"><div class="wrap hero-bottom">
     <div class="searchbox" id="searchbox">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
@@ -549,27 +582,6 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
 <main class="wrap">
 
   <!-- REAL MHSRV promos -->
-  <section>
-    <div class="sec-head"><h2>Happening at MHSRV</h2></div>
-    <div class="promo-rail">
-      <a class="promo" href="#">
-        <img src="https://mhsrv.s3.us-east-1.amazonaws.com/images/landing-pages/lp-2026-06-17-overstocked-luxury-diesel-pusher-sale/hdr-overstocked-luxury-diesel-pusher-sale-mobile.jpg" alt="Overstocked luxury diesel pusher sale" loading="lazy" onerror="this.style.display='none'">
-        <div class="p-body"><b>Overstocked Diesel Pusher Sale</b><span>Luxury coaches, priced to move</span></div>
-      </a>
-      <a class="promo" href="#">
-        <img src="https://mhsrv.s3.us-east-1.amazonaws.com/images/landing-pages/lp-2026-05-25-qwest-se-exclusive-floorplan/hdr-qwest-se-freedom-sale-mobile.gif" alt="Entegra Qwest SE Freedom Sale" loading="lazy" onerror="this.style.display='none'">
-        <div class="p-body"><b>Qwest SE Freedom Sale</b><span>MHSRV-exclusive floorplan</span></div>
-      </a>
-      <a class="promo" href="#">
-        <img src="https://mhsrv.s3.us-east-1.amazonaws.com/images/landing-pages/lp-2026-07-01-california-location/hdr-california-location-mobile.jpg" alt="MHSRV coming soon to California" loading="lazy" onerror="this.style.display='none'">
-        <div class="p-body"><b>Coming Soon: California</b><span>Palm Desert location opening</span></div>
-      </a>
-      <a class="promo" href="#">
-        <img src="https://mhsrv.s3.us-east-1.amazonaws.com/images/landing-pages/lp-2025-08-19-entrada-210ns/hdr-entrada-210ns-mobile-3-left.jpg" alt="East to West Entrada 210NS" loading="lazy" onerror="this.style.display='none'">
-        <div class="p-body"><b>Entrada 210NS</b><span>Big value in a small footprint</span></div>
-      </a>
-    </div>
-  </section>
 
   <section id="featured">
     <div class="sec-head"><h2>Featured this week</h2><button onclick="document.getElementById('inventory').scrollIntoView({behavior:'smooth'})">See all</button></div>
@@ -1260,6 +1272,42 @@ if(state.view==='data'){const bv=document.getElementById('vwVisual'),bd=document
   if(bd){bd.classList.add('on');bd.setAttribute('aria-pressed','true')}
   if(h)h.hidden=false;}
 renderLife();renderTypes();renderPrices();renderFeatured();renderGrid();
+
+/* ---------- hero slider ---------- */
+(function(){
+  const wrap=document.getElementById('heroSlides');if(!wrap)return;
+  const slides=[document.getElementById('hs0'),...wrap.querySelectorAll('[data-hs]')];
+  const dots=document.getElementById('hdots');let cur=0,timer=null,stopped=false;
+  slides.forEach((_,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Slide '+(i+1));
+    b.onclick=()=>{stop();go(i)};dots.appendChild(b);});
+  function paint(){[...dots.children].forEach((d,i)=>d.classList.toggle('on',i===cur));}
+  function go(i){
+    slides[cur].classList.add('off');slides[cur].classList.add('abs');
+    cur=(i+slides.length)%slides.length;
+    const el=slides[cur];
+    if(cur===0)el.classList.remove('abs');   /* scene slide defines height */
+    el.classList.remove('off');paint();
+  }
+  function stop(){stopped=true;if(timer)clearTimeout(timer);}
+  function tick(delay){
+    if(stopped)return;
+    timer=setTimeout(()=>{if(document.hidden){tick(2000);return}
+      if(!stopped){go(cur+1);tick(4500);}},delay);
+  }
+  wrap.addEventListener('mouseenter',()=>{if(timer)clearTimeout(timer)});
+  wrap.addEventListener('mouseleave',()=>{if(!stopped)tick(3000)});
+  let tx=null;
+  wrap.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;if(timer)clearTimeout(timer)},{passive:true});
+  wrap.addEventListener('touchend',e=>{
+    if(tx===null){if(!stopped)tick(4000);return}
+    const dx=e.changedTouches[0].clientX-tx;tx=null;
+    if(Math.abs(dx)>45){stop();go(cur+(dx<0?1:-1));}else if(!stopped)tick(4000);
+  },{passive:true});
+  window.promoGo=t=>{stop();state.smart=null;state.q='';state.type=t;renderTypes();renderGrid();document.getElementById('inventory').scrollIntoView({behavior:'smooth'});};
+  window.promoSearch=q=>{stop();smartSearch(q);};
+  paint();
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)tick(5600);
+})();
 </script>
 </body>
 </html>
