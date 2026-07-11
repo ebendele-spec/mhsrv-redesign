@@ -53,7 +53,7 @@
   .hpromo h2::before{display:none}
   .hpromo p{margin-top:7px;font-size:14px;font-weight:500;opacity:.92;text-shadow:0 1px 8px rgba(0,0,0,.5)}
   .hpromo .pcta{display:inline-block;margin-top:13px;background:var(--sign-yellow);color:var(--hwy-green-dark);font-weight:700;font-size:13.5px;padding:10px 18px;border-radius:99px;text-decoration:none;border:none;cursor:pointer;font-family:inherit}
-  .hdots{position:absolute;right:14px;bottom:10px;z-index:5;display:flex;gap:6px}
+  .hdots{position:absolute;right:12px;top:12px;z-index:5;display:flex;gap:6px;background:rgba(10,8,20,.42);padding:6px 9px;border-radius:99px;backdrop-filter:blur(3px)}
   .hdots button{width:8px;height:8px;border-radius:99px;background:rgba(255,255,255,.38);border:none;cursor:pointer;padding:0;transition:.2s}
   .hdots button.on{background:var(--sign-yellow);width:20px}
   @media(prefers-reduced-motion:reduce){.hslide{transition:none}}
@@ -1282,11 +1282,10 @@ renderLife();renderTypes();renderPrices();renderFeatured();renderGrid();
     b.onclick=()=>{stop();go(i)};dots.appendChild(b);});
   function paint(){[...dots.children].forEach((d,i)=>d.classList.toggle('on',i===cur));}
   function go(i){
-    slides[cur].classList.add('off');slides[cur].classList.add('abs');
+    slides[cur].classList.add('off');
+    if(cur!==0)slides[cur].classList.add('abs');   /* slide 0 stays in flow: it defines the height */
     cur=(i+slides.length)%slides.length;
-    const el=slides[cur];
-    if(cur===0)el.classList.remove('abs');   /* scene slide defines height */
-    el.classList.remove('off');paint();
+    slides[cur].classList.remove('off');paint();
   }
   function stop(){stopped=true;if(timer)clearTimeout(timer);}
   function tick(delay){
