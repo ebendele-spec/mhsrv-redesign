@@ -50,29 +50,6 @@
   .discbody a{color:var(--sign-yellow)}
   .hpromo .pcontent{width:100%}
 
-  /* ---------- liquid glass system ---------- */
-  @supports ((backdrop-filter:blur(4px)) or (-webkit-backdrop-filter:blur(4px))){
-    header{background:rgba(18,44,88,.72);-webkit-backdrop-filter:blur(16px) saturate(1.7);backdrop-filter:blur(16px) saturate(1.7);border-bottom:1px solid rgba(255,255,255,.14)}
-    .dock{background:transparent}
-    .dock-inner{background:rgba(255,255,255,.62);-webkit-backdrop-filter:blur(18px) saturate(1.5);backdrop-filter:blur(18px) saturate(1.5);border-top:1px solid rgba(255,255,255,.7);box-shadow:0 -6px 24px rgba(10,16,30,.14)}
-    .searchbox{background:rgba(255,255,255,.82);-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);border:1px solid rgba(255,255,255,.65)}
-    .chips .chip:not(.on){background:rgba(255,255,255,.13);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-color:rgba(255,255,255,.3);color:#fff}
-    .sugg{background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(18px) saturate(1.4);backdrop-filter:blur(18px) saturate(1.4);border:1px solid rgba(255,255,255,.7)}
-    .smartbar{background:rgba(236,241,250,.66);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
-    .viewtoggle{background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
-    .qprompt{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
-  }
-  .searchbox{transition:box-shadow .25s}
-  .searchbox:focus-within{box-shadow:0 0 0 2px rgba(255,201,31,.85),0 0 22px rgba(255,201,31,.35),0 10px 32px rgba(0,0,0,.4)}
-  .sb-spark{flex:none;font-size:16px;margin-right:2px;filter:drop-shadow(0 0 6px rgba(255,201,31,.8))}
-  .qprompts{display:flex;gap:8px;overflow-x:auto;margin-top:10px;scrollbar-width:none;padding-bottom:2px}
-  .qprompts::-webkit-scrollbar{display:none}
-  .qprompt{flex:none;display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:99px;padding:7px 13px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap}
-  .qprompt .qi{opacity:.85}
-  /* for-you rail */
-  #foryou .sec-head h2{display:flex;align-items:center;gap:7px}
-  .fy-badge{font-size:10px;font-weight:800;letter-spacing:.08em;background:linear-gradient(135deg,#17376A,#5B3FA8);color:#fff;border-radius:6px;padding:3px 7px;text-transform:uppercase}
-  .fy-why{font-size:12.5px;color:var(--muted);margin:2px 0 0}
   /* ---------- hero slider ---------- */
   .heroslides{position:relative;overflow:hidden}
   .hslide{transition:opacity .65s ease,transform .65s ease}
@@ -401,6 +378,31 @@
   .feat small{display:none}
   .feat .f-price{font-family:'Barlow Condensed';font-size:16px;font-weight:700;color:var(--hwy-green);margin-top:3px}
   .feat .f-off{font-size:9px;font-weight:700;color:#B4530A;background:#FDEBD7;padding:1.5px 4px;border-radius:4px;margin-left:4px;vertical-align:2px}
+  /* ---------- liquid glass system ---------- */
+  @supports ((backdrop-filter:blur(4px)) or (-webkit-backdrop-filter:blur(4px))){
+    header{background:rgba(18,44,88,.72);-webkit-backdrop-filter:blur(16px) saturate(1.7);backdrop-filter:blur(16px) saturate(1.7);border-bottom:1px solid rgba(255,255,255,.14)}
+    .dock{background:transparent}
+    .dock-inner{background:rgba(255,255,255,.62);-webkit-backdrop-filter:blur(18px) saturate(1.5);backdrop-filter:blur(18px) saturate(1.5);border-top:1px solid rgba(255,255,255,.7);box-shadow:0 -6px 24px rgba(10,16,30,.14)}
+    .searchbox{background:rgba(255,255,255,.82);-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);border:1px solid rgba(255,255,255,.65)}
+    .chips .chip:not(.on){background:rgba(255,255,255,.13);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-color:rgba(255,255,255,.3);color:#fff}
+    .sugg{background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(18px) saturate(1.4);backdrop-filter:blur(18px) saturate(1.4);border:1px solid rgba(255,255,255,.7)}
+    .smartbar{background:rgba(236,241,250,.66);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+    .viewtoggle{background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+    .qprompt{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+  }
+  .searchbox{transition:box-shadow .25s}
+  .searchbox:focus-within{box-shadow:0 0 0 2px rgba(255,201,31,.85),0 0 22px rgba(255,201,31,.35),0 10px 32px rgba(0,0,0,.4)}
+  .sb-spark{flex:none;font-size:16px;margin-right:2px;filter:drop-shadow(0 0 6px rgba(255,201,31,.8))}
+  .qprompts{display:flex;gap:8px;overflow-x:auto;margin-top:10px;scrollbar-width:none;padding-bottom:2px}
+  .qprompts::-webkit-scrollbar{display:none}
+  .qprompt{flex:none;display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:99px;padding:7px 13px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap}
+  .qprompt .qi{opacity:.85}
+  /* for-you rail */
+  #foryou .sec-head h2{display:flex;align-items:center;gap:7px}
+  .fy-badge{font-size:10px;font-weight:800;letter-spacing:.08em;background:linear-gradient(135deg,#17376A,#5B3FA8);color:#fff;border-radius:6px;padding:3px 7px;text-transform:uppercase}
+  .fy-why{font-size:12.5px;color:var(--muted);margin:2px 0 0}
+  .searchbox{z-index:45}
+  .sugg{z-index:90}
 </style>
 <script src="data.js"></script>
 <script src="specs.js"></script>
