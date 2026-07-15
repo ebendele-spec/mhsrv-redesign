@@ -257,7 +257,7 @@
 </style><style id="glassx">@supports ((backdrop-filter:blur(4px)) or (-webkit-backdrop-filter:blur(4px))){
 header{background:rgba(18,44,88,.72)!important;-webkit-backdrop-filter:blur(16px) saturate(1.7);backdrop-filter:blur(16px) saturate(1.7);border-bottom:1px solid rgba(255,255,255,.14)}
 .dock{background:rgba(255,255,255,.62)!important;-webkit-backdrop-filter:blur(18px) saturate(1.5);backdrop-filter:blur(18px) saturate(1.5);border-top:1px solid rgba(255,255,255,.7)!important;box-shadow:0 -6px 24px rgba(10,16,30,.14)!important}
-}</style></head><body>
+}</style><style id="fpimgx">.fp-img{width:100%;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;background:#fff;display:block}</style></head><body>
 
 <style>
 .dr-sub-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;text-align:left;padding:15px 18px 15px 56px;font-size:16.5px;font-weight:500;color:#3A4440;background:none;border:none;border-bottom:1px solid #ECEFEC;cursor:pointer;font-family:inherit}
@@ -376,13 +376,13 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
   <section><h2>Highlights</h2><div class="hl"><span>Cab-over bunk</span><span>Power awning</span><span>Back-up camera</span><span>Generator ready</span><span>Sleeps the family</span><span>Easy to drive</span><span>Ducted A/C</span><span>Apple CarPlay</span></div></section>
   <section><h2>Floorplan &amp; documents</h2>
   <div class="fpdocs">
-    <div class="fpcard">
+    <div class="fpcard open">
       <button class="fp-toggle" onclick="this.parentElement.classList.toggle('open')" aria-expanded="false">
         <span class="fp-art"><svg viewBox="0 0 120 60" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="6" width="112" height="48" rx="8"/><path d="M40 6 v20 h-14 M40 26 h-36 M78 54 v-22 h20 M78 32 h38 M56 6 v14 M56 54 v-16"/><rect x="88" y="12" width="20" height="12" rx="2"/><rect x="12" y="38" width="22" height="10" rx="2"/></svg></span>
         <span class="fpt"><b>Entrada 210NS floorplan</b><span class="sub">24ft — tap for layout details</span></span>
         <span class="fp-chev">⌄</span>
       </button>
-      <div class="fp-body">
+      <div class="fp-body"><img class="fp-img" src="https://d17qgzvii7d4wm.cloudfront.net/s3/img.rv/2321/i/5211356/o/1_2321_5211356_319570343.jpg;maxwidth=900;quality=70" alt="2027 East to West Entrada 210NS floorplan" loading="lazy" onerror="this.style.display='none'">
         <p>The official 2026 Entrada floorplan drawing with full dimensions is in the factory brochure. Want the exact layout of this coach with options? Text us the stock number <b>#MHS44845</b> and we&#39;ll send it right over.</p>
         <a class="fp-cta" href="https://www.bluecompassrv.com/product/rv-3701364-5#section-detail-floorplan-anchor" target="_blank" rel="noopener">📐 View floorplan drawing</a>
         <a class="fp-cta" href="https://library.rvusa.com/brochure/2026-East-to-West-Entrada.pdf" target="_blank" rel="noopener">📘 Open factory brochure</a>
@@ -439,7 +439,7 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
     <form id="docform" onsubmit="return false">
       <input placeholder="First name" name="first_name" required><input placeholder="Last name" name="last_name">
       <input placeholder="Phone" type="tel" name="phone" required><input placeholder="Email" type="email" name="email">
-      <button class="go" id="docbtn" onclick="sendLead(document.getElementById('docform'),(docKind==='brochure'?'Brochure':'Window Sticker')+' Request — 2027 East to West Entrada 210NS #MHS44845',this).then(ok=>{if(ok){document.getElementById('docformview').style.display='none';document.getElementById('docsuccess').style.display='block';}})">📄 Text me the document</button>
+      <button class="go" id="docbtn" onclick="sendLead(document.getElementById('docform'),(docKind==='brochure'?'Brochure':'Window Sticker')+' Request — 2027 East to West Entrada 210NS #MHS44845',this).then(ok=>{if(ok){document.getElementById('docformview').style.display='none';document.getElementById('docsuccess').style.display='block';}})">📄 Send me the Document</button><a class="go" style="display:block;text-align:center;text-decoration:none;background:#fff;color:var(--hwy-green);border:1.5px solid var(--hwy-green);margin-top:8px" href="sms:8177907771?&body=Hi%21%20Can%20you%20text%20me%20the%20factory%20documents%20%28window%20sticker%20/%20brochure%29%20for%20the%202027%20East%20to%20West%20Entrada%20210NS%20%E2%80%94%20stock%20%23MHS44845%3F%20Thanks%21">💬 Text Us For The Brochure Immediately</a>
     </form>
     <p style="font-size:11px;margin-top:10px;color:var(--muted)">Msg &amp; data rates may apply. Easily unsubscribe at any time.</p>
   </div>

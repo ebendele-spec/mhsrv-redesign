@@ -438,7 +438,7 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
     <form id="docform" onsubmit="return false">
       <input placeholder="First name" name="first_name" required><input placeholder="Last name" name="last_name">
       <input placeholder="Phone" type="tel" name="phone" required><input placeholder="Email" type="email" name="email">
-      <button class="go" id="docbtn" onclick="sendLead(document.getElementById('docform'),(docKind==='brochure'?'Brochure':'Window Sticker')+' Request — 2025 Grand Design Reflection 322FKTS #MHS44292A1',this).then(ok=>{if(ok){document.getElementById('docformview').style.display='none';document.getElementById('docsuccess').style.display='block';}})">📄 Text me the document</button>
+      <button class="go" id="docbtn" onclick="sendLead(document.getElementById('docform'),(docKind==='brochure'?'Brochure':'Window Sticker')+' Request — 2025 Grand Design Reflection 322FKTS #MHS44292A1',this).then(ok=>{if(ok){document.getElementById('docformview').style.display='none';document.getElementById('docsuccess').style.display='block';}})">📄 Send me the Document</button><a class="go" style="display:block;text-align:center;text-decoration:none;background:#fff;color:var(--hwy-green);border:1.5px solid var(--hwy-green);margin-top:8px" href="sms:8177907771?&body=Hi%21%20Can%20you%20text%20me%20the%20factory%20documents%20%28window%20sticker%20/%20brochure%29%20for%20the%202025%20Grand%20Design%20Reflection%20322FKTS%20%E2%80%94%20stock%20%23MHS44292A1%3F%20Thanks%21">💬 Text Us For The Brochure Immediately</a>
     </form>
     <p style="font-size:11px;margin-top:10px;color:var(--muted)">Msg &amp; data rates may apply. Easily unsubscribe at any time.</p>
   </div>
