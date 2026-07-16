@@ -40,17 +40,7 @@
 
 
 
-  .fine-center{text-align:center;margin-top:18px;font-size:11.5px;color:#9AA3AD;max-width:640px;margin-left:auto;margin-right:auto}
-  .discwrap{text-align:center;margin-top:14px}
-  .discbtn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);color:#9AA3AD;font-weight:600;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;padding:9px 18px;border-radius:99px;border:1px solid rgba(255,255,255,.16);cursor:pointer;font-family:'Barlow Condensed',sans-serif;transition:.2s}
-  .discbtn:hover{color:#fff;border-color:rgba(255,201,31,.5)}
-  .discbtn .dch{color:var(--sign-yellow);font-size:13px;transition:transform .25s;display:inline-block}
-  .discbtn.open .dch{transform:rotate(45deg)}
-  .discbody[hidden]{display:none}
-  .discbody{text-align:left;margin-top:16px;font-size:11.5px;line-height:1.6;color:#9AA3AD}
-  .discbody p{margin-top:10px}
-  .discbody b{color:#C4CCD4}
-  .discbody a{color:var(--sign-yellow)}
+  /* footer + legal disclaimer styles live in footer.js (shared across all pages) */
   .hpromo .pcontent{width:100%}
 
   /* ---------- hero slider ---------- */
@@ -294,15 +284,6 @@
   .review footer{margin-top:10px;font-size:12.5px;color:var(--muted);font-weight:600}
   .review-link{display:inline-block;margin-top:12px;font-size:13.5px;font-weight:700;color:var(--hwy-green);text-decoration:none}
 
-  /* ---------- footer ---------- */
-  .foot{background:var(--asphalt);color:#fff;margin-top:30px;padding:24px 0 28px}
-  .foot .wrap{display:grid;gap:18px}
-  @media(min-width:760px){.foot .wrap{grid-template-columns:repeat(3,1fr)}}
-  .loc b{font-family:'Barlow Condensed';font-size:17px;text-transform:uppercase;letter-spacing:.03em;color:var(--sign-yellow)}
-  .loc p{font-size:13px;line-height:1.5;opacity:.8;margin-top:4px}
-  .loc a{color:#fff;font-weight:600;text-decoration:none;font-size:13.5px}
-  .fine{font-size:11px;opacity:.5;margin-top:8px;line-height:1.5}
-
   /* ---------- sticky action bar ---------- */
   .dock{position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.08)}
   .dock-inner{max-width:960px;margin:0 auto;display:flex;gap:8px;padding:10px 14px calc(10px + env(safe-area-inset-bottom))}
@@ -354,6 +335,16 @@
   @media(max-width:370px){.call-btn{font-size:12px;padding:8px 9px}}
   #budget,#inventory,#typeRail,#reviews{scroll-margin-top:78px}
   .loadmore{grid-column:1/-1;background:#fff;border:1.5px solid var(--hwy-green);color:var(--hwy-green);font-weight:700;font-size:14.5px;padding:14px;border-radius:11px;cursor:pointer;font-family:inherit}
+
+  /* ---------- in-grid finance tile (Carvana-style) ---------- */
+  .fintile{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 20px 22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+  .fintile .ft-art{width:104px;height:auto;margin-bottom:10px}
+  .fintile h3{font-family:'Barlow Condensed';font-size:22px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;color:var(--ink)}
+  .fintile p{font-size:13.5px;color:var(--muted);line-height:1.5;max-width:300px;margin-top:5px}
+  .fintile .ft-go{display:block;width:100%;max-width:320px;margin-top:14px;background:var(--hwy-green);color:#fff;font-weight:700;font-size:14.5px;padding:13px;border-radius:11px;text-decoration:none;transition:.15s}
+  .fintile .ft-go:hover{background:var(--hwy-green-dark)}
+  .fintile small{font-size:11px;color:var(--muted);margin-top:8px}
+  .grid.dataview .fintile{padding:20px 16px}
   .cstrip{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab}
   .cstrip::-webkit-scrollbar{display:none}
   .cstrip img{position:static;flex:none;width:100%;height:100%;object-fit:cover;scroll-snap-align:center}
@@ -725,24 +716,8 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
 
 </main>
 
-<div class="foot">
-  <div class="wrap">
-    <div class="loc"><b>Texas — Alvarado</b><p>5411 South I-35W, Alvarado, TX 76009<br>Mon–Sat 8:30–5:30 · Sun closed</p><a href="tel:8003356054">800-335-6054</a></div>
-    <div class="loc"><b>Alabama — Montgomery</b><p>4504 Troy Hwy, Montgomery, AL 36116<br>Mon–Sat 8:30–5:30 · Sun closed</p><a href="tel:3342880331">334-288-0331</a></div>
-    <div class="loc"><b>California — Coming Soon</b><p>77840 Varner Rd, Palm Desert, CA 92211</p><a href="tel:8006103934">800-610-3934</a></div>
-  </div>
-  <div class="wrap" style="display:block">
-    <p class="fine fine-center">*#1 in the world per Stats Surveys Inc. for American-built motorhomes sold at a single location. Prices &amp; payments estimated; see dealer for details.</p>
-    <div class="discwrap">
-      <button type="button" class="discbtn" id="discBtn" aria-expanded="false">Legal &amp; pricing disclaimer <span class="dch">+</span></button>
-      <div class="discbody" id="discBody" hidden>
-        <p>All material copyright © Motor Home Specialist ( MHSRV.com ). All rights are reserved. No part of any material on this web site may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of Motor Home Specialist. *Information deemed reliable, but not guaranteed. Features &amp; options subject to change without notice. Weights &amp; measurements are estimates only. Verify before purchase.</p>
-        <p><b>DISCLAIMER:</b> +Due to industry shortages, product changes, and continual price increases the M.S.R.P. on “coming soon” and “on order” units must be estimated and based on the manufacturer’s information provided to MHS at the time of order. M.S.R.P.s may be slightly higher or lower when they ultimately arrive at MHS. *#1 in the world or #1 in Texas references are per the official Stats Surveys Inc. for American-built Motorhomes sold at a single location. *MINIMUM 25% OFF MSRP ON MOST RVs DISCOUNT DOES NOT APPLY TO ALL NEW RVs including, but not restricted to, CLASS B, CLASS C &amp; B+, CLASS A, TRAVEL TRAILER RVs, AND MERCEDES. CONTACT SALES FOR UP-TO-DATE SALE PRICING AND PERCENTAGE DISCOUNTS ON ALL PRODUCTS. The % discount shown on a unit is rounded to the nearest "whole number" percentage. The sale price is fractionally higher or lower than the percentage shown. All sale prices include all other incentives, offers, and rebates offered by MHSRV or any other manufacturer unless specified in writing. Motor Home Specialist's prices, sales, and offers are subject to change without notice and Motor Home Specialist reserves the right to price any unit, including those spotlighted or specially marked, before, during or after a sale or promotion of any kind or type of advertisement including that of an email blast, TV spot, written ad or any other type of advertisement at any price they wish after any sale or promotion ends to ultimately sell every unit. *(w.a.c.) Estimated payment figured at 7.99% on 20 yrs with 10% down on units above $49,001. Units below $49,000, estimated payment figured at 7.99% on 15yrs with 20% down. Price and payment do NOT include TT&amp;L or any other fees that may apply. Used units and RVs under $50K are subject to shorter terms, higher rates, and restrictions. Call MHSRV's finance department for complete details. Some videos and photos may not represent the actual vehicle for sale. Manufacturer's standards and features subject to change without notice. ALL weights, measurements, sizes, etc. including, but not limited to, TVs, bed sizes, tank capacities, lengths, GVWRs, etc., are all either estimated or information provided by the manufacturer and not guaranteed to be 100% accurate by MHSRV or the manufacturer due to continual product changes and enhancements. All deposits are NON-REFUNDABLE unless otherwise specified in writing. Upon receipt of deposit seller (MHSRV) agrees to hold the selected unit and prepare it for delivery and orientation to the buyer. Buyer understands and agrees that by leaving said NON-REFUNDABLE deposit they are asking MHS to prepare their purchase for delivery and orientation and should they fail to pay for their purchase by the specified delivery date they will forfeit the NON-REFUNDABLE deposit. MHS retains the right to apply partial or all said NON-REFUNDABLE deposit to a future purchase. Online info deemed reliable, but not guaranteed. All materials are copyrighted by Motor Home Specialist (MHSRV.com). All rights are reserved. No part of any material on this website may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of Motor Home Specialist. Thank you so much for shopping with us at Motor Home Specialist. If you have any further questions about sale prices, promotions, finance, etc. please call 800-335-6054 or local 817-790-7771. 100 OBanion Way Alvarado, TX. 76009.</p>
-        <p>View your <a href="your-california-privacy-rights.html">California Privacy Rights</a>. View the <a href="ccpa-notice.html">California Consumer Privacy Act Notice for California Consumers</a>.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- Footer is shared across all pages — see footer.js -->
+<script src="footer.js" defer></script>
 
 <nav class="dock" aria-label="Quick actions">
   <div class="dock-inner">
@@ -1134,6 +1109,28 @@ document.addEventListener('click',e=>{if(!e.target.closest('#searchbox'))hideSug
 
 $('sort').addEventListener('change',e=>{state.sort=e.target.value;renderGrid();});
 
+/* ---- Carvana-style finance tile, inserted throughout the results ---- */
+function finTile(){
+  return `<article class="fintile" aria-label="Finance with MHSRV">
+    <svg class="ft-art" viewBox="0 0 120 92" aria-hidden="true">
+      <rect x="41" y="3" width="38" height="21" rx="3.5" fill="#FFF4D6" stroke="#17376A" stroke-width="2.5"/>
+      <circle cx="60" cy="13.5" r="7" fill="#FFC91F" stroke="#17376A" stroke-width="2"/>
+      <text x="60" y="17.5" text-anchor="middle" font-family="Barlow,sans-serif" font-size="11" font-weight="800" fill="#17376A">$</text>
+      <g transform="translate(0,28)" style="color:#17376A"><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M12 47 V24 q0 -4 4 -4 h14 v-3 h12 v3 h10 v-3 h12 v3 h28 l10 14 V51 L97 51 a9 9 0 0 1 -18 0 L51 51 a9 9 0 0 1 -18 0 L16 51 q-4 0 -4 -4z  M93 23 l7 10 v3 h-7 z M25 26 h12 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-12 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M47 26 h12 a2 2 0 0 1 2 2 v5 a2 2 0 0 1 -2 2 h-12 a2 2 0 0 1 -2 -2 v-5 a2 2 0 0 1 2 -2 z M70.5 26 h5 a2.5 2.5 0 0 1 2.5 2.5 v13 a2.5 2.5 0 0 1 -2.5 2.5 h-5 a2.5 2.5 0 0 1 -2.5 -2.5 v-13 a2.5 2.5 0 0 1 2.5 -2.5 z M21.5 42 h9 a1.5 1.5 0 0 1 1.5 1.5 v0 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 v0 a1.5 1.5 0 0 1 1.5 -1.5 z "/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M35.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M38.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="42" cy="53" r="1.7" fill="currentColor"/><path fill="currentColor" stroke="none" fill-rule="evenodd" d="M81.2 53 a6.8 6.8 0 1 0 13.6 0 a6.8 6.8 0 1 0 -13.6 0 M84.4 53 a3.6 3.6 0 1 0 7.2 0 a3.6 3.6 0 1 0 -7.2 0 "/><circle cx="88" cy="53" r="1.7" fill="currentColor"/></g>
+    </svg>
+    <h3>Finance with MHSRV</h3>
+    <p>Real, personalized financing terms in minutes — with no impact to your credit score.</p>
+    <a class="ft-go" href="get-prequalified.html">Get Pre-Qualified</a>
+    <small>*w.a.c. — see Legal &amp; pricing disclaimer</small>
+  </article>`;
+}
+/* one tile after every 8th card; short result sets get one at the end */
+function withFinTiles(cards){
+  const out=[];
+  cards.forEach((c,i)=>{out.push(c);if((i+1)%8===0)out.push(finTile());});
+  if(cards.length>=3&&cards.length<8)out.push(finTile());
+  return out;
+}
 function renderGrid(more){if(!more)state.page=1;
   let list=RVS.filter(r=>{
     if(state.type&&r.type!==state.type)return false;
@@ -1162,7 +1159,7 @@ function renderGrid(more){if(!more)state.page=1;
   if(!list.length){$('grid').innerHTML=`<div class="empty"><b>No live units in this slice yet</b>Try widening your budget or clearing a filter — or call us, new arrivals land daily. </div>`;return;}
   if(state.view==='data'){renderDataRows(list);return;}
   $('grid').classList.remove('dataview');
-  $('grid').innerHTML=list.slice(0,state.page*24).map(r=>{
+  $('grid').innerHTML=withFinTiles(list.slice(0,state.page*24).map(r=>{
     const save=r.msrp?r.msrp-r.price:0;
     const pct=r.msrp?Math.round(save/r.msrp*100):0;
     const gal=(r.imgs&&r.imgs.length>1)?r.imgs.slice(0,6):null;
@@ -1190,7 +1187,7 @@ function renderGrid(more){if(!more)state.page=1;
         </div>
       </div>
     </article>`;
-  }).join('')+(list.length>state.page*24?`<button class="loadmore" onclick="state.page++;renderGrid(true)">Load 24 more · ${(list.length-state.page*24).toLocaleString()} remaining</button>`:'');
+  })).join('')+(list.length>state.page*24?`<button class="loadmore" onclick="state.page++;renderGrid(true)">Load 24 more · ${(list.length-state.page*24).toLocaleString()} remaining</button>`:'');
   document.querySelectorAll('.cstrip').forEach(s=>{
     s.scrollLeft=0; /* always start on photo #1 */
     s.addEventListener('scroll',()=>{
@@ -1216,7 +1213,7 @@ function setView(v){
 }
 function renderDataRows(list){
   const g=$('grid');g.classList.add('dataview');
-  g.innerHTML=list.slice(0,state.page*24).map(r=>{
+  g.innerHTML=withFinTiles(list.slice(0,state.page*24).map(r=>{
     const save=r.msrp?r.msrp-r.price:0;
     const pct=r.msrp?Math.round(save/r.msrp*100):0;
     const sp=(typeof SPECS!=='undefined'&&SPECS[r.stk])||{};
@@ -1242,7 +1239,7 @@ function renderDataRows(list){
         <div class="rvd-cta"><a class="primary" href="units/${r.stk}.html">View details</a><a class="ghost" href="tel:8003356054">Call</a></div>
       </div>
     </article>`;
-  }).join('')+(list.length>state.page*24?`<button class="loadmore" onclick="state.page++;renderGrid(true)">Load 24 more · ${(list.length-state.page*24).toLocaleString()} remaining</button>`:'');
+  })).join('')+(list.length>state.page*24?`<button class="loadmore" onclick="state.page++;renderGrid(true)">Load 24 more · ${(list.length-state.page*24).toLocaleString()} remaining</button>`:'');
 }
 /* ---- desktop gallery interactions: one-photo wheel steps + mouse drag ---- */
 function stripStep(s,d){const i=Math.round(s.scrollLeft/s.clientWidth);const n=Math.max(0,Math.min(s.children.length-1,i+d));s.scrollTo({left:n*s.clientWidth,behavior:'smooth'})}
@@ -1362,12 +1359,6 @@ renderLife();renderTypes();renderPrices();renderFeatured();renderGrid();
   paint();
   if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)tick(5600);
 })();
-
-document.getElementById('discBtn').addEventListener('click',function(){
-  const b=document.getElementById('discBody');const open=b.hidden;
-  b.hidden=!open;this.classList.toggle('open',open);
-  this.setAttribute('aria-expanded',open?'true':'false');
-});
 
 /* ---------- AI personalization: profile, for-you rail, quick prompts ---------- */
 const PROF_KEY='mhsrv-profile';
