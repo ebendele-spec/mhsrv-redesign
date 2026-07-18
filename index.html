@@ -1019,6 +1019,9 @@ function withFinTiles(cards){
   if(cards.length>=3&&cards.length<8)out.push(finTile());
   return out;
 }
+/* ---- infinite scroll: auto-load the next page when the load-more button nears the viewport ---- */
+const loadObserver='IntersectionObserver' in window?new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){loadObserver.unobserve(e.target);e.target.click();}})},{rootMargin:'600px 0px'}):null;
+function watchLoadMore(){if(!loadObserver)return;const b=document.querySelector('.loadmore');if(b)loadObserver.observe(b);}
 function renderGrid(more){if(!more)state.page=1;
   let list=RVS.filter(r=>{
     if(state.type&&r.type!==state.type)return false;
@@ -1076,6 +1079,7 @@ function renderGrid(more){if(!more)state.page=1;
       </div>
     </article>`;
   })).join('')+(list.length>state.page*24?`<button class="loadmore" onclick="state.page++;renderGrid(true)">Load 24 more · ${(list.length-state.page*24).toLocaleString()} remaining</button>`:'');
+  watchLoadMore();
   document.querySelectorAll('.cstrip').forEach(s=>{
     s.scrollLeft=0; /* always start on photo #1 */
     s.addEventListener('scroll',()=>{
@@ -1128,6 +1132,7 @@ function renderDataRows(list){
       </div>
     </article>`;
   })).join('')+(list.length>state.page*24?`<button class="loadmore" onclick="state.page++;renderGrid(true)">Load 24 more · ${(list.length-state.page*24).toLocaleString()} remaining</button>`:'');
+  watchLoadMore();
 }
 /* ---- desktop gallery interactions: one-photo wheel steps + mouse drag ---- */
 function stripStep(s,d){const i=Math.round(s.scrollLeft/s.clientWidth);const n=Math.max(0,Math.min(s.children.length-1,i+d));s.scrollTo({left:n*s.clientWidth,behavior:'smooth'})}
