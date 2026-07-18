@@ -1019,10 +1019,12 @@ function withFinTiles(cards){
   if(cards.length>=3&&cards.length<8)out.push(finTile());
   return out;
 }
-/* ---- infinite scroll: auto-load the next page when the load-more button nears the viewport ---- */
-const loadObserver='IntersectionObserver' in window?new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){loadObserver.unobserve(e.target);e.target.click();}})},{rootMargin:'600px 0px'}):null;
-function watchLoadMore(){if(!loadObserver)return;const b=document.querySelector('.loadmore');if(b)loadObserver.observe(b);}
-function renderGrid(more){if(!more)state.page=1;
+/* ---- infinite scroll: the first page is loaded by hand (so the footer stays reachable);
+   after that, the next page auto-loads once the button itself is visible, after a short pause ---- */
+let autoLoad=false;
+const loadObserver='IntersectionObserver' in window?new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const b=e.target;loadObserver.unobserve(b);setTimeout(()=>{if(b.isConnected)b.click();},350);}})}):null;
+function watchLoadMore(){if(!loadObserver||!autoLoad)return;const b=document.querySelector('.loadmore');if(b)loadObserver.observe(b);}
+function renderGrid(more){if(!more){state.page=1;autoLoad=false;}
   let list=RVS.filter(r=>{
     if(state.type&&r.type!==state.type)return false;
     if(state.life){const l=LIFESTYLES.find(x=>x.id===state.life);if(!l.types.includes(r.type))return false;}
@@ -1078,7 +1080,7 @@ function renderGrid(more){if(!more)state.page=1;
         </div>
       </div>
     </article>`;
-  })).join('')+(list.length>state.page*24?`<button class="loadmore" onclick="state.page++;renderGrid(true)">Load 24 more · ${(list.length-state.page*24).toLocaleString()} remaining</button>`:'');
+  })).join('')+(list.length>state.page*24?`<button class="loadmore" onclick="autoLoad=true;state.page++;renderGrid(true)">Load 24 more · ${(list.length-state.page*24).toLocaleString()} remaining</button>`:'');
   watchLoadMore();
   document.querySelectorAll('.cstrip').forEach(s=>{
     s.scrollLeft=0; /* always start on photo #1 */
@@ -1131,7 +1133,7 @@ function renderDataRows(list){
         <div class="rvd-cta"><a class="primary" href="units/${r.stk}.html">View details</a><a class="ghost" href="tel:8003356054">Call</a></div>
       </div>
     </article>`;
-  })).join('')+(list.length>state.page*24?`<button class="loadmore" onclick="state.page++;renderGrid(true)">Load 24 more · ${(list.length-state.page*24).toLocaleString()} remaining</button>`:'');
+  })).join('')+(list.length>state.page*24?`<button class="loadmore" onclick="autoLoad=true;state.page++;renderGrid(true)">Load 24 more · ${(list.length-state.page*24).toLocaleString()} remaining</button>`:'');
   watchLoadMore();
 }
 /* ---- desktop gallery interactions: one-photo wheel steps + mouse drag ---- */
