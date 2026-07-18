@@ -103,6 +103,8 @@
   .chips::-webkit-scrollbar{display:none}
   .chip{flex:none;border:1.5px solid rgba(255,255,255,.5);background:rgba(0,0,0,.25);color:#fff;font-size:13.5px;font-weight:600;padding:7px 14px;border-radius:99px;backdrop-filter:blur(4px);transition:.15s}
   .chip.on{background:var(--sign-yellow);border-color:var(--sign-yellow);color:var(--hwy-green-dark)}
+  .chips.chips-light{margin:0 0 14px}
+  .chips.chips-light .chip:not(.on){background:#fff;border-color:var(--line);color:var(--ink);backdrop-filter:none}
   @keyframes flick{0%,100%{opacity:.85}45%{opacity:1}60%{opacity:.7}}
   .fire{animation:flick 1.6s infinite}
   @keyframes twink{0%,100%{opacity:.95}50%{opacity:.2}}
@@ -232,6 +234,8 @@
   .rv-img{aspect-ratio:3/2;position:relative;overflow:hidden;cursor:pointer}
   .rv-img svg{position:absolute;inset:0;width:100%;height:100%}
   .rv-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .rv-img .ph-art{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  .rv-img .ph-art img{position:static;width:72%;height:auto;object-fit:contain;filter:drop-shadow(0 8px 14px rgba(0,0,0,.35))}
   .badge{position:absolute;top:10px;left:10px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:4px 9px;border-radius:6px;z-index:2}
   .badge.new{background:var(--sign-yellow);color:var(--hwy-green-dark)}
   .badge.used{background:#fff;color:var(--asphalt)}
@@ -592,12 +596,6 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
       <div class="sugg" id="sugg" hidden></div>
     </div>
     <div class="qprompts" id="qprompts" aria-label="Suggested searches"></div>
-    <div class="chips" id="condChips">
-      <button class="chip on" data-cond="all">All</button>
-      <button class="chip" data-cond="new">New</button>
-      <button class="chip" data-cond="used">Used</button>
-      <button class="chip" data-cond="deal">🔥 Deals of the Week</button>
-    </div>
   </div>
 </div></div>
 
@@ -633,6 +631,12 @@ function isSaved(stk){try{return JSON.parse(localStorage.getItem('mhsrv-saved')|
   </section>
 
   <section>
+    <div class="chips chips-light" id="condChips">
+      <button class="chip on" data-cond="all">All</button>
+      <button class="chip" data-cond="new">New</button>
+      <button class="chip" data-cond="used">Used</button>
+      <button class="chip" data-cond="deal">🔥 Deals of the Week</button>
+    </div>
     <div class="sec-head"><h2>Shop by type</h2><button onclick="clearType()">Clear</button></div>
     <div class="rail" id="typeRail" style="margin-top:10px"></div>
   </section>
@@ -746,37 +750,6 @@ const LIFESTYLES=[
 ];
 /* inventory loaded from data.js */
 
-/* ============ SCENIC BACKDROPS (SVG) ============ */
-const SCENES={
-  lake:`<defs><linearGradient id="skyL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FB4D8"/><stop offset=".6" stop-color="#CFE4EE"/><stop offset="1" stop-color="#F2E2C4"/></linearGradient></defs>
-    <rect width="400" height="180" fill="url(#skyL)"/>
-    <circle cx="330" cy="42" r="16" fill="#FFF3D6"/>
-    <path d="M0 96 L70 62 130 96 200 56 280 96 400 70 400 180 0 180Z" fill="#5E8A74" opacity=".8"/>
-    <rect y="118" width="400" height="62" fill="#8FB9CB"/>
-    <path d="M0 118 h400 v6 q-100 6 -200 0 t-200 0z" fill="#A9CBD8"/>
-    <path d="M30 150 q30 6 60 0 M250 158 q34 6 68 0" stroke="#C7DEE7" stroke-width="2.5" fill="none" stroke-linecap="round"/>`,
-  desert:`<defs><linearGradient id="skyD" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#40265C"/><stop offset=".55" stop-color="#B75B3F"/><stop offset="1" stop-color="#EDA24E"/></linearGradient></defs>
-    <rect width="400" height="180" fill="url(#skyD)"/>
-    <circle cx="300" cy="92" r="22" fill="#FFDFAE"/>
-    <path d="M0 110 L54 110 66 86 118 86 130 110 400 110 400 180 0 180Z" fill="#5A3040" opacity=".85"/>
-    <rect y="128" width="400" height="52" fill="#3A2232"/>
-    <path d="M46 140 v-18 M46 128 q-8 0 -8 -8 M46 132 q9 0 9 -9" stroke="#2A4A34" stroke-width="4" stroke-linecap="round" fill="none"/>
-    <path d="M352 148 v-14 M352 140 q-7 0 -7 -7" stroke="#2A4A34" stroke-width="3.5" stroke-linecap="round" fill="none"/>`,
-  mountain:`<defs><linearGradient id="skyM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A7FA8"/><stop offset="1" stop-color="#D8E4EA"/></linearGradient></defs>
-    <rect width="400" height="180" fill="url(#skyM)"/>
-    <path d="M0 120 L90 40 150 100 220 30 320 120 400 60 400 180 0 180Z" fill="#48607A"/>
-    <path d="M90 40 L110 62 96 60 82 66Z M220 30 L242 56 226 52 210 60Z" fill="#EAF2F6"/>
-    <rect y="132" width="400" height="48" fill="#39506A"/>
-    <path d="M40 150 l8 -16 8 16z M64 152 l7 -13 7 13z M330 150 l8 -15 8 15z" fill="#22392C"/>`,
-  family:`<defs><linearGradient id="skyF" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8CC0E0"/><stop offset="1" stop-color="#F4EBCF"/></linearGradient></defs>
-    <rect width="400" height="180" fill="url(#skyF)"/>
-    <circle cx="70" cy="40" r="14" fill="#FFF6DE"/>
-    <ellipse cx="180" cy="46" rx="30" ry="9" fill="#fff" opacity=".85"/><ellipse cx="300" cy="30" rx="24" ry="8" fill="#fff" opacity=".85"/>
-    <path d="M0 112 Q100 92 200 112 T400 108 L400 180 0 180Z" fill="#6E9E62"/>
-    <rect y="140" width="400" height="40" fill="#587F4E"/>
-    <path d="M320 128 l12 -20 12 20z" fill="#C46A3A"/><path d="M326 128 l6 -10 6 10z" fill="#8F4A28"/>`
-};
-
 const LIFESCENES={
   weekend:`<defs><linearGradient id="lsW" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FB4D8"/><stop offset="1" stop-color="#DDEDF5"/></linearGradient></defs>
     <rect width="400" height="180" fill="url(#lsW)"/>
@@ -873,82 +846,9 @@ const LIFESCENES={
     <circle cx="298" cy="154" r="5" fill="#C4B08A" opacity=".6"/><circle cx="308" cy="150" r="3.6" fill="#C4B08A" opacity=".45"/>`
 };
 
-/* ============ RV SILHOUETTES BY TYPE ============ */
-function rig(type){
-  const body='#F2F0EA',swoosh='#B0453A',glass='#7FA6B8',tire='#181C22',hub='#8B95A0';
-  const wheel=(x,y)=>`<circle cx="${x}" cy="${y}" r="11" fill="${tire}"/><circle cx="${x}" cy="${y}" r="4.5" fill="${hub}"/>`;
-  switch(type){
-    case 'diesel': case 'classa': return `
-      <rect x="60" y="86" width="252" height="62" rx="8" fill="${body}"/>
-      <path d="M60 118 h252 v8 q-126 12 -252 0z" fill="${swoosh}"/>
-      <path d="M60 112 q126 -8 252 0 v6 h-252z" fill="#5A2F28" opacity=".55"/>
-      <rect x="292" y="92" width="18" height="26" rx="3" fill="${glass}"/>
-      <rect x="72" y="94" width="30" height="16" rx="2" fill="${glass}"/>
-      <rect x="110" y="94" width="30" height="16" rx="2" fill="${glass}"/>
-      <rect x="148" y="94" width="30" height="16" rx="2" fill="${glass}"/>
-      <rect x="196" y="94" width="24" height="38" rx="2" fill="#D9D4C8"/>
-      ${wheel(104,148)}${wheel(262,148)}`;
-    case 'superc': return `
-      <path d="M244 118 h30 q8 0 10 8 l4 12 v10 h-44z" fill="${body}"/>
-      <path d="M238 96 h36 v22 h-36z" fill="${body}"/>
-      <rect x="60" y="82" width="184" height="66" rx="6" fill="${body}"/>
-      <path d="M232 82 h30 v14 h-36z" fill="${body}"/>
-      <path d="M60 120 h228 v8 q-114 10 -228 0z" fill="${swoosh}"/>
-      <rect x="246" y="122" width="22" height="12" rx="2" fill="${glass}"/>
-      <rect x="244" y="100" width="24" height="14" rx="2" fill="${glass}"/>
-      <rect x="72" y="90" width="26" height="15" rx="2" fill="${glass}"/>
-      <rect x="106" y="90" width="26" height="15" rx="2" fill="${glass}"/>
-      <rect x="146" y="90" width="20" height="34" rx="2" fill="#D9D4C8"/>
-      <path d="M270 148 h16" stroke="#3A424C" stroke-width="6" stroke-linecap="round"/>
-      ${wheel(100,148)}${wheel(210,148)}${wheel(236,148)}`;
-    case 'classc': return `
-      <path d="M236 96 h44 q12 0 16 12 l6 18 v22 h-66z" fill="${body}"/>
-      <rect x="60" y="82" width="182" height="66" rx="7" fill="${body}"/>
-      <path d="M242 82 h34 v14 h-40z" fill="${body}"/>
-      <path d="M60 120 h236 v8 q-118 10 -236 0z" fill="${swoosh}"/>
-      <rect x="252" y="102" width="26" height="18" rx="3" fill="${glass}"/>
-      <rect x="72" y="90" width="26" height="15" rx="2" fill="${glass}"/>
-      <rect x="106" y="90" width="26" height="15" rx="2" fill="${glass}"/>
-      <rect x="146" y="90" width="20" height="34" rx="2" fill="#D9D4C8"/>
-      ${wheel(100,148)}${wheel(244,148)}`;
-    case 'classb': return `
-      <path d="M96 92 q0 -12 14 -12 h130 q16 0 24 12 l14 22 q4 8 4 14 v14 h-186z" fill="${body}"/>
-      <path d="M96 124 h186 v6 q-93 9 -186 0z" fill="${swoosh}"/>
-      <rect x="236" y="96" width="26" height="17" rx="3" fill="${glass}"/>
-      <rect x="118" y="94" width="34" height="15" rx="3" fill="${glass}"/>
-      <rect x="162" y="94" width="24" height="30" rx="2" fill="#D9D4C8"/>
-      ${wheel(134,142)}${wheel(244,142)}`;
-    case 'fifth': return `
-      <path d="M84 108 h56 v-24 q0 -12 14 -12 h122 q14 0 14 12 v64 h-206z" fill="${body}"/>
-      <path d="M140 84 q30 -6 60 -6" stroke="#D9D4C8" stroke-width="2" fill="none"/>
-      <path d="M84 126 h206 v7 q-103 9 -206 0z" fill="${swoosh}"/>
-      <rect x="164" y="84" width="26" height="14" rx="2" fill="${glass}"/>
-      <rect x="202" y="84" width="26" height="14" rx="2" fill="${glass}"/>
-      <rect x="240" y="84" width="26" height="14" rx="2" fill="${glass}"/>
-      <rect x="102" y="114" width="24" height="14" rx="2" fill="${glass}"/>
-      <path d="M96 148 v-14 M90 148 h12" stroke="#6B7480" stroke-width="4" stroke-linecap="round"/>
-      ${wheel(200,148)}${wheel(230,148)}`;
-    case 'toy': return `
-      <rect x="70" y="80" width="216" height="66" rx="6" fill="${body}"/>
-      <path d="M70 116 h216 v8 q-108 10 -216 0z" fill="#3E4650"/>
-      <path d="M286 84 L322 146 H286Z" fill="#C8C2B4"/>
-      <path d="M288 92 L316 142 M288 104 L310 142 M288 116 L302 142" stroke="#9B948A" stroke-width="2"/>
-      <rect x="84" y="88" width="24" height="14" rx="2" fill="${glass}"/>
-      <rect x="118" y="88" width="24" height="14" rx="2" fill="${glass}"/>
-      <path d="M70 132 l-22 10" stroke="#6B7480" stroke-width="5" stroke-linecap="round"/>
-      ${wheel(150,146)}${wheel(180,146)}`;
-    default: return `
-      <rect x="86" y="84" width="196" height="60" rx="10" fill="${body}"/>
-      <path d="M86 114 h196 v7 q-98 9 -196 0z" fill="${swoosh}"/>
-      <rect x="102" y="92" width="26" height="15" rx="2" fill="${glass}"/>
-      <rect x="138" y="92" width="26" height="15" rx="2" fill="${glass}"/>
-      <rect x="238" y="92" width="26" height="15" rx="2" fill="${glass}"/>
-      <rect x="178" y="92" width="20" height="34" rx="2" fill="#D9D4C8"/>
-      <path d="M86 134 L58 142 M62 141 v7" stroke="#6B7480" stroke-width="4" stroke-linecap="round"/>
-      ${wheel(160,144)}${wheel(190,144)}`;
-  }
-}
-const unitArt=(scene,type)=>`<svg viewBox="0 0 400 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${SCENES[scene]||SCENES.lake}<g transform="translate(20,10)">${rig(type)}</g></svg>`;
+/* ============ NO-PHOTO PLACEHOLDER ART ============ */
+const TYPETINT={classa:['#1D4079','#0E2347'],classc:['#46508F','#1B2145'],classb:['#2F6E6E','#0F3333'],diesel:['#6E3E2F','#2E1712'],superc:['#6E2F3F','#2E1219'],fifth:['#5C3F79','#241238'],toy:['#A2622F','#40230E'],tt:['#2F6E4F','#123425']};
+const unitArt=(scene,type)=>{const t=TYPETINT[type]||TYPETINT.classa;return `<div class="ph-art" style="background:radial-gradient(120% 95% at 50% 108%,rgba(255,201,31,.42) 0%,rgba(255,201,31,.1) 45%,transparent 68%),linear-gradient(150deg,${t[0]},${t[1]})" aria-hidden="true"><img src="img/types/${TYPEIMG[type]}.webp" alt="" loading="lazy" decoding="async"></div>`};
 const TYPEIMG={classa:'class_a',classc:'class_c',classb:'class_b',diesel:'diesel_pusher',superc:'super_c',fifth:'fifth_wheel',toy:'toy_hauler',tt:'travel_trailer'};
 const typeIcon=t=>`<img src="img/types/${TYPEIMG[t.id]}.webp" alt="${t.name}" loading="lazy" decoding="async">`;
 const lifeArt=s=>`<svg viewBox="0 0 400 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${LIFESCENES[s]}</svg>`;
