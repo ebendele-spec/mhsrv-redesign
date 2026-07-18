@@ -1,0 +1,6895 @@
+{
+"catalog": {
+"thor motor coach|aria": {
+"file": "2026-Thor-Motor-Coach-Aria.pdf",
+"family": "Aria",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|tuscany": {
+"file": "2023-Thor-Motor-Coach-Tuscany.pdf",
+"family": "Tuscany",
+"broyear": "2023",
+"exact": true
+},
+"nexus|maximus": {
+"file": "2026-Nexus-Maximus.pdf",
+"family": "Maximus",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|inception": {
+"file": "2026-Thor-Motor-Coach-Inception.pdf",
+"family": "Inception",
+"broyear": "2026",
+"exact": true
+},
+"dynamax corp|dx3": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"family": "DX3",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|accolade xl": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"family": "Accolade XL",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|emblem": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"family": "Emblem",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|esteem": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"family": "Esteem",
+"broyear": "2025",
+"exact": true
+},
+"entegra coach|qwest se": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"family": "Qwest SE",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|chateau": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"family": "Chateau",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|odyssey se": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"family": "Odyssey SE",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|axis": {
+"file": "2026-Thor-Motor-Coach-Axis.pdf",
+"family": "Axis",
+"broyear": "2026",
+"exact": true
+},
+"midwest|patriot": {
+"file": "2025-Midwest-Patriot.pdf",
+"family": "Patriot",
+"broyear": "2025",
+"exact": true
+},
+"tiffin|gt2": {
+"file": "2026-Tiffin-GT2.pdf",
+"family": "GT2",
+"broyear": "2026",
+"exact": false
+},
+"forest river|georgetown 5 series gt5": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"family": "Georgetown 5 Series GT5",
+"broyear": "2025",
+"exact": true
+},
+"thor motor coach|quantum": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"family": "Quantum",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|outlaw": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"family": "Outlaw",
+"broyear": "2026",
+"exact": true
+},
+"dynamax corp|dynaquest xl": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"family": "Dynaquest XL",
+"broyear": "2026",
+"exact": true
+},
+"east to west|entrada": {
+"file": "2026-East-to-West-Entrada.pdf",
+"family": "Entrada",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|odyssey": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"family": "Odyssey",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|palazzo gt": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"family": "Palazzo GT",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|vegas": {
+"file": "2026-Thor-Motor-Coach-Vegas.pdf",
+"family": "Vegas",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|geneva": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"family": "Geneva",
+"broyear": "2026",
+"exact": true
+},
+"fleetwood|fortis": {
+"file": "2026-Fleetwood-Fortis.pdf",
+"family": "Fortis",
+"broyear": "2026",
+"exact": true
+},
+"grand design|imagine": {
+"file": "2022-Grand-Design-Imagine.pdf",
+"family": "Imagine",
+"broyear": "2022",
+"exact": true
+},
+"dynamax corp|europa": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"family": "Europa",
+"broyear": "2026",
+"exact": true
+},
+"foretravel|realm presidential": {
+"file": "2021-Foretravel-Realm-Presidential.pdf",
+"family": "Realm Presidential",
+"broyear": "2021",
+"exact": false
+},
+"thor motor coach|rize sport": {
+"file": "2026-Thor-Motor-Coach-Rize-Sport.pdf",
+"family": "Rize Sport",
+"broyear": "2026",
+"exact": true
+},
+"winnebago|travato": {
+"file": "2023-Winnebago-Travato.pdf",
+"family": "Travato",
+"broyear": "2023",
+"exact": true
+},
+"thor motor coach|tiburon": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"family": "Tiburon",
+"broyear": "2026",
+"exact": true
+},
+"holiday rambler|vacationer": {
+"file": "2026-Holiday-Rambler-Vacationer.pdf",
+"family": "Vacationer",
+"broyear": "2026",
+"exact": true
+},
+"fleetwood|bounder": {
+"file": "2026-Fleetwood-Bounder.pdf",
+"family": "Bounder",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|indigo": {
+"file": "2026-Thor-Motor-Coach-Indigo.pdf",
+"family": "Indigo",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|outlaw wild west edition": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"family": "Outlaw Wild West Edition",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|omni": {
+"file": "2025-Thor-Motor-Coach-Omni.pdf",
+"family": "Omni",
+"broyear": "2025",
+"exact": true
+},
+"forest river|forester le": {
+"file": "2026-Forest-River-Forester-LE.pdf",
+"family": "Forester LE",
+"broyear": "2026",
+"exact": true
+},
+"east to west|bravado": {
+"file": "2025-East-to-West-Bravado.pdf",
+"family": "Bravado",
+"broyear": "2025",
+"exact": true
+},
+"thor motor coach|delano": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"family": "Delano",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|riviera": {
+"file": "2026-Thor-Motor-Coach-Riviera.pdf",
+"family": "Riviera",
+"broyear": "2026",
+"exact": true
+},
+"forest river|berkshire xlt": {
+"file": "2026-Forest-River-Berkshire-XLT.pdf",
+"family": "Berkshire XLT",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|tellaro sport": {
+"file": "2026-Thor-Motor-Coach-Tellaro-Sport.pdf",
+"family": "Tellaro Sport",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|rize": {
+"file": "2026-Thor-Motor-Coach-Rize.pdf",
+"family": "Rize",
+"broyear": "2026",
+"exact": true
+},
+"dynamax corp|isata 6 series": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"family": "Isata 6 Series",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|cornerstone": {
+"file": "2025-Entegra-Coach-Cornerstone.pdf",
+"family": "Cornerstone",
+"broyear": "2025",
+"exact": true
+},
+"thor motor coach|pasadena": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"family": "Pasadena",
+"broyear": "2026",
+"exact": true
+},
+"dynamax corp|isata 5 series": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"family": "Isata 5 Series",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|aspire": {
+"file": "2025-Entegra-Coach-Aspire.pdf",
+"family": "Aspire",
+"broyear": "2025",
+"exact": true
+},
+"forest river|aurora light": {
+"file": "2026-Forest-River-Aurora-Light.pdf",
+"family": "Aurora Light",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|tellaro": {
+"file": "2026-Thor-Motor-Coach-Tellaro.pdf",
+"family": "Tellaro",
+"broyear": "2026",
+"exact": true
+},
+"nexus|ghost": {
+"file": "2025-Nexus-Ghost.pdf",
+"family": "Ghost",
+"broyear": "2025",
+"exact": true
+},
+"thor motor coach|gemini": {
+"file": "2026-Thor-Motor-Coach-Gemini.pdf",
+"family": "Gemini",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|four winds": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"family": "Four Winds",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|condor": {
+"file": "2026-Entegra-Coach-Condor.pdf",
+"family": "Condor",
+"broyear": "2026",
+"exact": true
+},
+"winnebago|micro minnie": {
+"file": "2022-Winnebago-Micro-Minnie.pdf",
+"family": "Micro Minnie",
+"broyear": "2022",
+"exact": true
+},
+"grand design|momentum": {
+"file": "2023-Grand-Design-Momentum.pdf",
+"family": "Momentum",
+"broyear": "2023",
+"exact": false
+},
+"thor motor coach|magnitude grand": {
+"file": "2026-Thor-Motor-Coach-Magnitude-Grand.pdf",
+"family": "Magnitude Grand",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|expanse": {
+"file": "2026-Entegra-Coach-Expanse.pdf",
+"family": "Expanse",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|quantum sprinter": {
+"file": "2026-Thor-Motor-Coach-Quantum-Sprinter.pdf",
+"family": "Quantum Sprinter",
+"broyear": "2026",
+"exact": true
+},
+"forest river|berkshire xl": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"family": "Berkshire XL",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|ethos": {
+"file": "2026-Entegra-Coach-Ethos.pdf",
+"family": "Ethos",
+"broyear": "2026",
+"exact": true
+},
+"fleetwood|discovery lxe": {
+"file": "2026-Fleetwood-Discovery-LXE.pdf",
+"family": "Discovery LXE",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|accolade": {
+"file": "2026-Entegra-Coach-Accolade.pdf",
+"family": "Accolade",
+"broyear": "2026",
+"exact": true
+},
+"holiday rambler|endeavor": {
+"file": "2026-Holiday-Rambler-Endeavor.pdf",
+"family": "Endeavor",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|vision xl": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"family": "Vision XL",
+"broyear": "2026",
+"exact": true
+},
+"dynamax corp|europa s": {
+"file": "2026-Dynamax-Corp-Europa-S.pdf",
+"family": "Europa S",
+"broyear": "2026",
+"exact": true
+},
+"forest river|forester mbs": {
+"file": "2026-Forest-River-Forester-MBS.pdf",
+"family": "Forester MBS",
+"broyear": "2026",
+"exact": true
+},
+"newmar|dutch star": {
+"file": "2026-Newmar-Dutch-Star.pdf",
+"family": "Dutch Star",
+"broyear": "2026",
+"exact": true
+},
+"dynamax corp|isata 3 series": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"family": "Isata 3 Series",
+"broyear": "2026",
+"exact": true
+},
+"brinkley rv|model g": {
+"file": "2026-Brinkley-RV-Model-G.pdf",
+"family": "Model G",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|hurricane": {
+"file": "2026-Thor-Motor-Coach-Hurricane.pdf",
+"family": "Hurricane",
+"broyear": "2026",
+"exact": true
+},
+"grand design|lineage series m": {
+"file": "2026-Grand-Design-Lineage-Series-M.pdf",
+"family": "Lineage Series M",
+"broyear": "2026",
+"exact": true
+},
+"jayco|seismic luxury series": {
+"file": "2024-Jayco-Seismic-Luxury-Series.pdf",
+"family": "Seismic Luxury Series",
+"broyear": "2024",
+"exact": true
+},
+"newmar|new aire": {
+"file": "2023-Newmar-New-Aire.pdf",
+"family": "New Aire",
+"broyear": "2023",
+"exact": true
+},
+"fleetwood|palisade": {
+"file": "2027-Fleetwood-Palisade.pdf",
+"family": "Palisade",
+"broyear": "2027",
+"exact": true
+},
+"forest river|fr3 plus": {
+"file": "2025-Forest-River-FR3-Plus.pdf",
+"family": "FR3 Plus",
+"broyear": "2025",
+"exact": true
+},
+"forest river|georgetown 7 series gt7": {
+"file": "2025-Forest-River-Georgetown-7-Series-GT7.pdf",
+"family": "Georgetown 7 Series GT7",
+"broyear": "2025",
+"exact": true
+},
+"american coach|american eagle": {
+"file": "2026-American-Coach-American-Eagle.pdf",
+"family": "American Eagle",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|windsport": {
+"file": "2026-Thor-Motor-Coach-Windsport.pdf",
+"family": "Windsport",
+"broyear": "2026",
+"exact": true
+},
+"drv|mobile suites": {
+"file": "2022-DRV-Mobile-Suites.pdf",
+"family": "Mobile Suites",
+"broyear": "2022",
+"exact": false
+},
+"forest river|fr3": {
+"file": "2025-Forest-River-FR3.pdf",
+"family": "FR3",
+"broyear": "2025",
+"exact": true
+},
+"thor motor coach|inception hd": {
+"file": "2026-Thor-Motor-Coach-Inception-HD.pdf",
+"family": "Inception HD",
+"broyear": "2026",
+"exact": true
+},
+"nexus|rebel": {
+"file": "2026-Nexus-Rebel.pdf",
+"family": "Rebel",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|luminate": {
+"file": "2026-Thor-Motor-Coach-Luminate.pdf",
+"family": "Luminate",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|esteem xl": {
+"file": "2026-Entegra-Coach-Esteem-XL.pdf",
+"family": "Esteem XL",
+"broyear": "2026",
+"exact": true
+},
+"jayco|swift": {
+"file": "2022-Jayco-Swift.pdf",
+"family": "Swift",
+"broyear": "2022",
+"exact": true
+},
+"nexus|viper": {
+"file": "2026-Nexus-Viper.pdf",
+"family": "Viper",
+"broyear": "2026",
+"exact": true
+},
+"keystone|raptor": {
+"file": "2026-Keystone-Raptor.pdf",
+"family": "Raptor",
+"broyear": "2026",
+"exact": true
+},
+"forest river|berkshire": {
+"file": "2026-Forest-River-Berkshire.pdf",
+"family": "Berkshire",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|vision": {
+"file": "2026-Entegra-Coach-Vision.pdf",
+"family": "Vision",
+"broyear": "2026",
+"exact": true
+},
+"newmar|ventana": {
+"file": "2017-Newmar-Ventana.pdf",
+"family": "Ventana",
+"broyear": "2017",
+"exact": true
+},
+"tiffin|allegro bus": {
+"file": "2026-Tiffin-Allegro-Bus.pdf",
+"family": "Allegro Bus",
+"broyear": "2026",
+"exact": false
+},
+"entegra coach|anthem": {
+"file": "2023-Entegra-Coach-Anthem.pdf",
+"family": "Anthem",
+"broyear": "2023",
+"exact": true
+},
+"tiffin|wayfarer": {
+"file": "2023-Tiffin-Wayfarer.pdf",
+"family": "Wayfarer",
+"broyear": "2023",
+"exact": true
+},
+"ogv luxury coach|v rv": {
+"file": "2026-OGV-Luxury-Coach-V-RV.pdf",
+"family": "V RV",
+"broyear": "2026",
+"exact": false
+},
+"entegra coach|qwest": {
+"file": "2026-Entegra-Coach-Qwest.pdf",
+"family": "Qwest",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|gemini awd": {
+"file": "2026-Thor-Motor-Coach-Gemini-AWD.pdf",
+"family": "Gemini AWD",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|accolade xt": {
+"file": "2026-Entegra-Coach-Accolade-XT.pdf",
+"family": "Accolade XT",
+"broyear": "2026",
+"exact": true
+},
+"tiffin|open road allegro": {
+"file": "2026-Tiffin-Open-Road-Allegro.pdf",
+"family": "Open Road Allegro",
+"broyear": "2026",
+"exact": false
+},
+"fleetwood|frontier": {
+"file": "2022-Fleetwood-Frontier.pdf",
+"family": "Frontier",
+"broyear": "2022",
+"exact": true
+},
+"holiday rambler|armada": {
+"file": "2026-Holiday-Rambler-Armada.pdf",
+"family": "Armada",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|tranquility": {
+"file": "2026-Thor-Motor-Coach-Tranquility.pdf",
+"family": "Tranquility",
+"broyear": "2026",
+"exact": true
+},
+"leisure travel|unity": {
+"file": "2026-Leisure-Travel-Unity.pdf",
+"family": "Unity",
+"broyear": "2026",
+"exact": true
+},
+"forest river|wildwood fsx": {
+"file": "2021-Forest-River-Wildwood-FSX.pdf",
+"family": "Wildwood FSX",
+"broyear": "2021",
+"exact": true
+},
+"tiffin|allegro bay": {
+"file": "2025-Tiffin-Allegro-Bay.pdf",
+"family": "Allegro Bay",
+"broyear": "2025",
+"exact": false
+},
+"entegra coach|launch": {
+"file": "2026-Entegra-Coach-Launch.pdf",
+"family": "Launch",
+"broyear": "2026",
+"exact": true
+},
+"brinkley rv|model z": {
+"file": "2026-Brinkley-RV-Model-Z.pdf",
+"family": "Model Z",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|compass": {
+"file": "2026-Thor-Motor-Coach-Compass.pdf",
+"family": "Compass",
+"broyear": "2026",
+"exact": true
+},
+"pleasure-way|ontour 2 2": {
+"file": "2023-Pleasure-Way-Ontour-2-2.pdf",
+"family": "Ontour 2 2",
+"broyear": "2023",
+"exact": false
+},
+"entegra coach|insignia": {
+"file": "2026-Entegra-Coach-Insignia.pdf",
+"family": "Insignia",
+"broyear": "2026",
+"exact": true
+},
+"thor motor coach|omni trail": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"family": "Omni Trail",
+"broyear": "2026",
+"exact": true
+},
+"dutchmen|astoria": {
+"file": "2022-Dutchmen-Astoria.pdf",
+"family": "Astoria",
+"broyear": "2022",
+"exact": false
+},
+"forest river|aurora": {
+"file": "2026-Forest-River-Aurora.pdf",
+"family": "Aurora",
+"broyear": "2026",
+"exact": true
+},
+"airstream|atlas": {
+"file": "2023-Airstream-Atlas.pdf",
+"family": "Atlas",
+"broyear": "2023",
+"exact": false
+},
+"holiday rambler|invicta": {
+"file": "2026-Holiday-Rambler-Invicta.pdf",
+"family": "Invicta",
+"broyear": "2026",
+"exact": true
+},
+"dynamax corp|grand sport": {
+"file": "2026-Dynamax-Corp-Grand-Sport.pdf",
+"family": "Grand Sport",
+"broyear": "2026",
+"exact": true
+},
+"tiffin|allegro red": {
+"file": "2026-Tiffin-Allegro-Red.pdf",
+"family": "Allegro Red",
+"broyear": "2026",
+"exact": true
+},
+"gulf stream|btouring cruiser": {
+"file": "2025-Gulf-Stream-BTouring-Cruiser.pdf",
+"family": "BTouring Cruiser",
+"broyear": "2025",
+"exact": true
+},
+"thor motor coach|a c e ": {
+"file": "2026-Thor-Motor-Coach-A-C-E-.pdf",
+"family": "A C E ",
+"broyear": "2026",
+"exact": false
+},
+"entegra coach|arc": {
+"file": "2026-Entegra-Coach-Arc.pdf",
+"family": "Arc",
+"broyear": "2026",
+"exact": true
+},
+"fleetwood|discovery": {
+"file": "2027-Fleetwood-Discovery.pdf",
+"family": "Discovery",
+"broyear": "2027",
+"exact": true
+},
+"newmar|supreme aire": {
+"file": "2026-Newmar-Supreme-Aire.pdf",
+"family": "Supreme Aire",
+"broyear": "2026",
+"exact": true
+},
+"forest river|forester": {
+"file": "2026-Forest-River-Forester.pdf",
+"family": "Forester",
+"broyear": "2026",
+"exact": true
+},
+"axiom|vendetta": {
+"file": "2026-Axiom-Vendetta.pdf",
+"family": "Vendetta",
+"broyear": "2026",
+"exact": true
+},
+"fleetwood|frontier gtx": {
+"file": "2025-Fleetwood-Frontier-GTX.pdf",
+"family": "Frontier GTX",
+"broyear": "2025",
+"exact": true
+},
+"brinkley rv|model i": {
+"file": "2026-Brinkley-RV-Model-I.pdf",
+"family": "Model I",
+"broyear": "2026",
+"exact": true
+},
+"heartland|big country": {
+"file": "2017-Heartland-Big-Country.pdf",
+"family": "Big Country",
+"broyear": "2017",
+"exact": true
+},
+"thor motor coach|talavera": {
+"file": "2026-Thor-Motor-Coach-Talavera.pdf",
+"family": "Talavera",
+"broyear": "2026",
+"exact": true
+},
+"fleetwood|flair": {
+"file": "2026-Fleetwood-Flair.pdf",
+"family": "Flair",
+"broyear": "2026",
+"exact": true
+},
+"grand design|lineage series vt": {
+"file": "2026-Grand-Design-Lineage-Series-VT.pdf",
+"family": "Lineage Series VT",
+"broyear": "2026",
+"exact": true
+},
+"newmar|bay star": {
+"file": "2026-Newmar-Bay-Star.pdf",
+"family": "Bay Star",
+"broyear": "2026",
+"exact": true
+},
+"entegra coach|vision se": {
+"file": "2026-Entegra-Coach-Vision-SE.pdf",
+"family": "Vision SE",
+"broyear": "2026",
+"exact": true
+},
+"nexus|phantom": {
+"file": "2026-Nexus-Phantom.pdf",
+"family": "Phantom",
+"broyear": "2026",
+"exact": true
+},
+"american coach|american dream": {
+"file": "2026-American-Coach-American-Dream.pdf",
+"family": "American Dream",
+"broyear": "2026",
+"exact": true
+},
+"brinkley rv|model ix": {
+"file": "2026-Brinkley-RV-Model-Ix.pdf",
+"family": "Model Ix",
+"broyear": "2026",
+"exact": true
+},
+"newmar|essex": {
+"file": "2026-Newmar-Essex.pdf",
+"family": "Essex",
+"broyear": "2026",
+"exact": true
+},
+"tiffin|byway": {
+"file": "2026-Tiffin-Byway.pdf",
+"family": "Byway",
+"broyear": "2026",
+"exact": false
+},
+"thor motor coach|resonate": {
+"file": "2026-Thor-Motor-Coach-Resonate.pdf",
+"family": "Resonate",
+"broyear": "2026",
+"exact": true
+},
+"tiffin|phaeton": {
+"file": "2027-Tiffin-Phaeton.pdf",
+"family": "Phaeton",
+"broyear": "2027",
+"exact": true
+},
+"thor motor coach|miramar": {
+"file": "2018-Thor-Motor-Coach-Miramar.pdf",
+"family": "Miramar",
+"broyear": "2018",
+"exact": true
+},
+"east to west|alita": {
+"file": "2024-East-to-West-Alita.pdf",
+"family": "Alita",
+"broyear": "2024",
+"exact": true
+},
+"grand design|lineage": {
+"file": "2026-Grand-Design-Lineage.pdf",
+"family": "Lineage",
+"broyear": "2026",
+"exact": false
+},
+"holiday rambler|admiral": {
+"file": "2026-Holiday-Rambler-Admiral.pdf",
+"family": "Admiral",
+"broyear": "2026",
+"exact": true
+},
+"nexus|wraith": {
+"file": "2026-Nexus-Wraith.pdf",
+"family": "Wraith",
+"broyear": "2026",
+"exact": true
+},
+"nexus|phantom sport": {
+"file": "2026-Nexus-Phantom-Sport.pdf",
+"family": "Phantom Sport",
+"broyear": "2026",
+"exact": true
+},
+"tiffin|allegrobreeze": {
+"file": "2020-Tiffin-AllegroBreeze.pdf",
+"family": "AllegroBreeze",
+"broyear": "2020",
+"exact": false
+},
+"thor motor coach|palazzo": {
+"file": "2023-Thor-Motor-Coach-Palazzo.pdf",
+"family": "Palazzo",
+"broyear": "2023",
+"exact": true
+},
+"thor motor coach|compass awd": {
+"file": "2026-Thor-Motor-Coach-Compass-AWD.pdf",
+"family": "Compass AWD",
+"broyear": "2026",
+"exact": true
+},
+"k-z|connect se": {
+"file": "2023-K-Z-Connect-SE.pdf",
+"family": "Connect SE",
+"broyear": "2023",
+"exact": false
+},
+"jayco|seismic": {
+"file": "2018-Jayco-Seismic.pdf",
+"family": "Seismic",
+"broyear": "2018",
+"exact": true
+},
+"brinkley rv|model z air": {
+"file": "2026-Brinkley-RV-Model-Z-AIR.pdf",
+"family": "Model Z AIR",
+"broyear": "2026",
+"exact": true
+},
+"coachmen|nova": {
+"file": "2023-Coachmen-Nova.pdf",
+"family": "Nova",
+"broyear": "2023",
+"exact": true
+},
+"keystone|passport": {
+"file": "2020-Keystone-Passport.pdf",
+"family": "Passport",
+"broyear": "2020",
+"exact": false
+},
+"grand design|reflection 150 series": {
+"file": "2025-Grand-Design-Reflection-150-Series.pdf",
+"family": "Reflection 150 Series",
+"broyear": "2025",
+"exact": true
+},
+"gulf stream|conquest class c": {
+"file": "2024-Gulf-Stream-Conquest-Class-C.pdf",
+"family": "Conquest Class C",
+"broyear": "2024",
+"exact": true
+},
+"tiffin|zephyr": {
+"file": "2024-Tiffin-Zephyr.pdf",
+"family": "Zephyr",
+"broyear": "2024",
+"exact": true
+},
+"leisure travel|wonder": {
+"file": "2025-Leisure-Travel-Wonder.pdf",
+"family": "Wonder",
+"broyear": "2025",
+"exact": true
+},
+"winnebago|navion": {
+"file": "2021-Winnebago-Navion.pdf",
+"family": "Navion",
+"broyear": "2021",
+"exact": true
+},
+"renegade rv|vienna": {
+"file": "2023-Renegade-RV-Vienna.pdf",
+"family": "Vienna",
+"broyear": "2023",
+"exact": true
+},
+"axiom|imperium": {
+"file": "2026-Axiom-Imperium.pdf",
+"family": "Imperium",
+"broyear": "2026",
+"exact": true
+},
+"winnebago|minnie winnie": {
+"file": "2025-Winnebago-Minnie-Winnie.pdf",
+"family": "Minnie Winnie",
+"broyear": "2025",
+"exact": true
+},
+"cruiser rv|radiance": {
+"file": "2022-Cruiser-RV-Radiance.pdf",
+"family": "Radiance",
+"broyear": "2022",
+"exact": true
+},
+"newmar|grand star": {
+"file": "2026-Newmar-Grand-Star.pdf",
+"family": "Grand Star",
+"broyear": "2026",
+"exact": true
+},
+"grand design|lineage series f": {
+"file": "2026-Grand-Design-Lineage-Series-F.pdf",
+"family": "Lineage Series F",
+"broyear": "2026",
+"exact": true
+},
+"fleetwood|altitude": {
+"file": "2025-Fleetwood-Altitude.pdf",
+"family": "Altitude",
+"broyear": "2025",
+"exact": true
+},
+"newmar|northern star": {
+"file": "2026-Newmar-Northern-Star.pdf",
+"family": "Northern Star",
+"broyear": "2026",
+"exact": true
+},
+"forest river|sunseeker": {
+"file": "2025-Forest-River-Sunseeker.pdf",
+"family": "Sunseeker",
+"broyear": "2025",
+"exact": true
+},
+"tiffin|allegro breeze": {
+"file": "2021-Tiffin-Allegro-Breeze.pdf",
+"family": "Allegro Breeze",
+"broyear": "2021",
+"exact": true
+},
+"grand design|reflection": {
+"file": "2025-Grand-Design-Reflection.pdf",
+"family": "Reflection",
+"broyear": "2025",
+"exact": true
+},
+"foretravel|realm fs605": {
+"file": "2025-Foretravel-Realm-FS605.pdf",
+"family": "Realm FS605",
+"broyear": "2025",
+"exact": false
+},
+"newmar|london aire": {
+"file": "2026-Newmar-London-Aire.pdf",
+"family": "London Aire",
+"broyear": "2026",
+"exact": true
+},
+"alliance rv|paradigm": {
+"file": "2022-Alliance-RV-Paradigm.pdf",
+"family": "Paradigm",
+"broyear": "2022",
+"exact": true
+},
+"newmar|bay star sport": {
+"file": "2026-Newmar-Bay-Star-Sport.pdf",
+"family": "Bay Star Sport",
+"broyear": "2026",
+"exact": true
+},
+"palomino|solaire": {
+"file": "2022-Palomino-Solaire.pdf",
+"family": "Solaire",
+"broyear": "2022",
+"exact": true
+},
+"winnebago|view": {
+"file": "2021-Winnebago-View.pdf",
+"family": "View",
+"broyear": "2021",
+"exact": true
+}
+},
+"stocks": {
+"MHS43225": {
+"file": "2026-Thor-Motor-Coach-Aria.pdf",
+"label": "2026 Aria factory brochure",
+"exact": true
+},
+"MHS44603A": {
+"file": "2023-Thor-Motor-Coach-Tuscany.pdf",
+"label": "2023 Tuscany factory brochure",
+"exact": true
+},
+"MHS43675": {
+"file": "2026-Nexus-Maximus.pdf",
+"label": "2026 Maximus factory brochure",
+"exact": true
+},
+"MHS43360": {
+"file": "2026-Thor-Motor-Coach-Inception.pdf",
+"label": "2026 Inception factory brochure",
+"exact": true
+},
+"MHS44626": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS44299": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS44763": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"label": "2026 Emblem factory brochure",
+"exact": true
+},
+"MHS44333": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS44558": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS43337": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS44671": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS43858": {
+"file": "2026-Thor-Motor-Coach-Axis.pdf",
+"label": "2026 Axis factory brochure",
+"exact": true
+},
+"MHS44364": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"M147373": {
+"file": "2026-Tiffin-GT2.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44734": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS43264": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS43276A": {
+"file": "2010_Pleasure-Way.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43321": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS44667": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"label": "2026 Outlaw factory brochure",
+"exact": true
+},
+"MHS44237": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44722": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44688": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44372": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS43233": {
+"file": "2026-Thor-Motor-Coach-Vegas.pdf",
+"label": "2026 Vegas factory brochure",
+"exact": true
+},
+"MHS44519": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS43376": {
+"file": "2026-Fleetwood-Fortis.pdf",
+"label": "2026 Fortis factory brochure",
+"exact": true
+},
+"UT2100250": {
+"file": "2022-Grand-Design-Imagine.pdf",
+"label": "2022 Imagine factory brochure",
+"exact": true
+},
+"MHS44260": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44630": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS44775": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44562": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44132": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS42582A": {
+"file": "2021-Foretravel-Realm-Presidential.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44427": {
+"file": "2026-Thor-Motor-Coach-Rize-Sport.pdf",
+"label": "2026 Rize Sport factory brochure",
+"exact": true
+},
+"MHS44406A": {
+"file": "2023-Winnebago-Travato.pdf",
+"label": "2023 Travato factory brochure",
+"exact": true
+},
+"MHS43862": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS43531": {
+"file": "2026-Holiday-Rambler-Vacationer.pdf",
+"label": "2026 Vacationer factory brochure",
+"exact": true
+},
+"MHS43474": {
+"file": "2026-Fleetwood-Bounder.pdf",
+"label": "2026 Bounder factory brochure",
+"exact": true
+},
+"MHS44535": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44470": {
+"file": "2026-Thor-Motor-Coach-Aria.pdf",
+"label": "2026 Aria factory brochure",
+"exact": true
+},
+"MHS43566": {
+"file": "2026-Thor-Motor-Coach-Indigo.pdf",
+"label": "2026 Indigo factory brochure",
+"exact": true
+},
+"MHS44759": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"label": "2026 Emblem factory brochure",
+"exact": true
+},
+"MHS43835": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS44399TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS42662": {
+"file": "2025-Thor-Motor-Coach-Omni.pdf",
+"label": "2025 Omni factory brochure",
+"exact": true
+},
+"MHS43073": {
+"file": "2026-Forest-River-Forester-LE.pdf",
+"label": "2026 Forester LE factory brochure",
+"exact": true
+},
+"MHS44523": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS44489": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS44173": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"M136498": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44466": {
+"file": "2026-Thor-Motor-Coach-Riviera.pdf",
+"label": "2026 Riviera factory brochure",
+"exact": true
+},
+"MHS44036": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS44124": {
+"file": "2026-Forest-River-Berkshire-XLT.pdf",
+"label": "2026 Berkshire XLT factory brochure",
+"exact": true
+},
+"MHS44574": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44710TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS44061": {
+"file": "2026-Thor-Motor-Coach-Tellaro-Sport.pdf",
+"label": "2026 Tellaro Sport factory brochure",
+"exact": true
+},
+"1FDXE4FN9VDD01274": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS44431": {
+"file": "2026-Thor-Motor-Coach-Rize.pdf",
+"label": "2026 Rize factory brochure",
+"exact": true
+},
+"MHS44718": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"MHS43177": {
+"file": "2025-Entegra-Coach-Cornerstone.pdf",
+"label": "2025 Cornerstone factory brochure",
+"exact": true
+},
+"MHS43874": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "2026 Pasadena factory brochure",
+"exact": true
+},
+"MHS44780": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"M135502": {
+"file": "2025-Entegra-Coach-Aspire.pdf",
+"label": "2025 Aspire factory brochure",
+"exact": true
+},
+"T136562": {
+"file": "2026-Forest-River-Aurora-Light.pdf",
+"label": "2026 Aurora Light factory brochure",
+"exact": true
+},
+"MHS3382C": {
+"file": "2024-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2024 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44446": {
+"file": "2026-Thor-Motor-Coach-Tellaro.pdf",
+"label": "2026 Tellaro factory brochure",
+"exact": true
+},
+"MHS44153": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44850": {
+"file": "2025-Thor-Motor-Coach-Gemini.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43507": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS44738": {
+"file": "2026-Entegra-Coach-Condor.pdf",
+"label": "2026 Condor factory brochure",
+"exact": true
+},
+"MHS44314A": {
+"file": "2022-Winnebago-Micro-Minnie.pdf",
+"label": "2022 Micro Minnie factory brochure",
+"exact": true
+},
+"MHS44692": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43604A": {
+"file": "2023-Grand-Design-Momentum.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44368": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS43854": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44041": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS44411": {
+"file": "2026-Thor-Motor-Coach-Magnitude-Grand.pdf",
+"label": "2026 Magnitude Grand factory brochure",
+"exact": true
+},
+"MHS44807": {
+"file": "2026-Entegra-Coach-Expanse.pdf",
+"label": "2026 Expanse factory brochure",
+"exact": true
+},
+"MHS44554": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44391": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS43454": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44684": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS43511": {
+"file": "2026-Thor-Motor-Coach-Quantum-Sprinter.pdf",
+"label": "2026 Quantum Sprinter factory brochure",
+"exact": true
+},
+"MHS44407": {
+"file": "2026-Thor-Motor-Coach-Gemini.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44542": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS43287": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44112": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"MHS44811": {
+"file": "2026-Entegra-Coach-Ethos.pdf",
+"label": "2026 Ethos factory brochure",
+"exact": true
+},
+"MHS44401TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"label": "2026 Outlaw factory brochure",
+"exact": true
+},
+"MHS43403": {
+"file": "2026-Fleetwood-Discovery-LXE.pdf",
+"label": "2026 Discovery LXE factory brochure",
+"exact": true
+},
+"MHS44796": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44283": {
+"file": "2026-Entegra-Coach-Accolade.pdf",
+"label": "2026 Accolade factory brochure",
+"exact": true
+},
+"MHS43546": {
+"file": "2026-Holiday-Rambler-Endeavor.pdf",
+"label": "2026 Endeavor factory brochure",
+"exact": true
+},
+"MHS44779": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS43116": {
+"file": "2026-Thor-Motor-Coach-Magnitude-Grand.pdf",
+"label": "2026 Magnitude Grand factory brochure",
+"exact": true
+},
+"MHS43815": {
+"file": "2026-Fleetwood-Discovery-LXE.pdf",
+"label": "2026 Discovery LXE factory brochure",
+"exact": true
+},
+"MHS44450": {
+"file": "2026-Dynamax-Corp-Europa-S.pdf",
+"label": "2026 Europa S factory brochure",
+"exact": true
+},
+"MHS44846": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44515": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS44702": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS43497": {
+"file": "2026-Forest-River-Forester-MBS.pdf",
+"label": "2026 Forester MBS factory brochure",
+"exact": true
+},
+"M146104": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"M131193": {
+"file": "2026-Newmar-Dutch-Star.pdf",
+"label": "2026 Dutch Star factory brochure",
+"exact": true
+},
+"MHS43881": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS44647": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"MHS43478": {
+"file": "2026-Fleetwood-Fortis.pdf",
+"label": "2026 Fortis factory brochure",
+"exact": true
+},
+"MHS43301": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44581": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"T134836": {
+"file": "2026-Brinkley-RV-Model-G.pdf",
+"label": "2026 Model G factory brochure",
+"exact": true
+},
+"MHS44755": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"label": "2026 Emblem factory brochure",
+"exact": true
+},
+"MHS44240": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44610": {
+"file": "2026-Thor-Motor-Coach-Hurricane.pdf",
+"label": "2026 Hurricane factory brochure",
+"exact": true
+},
+"M150592": {
+"file": "2026-Grand-Design-Lineage-Series-M.pdf",
+"label": "2026 Lineage Series M factory brochure",
+"exact": true
+},
+"MHS44095ATH": {
+"file": "2024-Jayco-Seismic-Luxury-Series.pdf",
+"label": "2024 Seismic Luxury Series factory brochure",
+"exact": true
+},
+"MHS44539": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS44169": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS44186": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS44743": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"label": "2026 Outlaw factory brochure",
+"exact": true
+},
+"MHS44485": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS43710": {
+"file": "2026-Thor-Motor-Coach-Magnitude-Grand.pdf",
+"label": "2026 Magnitude Grand factory brochure",
+"exact": true
+},
+"UM920443": {
+"file": "2023-Newmar-New-Aire.pdf",
+"label": "2023 New Aire factory brochure",
+"exact": true
+},
+"MHS43878": {
+"file": "2026-Thor-Motor-Coach-Tellaro-Sport.pdf",
+"label": "2026 Tellaro Sport factory brochure",
+"exact": true
+},
+"MHS43481": {
+"file": "2026-Fleetwood-Fortis.pdf",
+"label": "2026 Fortis factory brochure",
+"exact": true
+},
+"MHS44714": {
+"file": "2027-Fleetwood-Palisade.pdf",
+"label": "2027 Palisade factory brochure",
+"exact": true
+},
+"MHS44201": {
+"file": "2025-Forest-River-FR3-Plus.pdf",
+"label": "2025 FR3 Plus factory brochure",
+"exact": true
+},
+"MHS44651": {
+"file": "2025-Forest-River-Georgetown-7-Series-GT7.pdf",
+"label": "2025 Georgetown 7 Series GT7 factory brochure",
+"exact": true
+},
+"MHS43194": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS43897": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44578": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS43602": {
+"file": "2026-American-Coach-American-Eagle.pdf",
+"label": "2026 American Eagle factory brochure",
+"exact": true
+},
+"MHS43252": {
+"file": "2026-Thor-Motor-Coach-Hurricane.pdf",
+"label": "2026 Hurricane factory brochure",
+"exact": true
+},
+"MHS44597": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"MHS44579": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44129": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS43833**": {
+"file": "2026-Thor-Motor-Coach-Riviera.pdf",
+"label": "2026 Riviera factory brochure",
+"exact": true
+},
+"MHS43253": {
+"file": "2026-Thor-Motor-Coach-Windsport.pdf",
+"label": "2026 Windsport factory brochure",
+"exact": true
+},
+"MHS43480": {
+"file": "2026-Fleetwood-Fortis.pdf",
+"label": "2026 Fortis factory brochure",
+"exact": true
+},
+"CT920280": {
+"file": "2022-DRV-Mobile-Suites.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44715": {
+"file": "2027-Fleetwood-Palisade.pdf",
+"label": "2027 Palisade factory brochure",
+"exact": true
+},
+"MHS44200": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS43195": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS43896": {
+"file": "2026-Thor-Motor-Coach-Inception-HD.pdf",
+"label": "2026 Inception HD factory brochure",
+"exact": true
+},
+"MHS44484": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS43341": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS43204": {
+"file": "2026-Nexus-Rebel.pdf",
+"label": "2026 Rebel factory brochure",
+"exact": true
+},
+"MHS43654": {
+"file": "2026-Thor-Motor-Coach-Luminate.pdf",
+"label": "2026 Luminate factory brochure",
+"exact": true
+},
+"MHS44191": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"M136495": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44742": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44607": {
+"file": "2026-Thor-Motor-Coach-Windsport.pdf",
+"label": "2026 Windsport factory brochure",
+"exact": true
+},
+"MHS44257": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44538": {
+"file": "2026-Entegra-Coach-Esteem-XL.pdf",
+"label": "2026 Esteem XL factory brochure",
+"exact": true
+},
+"MHS44187": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS44419A": {
+"file": "2022-Jayco-Swift.pdf",
+"label": "2022 Swift factory brochure",
+"exact": true
+},
+"T146572": {
+"file": "2026-Forest-River-Aurora-Light.pdf",
+"label": "2026 Aurora Light factory brochure",
+"exact": true
+},
+"MHS43212": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44304": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44754": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS44241": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS43584": {
+"file": "2026-Nexus-Viper.pdf",
+"label": "2026 Viper factory brochure",
+"exact": true
+},
+"MHS44611": {
+"file": "2026-Thor-Motor-Coach-Windsport.pdf",
+"label": "2026 Windsport factory brochure",
+"exact": true
+},
+"MHS44128A": {
+"file": "2026-Keystone-Raptor.pdf",
+"label": "2026 Raptor factory brochure",
+"exact": true
+},
+"MHS44095": {
+"file": "2026-Forest-River-Berkshire.pdf",
+"label": "2026 Berkshire factory brochure",
+"exact": true
+},
+"MHS44580": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS43383A1": {
+"file": "2008_marquis.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44353": {
+"file": "2026-Entegra-Coach-Vision.pdf",
+"label": "2026 Vision factory brochure",
+"exact": true
+},
+"MHS43496": {
+"file": "2026-Forest-River-Forester-MBS.pdf",
+"label": "2026 Forester MBS factory brochure",
+"exact": true
+},
+"MHS44646": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"MHS43479": {
+"file": "2026-Fleetwood-Fortis.pdf",
+"label": "2026 Fortis factory brochure",
+"exact": true
+},
+"MHS44451": {
+"file": "2026-Dynamax-Corp-Europa-S.pdf",
+"label": "2026 Europa S factory brochure",
+"exact": true
+},
+"MHS44847": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44144": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44514": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS43402": {
+"file": "2026-Fleetwood-Discovery-LXE.pdf",
+"label": "2026 Discovery LXE factory brochure",
+"exact": true
+},
+"MHS44797": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS44282": {
+"file": "2026-Entegra-Coach-Accolade.pdf",
+"label": "2026 Accolade factory brochure",
+"exact": true
+},
+"MHS44778": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS44328": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS44406": {
+"file": "2026-Thor-Motor-Coach-Gemini.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43793": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44543": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS44810": {
+"file": "2026-Entegra-Coach-Ethos.pdf",
+"label": "2026 Ethos factory brochure",
+"exact": true
+},
+"MHS43455": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"CM920419": {
+"file": "2017-Newmar-Ventana.pdf",
+"label": "2017 Ventana factory brochure",
+"exact": true
+},
+"MHS44685": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"M129074": {
+"file": "2026-Tiffin-Allegro-Bus.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS3386C": {
+"file": "2023-Entegra-Coach-Anthem.pdf",
+"label": "2023 Anthem factory brochure",
+"exact": true
+},
+"MHS43510": {
+"file": "2026-Thor-Motor-Coach-Quantum-Sprinter.pdf",
+"label": "2026 Quantum Sprinter factory brochure",
+"exact": true
+},
+"MHS44410": {
+"file": "2026-Thor-Motor-Coach-Gemini.pdf",
+"label": "2026 Gemini factory brochure",
+"exact": true
+},
+"MHS44806": {
+"file": "2026-Entegra-Coach-Expanse.pdf",
+"label": "2026 Expanse factory brochure",
+"exact": true
+},
+"MHS44105": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"MHS44555": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44386": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"M127554-LUB": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44739": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"M127552-LEX": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44369": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS43855": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44447": {
+"file": "2026-Thor-Motor-Coach-Tellaro.pdf",
+"label": "2026 Tellaro factory brochure",
+"exact": true
+},
+"MHS44502": {
+"file": "2026-OGV-Luxury-Coach-V-RV.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44781": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"M135503": {
+"file": "2025-Entegra-Coach-Aspire.pdf",
+"label": "2025 Aspire factory brochure",
+"exact": true
+},
+"MHS43947": {
+"file": "2026-Entegra-Coach-Qwest.pdf",
+"label": "2026 Qwest factory brochure",
+"exact": true
+},
+"MHS43802": {
+"file": "2026-Thor-Motor-Coach-Gemini-AWD.pdf",
+"label": "2026 Gemini AWD factory brochure",
+"exact": true
+},
+"M138624": {
+"file": "2025-Entegra-Coach-Aspire.pdf",
+"label": "2025 Aspire factory brochure",
+"exact": true
+},
+"MHS43551": {
+"file": "2026-Nexus-Rebel.pdf",
+"label": "2026 Rebel factory brochure",
+"exact": true
+},
+"MHS44294": {
+"file": "2026-Entegra-Coach-Accolade-XT.pdf",
+"label": "2026 Accolade XT factory brochure",
+"exact": true
+},
+"MHS44719": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"M128543-LEX": {
+"file": "2026-Tiffin-Open-Road-Allegro.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44349": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS43875": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "2026 Pasadena factory brochure",
+"exact": true
+},
+"MHS44575": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44430": {
+"file": "2026-Thor-Motor-Coach-Rize.pdf",
+"label": "2026 Rize factory brochure",
+"exact": true
+},
+"MHS44274A1": {
+"file": "2024-Entegra-Coach-Qwest.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44522": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS44488": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS44172": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS44467": {
+"file": "2026-Thor-Motor-Coach-Riviera.pdf",
+"label": "2026 Riviera factory brochure",
+"exact": true
+},
+"MHS44096A": {
+"file": "2022-Fleetwood-Frontier.pdf",
+"label": "2022 Frontier factory brochure",
+"exact": true
+},
+"MHS44037": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS44758": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"label": "2026 Emblem factory brochure",
+"exact": true
+},
+"MHS43834": {
+"file": "2026-Thor-Motor-Coach-Riviera.pdf",
+"label": "2026 Riviera factory brochure",
+"exact": true
+},
+"MHS43588": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS44164": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS44534": {
+"file": "2026-Entegra-Coach-Ethos.pdf",
+"label": "2026 Ethos factory brochure",
+"exact": true
+},
+"MHS43530": {
+"file": "2026-Holiday-Rambler-Armada.pdf",
+"label": "2026 Armada factory brochure",
+"exact": true
+},
+"MHS43475": {
+"file": "2026-Fleetwood-Bounder.pdf",
+"label": "2026 Bounder factory brochure",
+"exact": true
+},
+"MHS44505**": {
+"file": "2026-Thor-Motor-Coach-Aria.pdf",
+"label": "2026 Aria factory brochure",
+"exact": true
+},
+"MHS44099": {
+"file": "2026-Forest-River-Berkshire.pdf",
+"label": "2026 Berkshire factory brochure",
+"exact": true
+},
+"MHS44563": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44133": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS43835TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS44426": {
+"file": "2026-Thor-Motor-Coach-Tranquility.pdf",
+"label": "2026 Tranquility factory brochure",
+"exact": true
+},
+"M136821": {
+"file": "2026-Leisure-Travel-Unity.pdf",
+"label": "2026 Unity factory brochure",
+"exact": true
+},
+"MHS44076": {
+"file": "2026-Thor-Motor-Coach-Gemini.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44261": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44631": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"CM920442": {
+"file": "2017-Newmar-Ventana.pdf",
+"label": "2017 Ventana factory brochure",
+"exact": true
+},
+"MHS44774": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43232": {
+"file": "2026-Thor-Motor-Coach-Vegas.pdf",
+"label": "2026 Vegas factory brochure",
+"exact": true
+},
+"MHS44518": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS43377": {
+"file": "2026-Fleetwood-Fortis.pdf",
+"label": "2026 Fortis factory brochure",
+"exact": true
+},
+"MHS44148": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44236": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44723": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44689": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"CM920415": {
+"file": "2015-Leisure-Travel-Unity.pdf",
+"label": "2015 Unity factory brochure",
+"exact": true
+},
+"MHS43352A": {
+"file": "2021-Forest-River-Wildwood-FSX.pdf",
+"label": "2021 Wildwood FSX factory brochure",
+"exact": true
+},
+"MHS44397TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS44670": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"M110340-LEX": {
+"file": "2025-Tiffin-Allegro-Bay.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43859": {
+"file": "2026-Thor-Motor-Coach-Axis.pdf",
+"label": "2026 Axis factory brochure",
+"exact": true
+},
+"M147372": {
+"file": "2026-Tiffin-Open-Road-Allegro.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44365": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS44735": {
+"file": "2025-Forest-River-Georgetown-7-Series-GT7.pdf",
+"label": "2025 Georgetown 7 Series GT7 factory brochure",
+"exact": true
+},
+"M120509-LIB": {
+"file": "2026-Tiffin-Allegro-Bay.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44559": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS43336": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS44109": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"MHS43302B": {
+"file": "2017-Entegra-Coach-Anthem.pdf",
+"label": "2017 Anthem factory brochure",
+"exact": true
+},
+"MHS44627": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS44277": {
+"file": "2026-Entegra-Coach-Launch.pdf",
+"label": "2026 Launch factory brochure",
+"exact": true
+},
+"MHS44298": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS44762": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"label": "2026 Emblem factory brochure",
+"exact": true
+},
+"MHS44332": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"CM920454": {
+"file": "2024-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2024 Four Winds factory brochure",
+"exact": true
+},
+"T135343": {
+"file": "2026-Brinkley-RV-Model-Z.pdf",
+"label": "2026 Model Z factory brochure",
+"exact": true
+},
+"MHS43224": {
+"file": "2026-Thor-Motor-Coach-Aria.pdf",
+"label": "2026 Aria factory brochure",
+"exact": true
+},
+"MHS43674": {
+"file": "2026-Nexus-Maximus.pdf",
+"label": "2026 Maximus factory brochure",
+"exact": true
+},
+"MHS43731": {
+"file": "2026-Thor-Motor-Coach-Compass.pdf",
+"label": "2026 Compass factory brochure",
+"exact": true
+},
+"UM920462": {
+"file": "2023-Pleasure-Way-Ontour-2-2.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44786": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44339": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS44293": {
+"file": "2026-Entegra-Coach-Accolade-XT.pdf",
+"label": "2026 Accolade XT factory brochure",
+"exact": true
+},
+"MHS44769": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44440": {
+"file": "2026-Thor-Motor-Coach-Tellaro.pdf",
+"label": "2026 Tellaro factory brochure",
+"exact": true
+},
+"MHS43385": {
+"file": "2026-Fleetwood-Discovery-LXE.pdf",
+"label": "2026 Discovery LXE factory brochure",
+"exact": true
+},
+"MHS44155": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS44381": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS43444": {
+"file": "2026-Entegra-Coach-Insignia.pdf",
+"label": "2026 Insignia factory brochure",
+"exact": true
+},
+"MHS44694": {
+"file": "2026-Entegra-Coach-Accolade.pdf",
+"label": "2026 Accolade factory brochure",
+"exact": true
+},
+"MHS44405A": {
+"file": "2023-Thor-Motor-Coach-Tellaro.pdf",
+"label": "2023 Tellaro factory brochure",
+"exact": true
+},
+"MHS44417": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"label": "2026 Omni Trail factory brochure",
+"exact": true
+},
+"MHS44552": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44801": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS43901": {
+"file": "2026-Entegra-Coach-Ethos.pdf",
+"label": "2026 Ethos factory brochure",
+"exact": true
+},
+"UT920458": {
+"file": "2022-Dutchmen-Astoria.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44397": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS44682": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44378": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS43517": {
+"file": "2026-Thor-Motor-Coach-Quantum-Sprinter.pdf",
+"label": "2026 Quantum Sprinter factory brochure",
+"exact": true
+},
+"MHS44728": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44401": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"label": "2026 Outlaw factory brochure",
+"exact": true
+},
+"M127529-LIB": {
+"file": "2026-Tiffin-Open-Road-Allegro.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44051": {
+"file": "2026-Thor-Motor-Coach-Vegas.pdf",
+"label": "2026 Vegas factory brochure",
+"exact": true
+},
+"T146918": {
+"file": "2026-Forest-River-Aurora.pdf",
+"label": "2026 Aurora factory brochure",
+"exact": true
+},
+"MHS44817": {
+"file": "2026-Thor-Motor-Coach-Rize.pdf",
+"label": "2026 Rize factory brochure",
+"exact": true
+},
+"MHS44114": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"MHS43405": {
+"file": "2026-Fleetwood-Discovery-LXE.pdf",
+"label": "2026 Discovery LXE factory brochure",
+"exact": true
+},
+"MHS44790": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"CM920449": {
+"file": "2024-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2024 Four Winds factory brochure",
+"exact": true
+},
+"MHS44109A": {
+"file": "2025-Entegra-Coach-Accolade.pdf",
+"label": "2025 Accolade factory brochure",
+"exact": true
+},
+"MHS43419A": {
+"file": "2023-Airstream-Atlas.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43540": {
+"file": "2026-Holiday-Rambler-Invicta.pdf",
+"label": "2026 Invicta factory brochure",
+"exact": true
+},
+"MHS44456": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS43669": {
+"file": "2026-Thor-Motor-Coach-Tranquility.pdf",
+"label": "2026 Tranquility factory brochure",
+"exact": true
+},
+"MHS44143": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44513": {
+"file": "2026-Dynamax-Corp-Grand-Sport.pdf",
+"label": "2026 Grand Sport factory brochure",
+"exact": true
+},
+"MHS44840": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"M146102": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44354": {
+"file": "2026-Thor-Motor-Coach-Magnitude-Grand.pdf",
+"label": "2026 Magnitude Grand factory brochure",
+"exact": true
+},
+"MHS44641": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"M131810-LEX": {
+"file": "2026-Tiffin-Allegro-Red.pdf",
+"label": "2026 Allegro Red factory brochure",
+"exact": true
+},
+"MHS44211": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS43887": {
+"file": "2026-Thor-Motor-Coach-Inception-HD.pdf",
+"label": "2026 Inception HD factory brochure",
+"exact": true
+},
+"MHS44138": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44092": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"MHS44568": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44587": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"label": "2026 Omni Trail factory brochure",
+"exact": true
+},
+"MHS44303": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44753": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS42687": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS44246": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44616": {
+"file": "2026-Thor-Motor-Coach-Gemini.pdf",
+"label": "2026 Gemini factory brochure",
+"exact": true
+},
+"MHS43429": {
+"file": "2026-Entegra-Coach-Esteem-XL.pdf",
+"label": "2026 Esteem XL factory brochure",
+"exact": true
+},
+"MHS43350": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS44495": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"M141940": {
+"file": "2025-Gulf-Stream-BTouring-Cruiser.pdf",
+"label": "2025 BTouring Cruiser factory brochure",
+"exact": true
+},
+"MHS44180": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS43215": {
+"file": "2026-Thor-Motor-Coach-A-C-E-.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44745": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS43400A": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44250": {
+"file": "2026-Entegra-Coach-Arc.pdf",
+"label": "2026 Arc factory brochure",
+"exact": true
+},
+"MHS43346": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS44483": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS44179": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS44529": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS44196": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS43653": {
+"file": "2026-Thor-Motor-Coach-Indigo.pdf",
+"label": "2026 Indigo factory brochure",
+"exact": true
+},
+"MHS43487": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS44342": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS44712": {
+"file": "2027-Fleetwood-Discovery.pdf",
+"label": "2027 Discovery factory brochure",
+"exact": true
+},
+"MHS43891": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "2026 Pasadena factory brochure",
+"exact": true
+},
+"MHS44207": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"M128064": {
+"file": "2026-Newmar-Supreme-Aire.pdf",
+"label": "2026 Supreme Aire factory brochure",
+"exact": true
+},
+"MHS44084": {
+"file": "2026-Forest-River-Forester.pdf",
+"label": "2026 Forester factory brochure",
+"exact": true
+},
+"MHS43604": {
+"file": "2026-American-Coach-American-Eagle.pdf",
+"label": "2026 American Eagle factory brochure",
+"exact": true
+},
+"T33335": {
+"file": "2026-Axiom-Vendetta.pdf",
+"label": "2026 Vendetta factory brochure",
+"exact": true
+},
+"MHS43254": {
+"file": "2026-Thor-Motor-Coach-Windsport.pdf",
+"label": "2026 Windsport factory brochure",
+"exact": true
+},
+"MHS43223": {
+"file": "2026-Thor-Motor-Coach-Aria.pdf",
+"label": "2026 Aria factory brochure",
+"exact": true
+},
+"MHS43389": {
+"file": "2026-Fleetwood-Discovery-LXE.pdf",
+"label": "2026 Discovery LXE factory brochure",
+"exact": true
+},
+"MHS43673": {
+"file": "2026-Nexus-Maximus.pdf",
+"label": "2026 Maximus factory brochure",
+"exact": true
+},
+"MHS44159": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS43736": {
+"file": "2026-Thor-Motor-Coach-Axis.pdf",
+"label": "2026 Axis factory brochure",
+"exact": true
+},
+"MHS44509": {
+"file": "2026-Dynamax-Corp-Grand-Sport.pdf",
+"label": "2026 Grand Sport factory brochure",
+"exact": true
+},
+"MHS44620": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS44270": {
+"file": "2026-Entegra-Coach-Ethos.pdf",
+"label": "2026 Ethos factory brochure",
+"exact": true
+},
+"MHS44765": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"label": "2026 Emblem factory brochure",
+"exact": true
+},
+"MHS44335": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS3398C": {
+"file": "2021-Holiday-Rambler-Vacationer.pdf",
+"label": "2021 Vacationer factory brochure",
+"exact": true
+},
+"MHS44667TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"label": "2026 Outlaw factory brochure",
+"exact": true
+},
+"MHS44227": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"MHS44677": {
+"file": "2026-Entegra-Coach-Arc.pdf",
+"label": "2026 Arc factory brochure",
+"exact": true
+},
+"MHS44698": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"label": "2026 Omni Trail factory brochure",
+"exact": true
+},
+"MHS44362": {
+"file": "2025-Fleetwood-Frontier-GTX.pdf",
+"label": "2025 Frontier GTX factory brochure",
+"exact": true
+},
+"MHS44732": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS43262": {
+"file": "2026-Thor-Motor-Coach-Indigo.pdf",
+"label": "2026 Indigo factory brochure",
+"exact": true
+},
+"T123951": {
+"file": "2026-Brinkley-RV-Model-I.pdf",
+"label": "2026 Model I factory brochure",
+"exact": true
+},
+"M141937": {
+"file": "2025-Gulf-Stream-BTouring-Cruiser.pdf",
+"label": "2025 BTouring Cruiser factory brochure",
+"exact": true
+},
+"MHS43327": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"label": "2026 Omni Trail factory brochure",
+"exact": true
+},
+"MHS44548": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS44231": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS43848": {
+"file": "2026-Forest-River-Forester-MBS.pdf",
+"label": "2026 Forester MBS factory brochure",
+"exact": true
+},
+"MHS44724": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"CT920435": {
+"file": "2017-Heartland-Big-Country.pdf",
+"label": "2017 Big Country factory brochure",
+"exact": true
+},
+"MHS43665": {
+"file": "2026-Entegra-Coach-Vision.pdf",
+"label": "2026 Vision factory brochure",
+"exact": true
+},
+"MHS42424": {
+"file": "2026-Thor-Motor-Coach-Talavera.pdf",
+"label": "2026 Talavera factory brochure",
+"exact": true
+},
+"T146410": {
+"file": "2026-Brinkley-RV-Model-Z.pdf",
+"label": "2026 Model Z factory brochure",
+"exact": true
+},
+"MHS43370": {
+"file": "2026-Fleetwood-Flair.pdf",
+"label": "2026 Flair factory brochure",
+"exact": true
+},
+"M127523": {
+"file": "2026-Grand-Design-Lineage-Series-VT.pdf",
+"label": "2026 Lineage Series VT factory brochure",
+"exact": true
+},
+"T145816": {
+"file": "2026-Brinkley-RV-Model-Z.pdf",
+"label": "2026 Model Z factory brochure",
+"exact": true
+},
+"MHS44636": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"MHS43409": {
+"file": "2026-Fleetwood-Frontier.pdf",
+"label": "2026 Frontier factory brochure",
+"exact": true
+},
+"MHS44323": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS44289": {
+"file": "2026-Entegra-Coach-Accolade-XT.pdf",
+"label": "2026 Accolade XT factory brochure",
+"exact": true
+},
+"MHS44773": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"M128584": {
+"file": "2025-Entegra-Coach-Aspire.pdf",
+"label": "2025 Aspire factory brochure",
+"exact": true
+},
+"MHS44564": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44134": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"M136826": {
+"file": "2026-Newmar-Bay-Star.pdf",
+"label": "2026 Bay Star factory brochure",
+"exact": true
+},
+"MHS44421": {
+"file": "2026-Thor-Motor-Coach-Tranquility.pdf",
+"label": "2026 Tranquility factory brochure",
+"exact": true
+},
+"MHS44071": {
+"file": "2026-Entegra-Coach-Launch.pdf",
+"label": "2026 Launch factory brochure",
+"exact": true
+},
+"MHS44358": {
+"file": "2026-Dynamax-Corp-Europa-S.pdf",
+"label": "2026 Europa S factory brochure",
+"exact": true
+},
+"MHS43537": {
+"file": "2026-Holiday-Rambler-Invicta.pdf",
+"label": "2026 Invicta factory brochure",
+"exact": true
+},
+"MHS44743TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"label": "2026 Outlaw factory brochure",
+"exact": true
+},
+"MHS44163": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS44533": {
+"file": "2026-Entegra-Coach-Accolade.pdf",
+"label": "2026 Accolade factory brochure",
+"exact": true
+},
+"M136037": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS44476": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS43976": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44525": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS12345": {
+"file": "2026-Entegra-Coach-Vision-SE.pdf",
+"label": "2026 Vision SE factory brochure",
+"exact": true
+},
+"MHS43728TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"label": "2026 Outlaw factory brochure",
+"exact": true
+},
+"MHS44175": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS44460": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS44319": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS43576": {
+"file": "2026-Nexus-Phantom.pdf",
+"label": "2026 Phantom factory brochure",
+"exact": true
+},
+"MHS44272A": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS43599": {
+"file": "2026-American-Coach-American-Dream.pdf",
+"label": "2026 American Dream factory brochure",
+"exact": true
+},
+"MHS44122": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"T144440": {
+"file": "2026-Brinkley-RV-Model-Ix.pdf",
+"label": "2026 Model Ix factory brochure",
+"exact": true
+},
+"MHS44088": {
+"file": "2026-Forest-River-Forester.pdf",
+"label": "2026 Forester factory brochure",
+"exact": true
+},
+"MHS44572": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44821": {
+"file": "2026-Forest-River-Forester.pdf",
+"label": "2026 Forester factory brochure",
+"exact": true
+},
+"M128068": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS43258": {
+"file": "2026-Thor-Motor-Coach-Hurricane.pdf",
+"label": "2026 Hurricane factory brochure",
+"exact": true
+},
+"MHS43608": {
+"file": "2026-Thor-Motor-Coach-Axis.pdf",
+"label": "2026 Axis factory brochure",
+"exact": true
+},
+"CM920428": {
+"file": "2015_Tiffin_Phaeton.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44089": {
+"file": "2026-Forest-River-Forester.pdf",
+"label": "2026 Forester factory brochure",
+"exact": true
+},
+"MHS44573": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44820": {
+"file": "2026-Forest-River-Forester.pdf",
+"label": "2026 Forester factory brochure",
+"exact": true
+},
+"MHS43186A1": {
+"file": "2025-DRV-Mobile-Suites.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44066": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS43259": {
+"file": "2026-Thor-Motor-Coach-Hurricane.pdf",
+"label": "2026 Hurricane factory brochure",
+"exact": true
+},
+"MHS43609": {
+"file": "2026-Fleetwood-Palisade.pdf",
+"label": "2026 Palisade factory brochure",
+"exact": true
+},
+"MHS44318": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44748": {
+"file": "2026-Thor-Motor-Coach-Magnitude-Grand.pdf",
+"label": "2026 Magnitude Grand factory brochure",
+"exact": true
+},
+"MHS43598": {
+"file": "2026-American-Coach-American-Dream.pdf",
+"label": "2026 American Dream factory brochure",
+"exact": true
+},
+"MHS44524": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS44174": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS44461": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS44031": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"M145774": {
+"file": "2026-Newmar-Essex.pdf",
+"label": "2026 Essex factory brochure",
+"exact": true
+},
+"MHS43561": {
+"file": "2026-American-Coach-American-Dream.pdf",
+"label": "2026 American Dream factory brochure",
+"exact": true
+},
+"M135499": {
+"file": "2025-Entegra-Coach-Anthem.pdf",
+"label": "2025 Anthem factory brochure",
+"exact": true
+},
+"M130842-LNG": {
+"file": "2026-Tiffin-Byway.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44162": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44532": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS43218": {
+"file": "2026-Thor-Motor-Coach-Resonate.pdf",
+"label": "2026 Resonate factory brochure",
+"exact": true
+},
+"MHS44477": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS43536": {
+"file": "2026-Holiday-Rambler-Invicta.pdf",
+"label": "2026 Invicta factory brochure",
+"exact": true
+},
+"MHS44709": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"label": "2026 Outlaw factory brochure",
+"exact": true
+},
+"M129072-DES": {
+"file": "2026-Tiffin-Byway.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43473": {
+"file": "2026-Fleetwood-Bounder.pdf",
+"label": "2026 Bounder factory brochure",
+"exact": true
+},
+"M143531": {
+"file": "2027-Tiffin-Phaeton.pdf",
+"label": "2027 Phaeton factory brochure",
+"exact": true
+},
+"MHS44565": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44420": {
+"file": "2026-Thor-Motor-Coach-Tranquility.pdf",
+"label": "2026 Tranquility factory brochure",
+"exact": true
+},
+"MHS44070": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS42974A": {
+"file": "newmarkingairebrochurelowres.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44267": {
+"file": "2026-Thor-Motor-Coach-Talavera.pdf",
+"label": "2026 Talavera factory brochure",
+"exact": true
+},
+"T145817": {
+"file": "2026-Brinkley-RV-Model-I.pdf",
+"label": "2026 Model I factory brochure",
+"exact": true
+},
+"MHS44637": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"MHS44772": {
+"file": "2026-Thor-Motor-Coach-Gemini.pdf",
+"label": "2026 Gemini factory brochure",
+"exact": true
+},
+"MHS43234": {
+"file": "2026-Thor-Motor-Coach-Vegas.pdf",
+"label": "2026 Vegas factory brochure",
+"exact": true
+},
+"MHS43721": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS43371": {
+"file": "2026-Fleetwood-Flair.pdf",
+"label": "2026 Flair factory brochure",
+"exact": true
+},
+"MHS44660": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS44230": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS44725": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44375": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS43799": {
+"file": "2025-Gulf-Stream-BTouring-Cruiser.pdf",
+"label": "2025 BTouring Cruiser factory brochure",
+"exact": true
+},
+"M141936": {
+"file": "2026-Dynamax-Corp-Europa-S.pdf",
+"label": "2026 Europa S factory brochure",
+"exact": true
+},
+"MHS44549": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44217A": {
+"file": "2020_Winnebago_View.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44226": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"MHS44676": {
+"file": "2026-Entegra-Coach-Arc.pdf",
+"label": "2026 Arc factory brochure",
+"exact": true
+},
+"M138696": {
+"file": "2026-Newmar-Bay-Star.pdf",
+"label": "2026 Bay Star factory brochure",
+"exact": true
+},
+"UT520687": {
+"file": "2022-DRV-Mobile-Suites.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44699": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"M147374": {
+"file": "2026-Tiffin-GT2.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44363": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS44733": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS43248**": {
+"file": "2026-Thor-Motor-Coach-Riviera.pdf",
+"label": "2026 Riviera factory brochure",
+"exact": true
+},
+"MHS43275": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"MHS43330": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS44621": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS44271": {
+"file": "2026-Entegra-Coach-Ethos.pdf",
+"label": "2026 Ethos factory brochure",
+"exact": true
+},
+"CM920452": {
+"file": "2024-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2024 Four Winds factory brochure",
+"exact": true
+},
+"MHS44036A": {
+"file": "2024-Entegra-Coach-Esteem.pdf",
+"label": "2024 Esteem factory brochure",
+"exact": true
+},
+"MHS44073A": {
+"file": "2025-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2025 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44764": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"label": "2026 Emblem factory brochure",
+"exact": true
+},
+"MHS44334": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS43222": {
+"file": "2026-Thor-Motor-Coach-Resonate.pdf",
+"label": "2026 Resonate factory brochure",
+"exact": true
+},
+"MHS43367": {
+"file": "2026-Fleetwood-Bounder.pdf",
+"label": "2026 Bounder factory brochure",
+"exact": true
+},
+"MHS44158": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS43737": {
+"file": "2026-Thor-Motor-Coach-Inception.pdf",
+"label": "2026 Inception factory brochure",
+"exact": true
+},
+"UM920464": {
+"file": "2019-Leisure-Travel-Unity.pdf",
+"label": "2019 Unity factory brochure",
+"exact": true
+},
+"MHS44508": {
+"file": "2026-Dynamax-Corp-Grand-Sport.pdf",
+"label": "2026 Grand Sport factory brochure",
+"exact": true
+},
+"MHS43740": {
+"file": "2026-Entegra-Coach-Launch.pdf",
+"label": "2026 Launch factory brochure",
+"exact": true
+},
+"MHS44085": {
+"file": "2026-Forest-River-Forester.pdf",
+"label": "2026 Forester factory brochure",
+"exact": true
+},
+"MHS43255": {
+"file": "2026-Thor-Motor-Coach-Windsport.pdf",
+"label": "2026 Windsport factory brochure",
+"exact": true
+},
+"MHS44343": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS43486": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS44713": {
+"file": "2027-Fleetwood-Palisade.pdf",
+"label": "2027 Palisade factory brochure",
+"exact": true
+},
+"MHS43890": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44505A": {
+"file": "2018-Thor-Motor-Coach-Miramar.pdf",
+"label": "2018 Miramar factory brochure",
+"exact": true
+},
+"MHS44206": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS43193": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS44656": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS44482": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS43347": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS44178": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS43717": {
+"file": "2024-East-to-West-Alita.pdf",
+"label": "2024 Alita factory brochure",
+"exact": true
+},
+"MHS44528": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"M150350": {
+"file": "2026-Grand-Design-Lineage.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44197": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS43982": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"MHS44744": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"M118130-LNG": {
+"file": "2026-Tiffin-Byway.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44314": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44251": {
+"file": "2026-Entegra-Coach-Arc.pdf",
+"label": "2026 Arc factory brochure",
+"exact": true
+},
+"MHS43701": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS44494": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS44181": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS43214": {
+"file": "2026-Thor-Motor-Coach-A-C-E-.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44302": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44752": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44247": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44617": {
+"file": "2026-Thor-Motor-Coach-Aria.pdf",
+"label": "2026 Aria factory brochure",
+"exact": true
+},
+"MHS44139": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44093": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"MHS44569": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"M128073": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"label": "2026 Omni Trail factory brochure",
+"exact": true
+},
+"MHS44586": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS43243": {
+"file": "2026-Thor-Motor-Coach-Tranquility.pdf",
+"label": "2026 Tranquility factory brochure",
+"exact": true
+},
+"M146103": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"CM920433": {
+"file": "2012MON_Diplomat_WEB.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44640": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44210": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS43886": {
+"file": "2026-Thor-Motor-Coach-Inception-HD.pdf",
+"label": "2026 Inception HD factory brochure",
+"exact": true
+},
+"M127555": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS42429": {
+"file": "2026-Thor-Motor-Coach-Talavera.pdf",
+"label": "2026 Talavera factory brochure",
+"exact": true
+},
+"M132305-DES": {
+"file": "2026-Tiffin-Allegro-Red.pdf",
+"label": "2026 Allegro Red factory brochure",
+"exact": true
+},
+"MHS44457": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS44095A": {
+"file": "2024-Jayco-Seismic-Luxury-Series.pdf",
+"label": "2024 Seismic Luxury Series factory brochure",
+"exact": true
+},
+"MHS44142": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44512": {
+"file": "2026-Dynamax-Corp-Grand-Sport.pdf",
+"label": "2026 Grand Sport factory brochure",
+"exact": true
+},
+"MHS44841": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS43404": {
+"file": "2026-Fleetwood-Discovery-LXE.pdf",
+"label": "2026 Discovery LXE factory brochure",
+"exact": true
+},
+"MHS44791": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS43541": {
+"file": "2026-Holiday-Rambler-Admiral.pdf",
+"label": "2026 Admiral factory brochure",
+"exact": true
+},
+"MHS44284": {
+"file": "2026-Entegra-Coach-Accolade.pdf",
+"label": "2026 Accolade factory brochure",
+"exact": true
+},
+"MHS44400": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"label": "2026 Outlaw factory brochure",
+"exact": true
+},
+"MHS44050": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"MHS43795": {
+"file": "2026-Nexus-Wraith.pdf",
+"label": "2026 Wraith factory brochure",
+"exact": true
+},
+"MHS44816": {
+"file": "2026-Thor-Motor-Coach-Rize.pdf",
+"label": "2026 Rize factory brochure",
+"exact": true
+},
+"MHS44545": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS44115": {
+"file": "2026-Forest-River-Berkshire-XLT.pdf",
+"label": "2026 Berkshire XLT factory brochure",
+"exact": true
+},
+"MHS43453": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44396": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS44683": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44379": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS43516": {
+"file": "2026-Thor-Motor-Coach-Quantum-Sprinter.pdf",
+"label": "2026 Quantum Sprinter factory brochure",
+"exact": true
+},
+"MHS44729": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44416": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"label": "2026 Omni Trail factory brochure",
+"exact": true
+},
+"MHS43629": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS44553": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44800": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS44380": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS44695": {
+"file": "2026-Entegra-Coach-Accolade.pdf",
+"label": "2026 Accolade factory brochure",
+"exact": true
+},
+"MHS44441": {
+"file": "2026-Thor-Motor-Coach-Tellaro.pdf",
+"label": "2026 Tellaro factory brochure",
+"exact": true
+},
+"M124430-LIB": {
+"file": "2026-Tiffin-Allegro-Bay.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"M136515": {
+"file": "2026-Dynamax-Corp-Grand-Sport.pdf",
+"label": "2026 Grand Sport factory brochure",
+"exact": true
+},
+"MHS44504": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44154": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS43691": {
+"file": "2026-Nexus-Wraith.pdf",
+"label": "2026 Wraith factory brochure",
+"exact": true
+},
+"MHS43941": {
+"file": "2026-Entegra-Coach-Qwest.pdf",
+"label": "2026 Qwest factory brochure",
+"exact": true
+},
+"MHS44787": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44338": {
+"file": "2026-Entegra-Coach-Vision.pdf",
+"label": "2026 Vision factory brochure",
+"exact": true
+},
+"MHS44292": {
+"file": "2026-Entegra-Coach-Accolade-XT.pdf",
+"label": "2026 Accolade XT factory brochure",
+"exact": true
+},
+"MHS44768": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS43804": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS44439": {
+"file": "2026-Thor-Motor-Coach-Tellaro.pdf",
+"label": "2026 Tellaro factory brochure",
+"exact": true
+},
+"MHS43256": {
+"file": "2026-Thor-Motor-Coach-Hurricane.pdf",
+"label": "2026 Hurricane factory brochure",
+"exact": true
+},
+"MHS44069": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS43743": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS44655": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS43939": {
+"file": "2026-Entegra-Coach-Qwest.pdf",
+"label": "2026 Qwest factory brochure",
+"exact": true
+},
+"MHS43893": {
+"file": "2026-Thor-Motor-Coach-Inception-HD.pdf",
+"label": "2026 Inception HD factory brochure",
+"exact": true
+},
+"MHS44340": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS44710": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS43201": {
+"file": "2026-Nexus-Wraith.pdf",
+"label": "2026 Wraith factory brochure",
+"exact": true
+},
+"MHS44194": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS44481": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS43344": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS43714": {
+"file": "2026-Nexus-Wraith.pdf",
+"label": "2026 Wraith factory brochure",
+"exact": true
+},
+"MHS44602": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"M129159": {
+"file": "2026-Grand-Design-Lineage-Series-M.pdf",
+"label": "2026 Lineage Series M factory brochure",
+"exact": true
+},
+"MHS43597": {
+"file": "2026-American-Coach-American-Dream.pdf",
+"label": "2026 American Dream factory brochure",
+"exact": true
+},
+"MHS44747": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "2026 Pasadena factory brochure",
+"exact": true
+},
+"MHS43578": {
+"file": "2026-Nexus-Phantom-Sport.pdf",
+"label": "2026 Phantom Sport factory brochure",
+"exact": true
+},
+"MHS44478": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS43217": {
+"file": "2026-Thor-Motor-Coach-A-C-E-.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43702": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS43352": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"M138624A": {
+"file": "2025-Entegra-Coach-Accolade-XL.pdf",
+"label": "2025 Accolade XL factory brochure",
+"exact": true
+},
+"MHS44244": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44301": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44751": {
+"file": "2026-Thor-Motor-Coach-Hurricane.pdf",
+"label": "2026 Hurricane factory brochure",
+"exact": true
+},
+"MHS44585": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"M136828": {
+"file": "2026-Newmar-Bay-Star.pdf",
+"label": "2026 Bay Star factory brochure",
+"exact": true
+},
+"MHS43384**": {
+"file": "2026-Fleetwood-Discovery-LXE.pdf",
+"label": "2026 Discovery LXE factory brochure",
+"exact": true
+},
+"MHS43885": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "2026 Pasadena factory brochure",
+"exact": true
+},
+"M127556": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43186": {
+"file": "2025-Entegra-Coach-Cornerstone.pdf",
+"label": "2025 Cornerstone factory brochure",
+"exact": true
+},
+"MHS44643": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"MHS44213": {
+"file": "2025-Forest-River-Georgetown-7-Series-GT7.pdf",
+"label": "2025 Georgetown 7 Series GT7 factory brochure",
+"exact": true
+},
+"MHS43539": {
+"file": "2026-Holiday-Rambler-Invicta.pdf",
+"label": "2026 Invicta factory brochure",
+"exact": true
+},
+"MHS44356": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"M141578": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44842": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44141": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44511": {
+"file": "2026-Dynamax-Corp-Grand-Sport.pdf",
+"label": "2026 Grand Sport factory brochure",
+"exact": true
+},
+"MHS43542": {
+"file": "2026-Holiday-Rambler-Admiral.pdf",
+"label": "2026 Admiral factory brochure",
+"exact": true
+},
+"T138997": {
+"file": "2026-Forest-River-Aurora.pdf",
+"label": "2026 Aurora factory brochure",
+"exact": true
+},
+"MHS43407": {
+"file": "2026-Fleetwood-Discovery.pdf",
+"label": "2026 Discovery factory brochure",
+"exact": true
+},
+"MHS44638": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"MHS44792": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44268": {
+"file": "2026-Thor-Motor-Coach-Windsport.pdf",
+"label": "2026 Windsport factory brochure",
+"exact": true
+},
+"MHS43283": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44546": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS44116": {
+"file": "2026-Forest-River-Berkshire-XLT.pdf",
+"label": "2026 Berkshire XLT factory brochure",
+"exact": true
+},
+"MHS43329": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS44815": {
+"file": "2026-Thor-Motor-Coach-Talavera.pdf",
+"label": "2026 Talavera factory brochure",
+"exact": true
+},
+"MHS44403": {
+"file": "2026-Thor-Motor-Coach-Compass.pdf",
+"label": "2026 Compass factory brochure",
+"exact": true
+},
+"MHS44053": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS43796": {
+"file": "2026-Nexus-Rebel.pdf",
+"label": "2026 Rebel factory brochure",
+"exact": true
+},
+"MHS43846": {
+"file": "2026-Fleetwood-Bounder.pdf",
+"label": "2026 Bounder factory brochure",
+"exact": true
+},
+"MHS44680": {
+"file": "2026-Entegra-Coach-Accolade-XT.pdf",
+"label": "2026 Accolade XT factory brochure",
+"exact": true
+},
+"MHS3392C": {
+"file": "2020-Tiffin-AllegroBreeze.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"M125191-DES": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44395": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS43903": {
+"file": "2026-Entegra-Coach-Ethos.pdf",
+"label": "2026 Ethos factory brochure",
+"exact": true
+},
+"MHS44803": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS44550": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"T139017": {
+"file": "2026-Forest-River-Aurora.pdf",
+"label": "2026 Aurora factory brochure",
+"exact": true
+},
+"MHS44045": {
+"file": "2026-American-Coach-American-Eagle.pdf",
+"label": "2026 American Eagle factory brochure",
+"exact": true
+},
+"MHS43780": {
+"file": "2025-Forest-River-FR3-Plus.pdf",
+"label": "2025 FR3 Plus factory brochure",
+"exact": true
+},
+"MHS44125A": {
+"file": "2023-Thor-Motor-Coach-Palazzo.pdf",
+"label": "2023 Palazzo factory brochure",
+"exact": true
+},
+"MHS44696": {
+"file": "2026-Entegra-Coach-Accolade-XT.pdf",
+"label": "2026 Accolade XT factory brochure",
+"exact": true
+},
+"MHS44400TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"label": "2026 Outlaw factory brochure",
+"exact": true
+},
+"M134840-DES": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43850": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS44383": {
+"file": "2026-Thor-Motor-Coach-Aria.pdf",
+"label": "2026 Aria factory brochure",
+"exact": true
+},
+"MHS44679": {
+"file": "2026-Entegra-Coach-Arc.pdf",
+"label": "2026 Arc factory brochure",
+"exact": true
+},
+"MHS44229": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS44507": {
+"file": "2026-Dynamax-Corp-Grand-Sport.pdf",
+"label": "2026 Grand Sport factory brochure",
+"exact": true
+},
+"MHS43738": {
+"file": "2026-Thor-Motor-Coach-Inception.pdf",
+"label": "2026 Inception factory brochure",
+"exact": true
+},
+"MHS44157": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS43692": {
+"file": "2026-Thor-Motor-Coach-Tranquility.pdf",
+"label": "2026 Tranquility factory brochure",
+"exact": true
+},
+"MHS44339A": {
+"file": "2022-Entegra-Coach-Vision.pdf",
+"label": "2022 Vision factory brochure",
+"exact": true
+},
+"MHS44442": {
+"file": "2026-Thor-Motor-Coach-Tellaro.pdf",
+"label": "2026 Tellaro factory brochure",
+"exact": true
+},
+"MHS44291": {
+"file": "2026-Entegra-Coach-Accolade-XT.pdf",
+"label": "2026 Accolade XT factory brochure",
+"exact": true
+},
+"MHS44784": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS43411": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS43942": {
+"file": "2026-Entegra-Coach-Qwest.pdf",
+"label": "2026 Qwest factory brochure",
+"exact": true
+},
+"MHS44659": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"MHS44209": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS44398TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS43870": {
+"file": "2026-Thor-Motor-Coach-Inception.pdf",
+"label": "2026 Inception factory brochure",
+"exact": true
+},
+"MHS44065": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS44435": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"label": "2026 Omni Trail factory brochure",
+"exact": true
+},
+"MHS44570": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS43124": {
+"file": "2026-Thor-Motor-Coach-Compass-AWD.pdf",
+"label": "2026 Compass AWD factory brochure",
+"exact": true
+},
+"MHS43574": {
+"file": "2026-Fleetwood-Discovery-LXE.pdf",
+"label": "2026 Discovery LXE factory brochure",
+"exact": true
+},
+"MHS44198": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS44032": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS44527": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS43348": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS43974": {
+"file": "2026-Thor-Motor-Coach-Vegas.pdf",
+"label": "2026 Vegas factory brochure",
+"exact": true
+},
+"MHS43427": {
+"file": "2026-Entegra-Coach-Condor.pdf",
+"label": "2026 Condor factory brochure",
+"exact": true
+},
+"MHS44618": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS44306A": {
+"file": "2023-K-Z-Connect-SE.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44248": {
+"file": "2026-Entegra-Coach-Arc.pdf",
+"label": "2026 Arc factory brochure",
+"exact": true
+},
+"MHS43132": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS42689": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"T136803": {
+"file": "2026-Brinkley-RV-Model-Z.pdf",
+"label": "2026 Model Z factory brochure",
+"exact": true
+},
+"MHS44024": {
+"file": "2026-Nexus-Viper.pdf",
+"label": "2026 Viper factory brochure",
+"exact": true
+},
+"T125956": {
+"file": "2026-Brinkley-RV-Model-I.pdf",
+"label": "2026 Model I factory brochure",
+"exact": true
+},
+"MHS44042A": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS44161": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS44531": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS43889": {
+"file": "2026-Thor-Motor-Coach-Inception-HD.pdf",
+"label": "2026 Inception HD factory brochure",
+"exact": true
+},
+"MHS43535": {
+"file": "2026-Holiday-Rambler-Invicta.pdf",
+"label": "2026 Invicta factory brochure",
+"exact": true
+},
+"MHS44128ATH": {
+"file": "2026-Keystone-Raptor.pdf",
+"label": "2026 Raptor factory brochure",
+"exact": true
+},
+"MHS44423": {
+"file": "2026-Thor-Motor-Coach-Tranquility.pdf",
+"label": "2026 Tranquility factory brochure",
+"exact": true
+},
+"MHS44566": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44136": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"T135350": {
+"file": "2026-Brinkley-RV-Model-G.pdf",
+"label": "2026 Model G factory brochure",
+"exact": true
+},
+"CM920447": {
+"file": "2024-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2024 Four Winds factory brochure",
+"exact": true
+},
+"MHS44321": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44771": {
+"file": "2026-Thor-Motor-Coach-Compass.pdf",
+"label": "2026 Compass factory brochure",
+"exact": true
+},
+"MHS44264": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44634": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"MHS43722": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS43688": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS43372": {
+"file": "2026-Fleetwood-Flair.pdf",
+"label": "2026 Flair factory brochure",
+"exact": true
+},
+"MHS44458": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS44726": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44376": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"UT220444TH": {
+"file": "2018-Jayco-Seismic.pdf",
+"label": "2018 Seismic factory brochure",
+"exact": true
+},
+"MHS44399": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS43985A2": {
+"file": "2023-Tiffin-Wayfarer.pdf",
+"label": "2023 Wayfarer factory brochure",
+"exact": true
+},
+"MHS44233": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS44819": {
+"file": "2026-Forest-River-Forester.pdf",
+"label": "2026 Forester factory brochure",
+"exact": true
+},
+"M127410-LEX": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43325": {
+"file": "2026-Thor-Motor-Coach-Magnitude-Grand.pdf",
+"label": "2026 Magnitude Grand factory brochure",
+"exact": true
+},
+"MHS43260": {
+"file": "2026-Thor-Motor-Coach-Hurricane.pdf",
+"label": "2026 Hurricane factory brochure",
+"exact": true
+},
+"MHS43630": {
+"file": "2026-Fleetwood-Bounder.pdf",
+"label": "2026 Bounder factory brochure",
+"exact": true
+},
+"M141935": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"T145013": {
+"file": "2026-Brinkley-RV-Model-Z-AIR.pdf",
+"label": "2026 Model Z AIR factory brochure",
+"exact": true
+},
+"M127557-LUB": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44360": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS44730": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"M127551-LEX": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS3389C": {
+"file": "2023-Coachmen-Nova.pdf",
+"label": "2023 Nova factory brochure",
+"exact": true
+},
+"MHS44675": {
+"file": "2026-Entegra-Coach-Expanse.pdf",
+"label": "2026 Expanse factory brochure",
+"exact": true
+},
+"UT920440": {
+"file": "2020-Keystone-Passport.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44419": {
+"file": "2026-Thor-Motor-Coach-Tranquility.pdf",
+"label": "2026 Tranquility factory brochure",
+"exact": true
+},
+"MHS44049": {
+"file": "2026-Thor-Motor-Coach-Inception-HD.pdf",
+"label": "2026 Inception HD factory brochure",
+"exact": true
+},
+"MHS44767": {
+"file": "2026-Entegra-Coach-Vision.pdf",
+"label": "2026 Vision factory brochure",
+"exact": true
+},
+"MHS44337": {
+"file": "2026-Entegra-Coach-Vision.pdf",
+"label": "2026 Vision factory brochure",
+"exact": true
+},
+"MHS44622": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS44788": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS43364": {
+"file": "2026-Thor-Motor-Coach-Luminate.pdf",
+"label": "2026 Luminate factory brochure",
+"exact": true
+},
+"MHS43734": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"label": "2026 Omni Trail factory brochure",
+"exact": true
+},
+"MHS43221": {
+"file": "2026-Thor-Motor-Coach-Resonate.pdf",
+"label": "2026 Resonate factory brochure",
+"exact": true
+},
+"MHS43735": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"label": "2026 Omni Trail factory brochure",
+"exact": true
+},
+"MHS43220": {
+"file": "2026-Thor-Motor-Coach-Resonate.pdf",
+"label": "2026 Resonate factory brochure",
+"exact": true
+},
+"MHS44396TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS44766": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"label": "2026 Emblem factory brochure",
+"exact": true
+},
+"MHS43567A1": {
+"file": "2018_Tiffin_Phaeton.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44336": {
+"file": "2026-Entegra-Coach-Vision.pdf",
+"label": "2026 Vision factory brochure",
+"exact": true
+},
+"M127473": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"CM920450": {
+"file": "2024-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2024 Four Winds factory brochure",
+"exact": true
+},
+"MHS44623": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS44789": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS43332": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"UM2100249": {
+"file": "2025-Entegra-Coach-Qwest.pdf",
+"label": "2025 Qwest factory brochure",
+"exact": true
+},
+"MHS43627": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS43673A": {
+"file": "2025-Grand-Design-Reflection-150-Series.pdf",
+"label": "2025 Reflection 150 Series factory brochure",
+"exact": true
+},
+"MHS44418": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"label": "2026 Omni Trail factory brochure",
+"exact": true
+},
+"MHS43277": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"MHS44361": {
+"file": "2025-Fleetwood-Frontier-GTX.pdf",
+"label": "2025 Frontier GTX factory brochure",
+"exact": true
+},
+"M127432-LEX": {
+"file": "2026-Tiffin-Byway.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44731": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS44224": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"T141544": {
+"file": "2026-Brinkley-RV-Model-Z.pdf",
+"label": "2026 Model Z factory brochure",
+"exact": true
+},
+"MHS44674": {
+"file": "2026-Entegra-Coach-Expanse.pdf",
+"label": "2026 Expanse factory brochure",
+"exact": true
+},
+"T138934": {
+"file": "2026-Brinkley-RV-Model-Z.pdf",
+"label": "2026 Model Z factory brochure",
+"exact": true
+},
+"MHS43261": {
+"file": "2026-Thor-Motor-Coach-Indigo.pdf",
+"label": "2026 Indigo factory brochure",
+"exact": true
+},
+"MHS43631": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "2026 Pasadena factory brochure",
+"exact": true
+},
+"M128544": {
+"file": "2026-Tiffin-Phaeton.pdf",
+"label": "2026 Phaeton factory brochure",
+"exact": true
+},
+"MHS44727": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44377": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"M147360": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44398": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"M130844-LUB": {
+"file": "2026-Tiffin-Allegro-Bus.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44232": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS43723": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS43689": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"M135264": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"T142000": {
+"file": "2026-Brinkley-RV-Model-G.pdf",
+"label": "2026 Model G factory brochure",
+"exact": true
+},
+"CT920436": {
+"file": "2023-Dutchmen-Astoria.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43666": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS44459": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS43236": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"CM920446": {
+"file": "2024-Gulf-Stream-Conquest-Class-C.pdf",
+"label": "2024 Conquest Class C factory brochure",
+"exact": true
+},
+"MHS44320": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44770": {
+"file": "2026-Thor-Motor-Coach-Compass.pdf",
+"label": "2026 Compass factory brochure",
+"exact": true
+},
+"MHS44635": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"M127531-LIB": {
+"file": "2026-Tiffin-Phaeton.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"M136825": {
+"file": "2026-Newmar-Bay-Star.pdf",
+"label": "2026 Bay Star factory brochure",
+"exact": true
+},
+"MHS44422": {
+"file": "2026-Thor-Motor-Coach-Tranquility.pdf",
+"label": "2026 Tranquility factory brochure",
+"exact": true
+},
+"MHS44588": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS44072": {
+"file": "2026-Entegra-Coach-Expanse.pdf",
+"label": "2026 Expanse factory brochure",
+"exact": true
+},
+"MHS44567": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44137": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS43308": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"T131806": {
+"file": "2026-Brinkley-RV-Model-Z-AIR.pdf",
+"label": "2026 Model Z AIR factory brochure",
+"exact": true
+},
+"MHS43888": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43867": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44160": {
+"file": "2025-Midwest-Patriot.pdf",
+"label": "2025 Patriot factory brochure",
+"exact": true
+},
+"MHS44530": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS43975": {
+"file": "2026-Thor-Motor-Coach-Vegas.pdf",
+"label": "2026 Vegas factory brochure",
+"exact": true
+},
+"MHS43426": {
+"file": "2026-Entegra-Coach-Condor.pdf",
+"label": "2026 Condor factory brochure",
+"exact": true
+},
+"MHS44619": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS44249": {
+"file": "2026-Entegra-Coach-Arc.pdf",
+"label": "2026 Arc factory brochure",
+"exact": true
+},
+"MHS44199": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS44463": {
+"file": "2026-Fleetwood-Palisade.pdf",
+"label": "2026 Palisade factory brochure",
+"exact": true
+},
+"MHS44033": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS44526": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS44176": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS43349": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS3394C": {
+"file": "16_AmericanEagle_A.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43430": {
+"file": "2026-Entegra-Coach-Esteem-XL.pdf",
+"label": "2026 Esteem XL factory brochure",
+"exact": true
+},
+"MHS42898TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS44228**": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS43575": {
+"file": "2026-Nexus-Phantom.pdf",
+"label": "2026 Phantom factory brochure",
+"exact": true
+},
+"MHS44822": {
+"file": "2026-Thor-Motor-Coach-Tranquility.pdf",
+"label": "2026 Tranquility factory brochure",
+"exact": true
+},
+"MHS44121": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"MHS44571": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44658": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS44208": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS44290": {
+"file": "2026-Entegra-Coach-Accolade-XT.pdf",
+"label": "2026 Accolade XT factory brochure",
+"exact": true
+},
+"MHS44785": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"M130843-DES": {
+"file": "2026-Tiffin-Open-Road-Allegro.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS3396C": {
+"file": "NEW_2015_CanyonStar_Brochure_1.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43410": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS43943": {
+"file": "2026-Entegra-Coach-Qwest.pdf",
+"label": "2026 Qwest factory brochure",
+"exact": true
+},
+"MHS44506": {
+"file": "2026-Dynamax-Corp-Grand-Sport.pdf",
+"label": "2026 Grand Sport factory brochure",
+"exact": true
+},
+"MHS43739": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "2026 Pasadena factory brochure",
+"exact": true
+},
+"MHS43369": {
+"file": "2026-Fleetwood-Discovery.pdf",
+"label": "2026 Discovery factory brochure",
+"exact": true
+},
+"MHS3403C": {
+"file": "2024-Tiffin-Zephyr.pdf",
+"label": "2024 Zephyr factory brochure",
+"exact": true
+},
+"MHS44443": {
+"file": "2026-Thor-Motor-Coach-Tellaro.pdf",
+"label": "2026 Tellaro factory brochure",
+"exact": true
+},
+"MHS43386": {
+"file": "2026-Fleetwood-Discovery-LXE.pdf",
+"label": "2026 Discovery LXE factory brochure",
+"exact": true
+},
+"MHS44697": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44382": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS43284A": {
+"file": "2023-Tiffin-Wayfarer.pdf",
+"label": "2023 Wayfarer factory brochure",
+"exact": true
+},
+"MHS44678": {
+"file": "2026-Entegra-Coach-Arc.pdf",
+"label": "2026 Arc factory brochure",
+"exact": true
+},
+"M125229": {
+"file": "2025-Leisure-Travel-Wonder.pdf",
+"label": "2025 Wonder factory brochure",
+"exact": true
+},
+"MHS44101": {
+"file": "2026-Forest-River-Berkshire.pdf",
+"label": "2026 Berkshire factory brochure",
+"exact": true
+},
+"MHS44551": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44414": {
+"file": "2026-Thor-Motor-Coach-Magnitude-Grand.pdf",
+"label": "2026 Magnitude Grand factory brochure",
+"exact": true
+},
+"M118566-DES": {
+"file": "2026-Tiffin-Allegro-Bay.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44681": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43514": {
+"file": "2026-Thor-Motor-Coach-Quantum-Sprinter.pdf",
+"label": "2026 Quantum Sprinter factory brochure",
+"exact": true
+},
+"MHS44394": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS43902": {
+"file": "2026-Entegra-Coach-Ethos.pdf",
+"label": "2026 Ethos factory brochure",
+"exact": true
+},
+"MHS43282": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"MHS44117": {
+"file": "2026-Forest-River-Berkshire-XLT.pdf",
+"label": "2026 Berkshire XLT factory brochure",
+"exact": true
+},
+"MHS43328": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS44814": {
+"file": "2026-Entegra-Coach-Accolade.pdf",
+"label": "2026 Accolade factory brochure",
+"exact": true
+},
+"M141938": {
+"file": "2025-Gulf-Stream-BTouring-Cruiser.pdf",
+"label": "2025 BTouring Cruiser factory brochure",
+"exact": true
+},
+"MHS44402": {
+"file": "2026-Thor-Motor-Coach-Compass.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"M120602-LUB": {
+"file": "2026-Tiffin-Byway.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44052": {
+"file": "2026-Thor-Motor-Coach-Axis.pdf",
+"label": "2026 Axis factory brochure",
+"exact": true
+},
+"MHS44286": {
+"file": "2026-Entegra-Coach-Accolade.pdf",
+"label": "2026 Accolade factory brochure",
+"exact": true
+},
+"MHS43543": {
+"file": "2026-Holiday-Rambler-Admiral.pdf",
+"label": "2026 Admiral factory brochure",
+"exact": true
+},
+"M127486": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS43406": {
+"file": "2026-Fleetwood-Discovery.pdf",
+"label": "2026 Discovery factory brochure",
+"exact": true
+},
+"MHS44639": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"MHS44793": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44269": {
+"file": "2026-Thor-Motor-Coach-Hurricane.pdf",
+"label": "2026 Hurricane factory brochure",
+"exact": true
+},
+"MHS44843": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44140": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44510": {
+"file": "2026-Dynamax-Corp-Grand-Sport.pdf",
+"label": "2026 Grand Sport factory brochure",
+"exact": true
+},
+"MHS43884": {
+"file": "2026-Thor-Motor-Coach-Inception-HD.pdf",
+"label": "2026 Inception HD factory brochure",
+"exact": true
+},
+"MHS44642": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44212": {
+"file": "2025-Forest-River-Georgetown-7-Series-GT7.pdf",
+"label": "2025 Georgetown 7 Series GT7 factory brochure",
+"exact": true
+},
+"MHS44357": {
+"file": "2026-Dynamax-Corp-Europa-S.pdf",
+"label": "2026 Europa S factory brochure",
+"exact": true
+},
+"MHS44584": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS43611": {
+"file": "2026-Nexus-Wraith.pdf",
+"label": "2026 Wraith factory brochure",
+"exact": true
+},
+"MHS44245": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44615": {
+"file": "2026-Thor-Motor-Coach-Gemini.pdf",
+"label": "2026 Gemini factory brochure",
+"exact": true
+},
+"MHS44300": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS44750": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"MHS44183": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS44479": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS43353": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS44253": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44746": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS44180A": {
+"file": "2021-Winnebago-Navion.pdf",
+"label": "2021 Navion factory brochure",
+"exact": true
+},
+"MHS44195": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS44480": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS44204": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS44654": {
+"file": "2025-Forest-River-FR3-Plus.pdf",
+"label": "2025 FR3 Plus factory brochure",
+"exact": true
+},
+"MHS43938": {
+"file": "2026-Entegra-Coach-Qwest.pdf",
+"label": "2026 Qwest factory brochure",
+"exact": true
+},
+"MHS43892": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44341": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS44711": {
+"file": "2027-Fleetwood-Discovery.pdf",
+"label": "2027 Discovery factory brochure",
+"exact": true
+},
+"M130841": {
+"file": "2026-Tiffin-Allegro-Red.pdf",
+"label": "2026 Allegro Red factory brochure",
+"exact": true
+},
+"MHS44361A": {
+"file": "2023-Renegade-RV-Vienna.pdf",
+"label": "2023 Vienna factory brochure",
+"exact": true
+},
+"MHS43257": {
+"file": "2026-Thor-Motor-Coach-Hurricane.pdf",
+"label": "2026 Hurricane factory brochure",
+"exact": true
+},
+"MHS44592": {
+"file": "2026-Axiom-Imperium.pdf",
+"label": "2026 Imperium factory brochure",
+"exact": true
+},
+"MHS44068": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS44087": {
+"file": "2026-Forest-River-Forester.pdf",
+"label": "2026 Forester factory brochure",
+"exact": true
+},
+"MHS43876": {
+"file": "2026-Thor-Motor-Coach-Magnitude-Grand.pdf",
+"label": "2026 Magnitude Grand factory brochure",
+"exact": true
+},
+"MHS44433": {
+"file": "2026-Thor-Motor-Coach-Rize.pdf",
+"label": "2026 Rize factory brochure",
+"exact": true
+},
+"MHS44126": {
+"file": "2026-Forest-River-Berkshire-XLT.pdf",
+"label": "2026 Berkshire XLT factory brochure",
+"exact": true
+},
+"MHS44576": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS43725TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS44258": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44608": {
+"file": "2026-Thor-Motor-Coach-Hurricane.pdf",
+"label": "2026 Hurricane factory brochure",
+"exact": true
+},
+"MHS44464": {
+"file": "2026-Fleetwood-Palisade.pdf",
+"label": "2026 Palisade factory brochure",
+"exact": true
+},
+"M136025": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS44521": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS44171": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS43421": {
+"file": "2026-Entegra-Coach-Accolade-XT.pdf",
+"label": "2026 Accolade XT factory brochure",
+"exact": true
+},
+"MHS44188": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS44167": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS44537": {
+"file": "2026-Entegra-Coach-Esteem-XL.pdf",
+"label": "2026 Esteem XL factory brochure",
+"exact": true
+},
+"MHS3396CTH": {
+"file": "NEW_2015_CanyonStar_Brochure_1.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44262A": {
+"file": "2025-Winnebago-Minnie-Winnie.pdf",
+"label": "2025 Minnie Winnie factory brochure",
+"exact": true
+},
+"M135998": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44219": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS43476": {
+"file": "2026-Fleetwood-Bounder.pdf",
+"label": "2026 Bounder factory brochure",
+"exact": true
+},
+"MHS44649": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"MHS43533": {
+"file": "2026-Holiday-Rambler-Vacationer.pdf",
+"label": "2026 Vacationer factory brochure",
+"exact": true
+},
+"MHS3351C": {
+"file": "2022-Cruiser-RV-Radiance.pdf",
+"label": "2022 Radiance factory brochure",
+"exact": true
+},
+"T137890": {
+"file": "2026-Axiom-Imperium.pdf",
+"label": "2026 Imperium factory brochure",
+"exact": true
+},
+"M143534": {
+"file": "2027-Tiffin-Allegro-Bus.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44560": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44130": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS44777": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"M136766": {
+"file": "2026-Fleetwood-Bounder.pdf",
+"label": "2026 Bounder factory brochure",
+"exact": true
+},
+"M122725": {
+"file": "2026-Newmar-Grand-Star.pdf",
+"label": "2026 Grand Star factory brochure",
+"exact": true
+},
+"MHS44262": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"M148180": {
+"file": "2026-Grand-Design-Lineage-Series-F.pdf",
+"label": "2026 Lineage Series F factory brochure",
+"exact": true
+},
+"MHS44632": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS44848": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS43724": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"M145531": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS43374": {
+"file": "2026-Fleetwood-Flair.pdf",
+"label": "2026 Flair factory brochure",
+"exact": true
+},
+"MHS42973": {
+"file": "2025-Fleetwood-Altitude.pdf",
+"label": "2025 Altitude factory brochure",
+"exact": true
+},
+"MHS43231": {
+"file": "2026-Thor-Motor-Coach-Vegas.pdf",
+"label": "2026 Vegas factory brochure",
+"exact": true
+},
+"MHS44720": {
+"file": "2026-Holiday-Rambler-Vacationer.pdf",
+"label": "2026 Vacationer factory brochure",
+"exact": true
+},
+"MHS44370": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS44235": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS43323": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS44409": {
+"file": "2026-Thor-Motor-Coach-Gemini.pdf",
+"label": "2026 Gemini factory brochure",
+"exact": true
+},
+"MHS44366": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS44736": {
+"file": "2026-Thor-Motor-Coach-Axis.pdf",
+"label": "2026 Axis factory brochure",
+"exact": true
+},
+"MHS44709TH": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"label": "2026 Outlaw factory brochure",
+"exact": true
+},
+"MHS44389": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"M129082": {
+"file": "2026-Newmar-Dutch-Star.pdf",
+"label": "2026 Dutch Star factory brochure",
+"exact": true
+},
+"MHS44673": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44809": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS43335": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS42898": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"M120535": {
+"file": "2026-Tiffin-Allegro-Bay.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44761": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"label": "2026 Emblem factory brochure",
+"exact": true
+},
+"MHS44624": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"MHS43785**": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS43698": {
+"file": "2025-Forest-River-Georgetown-5-Series-GT5.pdf",
+"label": "2025 Georgetown 5 Series GT5 factory brochure",
+"exact": true
+},
+"MHS43362": {
+"file": "2026-Thor-Motor-Coach-Inception.pdf",
+"label": "2026 Inception factory brochure",
+"exact": true
+},
+"MHS43732": {
+"file": "2026-Thor-Motor-Coach-Gemini-AWD.pdf",
+"label": "2026 Gemini AWD factory brochure",
+"exact": true
+},
+"MHS44448": {
+"file": "2026-Dynamax-Corp-Grand-Sport.pdf",
+"label": "2026 Grand Sport factory brochure",
+"exact": true
+},
+"MHS44595": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS43250": {
+"file": "2026-Thor-Motor-Coach-Windsport.pdf",
+"label": "2026 Windsport factory brochure",
+"exact": true
+},
+"MHS44080": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS43895": {
+"file": "2026-Thor-Motor-Coach-Inception-HD.pdf",
+"label": "2026 Inception HD factory brochure",
+"exact": true
+},
+"M118604-LEX": {
+"file": "2025-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44203": {
+"file": "2025-Forest-River-FR3-Plus.pdf",
+"label": "2025 FR3 Plus factory brochure",
+"exact": true
+},
+"MHS43196": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS44653": {
+"file": "2025-Forest-River-Georgetown-7-Series-GT7.pdf",
+"label": "2025 Georgetown 7 Series GT7 factory brochure",
+"exact": true
+},
+"MHS44346": {
+"file": "2026-Thor-Motor-Coach-Luminate.pdf",
+"label": "2026 Luminate factory brochure",
+"exact": true
+},
+"MHS43483": {
+"file": "2026-Fleetwood-Fortis.pdf",
+"label": "2026 Fortis factory brochure",
+"exact": true
+},
+"MHS44716": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"T140667": {
+"file": "2026-Brinkley-RV-Model-Z.pdf",
+"label": "2026 Model Z factory brochure",
+"exact": true
+},
+"M136496": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44192": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS44468": {
+"file": "2026-Thor-Motor-Coach-Aria.pdf",
+"label": "2026 Aria factory brochure",
+"exact": true
+},
+"MHS44487": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS43342": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"M138625A": {
+"file": "2022-Entegra-Coach-Aspire.pdf",
+"label": "2022 Aspire factory brochure",
+"exact": true
+},
+"MHS44254": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS43591": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS44741": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44311": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44184": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"T146571": {
+"file": "2026-Forest-River-Aurora-Light.pdf",
+"label": "2026 Aurora Light factory brochure",
+"exact": true
+},
+"MHS44491": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS43354": {
+"file": "2026-Thor-Motor-Coach-Compass.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44242": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44612": {
+"file": "2026-Thor-Motor-Coach-Windsport.pdf",
+"label": "2026 Windsport factory brochure",
+"exact": true
+},
+"MHS43138": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44757": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"label": "2026 Emblem factory brochure",
+"exact": true
+},
+"MHS44583": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44429": {
+"file": "2026-Thor-Motor-Coach-Rize.pdf",
+"label": "2026 Rize factory brochure",
+"exact": true
+},
+"MHS43303": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44096": {
+"file": "2026-Forest-River-Berkshire.pdf",
+"label": "2026 Berkshire factory brochure",
+"exact": true
+},
+"M130845-LIB": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44645": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"MHS44215": {
+"file": "2026-Entegra-Coach-Accolade.pdf",
+"label": "2026 Accolade factory brochure",
+"exact": true
+},
+"MHS43883": {
+"file": "2026-Thor-Motor-Coach-Aria.pdf",
+"label": "2026 Aria factory brochure",
+"exact": true
+},
+"M131191": {
+"file": "2026-Newmar-Northern-Star.pdf",
+"label": "2026 Northern Star factory brochure",
+"exact": true
+},
+"MHS44147": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS43378": {
+"file": "2026-Fleetwood-Fortis.pdf",
+"label": "2026 Fortis factory brochure",
+"exact": true
+},
+"MHS44517": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"M126789-LEX": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43604ATH": {
+"file": "2023-Grand-Design-Momentum.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43728": {
+"file": "2026-Thor-Motor-Coach-Outlaw.pdf",
+"label": "2026 Outlaw factory brochure",
+"exact": true
+},
+"MHS44844": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44452": {
+"file": "2026-Dynamax-Corp-Europa-S.pdf",
+"label": "2026 Europa S factory brochure",
+"exact": true
+},
+"MHS43544": {
+"file": "2026-Holiday-Rambler-Admiral.pdf",
+"label": "2026 Admiral factory brochure",
+"exact": true
+},
+"MHS44281": {
+"file": "2026-Entegra-Coach-Launch.pdf",
+"label": "2026 Launch factory brochure",
+"exact": true
+},
+"MHS44794": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"M147783": {
+"file": "2026-Entegra-Coach-Expanse.pdf",
+"label": "2026 Expanse factory brochure",
+"exact": true
+},
+"MHS44813": {
+"file": "2026-Entegra-Coach-Accolade.pdf",
+"label": "2026 Accolade factory brochure",
+"exact": true
+},
+"MHS44540": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS44110": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"MHS44405": {
+"file": "2026-Thor-Motor-Coach-Compass.pdf",
+"label": "2026 Compass factory brochure",
+"exact": true
+},
+"MHS44055": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"UM2100254": {
+"file": "2025-Forest-River-Sunseeker.pdf",
+"label": "2025 Sunseeker factory brochure",
+"exact": true
+},
+"MHS44111A1": {
+"file": "2025-Entegra-Coach-Esteem-XL.pdf",
+"label": "2025 Esteem XL factory brochure",
+"exact": true
+},
+"MHS44686": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"M129077": {
+"file": "2026-Newmar-Northern-Star.pdf",
+"label": "2026 Northern Star factory brochure",
+"exact": true
+},
+"MHS43513": {
+"file": "2026-Thor-Motor-Coach-Quantum-Sprinter.pdf",
+"label": "2026 Quantum Sprinter factory brochure",
+"exact": true
+},
+"MHS3353C": {
+"file": "2014_ah_b.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44239": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44393": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS44669": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44106": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"MHS43339": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS44556": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44805": {
+"file": "2026-Entegra-Coach-Expanse.pdf",
+"label": "2026 Expanse factory brochure",
+"exact": true
+},
+"MHS3406C": {
+"file": "2019-Entegra-Coach-Anthem.pdf",
+"label": "2019 Anthem factory brochure",
+"exact": true
+},
+"UM2100242": {
+"file": "2021-Tiffin-Allegro-Breeze.pdf",
+"label": "2021 Allegro Breeze factory brochure",
+"exact": true
+},
+"MHS44043": {
+"file": "2025-Foretravel-Realm-Presidential.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44413": {
+"file": "2026-Thor-Motor-Coach-Magnitude-Grand.pdf",
+"label": "2026 Magnitude Grand factory brochure",
+"exact": true
+},
+"MHS43856": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44690": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS3393C": {
+"file": "NEW_2015_Ventana_Brochure_1.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44385": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS44852": {
+"file": "2026-Dynamax-Corp-Europa-S.pdf",
+"label": "2026 Europa S factory brochure",
+"exact": true
+},
+"M100567": {
+"file": "2025-Newmar-Ventana.pdf",
+"label": "2025 Ventana factory brochure",
+"exact": true
+},
+"MHS44444": {
+"file": "2026-Thor-Motor-Coach-Tellaro.pdf",
+"label": "2026 Tellaro factory brochure",
+"exact": true
+},
+"MHS42969": {
+"file": "2025-Fleetwood-Altitude.pdf",
+"label": "2025 Altitude factory brochure",
+"exact": true
+},
+"T136560": {
+"file": "2026-Forest-River-Aurora-Light.pdf",
+"label": "2026 Aurora Light factory brochure",
+"exact": true
+},
+"MHS44297": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS43801": {
+"file": "2025-Gulf-Stream-BTouring-Cruiser.pdf",
+"label": "2025 BTouring Cruiser factory brochure",
+"exact": true
+},
+"MHS43944": {
+"file": "2026-Entegra-Coach-Qwest.pdf",
+"label": "2026 Qwest factory brochure",
+"exact": true
+},
+"MHS44782": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44278": {
+"file": "2026-Entegra-Coach-Launch.pdf",
+"label": "2026 Launch factory brochure",
+"exact": true
+},
+"M135500": {
+"file": "2025-Entegra-Coach-Anthem.pdf",
+"label": "2025 Anthem factory brochure",
+"exact": true
+},
+"MHS44628": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"T136561": {
+"file": "2026-Forest-River-Aurora-Light.pdf",
+"label": "2026 Aurora Light factory brochure",
+"exact": true
+},
+"MHS44296": {
+"file": "2026-Entegra-Coach-Esteem-XL.pdf",
+"label": "2026 Esteem XL factory brochure",
+"exact": true
+},
+"MHS43945": {
+"file": "2026-Entegra-Coach-Qwest.pdf",
+"label": "2026 Qwest factory brochure",
+"exact": true
+},
+"MHS44783": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44279": {
+"file": "2026-Entegra-Coach-Launch.pdf",
+"label": "2026 Launch factory brochure",
+"exact": true
+},
+"M135501": {
+"file": "2025-Entegra-Coach-Aspire.pdf",
+"label": "2025 Aspire factory brochure",
+"exact": true
+},
+"M131811": {
+"file": "2026-Tiffin-Byway.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44629": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS44853": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44292A1": {
+"file": "2025-Grand-Design-Reflection.pdf",
+"label": "2025 Reflection factory brochure",
+"exact": true
+},
+"MHS44150": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44445": {
+"file": "2026-Thor-Motor-Coach-Tellaro.pdf",
+"label": "2026 Tellaro factory brochure",
+"exact": true
+},
+"MHS43380": {
+"file": "2025-Foretravel-Realm-FS605.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44691": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44384": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS43441": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"M144415": {
+"file": "2026-Newmar-London-Aire.pdf",
+"label": "2026 London Aire factory brochure",
+"exact": true
+},
+"MHS44107": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"MHS43338": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS44557": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44804": {
+"file": "2026-Entegra-Coach-Expanse.pdf",
+"label": "2026 Expanse factory brochure",
+"exact": true
+},
+"M143153": {
+"file": "2027-Tiffin-Open-Road-Allegro.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44042": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS44412": {
+"file": "2026-Thor-Motor-Coach-Magnitude-Grand.pdf",
+"label": "2026 Magnitude Grand factory brochure",
+"exact": true
+},
+"MHS44687": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44238": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44392": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS44668": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"MHS44812": {
+"file": "2026-Entegra-Coach-Vision-XL.pdf",
+"label": "2026 Vision XL factory brochure",
+"exact": true
+},
+"MHS44541": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS43284": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44111": {
+"file": "2026-Forest-River-Berkshire-XL.pdf",
+"label": "2026 Berkshire XL factory brochure",
+"exact": true
+},
+"MHS44404": {
+"file": "2026-Thor-Motor-Coach-Compass.pdf",
+"label": "2026 Compass factory brochure",
+"exact": true
+},
+"UM2100255": {
+"file": "2025-Thor-Motor-Coach-Geneva.pdf",
+"label": "2025 Geneva factory brochure",
+"exact": true
+},
+"MHS44280": {
+"file": "2026-Entegra-Coach-Launch.pdf",
+"label": "2026 Launch factory brochure",
+"exact": true
+},
+"MHS43545": {
+"file": "2026-Holiday-Rambler-Endeavor.pdf",
+"label": "2026 Endeavor factory brochure",
+"exact": true
+},
+"MHS43400": {
+"file": "2025-Gulf-Stream-BTouring-Cruiser.pdf",
+"label": "2025 BTouring Cruiser factory brochure",
+"exact": true
+},
+"MHS44795": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44146": {
+"file": "2025-Nexus-Ghost.pdf",
+"label": "2025 Ghost factory brochure",
+"exact": true
+},
+"MHS44516": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS44845": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS43862A": {
+"file": "2017-Fleetwood-Discovery.pdf",
+"label": "2017 Discovery factory brochure",
+"exact": true
+},
+"MHS44644": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"MHS44214": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS43882": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS44351": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"label": "2026 Omni Trail factory brochure",
+"exact": true
+},
+"MHS43247": {
+"file": "2026-Thor-Motor-Coach-Riviera.pdf",
+"label": "2026 Riviera factory brochure",
+"exact": true
+},
+"MHS44582": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS43617": {
+"file": "2026-Entegra-Coach-Accolade.pdf",
+"label": "2026 Accolade factory brochure",
+"exact": true
+},
+"MHS44428": {
+"file": "2026-Thor-Motor-Coach-Talavera.pdf",
+"label": "2026 Talavera factory brochure",
+"exact": true
+},
+"MHS44097": {
+"file": "2026-Forest-River-Berkshire.pdf",
+"label": "2026 Berkshire factory brochure",
+"exact": true
+},
+"MHS43586": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS44243": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"MHS44756": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"label": "2026 Emblem factory brochure",
+"exact": true
+},
+"CM920460": {
+"file": "sunstar_2012.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44185": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS44490": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS44605": {
+"file": "2026-Entegra-Coach-Ethos.pdf",
+"label": "2026 Ethos factory brochure",
+"exact": true
+},
+"M127553-LNG": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"M150587": {
+"file": "2026-Grand-Design-Lineage-Series-M.pdf",
+"label": "2026 Lineage Series M factory brochure",
+"exact": true
+},
+"MHS44740": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44310": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"MHS44691A": {
+"file": "2022-Alliance-RV-Paradigm.pdf",
+"label": "2022 Paradigm factory brochure",
+"exact": true
+},
+"UM2100238": {
+"file": "2024-Thor-Motor-Coach-Quantum.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"M136497": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"M124500": {
+"file": "2026-Newmar-Bay-Star-Sport.pdf",
+"label": "2026 Bay Star Sport factory brochure",
+"exact": true
+},
+"MHS44039": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS44193": {
+"file": "2025-Forest-River-FR3.pdf",
+"label": "2025 FR3 factory brochure",
+"exact": true
+},
+"MHS44469": {
+"file": "2026-Thor-Motor-Coach-Aria.pdf",
+"label": "2026 Aria factory brochure",
+"exact": true
+},
+"MHS43343": {
+"file": "2026-Thor-Motor-Coach-Four-Winds.pdf",
+"label": "2026 Four Winds factory brochure",
+"exact": true
+},
+"MHS44486": {
+"file": "2025-East-to-West-Bravado.pdf",
+"label": "2025 Bravado factory brochure",
+"exact": true
+},
+"MHS43894": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44202": {
+"file": "2025-Forest-River-FR3-Plus.pdf",
+"label": "2025 FR3 Plus factory brochure",
+"exact": true
+},
+"MHS44652": {
+"file": "2025-Forest-River-Georgetown-7-Series-GT7.pdf",
+"label": "2025 Georgetown 7 Series GT7 factory brochure",
+"exact": true
+},
+"MHS43608A": {
+"file": "2024-Thor-Motor-Coach-Vegas.pdf",
+"label": "2024 Vegas factory brochure",
+"exact": true
+},
+"MHS43482": {
+"file": "2026-Fleetwood-Fortis.pdf",
+"label": "2026 Fortis factory brochure",
+"exact": true
+},
+"MHS44717": {
+"file": "2026-Dynamax-Corp-Isata-5-Series.pdf",
+"label": "2026 Isata 5 Series factory brochure",
+"exact": true
+},
+"MHS44594": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"M122726-LEX": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43363": {
+"file": "2026-Thor-Motor-Coach-Luminate.pdf",
+"label": "2026 Luminate factory brochure",
+"exact": true
+},
+"MHS43733": {
+"file": "2026-Thor-Motor-Coach-Omni-Trail.pdf",
+"label": "2026 Omni Trail factory brochure",
+"exact": true
+},
+"MHS3371C": {
+"file": "2022-Palomino-Solaire.pdf",
+"label": "2022 Solaire factory brochure",
+"exact": true
+},
+"MHS44449": {
+"file": "2026-Dynamax-Corp-Grand-Sport.pdf",
+"label": "2026 Grand Sport factory brochure",
+"exact": true
+},
+"MHS44760": {
+"file": "2026-Entegra-Coach-Emblem.pdf",
+"label": "2026 Emblem factory brochure",
+"exact": true
+},
+"MHS44330": {
+"file": "2025-Entegra-Coach-Esteem.pdf",
+"label": "2025 Esteem factory brochure",
+"exact": true
+},
+"MHS44625": {
+"file": "2026-Dynamax-Corp-DX3.pdf",
+"label": "2026 DX3 factory brochure",
+"exact": true
+},
+"M127530": {
+"file": "2026-Tiffin-Phaeton.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"M136771": {
+"file": "2026-Fleetwood-Bounder.pdf",
+"label": "2026 Bounder factory brochure",
+"exact": true
+},
+"MHS43949": {
+"file": "2026-Entegra-Coach-Qwest.pdf",
+"label": "2026 Qwest factory brochure",
+"exact": true
+},
+"MHS44808": {
+"file": "2026-Entegra-Coach-Expanse.pdf",
+"label": "2026 Expanse factory brochure",
+"exact": true
+},
+"MHS43334": {
+"file": "2026-Thor-Motor-Coach-Chateau.pdf",
+"label": "2026 Chateau factory brochure",
+"exact": true
+},
+"MHS44367": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS44737": {
+"file": "2026-Entegra-Coach-Condor.pdf",
+"label": "2026 Condor factory brochure",
+"exact": true
+},
+"MHS43508": {
+"file": "2026-Thor-Motor-Coach-Quantum-Sprinter.pdf",
+"label": "2026 Quantum Sprinter factory brochure",
+"exact": true
+},
+"MHS44222": {
+"file": "2026-Dynamax-Corp-Isata-6-Series.pdf",
+"label": "2026 Isata 6 Series factory brochure",
+"exact": true
+},
+"MHS44388": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS44672": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS43322": {
+"file": "2026-Thor-Motor-Coach-Quantum.pdf",
+"label": "2026 Quantum factory brochure",
+"exact": true
+},
+"MHS44408": {
+"file": "2026-Thor-Motor-Coach-Gemini.pdf",
+"label": "2026 Gemini factory brochure",
+"exact": true
+},
+"MHS44721": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS44371": {
+"file": "2026-Thor-Motor-Coach-Palazzo-GT.pdf",
+"label": "2026 Palazzo GT factory brochure",
+"exact": true
+},
+"MHS44234": {
+"file": "2026-Dynamax-Corp-Dynaquest-XL.pdf",
+"label": "2026 Dynaquest XL factory brochure",
+"exact": true
+},
+"UT920451": {
+"file": "2021-Grand-Design-Imagine.pdf",
+"label": "2021 Imagine factory brochure",
+"exact": true
+},
+"MHS43908": {
+"file": "2026-Entegra-Coach-Ethos.pdf",
+"label": "2026 Ethos factory brochure",
+"exact": true
+},
+"MHS44849": {
+"file": "2026-East-to-West-Entrada.pdf",
+"label": "2026 Entrada factory brochure",
+"exact": true
+},
+"MHS43725": {
+"file": "2026-Thor-Motor-Coach-Outlaw-Wild-West-Edition.pdf",
+"label": "2026 Outlaw Wild West Edition factory brochure",
+"exact": true
+},
+"MHS43375": {
+"file": "2026-Fleetwood-Fortis.pdf",
+"label": "2026 Fortis factory brochure",
+"exact": true
+},
+"MHS44776": {
+"file": "2026-Entegra-Coach-Odyssey.pdf",
+"label": "2026 Odyssey factory brochure",
+"exact": true
+},
+"M133072-LNG": {
+"file": "2026-Tiffin-Phaeton.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44799": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"M148181": {
+"file": "2026-Grand-Design-Lineage-Series-M.pdf",
+"label": "2026 Lineage Series M factory brochure",
+"exact": true
+},
+"MHS44263": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44633": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"M143165": {
+"file": "2027-Tiffin-Allegro-Bus.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"UM900541": {
+"file": "2021-Winnebago-View.pdf",
+"label": "2021 View factory brochure",
+"exact": true
+},
+"MHS44561": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS44131": {
+"file": "2026-Dynamax-Corp-Europa.pdf",
+"label": "2026 Europa factory brochure",
+"exact": true
+},
+"MHS44648": {
+"file": "2026-Dynamax-Corp-Isata-3-Series.pdf",
+"label": "2026 Isata 3 Series factory brochure",
+"exact": true
+},
+"MHS43498": {
+"file": "2026-Forest-River-Forester-MBS.pdf",
+"label": "2026 Forester MBS factory brochure",
+"exact": true
+},
+"MHS43532": {
+"file": "2026-Holiday-Rambler-Vacationer.pdf",
+"label": "2026 Vacationer factory brochure",
+"exact": true
+},
+"MHS3400C": {
+"file": "2025-DRV-Mobile-Suites.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS44023": {
+"file": "2026-Nexus-Viper.pdf",
+"label": "2026 Viper factory brochure",
+"exact": true
+},
+"MHS44189": {
+"file": "2026-Thor-Motor-Coach-Tiburon.pdf",
+"label": "2026 Tiburon factory brochure",
+"exact": true
+},
+"MHS44166": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS43359": {
+"file": "2026-Thor-Motor-Coach-Inception.pdf",
+"label": "2026 Inception factory brochure",
+"exact": true
+},
+"MHS44536": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS3395C": {
+"file": "2024-Tiffin-Allegro-Breeze.pdf",
+"label": "2024 Allegro Breeze factory brochure",
+"exact": true
+},
+"MHS43420": {
+"file": "2026-Entegra-Coach-Accolade-XT.pdf",
+"label": "2026 Accolade XT factory brochure",
+"exact": true
+},
+"M127558-LNG": {
+"file": "2026-Tiffin-Wayfarer.pdf",
+"label": "Factory brochure",
+"exact": false
+},
+"MHS43836": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44465": {
+"file": "2026-Thor-Motor-Coach-Riviera.pdf",
+"label": "2026 Riviera factory brochure",
+"exact": true
+},
+"MHS44035": {
+"file": "2026-Entegra-Coach-Accolade-XL.pdf",
+"label": "2026 Accolade XL factory brochure",
+"exact": true
+},
+"MHS44520": {
+"file": "2026-Thor-Motor-Coach-Geneva.pdf",
+"label": "2026 Geneva factory brochure",
+"exact": true
+},
+"MHS44170": {
+"file": "2026-Thor-Motor-Coach-Delano.pdf",
+"label": "2026 Delano factory brochure",
+"exact": true
+},
+"MHS44259": {
+"file": "2026-Entegra-Coach-Odyssey-SE.pdf",
+"label": "2026 Odyssey SE factory brochure",
+"exact": true
+},
+"MHS44609": {
+"file": "2026-Thor-Motor-Coach-Windsport.pdf",
+"label": "2026 Windsport factory brochure",
+"exact": true
+},
+"MHS43573": {
+"file": "2026-Fleetwood-Discovery-LXE.pdf",
+"label": "2026 Discovery LXE factory brochure",
+"exact": true
+},
+"MHS44062": {
+"file": "2026-Thor-Motor-Coach-Tellaro-Sport.pdf",
+"label": "2026 Tellaro Sport factory brochure",
+"exact": true
+},
+"MHS44432": {
+"file": "2026-Thor-Motor-Coach-Rize.pdf",
+"label": "2026 Rize factory brochure",
+"exact": true
+},
+"MHS44127": {
+"file": "2026-Forest-River-Berkshire-XLT.pdf",
+"label": "2026 Berkshire XLT factory brochure",
+"exact": true
+},
+"MHS44577": {
+"file": "2026-Entegra-Coach-Qwest-SE.pdf",
+"label": "2026 Qwest SE factory brochure",
+"exact": true
+},
+"MHS43898": {
+"file": "2026-Thor-Motor-Coach-Pasadena.pdf",
+"label": "Factory brochure",
+"exact": false
+}
+}
+}
