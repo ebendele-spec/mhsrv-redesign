@@ -27,6 +27,20 @@ test('typed fuel and RV category constraints remain separate',()=>{
   assert.deepEqual(query('class C, under $100k').parsed.types,['classc']);
   assert(query('Sprinter').items.some(u=>u.type==='classc'));
 });
+test('Sprinter matches both chassis and model without overriding explicit RV types or brands',()=>{
+  const common={year:2026,condition:'new',price:100000,features:[],status:'listed',state:'TX',floorplan:''};
+  const sample=[
+    {...common,stock:'TEST-C',brand:'Example Coach',model:'Compact',type:'classc',fuel:'Diesel',searchText:'Mercedes Sprinter chassis'},
+    {...common,stock:'TEST-F',brand:'Keystone',model:'Sprinter',type:'fifth',fuel:'n/a',searchText:'Fifth wheel'},
+    {...common,stock:'TEST-Q',brand:'Thor Motor Coach',model:'Quantum Sprinter',type:'classc',fuel:'Diesel',searchText:'Mercedes Sprinter chassis'}
+  ];
+  const stocks=q=>search.run(sample,q).items.map(u=>u.stock).sort();
+  assert.deepEqual(stocks('Sprinter'),['TEST-C','TEST-F','TEST-Q']);
+  for(const q of ['class C Sprinter','Mercedes Sprinter','Sprinter diesel'])assert.deepEqual(stocks(q),['TEST-C','TEST-Q'],q);
+  assert.deepEqual(stocks('Keystone Sprinter'),['TEST-F']);
+  assert.deepEqual(stocks('Sprinter fifth wheel'),['TEST-F']);
+  assert.deepEqual(stocks('Quantum Sprinter'),['TEST-Q']);
+});
 test('feature exclusions stop at the next positive clause',()=>{
   const p=query('no bunks with a king bed').parsed;assert.deepEqual(p.excluded,['bunks']);assert.deepEqual(p.features,['king bed']);
   const p2=query('bunkhouse without a loft but with solar').parsed;assert(p2.excluded.includes('loft'));assert(p2.features.includes('solar'));assert(p2.features.includes('bunks'));

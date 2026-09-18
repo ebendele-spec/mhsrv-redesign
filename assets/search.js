@@ -53,7 +53,8 @@
     const exact = items.find(u=>u.stock.replace(/[^a-z0-9]/gi,'').toUpperCase()===stockKey);
     if(exact){p.stock=exact.stock;p.chips.push('#'+exact.stock);return p;}
     // Protect model names such as New Aire before interpreting "new" as condition.
-    const modelNames=[...new Set(items.map(u=>norm(u.model)))].filter(m=>m.length>=3&&!['new','used','gas','diesel','solar','bunkhouse'].includes(m)).sort((a,b)=>b.length-a.length);
+    // Sprinter names both a chassis and an RV model; leave the bare word searchable.
+    const modelNames=[...new Set(items.map(u=>norm(u.model)))].filter(m=>m.length>=3&&!['new','used','gas','diesel','solar','bunkhouse','sprinter'].includes(m)).sort((a,b)=>b.length-a.length);
     for(const model of modelNames){const rx=new RegExp('\\b'+model.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b','g');if(rx.test(q)){p.models.push(model);q=q.replace(rx,' ');}}
     take(/\b(?:between\s+)?(20\d{2})\s*(?:-|to|and)\s*(20\d{2})\b/g,(_,a,b)=>{p.minYear=+a;p.maxYear=+b;});
     take(/\b(20\d{2})\s*(?:or newer|and newer|and up|\+)(?=\s|$)/g,(_,a)=>p.minYear=+a);

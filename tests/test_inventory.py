@@ -5,6 +5,7 @@ import math
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT=Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('import_inventory',ROOT/'tools/import_inventory.py')
@@ -33,6 +34,27 @@ class ImportTests(unittest.TestCase):
     def test_non_finite_values_are_not_emitted(self):
         for value in ['NaN','Infinity','-Infinity','']:
             self.assertIsNone(module.number(value))
+
+    def test_removed_stock_keeps_last_known_data_date(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory); (root/'inventory').mkdir()
+            old={'stock':'OLD123','status':'listed','updated':'2026-07-18','price':125000}
+            archive=root/'inventory/OLD123.json'; archive.write_text(json.dumps(old))
+            current={'stock':'NEW123','status':'listed','updated':'2026-09-17','price':145000}
+            catalog={'updated':'2026-09-17','items':[current]}
+            with patch.object(module,'ROOT',root):
+                module.write_inventory(catalog,{'NEW123':current})
+                saved=json.loads(archive.read_text())
+                self.assertEqual(saved['status'],'unavailable')
+                self.assertEqual(saved['updated'],old['updated'])
+                self.assertEqual(saved['price'],old['price'])
+                self.assertEqual(saved['unavailableSince'],'2026-09-17')
+                self.assertNotIn('OLD123',[u['stock'] for u in json.loads((root/'inventory.json').read_text())['items']])
+                module.write_inventory(dict(catalog,updated='2026-09-18'),{'NEW123':current})
+                self.assertEqual(json.loads(archive.read_text())['unavailableSince'],'2026-09-17')
+                module.write_inventory({'updated':'2026-09-18','items':[old,current]}, {'OLD123':old,'NEW123':current})
+                self.assertEqual(json.loads(archive.read_text())['status'],'listed')
+                self.assertNotIn('unavailableSince',json.loads(archive.read_text()))
 
     def test_public_catalog_matches_detail_records(self):
         catalog=json.loads((ROOT/'inventory.json').read_text())

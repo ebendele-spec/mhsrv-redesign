@@ -7,7 +7,7 @@ The September 2026 redesign keeps the existing GitHub Pages repository and every
 - Responsive shopping page, natural-language inventory matching, keyboard suggestions, explicit filter interpretation, conventional filters and sort.
 - Stock and model matching, common brand typos, dollar/length/year/capacity constraints, feature exclusions and transparent missing-data handling.
 - Saved RVs on this device; three-unit comparisons; a guided RV Match questionnaire.
-- 1,267 imported RVs, individual static detail pages, full photo galleries, available floorplans, on-page brochure and related-video viewers, and 360-tour links where supplied.
+- 1,263 imported RVs, individual static detail pages, full photo galleries, available floorplans, on-page brochure and related-video viewers, and 360-tour links where supplied.
 - Listing-based answers from the exact unit data. These are deterministic and explicitly labeled; they are not a connected generative AI model.
 - Lead requests to `elisha@mhsrv.com` through FormSubmit, with validation, stock/intent context, campaign attribution, timeout handling and honest failures.
 - Payment illustrations with editable assumptions, not offered rates or approval claims.
@@ -16,7 +16,7 @@ The September 2026 redesign keeps the existing GitHub Pages repository and every
 
 ## Required before advertising or production cutover
 
-1. Import a fresh feed. The current snapshot is **July 18, 2026**, not live inventory.
+1. Keep importing fresh feeds. The current snapshot was supplied and imported **September 17, 2026**; it is not a live connection. The CSV has no export-date field, so this date reflects the owner's latest-feed submission.
 2. Activate the FormSubmit recipient and verify an actual inquiry arrives in `elisha@mhsrv.com`. No live test inquiry was sent during development. A service acceptance response is not mailbox delivery confirmation.
 3. Connect the daily emailed feed to a private import process. Receiving an attachment in an email account does not automatically update this repository.
 4. For generative AI, connect a secured server endpoint and an AI service account. GitHub Pages cannot keep an API secret. The current RV Match and listing assistant work without that service; they do not pretend to be one.
@@ -24,6 +24,8 @@ The September 2026 redesign keeps the existing GitHub Pages repository and every
 6. Complete the production SEO migration in `SEO-STRATEGY.md`. No MHSRV.com DNS, hosting or production content has been changed.
 
 ## Daily feed options
+
+The September 17 update added 234 stocks, removed 238 from search, and changed 531 prices compared with the July 18 snapshot. Removed-stock URLs remain available with a "No longer listed" status, their last known price/specification date, and the date they first disappeared from the feed. No raw source attachment was committed.
 
 - **Manual now:** attach the CSV in the coding conversation or save it privately and run the documented importer.
 - **Automatic later:** a mailbox rule/Power Automate/Zapier/Make workflow can fetch the attachment into private storage, then trigger a trusted import runner. Keep source credentials and the original attachment out of this public repository.

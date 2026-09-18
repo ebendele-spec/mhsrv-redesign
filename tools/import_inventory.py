@@ -113,13 +113,7 @@ def import_feed(path, imported):
         raise ValueError('Feed contains no valid inventory. Existing catalog was not changed.')
     return {'updated':imported,'source':'NetSource inventory export','items':items}, details
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('feed',type=Path)
-    parser.add_argument('--date',default=date.today().isoformat())
-    args = parser.parse_args()
-    date.fromisoformat(args.date)
-    catalog, details = import_feed(args.feed,args.date)
+def write_inventory(catalog, details):
     out = ROOT/'inventory';out.mkdir(exist_ok=True)
     for stock,data in details.items():
         (out/(stock+'.json')).write_text(json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n')
@@ -127,8 +121,19 @@ def main():
     # Keep removed-stock pages as honest unavailable records, never stale active offers.
     for file in out.glob('*.json'):
         if file.stem not in details:
-            old = json.loads(file.read_text());old['status']='unavailable';old['updated']=args.date
+            old = json.loads(file.read_text());old['status']='unavailable'
+            # The new feed establishes absence, not fresh prices or specifications.
+            old.setdefault('unavailableSince', catalog['updated'])
             file.write_text(json.dumps(old,ensure_ascii=False,separators=(',',':'))+'\n')
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('feed',type=Path)
+    parser.add_argument('--date',default=date.today().isoformat())
+    args = parser.parse_args()
+    date.fromisoformat(args.date)
+    catalog, details = import_feed(args.feed,args.date)
+    write_inventory(catalog, details)
     print(f'Imported {len(details):,} public inventory records, dated {args.date}. No private CSV columns exported.')
 
 if __name__ == '__main__':

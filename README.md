@@ -50,7 +50,7 @@ Publish reviewed changes to `main`; GitHub Pages rebuilds the live preview. Use 
 ## Important deployment details
 
 - GitHub is a design preview and deliberately uses `noindex,follow` on every HTML page.
-- Current inventory is the July 18, 2026 import until a newer feed is supplied.
+- Current inventory is the September 17, 2026 import (1,263 records). This is a supplied feed snapshot, not a live connection.
 - Leads route to `elisha@mhsrv.com` through FormSubmit. Mailbox activation and a real delivery check are required before paid traffic.
 - Saved and compared RVs are stored only in the current browser, without account sync.
 - RV Match and listing answers are grounded local tools. A generative AI model and secure backend are not connected.
