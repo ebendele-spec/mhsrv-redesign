@@ -1,3 +1,16 @@
 # Raw NetSource feed stays local — full field set incl. Cost must never be published
 netsourcemedia_export.csv
 .DS_Store
+
+# Daily source feeds can contain confidential dealer fields. Keep all raw CSVs private.
+*.csv
+!redirects-301.csv
+*.xlsx
+*.xls
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store

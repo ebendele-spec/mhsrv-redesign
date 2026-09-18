@@ -1,7 +1,60 @@
-# MHSRV Redesign — Full Site
+# MHSRV shopping redesign
 
-23 real units from the live Blue Compass Alvarado feed, each with its own VDP in /units. On-site reviews hub (reviews.html) + individual review pages in /reviews with Review schema. Forms deliver to ebendele@gmail.com via FormSubmit (one-time activation email on first submission).
+Static HTML, CSS and JavaScript, published from `main` through GitHub Pages:
+https://ebendele-spec.github.io/mhsrv-redesign/
 
-Production swaps: data.js → live inventory API; reviews-data.js → WordPress REST import of all 4,571 reviews with 301s from motorhomespecialistreviews.com.
+## Work on the site
 
-Shared footer: footer.js renders the site footer (locations + legal & pricing disclaimer) on every page — edit footer.js once and all ~5,800 pages update. Pages include it with `<script src="footer.js" defer></script>` (`../footer.js` from /units and /reviews). On pages with the fixed bottom dock it extends the dark footer beneath the dock so no background gap shows.
+- `assets/site.css`: shared visual system and responsive layouts.
+- `assets/app.js`: shopping, saved RVs, comparisons, dialogs and resource viewers.
+- `assets/search.js`: inventory-grounded natural-language matching.
+- `assets/core.js`: tested lead transport and payment calculations.
+- `tools/site_templates.py`: shared page templates.
+- `tools/build-site.py`: rebuilds all pages and sitemaps from public data.
+- `site-config.json`: preview origin, publication mode and lead recipient.
+
+Preview locally:
+
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1
+```
+
+Rebuild after changing a template:
+
+```sh
+python3 tools/build-site.py
+```
+
+## Import a fresh daily feed
+
+Keep the emailed CSV **outside the repository**. It contains confidential columns such as dealer Cost.
+
+```sh
+python3 tools/build-inventory.py /private/path/to/daily-feed.csv --date YYYY-MM-DD
+```
+
+The importer writes an allowlisted `inventory.json` and individual `inventory/*.json` records. It rebuilds existing stock URLs, retains missing stocks as unavailable, and does not publish the raw CSV. Use the actual feed date. Rebuilding alone does not update the inventory date.
+
+For daily email automation, see `HANDOFF.md`. An email connection or private attachment runner still needs to be configured; this site does not poll your inbox.
+
+## Check before publishing
+
+```sh
+python3 -m unittest discover -s tests -p 'test_*.py'
+node --test tests/*.test.cjs
+python3 tools/validate-site.py
+```
+
+Publish reviewed changes to `main`; GitHub Pages rebuilds the live preview. Use the repository owner's GitHub credentials when the default signed-in account lacks push access.
+
+## Important deployment details
+
+- GitHub is a design preview and deliberately uses `noindex,follow` on every HTML page.
+- Current inventory is the July 18, 2026 import until a newer feed is supplied.
+- Leads route to `elisha@mhsrv.com` through FormSubmit. Mailbox activation and a real delivery check are required before paid traffic.
+- Saved and compared RVs are stored only in the current browser, without account sync.
+- RV Match and listing answers are grounded local tools. A generative AI model and secure backend are not connected.
+- `mhsrv_*` conversion events are ready for a tag manager, but no analytics account is connected.
+- No changes have been made to the existing MHSRV.com production website.
+
+Read `AGENTS.md`, `HANDOFF.md` and `SEO-STRATEGY.md` before continuing development or preparing a production launch.

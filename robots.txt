@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mhsrv.com/sitemap.xml
+# Design preview: every HTML page has a static noindex,follow directive.
