@@ -2,7 +2,7 @@
 
 This is a plain HTML/CSS/JavaScript site hosted by GitHub Pages. Keep that architecture unless the owner explicitly requests a migration.
 
-- Edit `tools/site_templates.py` and `tools/build-site.py` for generated HTML. Rebuild with `python3 tools/build-site.py`; do not hand-edit thousands of generated pages.
+- Edit `tools/site_templates.py`, its focused `*_templates.py` modules and `tools/build-site.py` for generated HTML. Rebuild with `python3 tools/build-site.py`; do not hand-edit thousands of generated pages.
 - Shared UI is in `assets/site.css` and `assets/app.js`. Inventory search is in `assets/search.js`; lead delivery and calculator logic are in `assets/core.js`.
 - Lead destination is `site-config.json`: `elisha@mhsrv.com`. The FormSubmit mailbox must be activated and actual delivery confirmed before a paid campaign.
 - The GitHub site is a design preview. Preserve static `noindex,follow` and the preview origin until a deliberate production migration.
@@ -11,5 +11,7 @@ This is a plain HTML/CSS/JavaScript site hosted by GitHub Pages. Keep that archi
 - Keep customer testimonial text and existing URL paths. Do not invent star ratings or label dealership testimonials as unit reviews.
 - Run `python3 -m unittest discover -s tests -p 'test_*.py'`, `node --test tests/*.test.cjs`, and `python3 tools/validate-site.py` after relevant changes.
 - Do not submit test leads to real recipients during automated checks. Tests use a mocked transport.
+
+- Google reviews use an on-demand private endpoint; do not commit cached Google review content or claim the integration is connected without a real verified API response. See `tools/README-google-reviews.md`.
 
 Read `README.md`, `HANDOFF.md` and `SEO-STRATEGY.md` for the current implementation and remaining integration work.

@@ -1,0 +1,2963 @@
+{
+  "source": "Restored from trade-in.html at 66bf55a7; marketing choices are replaced by separate optional consents at render time.",
+  "forms": {
+    "rv": [
+      {
+        "title": "Contact & Unit Info",
+        "fields": [
+          {
+            "name": "location",
+            "label": "Location",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "MHS Texas",
+                "label": "MHS Texas"
+              },
+              {
+                "value": "MHS Alabama",
+                "label": "MHS Alabama"
+              },
+              {
+                "value": "Blue Compass RV Palm Desert — Soon to Be MHS California",
+                "label": "Blue Compass RV Palm Desert — Soon to Be MHS California"
+              }
+            ]
+          },
+          {
+            "name": "date",
+            "label": "Date",
+            "type": "date",
+            "required": true
+          },
+          {
+            "name": "name",
+            "label": "Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "preferred_phone",
+            "label": "Preferred Phone",
+            "type": "tel",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true
+          },
+          {
+            "name": "confirm_email",
+            "label": "Confirm Email",
+            "type": "email",
+            "required": true
+          },
+          {
+            "name": "year",
+            "label": "Year",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "make_and_model",
+            "label": "Make and Model",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "floor_plan_model",
+            "label": "Floor Plan / Model #",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "floor_plan_type_click_any_that_apply",
+            "label": "Floor Plan Type (Click any that apply)",
+            "type": "checkbox",
+            "required": false,
+            "options": [
+              {
+                "value": "Bunk Model",
+                "label": "Bunk Model"
+              },
+              {
+                "value": "Bath & 1/2",
+                "label": "Bath & 1/2"
+              },
+              {
+                "value": "2 Full Bath",
+                "label": "2 Full Bath"
+              },
+              {
+                "value": "Toy Hauler",
+                "label": "Toy Hauler"
+              }
+            ]
+          },
+          {
+            "name": "miles",
+            "label": "Miles",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "length",
+            "label": "Length",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "vin_optional",
+            "label": "VIN# (Optional)",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "original_m_s_r_p",
+            "label": "Original M.S.R.P.",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "rv_type",
+            "label": "RV Type",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Diesel Pusher",
+                "label": "Diesel Pusher"
+              },
+              {
+                "value": "Class A Gas",
+                "label": "Class A Gas"
+              },
+              {
+                "value": "Class C",
+                "label": "Class C"
+              },
+              {
+                "value": "Class B+",
+                "label": "Class B+"
+              },
+              {
+                "value": "Class B",
+                "label": "Class B"
+              },
+              {
+                "value": "Fifth Wheel",
+                "label": "Fifth Wheel"
+              },
+              {
+                "value": "Travel Trailer",
+                "label": "Travel Trailer"
+              },
+              {
+                "value": "Super C Diesel",
+                "label": "Super C Diesel"
+              },
+              {
+                "value": "Sprinter Diesel",
+                "label": "Sprinter Diesel"
+              },
+              {
+                "value": "Class A Front Engine Diesel",
+                "label": "Class A Front Engine Diesel"
+              },
+              {
+                "value": "Class A Mid-Engine Diesel",
+                "label": "Class A Mid-Engine Diesel"
+              },
+              {
+                "value": "Other",
+                "label": "Other"
+              }
+            ]
+          },
+          {
+            "name": "sales_representative",
+            "label": "Sales Representative",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "None",
+                "label": "None"
+              },
+              {
+                "value": "Bradley Schwind",
+                "label": "Bradley Schwind"
+              },
+              {
+                "value": "Brayden Hirsch",
+                "label": "Brayden Hirsch"
+              },
+              {
+                "value": "Brighan Stanley",
+                "label": "Brighan Stanley"
+              },
+              {
+                "value": "Brian Dexter",
+                "label": "Brian Dexter"
+              },
+              {
+                "value": "Caleb Banks",
+                "label": "Caleb Banks"
+              },
+              {
+                "value": "Caleb Maples",
+                "label": "Caleb Maples"
+              },
+              {
+                "value": "Christine Johnson",
+                "label": "Christine Johnson"
+              },
+              {
+                "value": "Ethen Burns",
+                "label": "Ethen Burns"
+              },
+              {
+                "value": "Eric Watson",
+                "label": "Eric Watson"
+              },
+              {
+                "value": "Erica Garcia",
+                "label": "Erica Garcia"
+              },
+              {
+                "value": "Graham Beckwith",
+                "label": "Graham Beckwith"
+              },
+              {
+                "value": "Jake Hobbs (Alabama)",
+                "label": "Jake Hobbs (Alabama)"
+              },
+              {
+                "value": "James Smith",
+                "label": "James Smith"
+              },
+              {
+                "value": "Jordan Buckley",
+                "label": "Jordan Buckley"
+              },
+              {
+                "value": "Kerry Merrill (Alabama)",
+                "label": "Kerry Merrill (Alabama)"
+              },
+              {
+                "value": "Kolton Baldwin",
+                "label": "Kolton Baldwin"
+              },
+              {
+                "value": "Max Bradshaw",
+                "label": "Max Bradshaw"
+              },
+              {
+                "value": "Michael Martinez",
+                "label": "Michael Martinez"
+              },
+              {
+                "value": "Michael J. Reardon (Alabama)",
+                "label": "Michael J. Reardon (Alabama)"
+              },
+              {
+                "value": "Mitch Bennett",
+                "label": "Mitch Bennett"
+              },
+              {
+                "value": "Robert \"Cowboy\" Langley",
+                "label": "Robert \"Cowboy\" Langley"
+              },
+              {
+                "value": "Rocco Quaranta",
+                "label": "Rocco Quaranta"
+              },
+              {
+                "value": "Ron Johnson",
+                "label": "Ron Johnson"
+              },
+              {
+                "value": "Spencer Molina",
+                "label": "Spencer Molina"
+              },
+              {
+                "value": "Ted Eaton",
+                "label": "Ted Eaton"
+              },
+              {
+                "value": "William Illa",
+                "label": "William Illa"
+              },
+              {
+                "value": "Other",
+                "label": "Other"
+              }
+            ]
+          },
+          {
+            "name": "who_did_you_purchase_the_unit_from",
+            "label": "Who Did You Purchase the Unit From?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Private Seller",
+                "label": "Private Seller"
+              },
+              {
+                "value": "Motor Home Specialist",
+                "label": "Motor Home Specialist"
+              },
+              {
+                "value": "Other Dealer",
+                "label": "Other Dealer"
+              }
+            ]
+          },
+          {
+            "name": "if_other_dealer_please_list_dealership",
+            "label": "If Other Dealer, Please List Dealership",
+            "type": "text",
+            "required": false
+          }
+        ]
+      },
+      {
+        "title": "Trade In Description (Part 1)",
+        "fields": [
+          {
+            "name": "do_you_owe_anything_on_your_trade_in",
+            "label": "Do You Owe Anything on Your Trade-In?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "approximately_how_much_do_you_owe",
+            "label": "Approximately How Much Do You Owe?",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "will_you_be_financing",
+            "label": "Will You be Financing?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "approximately_how_much_are_you_putting_down",
+            "label": "Approximately How Much Are You Putting Down?",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "beds_click_all_that_apply",
+            "label": "Beds: Click All that Apply",
+            "type": "checkbox",
+            "required": false,
+            "options": [
+              {
+                "value": "King",
+                "label": "King"
+              },
+              {
+                "value": "Queen",
+                "label": "Queen"
+              },
+              {
+                "value": "Full",
+                "label": "Full"
+              },
+              {
+                "value": "Twins",
+                "label": "Twins"
+              },
+              {
+                "value": "Hallway Bunks",
+                "label": "Hallway Bunks"
+              },
+              {
+                "value": "Salon Bunks",
+                "label": "Salon Bunks"
+              },
+              {
+                "value": "Cab-over Loft",
+                "label": "Cab-over Loft"
+              },
+              {
+                "value": "Dropdown Cab-over Loft",
+                "label": "Dropdown Cab-over Loft"
+              }
+            ]
+          },
+          {
+            "name": "slide_out_room",
+            "label": "Slide-out Room #",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "0",
+                "label": "0"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "5",
+                "label": "5"
+              }
+            ]
+          },
+          {
+            "name": "engine_type",
+            "label": "Engine Type",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Gas",
+                "label": "Gas"
+              },
+              {
+                "value": "Diesel",
+                "label": "Diesel"
+              }
+            ]
+          },
+          {
+            "name": "engine_gas",
+            "label": "Engine (Gas)",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "460 Ford",
+                "label": "460 Ford"
+              },
+              {
+                "value": "V-10 Ford",
+                "label": "V-10 Ford"
+              },
+              {
+                "value": "454 Chev.",
+                "label": "454 Chev."
+              },
+              {
+                "value": "8.1L Chev.",
+                "label": "8.1L Chev."
+              },
+              {
+                "value": "Other",
+                "label": "Other"
+              }
+            ]
+          },
+          {
+            "name": "chassis_gas",
+            "label": "Chassis (Gas)",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Ford",
+                "label": "Ford"
+              },
+              {
+                "value": "Chevrolet",
+                "label": "Chevrolet"
+              },
+              {
+                "value": "Workhorse",
+                "label": "Workhorse"
+              },
+              {
+                "value": "Other",
+                "label": "Other"
+              }
+            ]
+          },
+          {
+            "name": "engine_gas_other",
+            "label": "Engine (Gas) - Other",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "chassis_gas_other",
+            "label": "Chassis (Gas) - Other",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "engine_diesel",
+            "label": "Engine (Diesel)",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Cummins",
+                "label": "Cummins"
+              },
+              {
+                "value": "Caterpillar",
+                "label": "Caterpillar"
+              },
+              {
+                "value": "Mercedes",
+                "label": "Mercedes"
+              },
+              {
+                "value": "Ford",
+                "label": "Ford"
+              },
+              {
+                "value": "Other",
+                "label": "Other"
+              }
+            ]
+          },
+          {
+            "name": "chassis_diesel",
+            "label": "Chassis (Diesel)",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Freightliner",
+                "label": "Freightliner"
+              },
+              {
+                "value": "Spartan",
+                "label": "Spartan"
+              },
+              {
+                "value": "Other",
+                "label": "Other"
+              }
+            ]
+          },
+          {
+            "name": "engine_diesel_other",
+            "label": "Engine (Diesel) - Other",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "chassis_diesel_other",
+            "label": "Chassis (Diesel) - Other",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "engine_diesel_hp",
+            "label": "Engine (Diesel) - HP",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "exhaust_leak",
+            "label": "Exhaust Leak?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "runs_good",
+            "label": "Runs Good?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "transmission",
+            "label": "Transmission",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "3 Speed",
+                "label": "3 Speed"
+              },
+              {
+                "value": "4 Speed",
+                "label": "4 Speed"
+              },
+              {
+                "value": "5 Speed",
+                "label": "5 Speed"
+              },
+              {
+                "value": "6 Speed",
+                "label": "6 Speed"
+              }
+            ]
+          },
+          {
+            "name": "shifts_good",
+            "label": "Shifts Good?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "tire_size",
+            "label": "Tire Size",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "16.5 R",
+                "label": "16.5 R"
+              },
+              {
+                "value": "19 R",
+                "label": "19 R"
+              },
+              {
+                "value": "22 R",
+                "label": "22 R"
+              }
+            ]
+          },
+          {
+            "name": "tag_axle",
+            "label": "Tag Axle",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "i_f_s_independent_front_suspension",
+            "label": "I.F.S. (Independent Front Suspension)",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Trade In Description (Part 2)",
+        "fields": [
+          {
+            "name": "generator_brand",
+            "label": "Generator Brand",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Onan",
+                "label": "Onan"
+              },
+              {
+                "value": "Generac",
+                "label": "Generac"
+              },
+              {
+                "value": "Powertech",
+                "label": "Powertech"
+              },
+              {
+                "value": "Kohler",
+                "label": "Kohler"
+              },
+              {
+                "value": "Other",
+                "label": "Other"
+              }
+            ]
+          },
+          {
+            "name": "generator_hours",
+            "label": "Generator Hours",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "generator_size",
+            "label": "Generator Size",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "generator_type",
+            "label": "Generator Type",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Gas",
+                "label": "Gas"
+              },
+              {
+                "value": "LP Gas",
+                "label": "LP Gas"
+              },
+              {
+                "value": "Diesel",
+                "label": "Diesel"
+              }
+            ]
+          },
+          {
+            "name": "generator_runs_good",
+            "label": "Generator Runs Good?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "how_many_roof_a_c_units",
+            "label": "How Many Roof A/C Units?",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "0",
+                "label": "0"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "4",
+                "label": "4"
+              }
+            ]
+          },
+          {
+            "name": "basement_a_c",
+            "label": "Basement A/C",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "house_a_cs_cold",
+            "label": "House A/Cs Cold?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "dash_a_c_cold",
+            "label": "Dash A/C Cold?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "choose_your_exterior_graphics",
+            "label": "Choose Your Exterior Graphics",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "No Paint W/Vinyl Graphics",
+                "label": "No Paint W/Vinyl Graphics"
+              },
+              {
+                "value": "Partial Paint W/Vinyl Graphics",
+                "label": "Partial Paint W/Vinyl Graphics"
+              },
+              {
+                "value": "Colored Sidewalls W/Vinyl Graphics",
+                "label": "Colored Sidewalls W/Vinyl Graphics"
+              },
+              {
+                "value": "White Paint W/Painted Graphics",
+                "label": "White Paint W/Painted Graphics"
+              },
+              {
+                "value": "Full Color Paint W/Painted Graphics",
+                "label": "Full Color Paint W/Painted Graphics"
+              }
+            ]
+          },
+          {
+            "name": "awnings_click_all_that_apply",
+            "label": "Awnings (Click All That Apply)",
+            "type": "checkbox",
+            "required": false,
+            "options": [
+              {
+                "value": "Power Integrated Roof Awnings",
+                "label": "Power Integrated Roof Awnings"
+              },
+              {
+                "value": "Power Patio Awning",
+                "label": "Power Patio Awning"
+              },
+              {
+                "value": "Power Door Awning",
+                "label": "Power Door Awning"
+              },
+              {
+                "value": "Power Window Awnings",
+                "label": "Power Window Awnings"
+              },
+              {
+                "value": "Manual Patio Awning",
+                "label": "Manual Patio Awning"
+              },
+              {
+                "value": "Manual Window Awnings",
+                "label": "Manual Window Awnings"
+              },
+              {
+                "value": "Slide-Out Room Awning Toppers",
+                "label": "Slide-Out Room Awning Toppers"
+              }
+            ]
+          },
+          {
+            "name": "are_all_awnings_good",
+            "label": "Are All Awnings Good?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "if_no_explain_problem_or_damage",
+            "label": "If No — Explain Problem or Damage",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "refrigerator",
+            "label": "Refrigerator",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Residential Refrigerator",
+                "label": "Residential Refrigerator"
+              },
+              {
+                "value": "Side-By-Side",
+                "label": "Side-By-Side"
+              },
+              {
+                "value": "4-Door",
+                "label": "4-Door"
+              },
+              {
+                "value": "Stack",
+                "label": "Stack"
+              }
+            ]
+          },
+          {
+            "name": "satellite",
+            "label": "Satellite",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "In-Motion",
+                "label": "In-Motion"
+              },
+              {
+                "value": "HD Travelers",
+                "label": "HD Travelers"
+              },
+              {
+                "value": "Automatic (Dome)",
+                "label": "Automatic (Dome)"
+              },
+              {
+                "value": "Manual",
+                "label": "Manual"
+              }
+            ]
+          },
+          {
+            "name": "inverter",
+            "label": "Inverter",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "inverter_size",
+            "label": "Inverter - Size",
+            "type": "text",
+            "required": false
+          }
+        ]
+      },
+      {
+        "title": "Condition Report (Part 1)",
+        "fields": [
+          {
+            "name": "carpet_flooring",
+            "label": "Carpet & Flooring",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "pilot_copilot_seats",
+            "label": "Pilot & Copilot Seats",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "sofas_chairs",
+            "label": "Sofas & Chairs",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "dinette",
+            "label": "Dinette",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "cabinets",
+            "label": "Cabinets",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "refrigerator_condition",
+            "label": "Refrigerator Condition",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "roof",
+            "label": "Roof",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "head_liner",
+            "label": "Head Liner",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "bed_spread",
+            "label": "Bed Spread",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "exterior_decals_stripes",
+            "label": "Exterior Decals & Stripes",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "exterior_paint",
+            "label": "Exterior Paint",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "one_piece_windshield",
+            "label": "One Piece Windshield",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Good",
+                "label": "Good"
+              },
+              {
+                "value": "Cracks",
+                "label": "Cracks"
+              },
+              {
+                "value": "Stars",
+                "label": "Stars"
+              }
+            ]
+          },
+          {
+            "name": "driver_s_side_windshield",
+            "label": "Driver's Side Windshield",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Good",
+                "label": "Good"
+              },
+              {
+                "value": "Cracks",
+                "label": "Cracks"
+              },
+              {
+                "value": "Stars",
+                "label": "Stars"
+              }
+            ]
+          },
+          {
+            "name": "passenger_side_windshield",
+            "label": "Passenger Side Windshield",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Good",
+                "label": "Good"
+              },
+              {
+                "value": "Cracks",
+                "label": "Cracks"
+              },
+              {
+                "value": "Stars",
+                "label": "Stars"
+              }
+            ]
+          },
+          {
+            "name": "please_describe_cracks_stars_if_any",
+            "label": "Please Describe Cracks & Stars if Any",
+            "type": "text",
+            "required": false
+          }
+        ]
+      },
+      {
+        "title": "Condition Report (Part 2)",
+        "fields": [
+          {
+            "name": "is_anything_missing",
+            "label": "Is Anything Missing?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "if_yes_please_list",
+            "label": "If Yes, Please List",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "any_exterior_damage",
+            "label": "Any Exterior Damage?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "any_interior_damage",
+            "label": "Any Interior Damage?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "any_window_glass_damage_or_defects",
+            "label": "Any Window Glass Damage or Defects?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "if_yes_to_any_please_list",
+            "label": "If Yes to Any, Please List",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "is_everything_working",
+            "label": "Is Everything Working?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "if_no_please_list",
+            "label": "If No, Please List",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "is_everything_original",
+            "label": "Is Everything Original?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "if_no_please_list_original",
+            "label": "If No, Please List (Original)",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "are_you_the_original_owner",
+            "label": "Are You the Original Owner?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "has_rv_been_smoked_in",
+            "label": "Has RV Been Smoked in?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "has_rv_been_lived_in",
+            "label": "Has RV Been Lived in?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "has_rv_had_pets_in_it",
+            "label": "Has RV Had Pets in it?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "are_all_batteries_good",
+            "label": "Are All Batteries Good?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "original_books_manuals",
+            "label": "Original Books & Manuals?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "original_bed_spread",
+            "label": "Original Bed Spread?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "all_remote_controls",
+            "label": "All Remote Controls?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "are_tires_original",
+            "label": "Are Tires Original?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "are_all_tires_still_matching_brand",
+            "label": "Are All Tires Still Matching Brand?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "are_sidewalls_of_tires_dry_rotted",
+            "label": "Are Sidewalls of Tires Dry Rotted?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "are_tires_wearing_even_on_fronts",
+            "label": "Are Tires Wearing Even on Fronts?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "is_tire_tread_still_good",
+            "label": "Is Tire Tread Still Good?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "approximate_miles_on_tires",
+            "label": "Approximate Miles on Tires",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "approximate_age_of_tires",
+            "label": "Approximate Age of Tires",
+            "type": "text",
+            "required": false
+          }
+        ]
+      },
+      {
+        "title": "Features & Options",
+        "fields": [
+          {
+            "name": "aluminum_wheels",
+            "label": "Aluminum Wheels",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "aqua_hot_or_hydro_hot",
+            "label": "Aqua Hot or Hydro Hot",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "back_up_camera",
+            "label": "Back-up Camera",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "ceramic_tile_floors",
+            "label": "Ceramic Tile Floors",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "day_night_shades",
+            "label": "Day/Night Shades",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "dishwasher",
+            "label": "Dishwasher",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "dual_pane_windows",
+            "label": "Dual Pane Windows",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "dvd_or_blu_ray",
+            "label": "DVD or Blu-Ray",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "leveling_jack_system",
+            "label": "Leveling Jack System",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "tv_cab",
+            "label": "TV - Cab",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "tv_living_room",
+            "label": "TV - Living Room",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "tv_bedroom",
+            "label": "TV - Bedroom",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "tv_exterior",
+            "label": "TV - Exterior",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "washer_dryer",
+            "label": "Washer/Dryer",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "please_list_any_additional_information_or_featur",
+            "label": "Please List Any Additional Information or Features You Would Like Us to Consider",
+            "type": "textarea",
+            "required": false
+          },
+          {
+            "name": "description_or_stock_of_rv_that_you_are_interest",
+            "label": "Description or stock # of RV that you are interested in",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "news_letter",
+            "label": "News Letter",
+            "type": "checkbox",
+            "required": false,
+            "options": [
+              {
+                "value": "I would like to receive offers and promotional marketing emails and SMS/Text messages from Blue Compass.",
+                "label": "I would like to receive offers and promotional marketing emails and SMS/Text messages from Blue Compass."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "auto": [
+      {
+        "title": "Contact & Vehicle Info",
+        "fields": [
+          {
+            "name": "location",
+            "label": "Location",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "MHS Texas",
+                "label": "MHS Texas"
+              },
+              {
+                "value": "MHS Alabama",
+                "label": "MHS Alabama"
+              },
+              {
+                "value": "Blue Compass RV Palm Desert — Soon to Be MHS California",
+                "label": "Blue Compass RV Palm Desert — Soon to Be MHS California"
+              }
+            ]
+          },
+          {
+            "name": "date",
+            "label": "Date",
+            "type": "date",
+            "required": true
+          },
+          {
+            "name": "name",
+            "label": "Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "preferred_phone",
+            "label": "Preferred Phone",
+            "type": "tel",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true
+          },
+          {
+            "name": "confirm_email",
+            "label": "Confirm Email",
+            "type": "email",
+            "required": true
+          },
+          {
+            "name": "year",
+            "label": "Year",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "make",
+            "label": "Make",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "model",
+            "label": "Model",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "miles",
+            "label": "Miles",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "sales_representative",
+            "label": "Sales Representative",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "None",
+                "label": "None"
+              },
+              {
+                "value": "Bradley Schwind",
+                "label": "Bradley Schwind"
+              },
+              {
+                "value": "Brayden Hirsch",
+                "label": "Brayden Hirsch"
+              },
+              {
+                "value": "Brighan Stanley",
+                "label": "Brighan Stanley"
+              },
+              {
+                "value": "Brian Dexter",
+                "label": "Brian Dexter"
+              },
+              {
+                "value": "Caleb Banks",
+                "label": "Caleb Banks"
+              },
+              {
+                "value": "Caleb Maples",
+                "label": "Caleb Maples"
+              },
+              {
+                "value": "Christine Johnson",
+                "label": "Christine Johnson"
+              },
+              {
+                "value": "Ethen Burns",
+                "label": "Ethen Burns"
+              },
+              {
+                "value": "Eric Watson",
+                "label": "Eric Watson"
+              },
+              {
+                "value": "Erica Garcia",
+                "label": "Erica Garcia"
+              },
+              {
+                "value": "Graham Beckwith",
+                "label": "Graham Beckwith"
+              },
+              {
+                "value": "Jake Hobbs (Alabama)",
+                "label": "Jake Hobbs (Alabama)"
+              },
+              {
+                "value": "James Smith",
+                "label": "James Smith"
+              },
+              {
+                "value": "Jordan Buckley",
+                "label": "Jordan Buckley"
+              },
+              {
+                "value": "Kerry Merrill (Alabama)",
+                "label": "Kerry Merrill (Alabama)"
+              },
+              {
+                "value": "Kolton Baldwin",
+                "label": "Kolton Baldwin"
+              },
+              {
+                "value": "Max Bradshaw",
+                "label": "Max Bradshaw"
+              },
+              {
+                "value": "Michael Martinez",
+                "label": "Michael Martinez"
+              },
+              {
+                "value": "Michael J. Reardon (Alabama)",
+                "label": "Michael J. Reardon (Alabama)"
+              },
+              {
+                "value": "Mitch Bennett",
+                "label": "Mitch Bennett"
+              },
+              {
+                "value": "Robert \"Cowboy\" Langley",
+                "label": "Robert \"Cowboy\" Langley"
+              },
+              {
+                "value": "Rocco Quaranta",
+                "label": "Rocco Quaranta"
+              },
+              {
+                "value": "Ron Johnson",
+                "label": "Ron Johnson"
+              },
+              {
+                "value": "Spencer Molina",
+                "label": "Spencer Molina"
+              },
+              {
+                "value": "Ted Eaton",
+                "label": "Ted Eaton"
+              },
+              {
+                "value": "William Illa",
+                "label": "William Illa"
+              },
+              {
+                "value": "Other",
+                "label": "Other"
+              }
+            ]
+          },
+          {
+            "name": "package_example_xlt",
+            "label": "Package (Example: XLT)",
+            "type": "text",
+            "required": false
+          }
+        ]
+      },
+      {
+        "title": "Features & Options",
+        "fields": [
+          {
+            "name": "vin_optional",
+            "label": "VIN# (Optional)",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "engine_type",
+            "label": "Engine Type",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Gas",
+                "label": "Gas"
+              },
+              {
+                "value": "Diesel",
+                "label": "Diesel"
+              }
+            ]
+          },
+          {
+            "name": "engine_size_example_v8",
+            "label": "Engine Size (Example: V8)",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "transmission",
+            "label": "Transmission",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Automatic",
+                "label": "Automatic"
+              },
+              {
+                "value": "Standard",
+                "label": "Standard"
+              }
+            ]
+          },
+          {
+            "name": "drive_type",
+            "label": "Drive Type",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "2WD",
+                "label": "2WD"
+              },
+              {
+                "value": "4WD",
+                "label": "4WD"
+              },
+              {
+                "value": "AWD",
+                "label": "AWD"
+              }
+            ]
+          },
+          {
+            "name": "weight_class_trucks",
+            "label": "Weight Class (Trucks)",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "1/2 Ton",
+                "label": "1/2 Ton"
+              },
+              {
+                "value": "3/4 Ton",
+                "label": "3/4 Ton"
+              },
+              {
+                "value": "1 Ton",
+                "label": "1 Ton"
+              }
+            ]
+          },
+          {
+            "name": "rear_axle",
+            "label": "Rear Axle",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Single",
+                "label": "Single"
+              },
+              {
+                "value": "Dually",
+                "label": "Dually"
+              }
+            ]
+          },
+          {
+            "name": "truck_bed",
+            "label": "Truck Bed",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Short",
+                "label": "Short"
+              },
+              {
+                "value": "Long",
+                "label": "Long"
+              }
+            ]
+          },
+          {
+            "name": "truck_cab",
+            "label": "Truck Cab",
+            "type": "select",
+            "required": false,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Regular",
+                "label": "Regular"
+              },
+              {
+                "value": "Extended",
+                "label": "Extended"
+              },
+              {
+                "value": "Crew",
+                "label": "Crew"
+              },
+              {
+                "value": "Quad",
+                "label": "Quad"
+              }
+            ]
+          },
+          {
+            "name": "seat_upholstery",
+            "label": "Seat Upholstery",
+            "type": "select",
+            "required": true,
+            "options": [
+              {
+                "value": "",
+                "label": "Choose"
+              },
+              {
+                "value": "Leather",
+                "label": "Leather"
+              },
+              {
+                "value": "Cloth",
+                "label": "Cloth"
+              }
+            ]
+          },
+          {
+            "name": "exterior_color",
+            "label": "Exterior Color",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "interior_color",
+            "label": "Interior Color",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "power_seats",
+            "label": "Power Seats",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "power_locks",
+            "label": "Power Locks",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "power_windows",
+            "label": "Power Windows",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "heated_seats",
+            "label": "Heated Seats",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "cooled_seats",
+            "label": "Cooled Seats",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "sunroof",
+            "label": "Sunroof",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "navigation_system",
+            "label": "Navigation System",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "back_up_camera",
+            "label": "Back-Up Camera",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Condition Report (Part 1)",
+        "fields": [
+          {
+            "name": "exterior_condition",
+            "label": "Exterior Condition",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "describe_any_exterior_dents_dings_hail_scrapes_e",
+            "label": "Describe Any Exterior Dents, Dings, Hail, Scrapes, etc.",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "interior_condition",
+            "label": "Interior Condition",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "4",
+                "label": "4"
+              },
+              {
+                "value": "3",
+                "label": "3"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              },
+              {
+                "value": "1",
+                "label": "1"
+              }
+            ]
+          },
+          {
+            "name": "describe_any_interior_stains_tears_etc",
+            "label": "Describe Any Interior Stains, Tears, etc.",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "windshield_good",
+            "label": "Windshield Good?",
+            "type": "radio",
+            "required": true,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "if_no_please_describe_windshield_damage",
+            "label": "If No, Please Describe Windshield Damage",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "a_c_working_good",
+            "label": "A/C Working Good?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "are_you_original_owner",
+            "label": "Are You Original Owner?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "has_vehicle_been_smoked_in",
+            "label": "Has Vehicle Been Smoked in?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "is_the_battery_good",
+            "label": "Is the Battery Good?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Condition Report (Part 2)",
+        "fields": [
+          {
+            "name": "are_tires_original",
+            "label": "Are Tires Original?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "are_tires_still_matching_brand",
+            "label": "Are Tires Still Matching Brand?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "are_sidewalls_of_tires_dry_rotted",
+            "label": "Are Sidewalls of Tires Dry Rotted?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "is_tire_tread_still_good",
+            "label": "Is Tire Tread Still Good?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "approximate_miles_on_tires",
+            "label": "Approximate Miles on Tires",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "approximate_age_on_tires",
+            "label": "Approximate Age on Tires",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "any_engine_problems",
+            "label": "Any Engine Problems?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "if_yes_please_explain_engine_problems",
+            "label": "If Yes, Please Explain Engine Problems",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "any_warning_or_service_lights_on_ex_check_engine",
+            "label": "Any Warning or Service Lights on? (Ex: Check Engine Light)",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "if_yes_please_explain_warning_lights",
+            "label": "If Yes, Please Explain Warning Lights",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "any_previous_damage_or_insurance_claim",
+            "label": "Any Previous Damage or Insurance Claim?",
+            "type": "radio",
+            "required": false,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "if_yes_please_explain_previous_damage",
+            "label": "If Yes, Please Explain Previous Damage",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "please_list_dealer_and_state_where_you_purchased",
+            "label": "Please List Dealer and State Where You Purchased the Vehicle From",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "do_you_owe_anything_on_your_trade_in",
+            "label": "Do You Owe Anything on Your Trade-In?",
+            "type": "radio",
+            "required": true,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "approximately_how_much_do_you_owe",
+            "label": "Approximately How Much Do You Owe?",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "will_you_be_financing",
+            "label": "Will You be Financing?",
+            "type": "radio",
+            "required": true,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "approximately_how_much_are_you_putting_down",
+            "label": "Approximately How Much Are You Putting Down?",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "please_list_any_additional_information_or_featur",
+            "label": "Please List Any Additional Information or Features You Would Like Us to Consider",
+            "type": "textarea",
+            "required": false
+          },
+          {
+            "name": "description_or_stock_of_rv_that_you_are_interest",
+            "label": "Description or stock # of RV that you are interested in",
+            "type": "text",
+            "required": false
+          },
+          {
+            "name": "be_the_first_to_see_exclusive_weekly_specials_on",
+            "label": "Be the first to see exclusive weekly specials only at MHSRV. Subscribe Today",
+            "type": "radio",
+            "required": true,
+            "options": [
+              {
+                "value": "Yes",
+                "label": "Yes"
+              },
+              {
+                "value": "No",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "name": "news_letter",
+            "label": "News Letter",
+            "type": "checkbox",
+            "required": false,
+            "options": [
+              {
+                "value": "I would like to receive offers and promotional marketing emails and SMS/Text messages from Blue Compass.",
+                "label": "I would like to receive offers and promotional marketing emails and SMS/Text messages from Blue Compass."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

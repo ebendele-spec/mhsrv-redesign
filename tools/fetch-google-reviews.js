@@ -1,40 +1,74 @@
 #!/usr/bin/env node
-/**
- * Refresh google-reviews.json with the latest 5-star Google reviews.
- *
- * OPTION A (quick start) — Google Places API (New):
- *   1. Create an API key: console.cloud.google.com → enable "Places API (New)".
- *   2. Find the Place ID for each location: developers.google.com/maps/documentation/places/web-service/place-id
- *   3. Run:  GOOGLE_API_KEY=xxx PLACE_ID=ChIJ... node tools/fetch-google-reviews.js
- *   ⚠ Places API returns only the 5 "most relevant" reviews per place — great for a
- *   rotating fresh sample, not the full history.
- *
- * OPTION B (full history + true auto-sync) — Google Business Profile API:
- *   Owner-verified OAuth on the MHSRV account exposes EVERY review (all years),
- *   supports pagination, and can run on a nightly cron. Swap the fetch below for
- *   mybusiness.googleapis.com/v4/accounts/{acct}/locations/{loc}/reviews
- *   filtered to starRating === "FIVE".
- *
- * Schedule either with cron / GitHub Actions:  0 6 * * *  node tools/fetch-google-reviews.js
+'use strict';
+/** Live server-side Google Places adapter. No review content is written to disk/Git.
+ * --check verifies configured access without logging keys or reviews.
+ * --serve exposes GET /google-reviews for explicitly allowed website origins.
  */
-const fs=require('fs');
-const KEY=process.env.GOOGLE_API_KEY, PLACE=process.env.PLACE_ID;
-if(!KEY||!PLACE){console.error('Set GOOGLE_API_KEY and PLACE_ID env vars.');process.exit(1)}
-(async()=>{
-  const r=await fetch(`https://places.googleapis.com/v1/places/${PLACE}?fields=reviews,googleMapsUri,rating,userRatingCount&key=${KEY}`);
-  const j=await r.json();
-  if(!j.reviews){console.error('No reviews returned',j);process.exit(1)}
-  const cutoff=Date.now()-5*365*24*3600*1000; // last 5 years
-  const out={
-    updated:new Date().toISOString(),
-    placeUrl:j.googleMapsUri||'',
-    rating:j.rating,count:j.userRatingCount,
-    reviews:j.reviews
-      .filter(v=>v.rating===5&&new Date(v.publishTime).getTime()>=cutoff)
-      .map(v=>({author:v.authorAttribution?.displayName||'Google user',rating:v.rating,
-                date:new Date(v.publishTime).toLocaleDateString('en-US',{month:'short',year:'numeric'}),
-                text:(v.text?.text||'').trim()}))
+const FIELD_MASK='id,displayName,googleMapsUri,rating,userRatingCount,reviews,attributions';
+class GooglePlacesError extends Error{
+  constructor(code,status=502){super('Google reviews are unavailable ('+code+').');this.name='GooglePlacesError';this.code=code;this.status=status;}
+}
+const httpsUrl=value=>{try{const u=new URL(value);return u.protocol==='https:'?u.href:'';}catch(_){return '';}};
+function settingsFromEnv(env=process.env){
+  const apiKey=env.GOOGLE_API_KEY||'';
+  const placeIds=[...new Set(String(env.GOOGLE_PLACE_IDS||env.PLACE_ID||'').split(',').map(x=>x.trim()).filter(Boolean))];
+  if(!apiKey)throw new GooglePlacesError('MISSING_SERVER_API_KEY',503);
+  if(!placeIds.length||placeIds.length>5||placeIds.some(x=>!/^[-_A-Za-z0-9]{10,255}$/.test(x)))throw new GooglePlacesError('INVALID_PLACE_IDS',503);
+  const allowedOrigins=String(env.GOOGLE_ALLOWED_ORIGINS||'').split(',').map(x=>x.trim()).filter(Boolean);
+  if(allowedOrigins.some(x=>{try{const u=new URL(x);return u.protocol!=='https:'||u.origin!==x;}catch(_){return true;}}))throw new GooglePlacesError('INVALID_ALLOWED_ORIGINS',503);
+  return {apiKey,placeIds,allowedOrigins};
+}
+function normalizePlace(place,expectedId){
+  if(place.id!==expectedId||typeof place.displayName?.text!=='string'||!httpsUrl(place.googleMapsUri))throw new GooglePlacesError('INVALID_PROVIDER_RESPONSE');
+  const reviews=(Array.isArray(place.reviews)?place.reviews:[]).filter(r=>Number.isInteger(r.rating)&&r.rating>=1&&r.rating<=5&&typeof r.authorAttribution?.displayName==='string'&&httpsUrl(r.googleMapsUri)).map(r=>({
+    author:r.authorAttribution.displayName,authorUrl:httpsUrl(r.authorAttribution.uri),authorPhoto:httpsUrl(r.authorAttribution.photoUri),
+    rating:r.rating,text:r.originalText?.text||r.text?.text||'',date:r.relativePublishTimeDescription||r.publishTime||'',url:httpsUrl(r.googleMapsUri)
+  }));
+  return {id:place.id,name:place.displayName.text,url:httpsUrl(place.googleMapsUri),
+    rating:Number.isFinite(place.rating)&&place.rating>=1&&place.rating<=5?place.rating:null,
+    count:Number.isInteger(place.userRatingCount)&&place.userRatingCount>=0?place.userRatingCount:null,
+    attributions:(Array.isArray(place.attributions)?place.attributions:[]).map(a=>({provider:String(a.provider||''),url:httpsUrl(a.providerUri)})),reviews};
+}
+async function fetchGoogleReviews(settings,transport=fetch){
+  const locations=await Promise.all(settings.placeIds.map(async id=>{
+    let response;
+    try{response=await transport('https://places.googleapis.com/v1/places/'+encodeURIComponent(id),{
+      headers:{'X-Goog-Api-Key':settings.apiKey,'X-Goog-FieldMask':FIELD_MASK},signal:AbortSignal.timeout(10000),cache:'no-store'});
+    }catch(error){throw new GooglePlacesError(error.name==='TimeoutError'||error.name==='AbortError'?'PROVIDER_TIMEOUT':'PROVIDER_NETWORK_ERROR');}
+    if(!response.ok){
+      const code={400:'INVALID_PROVIDER_REQUEST',401:'INVALID_API_KEY',403:'PROVIDER_PERMISSION_DENIED',404:'PLACE_NOT_FOUND',429:'PROVIDER_QUOTA_EXCEEDED'}[response.status]||'PROVIDER_HTTP_ERROR';
+      throw new GooglePlacesError(code);
+    }
+    let data;try{data=await response.json();}catch(_){throw new GooglePlacesError('INVALID_PROVIDER_JSON');}
+    if(data.error)throw new GooglePlacesError('PROVIDER_ERROR');
+    return normalizePlace(data,id);
+  }));
+  return {source:'google-places-api',fetchedAt:new Date().toISOString(),locations};
+}
+function createHandler(settings,transport=fetch){
+  if(!settings.allowedOrigins?.length)throw new GooglePlacesError('MISSING_ALLOWED_ORIGINS',503);
+  return async(req,res)=>{
+    res.setHeader('Cache-Control','no-store, max-age=0');res.setHeader('Pragma','no-cache');
+    res.setHeader('Vary','Origin');res.setHeader('Content-Type','application/json; charset=utf-8');res.setHeader('X-Content-Type-Options','nosniff');
+    const origin=req.headers.origin;
+    if(!settings.allowedOrigins.includes(origin)){res.statusCode=403;res.end(JSON.stringify({error:'ORIGIN_NOT_ALLOWED'}));return;}
+    res.setHeader('Access-Control-Allow-Origin',origin);res.setHeader('Access-Control-Allow-Methods','GET, OPTIONS');
+    if(req.url!=='/google-reviews'){res.statusCode=404;res.end(JSON.stringify({error:'NOT_FOUND'}));return;}
+    if(req.method==='OPTIONS'){res.statusCode=204;res.end();return;}
+    if(req.method!=='GET'){res.statusCode=405;res.end(JSON.stringify({error:'METHOD_NOT_ALLOWED'}));return;}
+    try{res.statusCode=200;res.end(JSON.stringify(await fetchGoogleReviews(settings,transport)));}
+    catch(error){res.statusCode=error instanceof GooglePlacesError?error.status:502;res.end(JSON.stringify({error:error instanceof GooglePlacesError?error.code:'PROVIDER_UNAVAILABLE'}));}
   };
-  fs.writeFileSync(__dirname+'/../google-reviews.json',JSON.stringify(out,null,1));
-  console.log('google-reviews.json updated:',out.reviews.length,'five-star reviews');
-})();
+}
+async function main(){
+  const settings=settingsFromEnv();
+  if(process.argv.includes('--check')){
+    const result=await fetchGoogleReviews(settings);
+    console.log('Google Places API connection verified for '+result.locations.length+' configured location(s). Review content was not saved.');
+  }else if(process.argv.includes('--serve')){
+    const http=require('node:http'),port=Number(process.env.PORT||8787);
+    http.createServer(createHandler(settings)).listen(port,'127.0.0.1',()=>console.log('No-store Google review endpoint listening locally on port '+port+'. Use an approved HTTPS reverse proxy for deployment.'));
+  }else throw new GooglePlacesError('CHOOSE_CHECK_OR_SERVE',503);
+}
+module.exports={GooglePlacesError,FIELD_MASK,settingsFromEnv,normalizePlace,fetchGoogleReviews,createHandler};
+if(require.main===module)main().catch(error=>{console.error(error instanceof GooglePlacesError?error.message:'Google review setup failed. No provider data was written.');process.exitCode=1;});

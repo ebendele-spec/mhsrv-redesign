@@ -9,7 +9,9 @@ https://ebendele-spec.github.io/mhsrv-redesign/
 - `assets/app.js`: shopping, saved RVs, comparisons, dialogs and resource viewers.
 - `assets/search.js`: inventory-grounded natural-language matching.
 - `assets/core.js`: tested lead transport and payment calculations.
-- `tools/site_templates.py`: shared page templates.
+- `tools/site_templates.py`: shared document shell; `shopping_templates.py`, `detail_templates.py`, `lead_templates.py`, `review_templates.py` and `dealership_templates.py` own their page areas.
+- `assets/shopping.css`, `detail.js/css`, `leads.js/css`, `reviews.js/css`, `restoration.css`: restored interactions and responsive layouts.
+- `google-reviews.config.json` and `tools/fetch-google-reviews.js`: prepared Google runtime integration; connection remains pending (see its README).
 - `tools/build-site.py`: rebuilds all pages and sitemaps from public data.
 - `site-config.json`: preview origin, publication mode and lead recipient.
 
@@ -55,6 +57,7 @@ Publish reviewed changes to `main`; GitHub Pages rebuilds the live preview. Use 
 - Saved and compared RVs are stored only in the current browser, without account sync.
 - RV Match and listing answers are grounded local tools. A generative AI model and secure backend are not connected.
 - `mhsrv_*` conversion events are ready for a tag manager, but no analytics account is connected.
+- Google reviews are **not yet connected**. The attributed live adapter needs an authorized Places API project, verified Place IDs and a private HTTPS runtime host; the old seed ratings are not displayed.
 - No changes have been made to the existing MHSRV.com production website.
 
 Read `AGENTS.md`, `HANDOFF.md` and `SEO-STRATEGY.md` before continuing development or preparing a production launch.

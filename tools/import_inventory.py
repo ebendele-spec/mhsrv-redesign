@@ -13,6 +13,7 @@ import re
 from datetime import date
 from pathlib import Path
 from urllib.parse import quote, urlparse
+from html.parser import HTMLParser
 
 ROOT = Path(__file__).resolve().parents[1]
 TYPES = {'Class A':'classa','Class B':'classb','Class B+':'classc','Class C':'classc','Diesel Pusher':'diesel','Super C':'superc','Fifth Wheel':'fifth','Toy Hauler':'toy','Travel Trailer':'tt','Teardrop Trailer':'tt'}
@@ -21,6 +22,47 @@ SPEC_FIELDS = {'Chassis':'Chassis','Engine':'Engine Model','Engine manufacturer'
 
 def text(value):
     return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', value or ''))).strip()
+
+class DescriptionParser(HTMLParser):
+    """Preserve editorial paragraphs and equipment lists without publishing HTML."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.blocks=[]; self.buffer=[]; self.kind='paragraph'; self.ignore=0; self.in_item=False
+    def flush(self):
+        value=re.sub(r'\s+',' ',' '.join(self.buffer)).strip()
+        if value:self.blocks.append({'kind':self.kind,'text':value})
+        self.buffer=[]
+    def handle_starttag(self,tag,attrs):
+        if tag in ('script','style'):self.ignore+=1;return
+        if self.ignore:return
+        if tag in ('p','div','li','br','h1','h2','h3','h4','ul','ol'):
+            self.flush()
+            if tag=='li':self.in_item=True
+            self.kind='item' if self.in_item else 'heading' if tag.startswith('h') else 'paragraph'
+    def handle_endtag(self,tag):
+        if tag in ('script','style'):self.ignore=max(0,self.ignore-1);return
+        if not self.ignore and tag in ('p','div','li','h1','h2','h3','h4'):
+            self.flush()
+            if tag=='li':self.in_item=False
+            self.kind='item' if self.in_item else 'paragraph'
+    def handle_data(self,data):
+        if not self.ignore:self.buffer.append(data)
+
+def description_sections(value):
+    parser=DescriptionParser();parser.feed(value or '');parser.flush()
+    result=[]
+    for block in parser.blocks:
+        # Plain-text feeds may already delimit equipment with bullets/newlines.
+        segments=re.split(r'\s*[•●]\s*',block['text'])
+        for i,segment in enumerate(segments):
+            if segment:result.append({'kind':'item' if i else block['kind'],'text':segment})
+    return result
+
+def horsepower(row):
+    explicit=number(row.get('Horsepower'))
+    if explicit:return explicit
+    match=re.search(r'\b(\d{2,4})\s*(?:HP|horsepower)\b',text(row.get('Engine Model')),re.I)
+    return int(match[1]) if match else None
 
 def number(value):
     try:
@@ -40,6 +82,7 @@ def read_map(name):
 
 def import_feed(path, imported):
     fp, videos, brochures = read_map('fpmap.json'), read_map('vidmap.json'), read_map('tools/brochures.json')
+    blue_compass = read_map('bcmap.json')
     items, details, seen = [], {}, set()
     with open(path, encoding='utf-8-sig', newline='') as f:
         reader = csv.DictReader(f)
@@ -107,8 +150,17 @@ def import_feed(path, imported):
                 if label in specs and number(specs[label])==0:
                     del specs[label]
             unit = {'stock':stock,'year':year,'brand':brand,'model':model,'floorplan':plan,'type':kind,'condition':text(row.get('Condition')).lower(),'price':number(row.get('Sale Price')) or number(row.get('Price')),'msrp':number(row.get('MSRP')),'length':number(row.get('Length')),'sleeps':number(row.get('Sleep Capacity')) or None,'slides':number(row.get('# Slideouts')),'city':city,'state':state,'phone':phone,'status':status,'image':photos[0].replace('width=1200;quality=75','width=640;quality=70') if photos else '', 'photoCount':len(photos),'fuel':text(row.get('Fuel Type')),'mileage':number(row.get('Mileage')),'features':features,'searchText':core[:2400],'hasFloorplan':bool(floorplan),'hasVideo':bool(video),'hasBrochure':bool(brochure),'gvwr':number(row.get('Gross Vehicle Weight')),'dryWeight':number(row.get('Dry Weight')),'updated':imported}
+            regular=number(row.get('Price'));price=unit['price'];msrp=unit['msrp']
+            unit.update(images=[p.replace('width=1200;quality=75','width=640;quality=70') for p in photos[:6]],
+                newArrival='new arrival' in attrs,
+                deal=bool(set(attrs)&{'super deals','blow out sale','on special','reduced'}) or bool(price and msrp and (msrp-price)/msrp>=.42),
+                regularPrice=regular if regular and price and regular>price else None,
+                horsepower=horsepower(row),engine=text(row.get('Engine Model')),chassis=text(row.get('Chassis')),
+                exterior=text(row.get('Exterior Color')),interior=text(row.get('Interior Color')))
+            bc_id=str(blue_compass.get(stock,''))
+            dealer_url=f'https://www.bluecompassrv.com/product/rv-{bc_id}-5' if re.fullmatch(r'\d+',bc_id) else ''
             items.append(unit)
-            details[stock] = dict(unit, description=desc, photos=photos, floorplanImage=floorplan, brochure=brochure, video=video, tour=safe_url(row.get('Tour 360 URL')), specs=specs)
+            details[stock] = dict(unit, description=desc,descriptionSections=description_sections(row.get('Description')), photos=photos, floorplanImage=floorplan, brochure=brochure, video=video, tour=safe_url(row.get('Tour 360 URL')), specs=specs,dealerListingUrl=dealer_url,youtubeSearchUrl='https://www.youtube.com/@motorhomespecialist/search?query='+quote(f'{year} {brand} {model} {plan}'))
     if not items:
         raise ValueError('Feed contains no valid inventory. Existing catalog was not changed.')
     return {'updated':imported,'source':'NetSource inventory export','items':items}, details
